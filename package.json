@@ -49,7 +49,7 @@
 		"js:watch": "npx rollup --config rollup.config.js --watch"
 	},
 	"type": "module",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"watch": {
 		"css:build": {
 			"extensions": "css,sass,scss",
