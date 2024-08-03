@@ -1,0 +1,73 @@
+address,
+area,
+article,
+aside,
+audio,
+blockquote,
+datalist,
+details,
+dl,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hr,
+iframe,
+img,
+label,
+menu,
+meter,
+nav,
+ol,
+optgroup,
+option,
+output,
+p,
+pre,
+progress,
+ruby,
+section,
+table,
+ul,
+video
+	margin-block-start: var(--sc-m-t)
+	margin-block-end: var(--sc-m-b)
+
+blockquote, details, pre
+	background: var(--sc-bg-2)
+	border-box: box-sizing
+	padding-block: var(--sc-p)
+	padding-inline: var(--sc-p)
+
+blockquote
+	--sc-border-left: calc(var(--sc-bs) * 4)
+	border-inline-start: var(--sc-border-left) solid var(--sc-bg-3)
+	margin-inline-start: 0
+	margin-inline-end: 0
+	padding-inline-start: calc(var(--sc-p) - var(--sc-border-left))
+
+details, pre
+	border: var(--sc-bs) solid var(--sc-bg-3)
+	border-radius: var(--sc-br)
+
+details
+	padding-block: calc(var(--sc-p) / 2)
+
+	&[open]
+		padding-block-end: 0
+
+hr
+	--sc-m-b: calc((var(--sc-m-v) * 2) - var(--sc-bs))
+	--sc-m-t: calc(var(--sc-m-v) * 2)
+	border: 0
+	border-block-start: var(--sc-bs) solid var(--sc-bg-3)
+
+summary
+	cursor: pointer
+	font-weight: bold

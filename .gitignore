@@ -1,0 +1,11 @@
+.build
+.build_images
+.bundle
+.cache
+.DS_Store
+.env
+.sass-cache
+build/
+deploy/
+dist/
+node_modules/

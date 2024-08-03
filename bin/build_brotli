@@ -1,0 +1,71 @@
+#!/bin/sh
+
+build_brotli_main() {
+	SCRIPT_INV="$( basename "$0" )"
+
+	E_MISSING=17
+
+	[ $# -lt 1 ] && _help && return
+
+	SOURCE_DIR="$1"
+
+	[ ! -d "$SOURCE_DIR" ] && echo "No directory: $SOURCE_DIR" >&2 && return 17
+
+	not_installed=
+	for cmd in gzip brotli
+	do
+		command -v "$cmd" > /dev/null 2>&1 || not_installed="$not_installed $cmd"
+	done
+
+	[ -n "$not_installed" ] && echo "Not installed:$not_installed" >&2 && return "$E_MISSING"
+
+	_find "$SOURCE_DIR" | while read -r src
+	do
+		# _gen_gzip "$src"
+		_gen_brotli "$src"
+	done
+}
+
+_find() {
+	find "$1" \
+		\( \
+			-iname '*.css' \
+			-or -iname '*.html' \
+			-or -iname '*.js' \
+			-or -iname '*.otf' \
+			-or -iname '*.svg' \
+			-or -iname '*.ttf' \
+			-or -iname '*.woff' \
+			-or -iname '*.xhtml' \
+		\) \
+	;
+}
+
+_gen_brotli() {
+	src="$1"
+	brotli -fkq 11 "$src"
+	brotli -t "$src.br"
+
+	# Append a null byte at the end of .br because something
+	# with nginx or the brotli plugin sometimes eats the last byte.
+	# https://github.com/google/ngx_brotli/issues/118
+	truncate -s +1 "$src.br"
+}
+
+_gen_gzip() {
+	src="$1"
+	gzip -9fknq "$src"
+	gzip -t "$src.gz"
+}
+
+_help() {
+cat <<USAGE
+Usage: $SCRIPT_INV <build_dir>
+
+Build Gzip & Brotli files for Web files,
+including CSS, HTML, JavaScript, SVG, and fonts.
+
+USAGE
+}
+
+build_brotli_main "$@"

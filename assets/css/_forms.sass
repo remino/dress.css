@@ -1,0 +1,116 @@
+%input-block
+	line-height: var(--sc-lh)
+	margin-block: calc(var(--sc-m-v) / 4)
+	padding-block: calc(var(--sc-m-v) / 4 - var(--sc-bs))
+	padding-inline: calc(var(--sc-m-v) / 2)
+
+[disabled]
+	cursor: not-allowed
+	filter: grayscale(1)
+	opacity: 0.6
+	user-select: none
+
+a[role='button'],
+button,
+input,
+select,
+textarea
+	border-radius: var(--sc-br)
+	font-size: 1rem
+
+a[role='button'],
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit']
+	@extend %input-block
+	appearance: none
+	border-radius: var(--sc-br)
+	border: 0
+	cursor: pointer
+
+	&:has(+ &)
+		margin-inline-end: calc(var(--sc-m-v) / 2)
+
+a[role='button'],
+button[type='submit'],
+input[type='submit']
+	background: var(--sc-lk)
+	color: var(--sc-lk-tx)
+
+	&:focus, &:hover
+		background: var(--sc-lk-2)
+
+button,
+html,
+input,
+select
+	font-family: var(--sc-ff-sans)
+
+button,
+input[type='button'],
+input[type='reset']
+	background: var(--sc-bt)
+	color: var(--sc-bt-tx)
+
+	&:focus, &:hover
+		background: var(--sc-bt-2)
+
+fieldset
+	background: var(--sc-bg-2)
+	border: var(--sc-bs) solid var(--sc-bg-3)
+	border-radius: var(--sc-br)
+	margin-inline: 0
+	padding-block: var(--sc-p) calc(var(--sc-m-v) / 2 * 3 - var(--sc-bs))
+	padding-inline: var(--sc-p)
+
+	> legend + *
+		margin-block-start: 0
+
+	> :last-child
+		margin-block-end: 0
+
+input:not([type='button'], [type='checkbox'], [type='radio'], [type='reset'], [type='submit']),
+select,
+textarea
+	@extend %input-block
+	appearance: none
+	background: var(--sc-bg-2)
+	border-box: box-sizing
+	border: var(--sc-bs) solid var(--sc-bg-3)
+	border-radius: var(--sc-br)
+	color: var(--sc-fg)
+
+label
+	cursor: pointer
+	display: flex
+	flex-flow: column
+
+	input,
+	select,
+	small,
+	span,
+	textarea
+		display: block
+
+	small
+		line-height: calc(var(--sc-lh) * 1rem)
+
+	&:has(input[type='checkbox'], input[type='radio'])
+		align-items: center
+		flex-flow: row
+		gap: calc(var(--sc-p) / 2)
+		justify-content: flex-start
+
+legend
+	font-weight: bold
+
+select
+	cursor: pointer
+	display: flex
+	flex-flow: row nowrap
+
+	&::after
+		content: '▼'
+		display: block
+		flex-shrink: 1

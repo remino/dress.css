@@ -1,0 +1,35 @@
+h1, h2, h3, h4, h5, h6
+	--sc-m-t: calc(var(--sc-m-v))
+
+	& + *
+		margin-block-start: 0
+
+h1, h2, h3
+	line-height: calc(var(--sc-lh) * 2rem)
+
+h1
+	font-size: 2rem
+
+h2
+	font-size: 1.5rem
+
+h3, h4, h5, h6
+	line-height: calc(var(--sc-lh) * 1rem)
+
+h3
+	font-size: 1.25rem
+
+h4
+	font-size: 1rem
+
+h5, h6
+	text-transform: uppercase
+
+	code, kbd
+		text-transform: initial
+
+h5
+	font-size: 0.875rem
+
+h6
+	font-size: 0.75rem

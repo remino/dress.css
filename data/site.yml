@@ -1,0 +1,5 @@
+build_dir: deploy/public
+description: 'Minimal class-less CSS for semantic HTML'
+prefix: semcss
+title: sem.css
+url: https://remino.net/

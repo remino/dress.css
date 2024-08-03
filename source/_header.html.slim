@@ -1,0 +1,6 @@
+header
+	h1= title
+	nav
+		menu
+			- top_level_pages.each do |page|
+				li= link_to nav_item_title(page), page.url

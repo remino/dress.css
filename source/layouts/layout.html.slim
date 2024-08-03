@@ -1,0 +1,15 @@
+doctype html
+= yield_content :comment
+html(lang="en")
+	head
+		= partial 'head'
+		= stylesheet_link_tag 'sem'
+		= stylesheet_link_tag 'docs'
+		= yield_content :head
+		= partial 'nav/htmlhead'
+	body
+		= partial 'nav/header'
+		= partial 'header'
+		= yield
+		= partial 'footer'
+		= partial 'nav/footer'

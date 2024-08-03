@@ -1,0 +1,11 @@
+@mixin letter-spacing($letter-spacing)
+	letter-spacing: $letter-spacing
+	padding-left: $letter-spacing
+
+@mixin motion
+	@media not (prefers-reduced-motion: reduce)
+		@content
+
+@mixin print
+	@media print
+		@content

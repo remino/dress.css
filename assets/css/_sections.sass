@@ -1,0 +1,32 @@
+body, main
+	>
+		footer:last-of-type, header:first-of-type
+			--sc-m-b: 0
+			--sc-m-t: 0
+			background: var(--sc-bg-2)
+			margin-inline-start: calc(0px - (50vw - 50%))
+			padding-inline-start: calc(50vw - 50%)
+			padding-inline-end: calc(50vw - 50%)
+			padding-block: var(--sc-m-v)
+			width: 100%
+
+			h1, h2, h3, h4, h5, h6
+				--sc-m-t: 0
+
+			figure
+				margin-inline: 0
+
+		footer:last-of-type
+			margin-block-start: calc(var(--sc-m-v) * 2)
+
+		header:first-of-type
+			margin-block-end: calc(var(--sc-m-v) * 2)
+
+			nav
+				menu
+					display: flex
+					flex-flow: row
+					gap: var(--sc-m-v)
+					list-style-type: none
+					margin: 0
+					padding-inline: 0

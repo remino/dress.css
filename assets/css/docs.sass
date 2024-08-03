@@ -1,0 +1,23 @@
+footer
+	> nav
+		margin-block-start: var(--sc-m-v)
+		align-items: flex-start
+		display: flex
+		flex-flow: row
+
+		> a
+			align-items: flex-start
+			display: inline-flex
+			flex-flow: column
+			justify-content: flex-start
+			position: relative
+
+			&::after
+				content: ''
+				display: block
+				inset: 0
+				position: absolute
+				z-index: 10
+
+			> object
+				display: inline-block

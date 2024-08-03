@@ -1,0 +1,48 @@
+
+:root
+	--sc-bg: rgb(255 255 255)
+	--sc-bg-2: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 5%)
+	--sc-bg-3: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 10%)
+	--sc-fg: rgb(0 0 0)
+
+	--sc-lk: hsl(212 100% 48%)
+	--sc-lk-2: hsl(212 97% 42%)
+	--sc-lk-tx: hsl(0 0% 100%)
+	--sc-lk-v: hsl(270 100% 46%)
+	--sc-lk-a: hsl(320 100% 48%)
+	--sc-bt: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 10%)
+	--sc-bt-2: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 15%)
+	--sc-bt-tx: var(--sc-fg)
+	--sc-ac: hsl(167 100% 54% / 60%)
+	--sc-ac-tx: hsl(187 71% 16%)
+
+	--sc-mp: calc(var(--sc-lh) * 2rem)
+	--sc-mw: 50rem
+
+	--sc-bs: 1px
+	--sc-br: 0.25rem
+	--sc-m-v: calc(var(--sc-lh) * 1rem)
+	--sc-p: calc(var(--sc-lh) * 1rem - var(--sc-bs))
+	--sc-m-t: var(--sc-m-v)
+	--sc-m-b: var(--sc-m-v)
+
+	--sc-fs: 16px
+	--sc-ff-sans: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif
+	--sc-ff-mono: Menlo, Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace
+	--sc-lh: 1.6
+	--sc-ts: 2
+
+	@media (prefers-color-scheme: dark)
+		--sc-bg: rgb(0 0 0)
+		--sc-fg: rgb(255 255 255)
+		--sc-bg-2: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 15%)
+		--sc-bg-3: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 30%)
+
+		--sc-lk: hsl(212 100% 60%)
+		--sc-lk-2: hsl(212 100% 48%)
+		--sc-lk-v: hsl(270 100% 64%)
+		--sc-lk-a: hsl(320 100% 64%)
+		--sc-bt: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 30%)
+		--sc-bt-2: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 40%)
+		--sc-ac: hsl(167 100% 63% / 50%)
+		--sc-ac-tx: rgb(var(--sc-fg-rgb))

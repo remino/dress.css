@@ -1,0 +1,62 @@
+{
+	"description": "Minimal class-less CSS for semantic HTML",
+	"devDependencies": {
+		"@lopatnov/rollup-plugin-uglify": "^2.1.5",
+		"@rollup/plugin-commonjs": "^24.1.0",
+		"@rollup/plugin-node-resolve": "^15.2.3",
+		"@rollup/plugin-terser": "^0.4.4",
+		"autoprefixer": "^10.4.19",
+		"concurrently": "^8.2.2",
+		"cssnano": "^6.1.2",
+		"cssnano-preset-default": "^6.1.2",
+		"eslint": "^8.57.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-no-template-curly-in-string-fix": "^1.0.4",
+		"minify": "^10.5.2",
+		"npm-watch": "^0.11.0",
+		"postcss": "^8.4.38",
+		"postcss-cli": "^10.1.0",
+		"postcss-load-config": "^4.0.2",
+		"postcss-value-parser": "^4.2.0",
+		"rollup": "^3.29.4",
+		"rollup-plugin-postcss": "^4.0.2",
+		"rollup-plugin-sass": "^1.12.22",
+		"sass": "^1.77.1",
+		"smoothscroll-polyfill": "^0.4.4",
+		"terser": "^5.31.0",
+		"yaml": "^2.4.2"
+	},
+	"files": [
+		"dist/*"
+	],
+	"homepage": "https://remino.net/sem.css/",
+	"keywords": [
+		"javascript",
+		"css",
+		"animation",
+		"scroll"
+	],
+	"license": "ISC",
+	"name": "semcss",
+	"scripts": {
+		"build": "npm run css:build && npx postcss .build/sass-css/sem.css -o dist/sem.css",
+		"css:build": "npm run css:sass && pnpm run css:postcss",
+		"css:postcss": "npx postcss .build/sass-css/ --dir .build/css/$( grep -F prefix: data/site.yml | cut -d ' ' -f 2 )/",
+		"css:sass": "npx sass --no-source-map --load-path=node_modules/ assets/css/:.build/sass-css/",
+		"css:watch": "npm-watch css:build",
+		"js:build": "npx rollup --config rollup.config.js",
+		"js:watch": "npx rollup --config rollup.config.js --watch"
+	},
+	"type": "module",
+	"version": "0.1.0",
+	"watch": {
+		"css:build": {
+			"extensions": "css,sass,scss",
+			"patterns": [
+				"assets/css"
+			],
+			"quiet": false
+		}
+	}
+}

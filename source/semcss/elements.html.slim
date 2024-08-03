@@ -1,0 +1,569 @@
+h1 Elements
+
+p
+	| Below are all the tags style by <mark><strong>sem.css</strong></mark> along with
+	  markup samples. Tag names are linked to documentation on
+		the <a href="https://developer.mozilla.org/">Mozilla Developer Network (MDN)</a>.
+
+nav
+	ol
+		li
+			a href="#links" Links
+			ol
+				li
+					a href="#hyperlink" Hyperlink
+				li
+					a href="#buttonlink" Button Link
+		li
+			a href="#headings" Headings
+		li
+			a href="#sections" Page Sections
+			ol
+				li
+					a href="#header" Header
+				li
+					a href="#footer" Footer
+		li
+			a href="#code" Code
+		li
+			a href="#blockquote" Block Quotation
+		li
+			a href="#lists" Lists
+			ol
+				li
+					a href="#ul" Unordered List
+				li
+					a href="#ol" Ordered List
+				li
+					a href="#menu" Menu List
+				li
+					a href="#dl" Description List
+		li
+			a href="#table" Table
+		li
+			a href="#details" Details Disclosure
+		li
+			a href="#figure" Figure
+		li
+			a href="#mark" Mark Text (Highlighted Text)
+		li
+			a href="#hr" Thematic Break (Horizontal Rule)
+		li
+			a href="#form" Form
+			ol
+				li
+					a href="#input" Input
+				li
+					a href="#textarea" Textarea
+				li
+					a href="#select" Select
+				li
+					a href="#checkbox" Checkbox
+				li
+					a href="#radio" Radio
+				li
+					a href="#buttons" Buttons
+
+hr
+
+h2#links Links <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a>
+
+h3#hyperlink Hyperlink
+
+p
+	a(href="javascript:void(0)") Click me
+
+pre
+	| &lt;a href="#"&gt;Click me&lt;/a&gt;
+
+h3#buttonlink Button Link
+
+a[role="button" href="https://remino.net/"] Visit RÉMINO
+
+pre
+	| &lt;a role="button" href="https://remino.net/"&gt;Visit RÉMINO&lt;/a&gt;
+
+nav
+	a[href="#"] Back to top
+
+hr
+
+h2#headings Headings
+
+blockquote
+	h1 Heading 1 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1"><code>&lt;h1&gt;</code></a>
+	h2 Heading 2 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h2"><code>&lt;h2&gt;</code></a>
+	h3 Heading 3 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h3"><code>&lt;h3&gt;</code></a>
+	h4 Heading 4 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h4"><code>&lt;h4&gt;</code></a>
+	h5 Heading 5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h5"><code>&lt;h5&gt;</code></a>
+	h6 Heading 6 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h6"><code>&lt;h6&gt;</code></a>
+
+pre
+	| &lt;h1&gt;Heading 1&lt;/h1&gt;
+	  &lt;h2&gt;Heading 2&lt;/h2&gt;
+	  &lt;h3&gt;Heading 3&lt;/h3&gt;
+	  &lt;h4&gt;Heading 4&lt;/h4&gt;
+	  &lt;h5&gt;Heading 5&lt;/h5&gt;
+	  &lt;h6&gt;Heading 6&lt;/h6&gt;
+
+nav
+	a[href="#"] Back to top
+
+hr
+
+h2#sections Page Sections
+
+p
+	| In <mark><strong>sem.css</strong></mark>, some special formatting is used
+	  in the header and the footer of the page to ease navigation and readability.
+
+h3#header Header <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"><code>&lt;header&gt;</code></a>
+
+p
+	| Some special styling is applied to the
+		<code>&lt;header&gt;</code> tag. When it is the first child of
+		<code>&lt;body&gt;</code> or <code>&lt;main&gt;</code> tag, its heading
+		and navigation are styled differently, like the one seen at <a href="#">top of this page</a>.
+
+pre
+	| &lt;header&gt;
+	    &lt;h1&gt;Header&lt;/h1&gt;
+	    &lt;nav&gt;
+	      &lt;menu&gt;
+	        &lt;li&gt;&lt;a href="#header"&gt;Header&lt;/a&gt;&lt;/li&gt;
+	        &lt;li&gt;&lt;a href="#footer"&gt;Footer&lt;/a&gt;&lt;/li&gt;
+	      &lt;/menu&gt;
+	    &lt;/nav&gt;
+	  &lt;/header&gt;
+
+h3#footer Footer <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"><code>&lt;footer&gt;</code></a>
+
+p
+	| Like the <code>&lt;header&gt;</code> tag, some special formatting is applied
+	  to <code>&lt;footer&gt;</code> when it is the last child of
+		<code>&lt;body&gt;</code> or <code>&lt;main&gt;</code> tag. That can also
+		been seen at the <a href="#footer">bottom of this page</a>.
+
+pre
+	| &lt;footer&gt;
+	    &lt;p&gt;&copy; 2024&lt;/p&gt;
+	  &lt;/footer&gt;
+
+nav
+	a[href="#"] Back to top
+
+hr
+
+h2#code Code
+
+h3 Preformatted Text (Code Block) <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre"><code>&lt;pre&gt;</code></a>
+
+p
+	| Using <code>&lt;code&gt;</code> to wrap code in <code>&lt;pre&gt;</code> is
+	  not necessary. But if it is, its style will be reset to match the container,
+		thus making no difference in style.
+
+pre
+	| alert('Hello World!');
+
+pre
+	| &lt;code&gt;
+	    alert('Hello World!');
+	  &lt;/code&gt;
+
+h3 Inline Code <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code"><code>&lt;code&gt;</code></a>
+
+p <code>echo hello</code>
+
+pre
+	| &lt;code&gt;echo hello&lt;/code&gt;
+
+h3 Keyboard Input <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd"><code>&lt;kbd&gt;</code></a>
+
+p <kbd>Ctrl+C</kbd>
+
+pre
+	| &lt;kbd&gt;Ctrl+C&lt;/kbd&gt;
+
+nav
+	a[href="#"] Back to top
+
+hr
+
+h2#blockquote Block Quotation <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"><code>&lt;blockquote&gt;</code></a>
+
+blockquote
+	| “What goes up must come down.”<br><br>
+		— Isaac Newton
+
+pre
+	| &lt;blockquote&gt;
+	    “What goes up must come down.”&lt;br&gt;&lt;br&gt;
+	    — Isaac Newton
+	  &lt;/blockquote&gt;
+
+nav
+	a[href="#"] Back to top
+
+hr
+
+h2#lists Lists
+
+h3#ul Unordered List <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul"><code>&lt;ul&gt;</code></a>
+
+ul
+	li
+		| Unordered list item 1
+		ul
+			li Nested unordered list item 1
+			li Nested unordered list item 2
+	li Unordered list item 2
+	li Unordered list item 3
+
+pre
+	| &lt;ul&gt;
+	    &lt;li&gt;Unordered list item 1
+	      &lt;ul&gt;
+	        &lt;li&gt;Nested unordered list item 1&lt;/li&gt;
+	        &lt;li&gt;Nested unordered list item 2&lt;/li&gt;
+	      &lt;/ul&gt;
+	    &lt;/li&gt;
+	    &lt;li&gt;Unordered list item 2&lt;/li&gt;
+	    &lt;li&gt;Unordered list item 3&lt;/li&gt;
+	  &lt;/ul&gt;
+
+h3#ol Ordered List <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"><code>&lt;ol&gt;</code></a>
+
+ol
+	li
+		| Ordered list item 1
+		ol
+			li Nested ordered list item 1
+			li Nested ordered list item 2
+	li Ordered list item 2
+	li Ordered list item 3
+
+pre
+	| &lt;ol&gt;
+	    &lt;li&gt;Ordered list item 1
+	      &lt;ol&gt;
+	        &lt;li&gt;Nested ordered list item 1&lt;/li&gt;
+	        &lt;li&gt;Nested ordered list item 2&lt;/li&gt;
+	      &lt;/ol&gt;
+	    &lt;/li&gt;
+	    &lt;li&gt;Ordered list item 2&lt;/li&gt;
+	    &lt;li&gt;Ordered list item 3&lt;/li&gt;
+	  &lt;/ol&gt;
+
+h3#menu Menu List <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu"><code>&lt;menu&gt;</code></a>
+
+menu
+	li
+		| Menu list item 1
+		ul
+			li Nested menu list item 1
+			li Nested menu list item 2
+	li Menu list item 2
+	li Menu list item 3
+
+pre
+	| &lt;menu&gt;
+	    &lt;li&gt;Menu list item 1
+	      &lt;ul&gt;
+	        &lt;li&gt;Nested menu list item 1&lt;/li&gt;
+	        &lt;li&gt;Nested menu list item 2&lt;/li&gt;
+	      &lt;/ul&gt;
+	    &lt;/li&gt;
+	    &lt;li&gt;Menu list item 2&lt;/li&gt;
+	    &lt;li&gt;Menu list item 3&lt;/li&gt;
+	  &lt;/menu&gt;
+
+h3#dl Description List <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl"><code>&lt;dl&gt;</code></a>
+
+dl
+	dt Term 1
+	dd Definition 1
+	dt Term 2
+	dd Definition 2
+	dt Term 3
+	dd Definition 3
+
+pre
+	| &lt;dl&gt;
+	    &lt;dt&gt;Term 1&lt;/dt&gt;
+	    &lt;dd&gt;Definition 1&lt;/dd&gt;
+	    &lt;dt&gt;Term 2&lt;/dt&gt;
+	    &lt;dd&gt;Definition 2&lt;/dd&gt;
+	    &lt;dt&gt;Term 3&lt;/dt&gt;
+	    &lt;dd&gt;Definition 3&lt;/dd&gt;
+	  &lt;/dl&gt;
+
+nav
+	a[href="#"] Back to top
+
+hr
+
+h2#table Table <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"><code>&lt;table&gt;</code></a>
+
+table
+	caption Table Caption
+	thead
+		tr
+			th Header 1
+			th Header 2
+			th Header 3
+	tfoot
+		tr
+			th Footer 1
+			th Footer 2
+			th Footer 3
+	tbody
+		tr
+			td Data 1
+			td Data 2
+			td Data 3
+		tr
+			td Data 4
+			td Data 5
+			td Data 6
+		tr
+			td Data 7
+			td Data 8
+			td Data 9
+
+pre
+	| &lt;table&gt;
+	    &lt;caption&gt;Table Caption&lt;/caption&gt;
+	    &lt;thead&gt;
+	      &lt;tr&gt;
+	        &lt;th&gt;Header 1&lt;/th&gt;
+	        &lt;th&gt;Header 2&lt;/th&gt;
+	        &lt;th&gt;Header 3&lt;/th&gt;
+	      &lt;/tr&gt;
+	    &lt;/thead&gt;
+	    &lt;tfoot&gt;
+	      &lt;tr&gt;
+	        &lt;th&gt;Footer 1&lt;/th&gt;
+	        &lt;th&gt;Footer 2&lt;/th&gt;
+	        &lt;th&gt;Footer 3&lt;/th&gt;
+	      &lt;/tr&gt;
+	    &lt;/tfoot&gt;
+	    &lt;tbody&gt;
+	      &lt;tr&gt;
+	        &lt;td&gt;Data 1&lt;/td&gt;
+	        &lt;td&gt;Data 2&lt;/td&gt;
+	        &lt;td&gt;Data 3&lt;/td&gt;
+	      &lt;/tr&gt;
+	      &lt;tr&gt;
+	        &lt;td&gt;Data 4&lt;/td&gt;
+	        &lt;td&gt;Data 5&lt;/td&gt;
+	        &lt;td&gt;Data 6&lt;/td&gt;
+	      &lt;/tr&gt;
+	      &lt;tr&gt;
+	        &lt;td&gt;Data 7&lt;/td&gt;
+	        &lt;td&gt;Data 8&lt;/td&gt;
+	        &lt;td&gt;Data 9&lt;/td&gt;
+	      &lt;/tr&gt;
+	    &lt;/tbody&gt;
+	  &lt;/table&gt;
+
+nav
+	a[href="#"] Back to top
+
+hr
+
+h2#details Details Disclosure <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"><code>&lt;details&gt;</code></a>
+
+details
+	summary Click to show details
+	p Here are all the details!
+
+pre
+	| &lt;details&gt;
+	    &lt;summary&gt;Click to show details&lt;/summary&gt;
+	    &lt;p&gt;Here are all the details!&lt;/p&gt;
+	  &lt;/details&gt;
+
+nav
+	a[href="#"] Back to top
+
+hr
+
+h2#figure Figure <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure"><code>&lt;figure&gt;</code></a>
+
+figure
+	= image_tag '/semcss/triangles.svg'
+	figcaption A display of colourful triangles.
+
+pre
+	| &lt;figure&gt;
+	    &lt;img src="triangles.svg"&gt;
+	    &lt;figcaption&gt;A display of colourful triangles.&lt;/figcaption&gt;
+	  &lt;/figure&gt;
+
+hr
+
+h2#mark Mark Text (Highlighted Text) <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark"><code>&lt;mark&gt;</code></a>
+
+p
+	mark highlighted text
+
+pre
+	| &lt;mark&gt;highlighted text&lt;/mark&gt;
+
+nav
+	a[href="#"] Back to top
+
+hr
+
+h2#hr Thematic Break (Horizontal Rule) <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr"><code>&lt;hr&gt;</code></a>
+
+figure
+	hr
+
+pre
+	| &lt;hr&gt;
+
+nav
+	a[href="#"] Back to top
+
+hr
+
+h2#form Form <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"><code>&lt;form&gt;</code></a>
+
+p
+	| There is some styling for forms in <mark><strong>sem.css</strong></mark> for the most common controls.
+		It works best with the suggested markup below, wrapping every input field into a
+		<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label"><code>&lt;label&gt;</code></a>
+		for better usability. However, forms are notorious for how finicky they are with
+		styling, accessibility, and inconsistencies between browsers. For anything more complex, as this
+		stylesheet is basic, you may need to look for a different styling system better suited
+		for your needs.
+
+h3#input Input <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>
+
+p Works with “textual” input fields like <code>text</code> (the default type) and <code>password</code>.
+
+form[onsubmit="return false" method="post"]
+	label
+		span Name
+		input
+		small Enter any name you identifies you best.
+
+pre
+	| &lt;label&gt;
+	    &lt;span&gt;Name&lt;/span&gt;
+	    &lt;input&gt;
+	    &lt;small&gt;Enter any name you identifies you best.&lt;/small&gt;
+	  &lt;/label&gt;
+
+h3#textarea Textarea <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a>
+
+form[onsubmit="return false" method="post"]
+	label
+		span Message
+		textarea(rows="4")
+
+pre
+	| &lt;label&gt;
+	    &lt;span&gt;Message&lt;/span&gt;
+	    &lt;textarea rows="4"&gt;&lt;/textarea&gt;
+	  &lt;/label&gt;
+
+h3#select Select <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select"><code>&lt;select&gt;</code></a>
+
+form[onsubmit="return false" method="post"]
+	label
+		span Choose one
+		select
+			option Option A
+			option Option B
+
+pre
+	| &lt;label&gt;
+	    &lt;span&gt;Choose one&lt;/span&gt;
+	    &lt;select&gt;
+	      &lt;option&gt;Option A&lt;/option&gt;
+	      &lt;option&gt;Option B&lt;/option&gt;
+	    &lt;/select&gt;
+	  &lt;/label&gt;
+
+h3#checkbox Checkbox <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox"><code>&lt;input type="checkbox"&gt;</code></a>
+
+form[onsubmit="return false" method="post"]
+	label
+		input type="checkbox" name="agree" value="1"
+		span I agree
+
+pre
+	| &lt;label&gt;
+	    &lt;input type="checkbox" name="agree" value="1"&gt;
+	    &lt;span&gt;I agree&lt;/span&gt;
+	  &lt;/label&gt;
+
+h3#radio Radio <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio"><code>&lt;input type="radio"&gt;</code></a>
+
+form[onsubmit="return false" method="post"]
+	label
+		input type="radio" name="be" value="1"
+		span To be
+	label
+		input type="radio" name="be" value="0"
+		span Not to be
+
+pre
+	| &lt;label&gt;
+	    &lt;input type="radio" name="be" value="1"&gt;
+	    &lt;span&gt;To be&lt;/span&gt;
+	  &lt;/label&gt;
+	  &lt;label&gt;
+	    &lt;input type="radio" name="be" value="0"&gt;
+	    &lt;span&gt;Not to be&lt;/span&gt;
+	  &lt;/label&gt;
+
+h3#fieldset Field Set <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset"><code>&lt;fieldset&gt;</code></a>
+
+fieldset
+	legend Skills
+	label
+		input type="checkbox" name="skills" value="html"
+		span HTML
+	label
+		input type="checkbox" name="skills" value="css"
+		span CSS
+
+pre
+	| &lt;fieldset&gt;
+	    &lt;legend&gt;Skills&lt;/legend&gt;
+	    &lt;label&gt;
+	      &lt;input type="checkbox" name="skills" value="html"&gt;
+	      &lt;span&gt;HTML&lt;/span&gt;
+	    &lt;/label&gt;
+	    &lt;label&gt;
+	      &lt;input type="checkbox" name="skills" value="css"&gt;
+	      &lt;span&gt;CSS&lt;/span&gt;
+	    &lt;/label&gt;
+	  &lt;/fieldset&gt;
+
+h3#buttons Buttons
+
+p
+	| Including
+		<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"><code>&lt;button&gt;</code></a> as well as
+		<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a> with
+		<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button"><code>type="button"</code></a>,
+		<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset"><code>type="reset"</code></a>, and
+		<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit"><code>type="submit"</code></a>.
+
+form[onsubmit="return false" method="post"]
+	input type="reset" value="Reset"
+	button[disabled] Disabled
+	button[type="submit"] Submit
+
+pre
+	| &lt;input type="reset" value="Reset"&gt;
+	  &lt;button disabled&gt;Disabled&lt;/button&gt;
+	  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+
+nav
+	a[href="#"] Back to top

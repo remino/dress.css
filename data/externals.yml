@@ -1,0 +1,3 @@
+static_paths:
+  /common: ../common/deploy/public
+  /nav: ../nav/deploy/public

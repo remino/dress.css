@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+	head
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")/
+		title= data.site.prefix
+
+		sass:
+			\:root
+				--color-bg: #fff
+				--color-fg: #000
+
+				@media (prefers-color-scheme: dark)
+					--color-bg: #000
+					--color-fg: #fff
+
+			a
+				animation: fade-in 1s ease-in-out
+				color: inherit
+				text-decoration: none
+
+				&:focus,
+				&:hover
+					outline: none
+					text-decoration: underline
+
+			body, html
+				margin: 0
+				padding: 0
+				width: 100%
+
+			body
+				align-items: center
+				background: var(--color-bg)
+				color: var(--color-fg)
+				display: flex
+				flex-flow: column
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+				justify-content: center
+				min-height: 100%
+
+			h1
+				font-size: 1rem
+				font-weight: normal
+
+			html
+				height: 100%
+
+	body
+		h1
+			a(href="#{data.site.prefix}/" target="_top")
+				= data.site.prefix

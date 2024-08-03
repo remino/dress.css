@@ -1,0 +1,169 @@
+h1 Demo
+
+hr
+
+h1 Anim Duis Ut in Cillum
+
+p Elit sit occaecat mollit laboris id proident <a href="javascript:void(0)">elit consectetur</a> ex id Lorem id commodo aliqua. Ea excepteur ipsum voluptate non do duis <a href="#">anim duis enim sint</a>.
+
+h2 Consequat Voluptate Sint Officia Adipisicing Sunt Officia Id
+
+p Labore velit sunt voluptate dolore aliqua non sunt do. Reprehenderit ex consequat <del>exercitation</del> <ins>consectetur</ins> voluptate sint eu deserunt. Aliqua proident nostrud do commodo qui laborum sit nulla quis in commodo ut. <mark>Sint pariatur</mark> enim do enim amet do sit eiusmod mollit. Nulla nisi laborum id aliqua ad excepteur officia officia aliqua sit aliquip et proident. Incididunt reprehenderit ad reprehenderit Lorem irure quis Lorem do amet nisi <code>ls -l</code> sunt cillum non aliquip.
+
+h3 Minim Ipsum Laboris Reprehenderit Cupidatat Minim Eiusmod
+
+p Deserunt cupidatat minim ut est aliquip velit velit occaecat nostrud ullamco sit eu.
+
+pre
+	| const showMessage = () => {
+	    alert('Hello World!');
+	  }
+
+	  showMessage();
+
+h4 Fugiat Consequat Consectetur
+
+p Labore mollit aute <kbd>Alt+F4</kbd> amet.
+
+h5 Aliqua Ipsum Consequat
+
+p Consequat proident eiusmod officia amet enim esse et amet cupidatat laborum. Elit esse labore reprehenderit deserunt. Do nisi nostrud sunt tempor voluptate amet nisi irure do. Ipsum adipisicing sit laboris minim. Ut eu amet voluptate fugiat laboris cupidatat consequat adipisicing veniam commodo sit est Lorem. Anim non eiusmod proident occaecat veniam officia Lorem aliquip sit proident tempor. Incididunt culpa ullamco velit occaecat proident.
+
+blockquote
+	| “Ullamco qui adipisicing anim quis commodo esse voluptate fugiat occaecat amet.”<br><br>
+	  — Voluptate Dolor
+
+dl
+	dt Tempor
+	dd Lorem ea incididunt eiusmod eu minim incididunt velit mollit.
+	dt Sint Aute
+	dd Consectetur adipisicing. Duis ut laborum reprehenderit deserunt.
+
+h6 Ipsum Adipisicing
+
+p Minim proident fugiat dolor anim ipsum.
+
+figure
+	= image_tag '/semcss/triangles.svg'
+	figcaption Non magna est occaecat ullamco id et consequat aute.
+
+hr
+
+h2 Aute Aliquip Eu Dolor Nostrud
+
+table
+	caption Ipsum Et Laboris Do Cupidatat Deserunt
+	thead
+		tr
+			th Tempor
+			th Lorem Ea
+			th Sint Aute
+	tfoot
+		tr
+			th Tempor
+			th Lorem Ea
+			th Sint Aute
+	tbody
+		tr
+			td 1
+			td Do Aute Proident
+			td Sit adipisicing.
+		tr
+			td 2
+			td Exercitation
+			td Duis ut laborum.
+		tr
+			td 3
+			td Duis magna
+			td Reprehenderit deserunt.
+
+h3 Ipsum Adipisicing:
+
+ol
+	li Labore aliquip <em>nostrud adipisicing</em>.
+	li Occaecat adipisicing incididunt eiusmod eu minim incididunt velit mollit.
+	li Non anim ullamco sunt <strong>ullamco in ad mollit non elit officia</strong> commodo consequat aliquip.
+	li
+		| Exercitation ut laborum.
+		ol
+			li Duis eiusmod cillum eu labore aliquip deserunt.
+			li Magna ea veniam culpa.
+	li Quis irure anim labore do duis est officia adipisicing consequat qui.
+
+details
+	summary ⚠️ Ea in Proident Excepteur Consectetur Aliqua Eiusmod Labore
+
+	ul
+		li Nulla in qui aliquip.
+		li Aute aliquip eu dolor nostrud.
+		li Irure exercitation pariatur nulla <strong>minim dolore culpa adipisicing</strong> lorem laborum minim in reprehenderit reprehenderit.
+		li Enim voluptate sit id ut Lorem.
+		li Ullamco veniam fugiat aliquip sint magna quis labore veniam aliquip culpa aute anim nulla proident.
+		li
+			| Laborum dolor minim velit officia deserunt ipsum officia ea laboris consequat.
+			ul
+				li Duis eiusmod cillum eu labore aliquip deserunt.
+				li Magna ea veniam culpa.
+
+hr
+
+h2 Sign Up for our Newsletter!
+
+p Get all the lorem ipsum in your inbox.
+
+form[onsubmit="return false" method="post"]
+	label
+		span Name
+		input type="text"
+		small Input the name with which we should greet you.
+
+	label
+		span Email
+		input type="email"
+
+	label
+		span Country of Residence
+		select
+			option Canada
+			option China
+			option France
+			option Germany
+			option Italy
+			option Japan
+			option Mexico
+			option South Korea
+			option United Kingdom
+			option United States
+			option Other
+
+	fieldset
+		legend Select Topics
+		label
+			input type="checkbox" name="topics" value="news"
+			span General News
+		label
+			input type="checkbox" name="topics" value="tech"
+			span Tech
+		label
+			input type="checkbox" name="topics" value="fashion"
+			span Fashion
+		label
+			input type="checkbox" name="topics" value="photo"
+			span Photography
+
+	fieldset
+		legend Format
+		label
+			input type="radio" name="format" value="html"
+			span HTML
+		label
+			input type="radio" name="format" value="plain"
+			span Plain Text
+
+	label
+		span Feedback
+		textarea[rows="4"]
+		small Tell us what you think about our service.
+
+	input type="reset" value="Reset"
+	button[type="submit"] Submit
