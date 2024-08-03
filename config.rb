@@ -1,6 +1,5 @@
 require 'date'
 require 'middleman-reslib/date'
-require 'middleman-reslib/external_link_popup'
 require 'middleman-reslib/i18n'
 require 'middleman-reslib/minify'
 require 'middleman-reslib/title'
@@ -9,7 +8,6 @@ require 'middleman-reslib/url'
 activate :i18n
 activate :directory_indexes
 activate :reslib_date
-activate :reslib_external_link_popup
 activate :reslib_i18n
 activate :reslib_title
 activate :reslib_url, base_url: app.data.site.url
