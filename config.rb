@@ -74,5 +74,5 @@ set :css_dir, app.data.site.prefix
 set :images_dir, app.data.site.prefix
 set :js_dir, app.data.site.prefix
 set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, smartypants: true
+set :markdown, fenced_code_blocks: true, smartypants: true, with_toc_data: true
 set :relative_links, false
