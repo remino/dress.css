@@ -32,10 +32,8 @@
 	],
 	"homepage": "https://remino.net/semcss/",
 	"keywords": [
-		"javascript",
 		"css",
-		"animation",
-		"scroll"
+		"boilerplate"
 	],
 	"license": "ISC",
 	"name": "semcss",
