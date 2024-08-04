@@ -118,10 +118,10 @@ legend
 
 select
 	@extend %cursor-pointer
-	display: flex
-	flex-flow: row nowrap
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 12 7 15 10"/><polyline points="9 14 12 17 15 14"/></svg>')
+	background-position: right center
+	background-repeat: no-repeat
+	background-size: auto 100%
 
-	&::after
-		content: '▼'
-		display: block
-		flex-shrink: 1
+	@media (prefers-color-scheme: dark)
+		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 12 7 15 10"/><polyline points="9 14 12 17 15 14"/></svg>')
