@@ -4,4 +4,5 @@ en:
     items:
       index: Home
   title:
-    site: sem.css
+    site: 'sem.css - RÉMINO'
+    page: '%{page} - %{site}'
