@@ -10,7 +10,7 @@
 	echo "$output" | grep -q -i -F 'location: /sem.css/'
 }
 
-@test "Responds with redirect from /sem.css/ to /semcss/" {
+@test "Responds with redirect from /sem.css/sem.css to /semcss/sem.css" {
 	run curl -f -s -I \
 		-A 'remino.net/semcss//tests' \
 		'https://remino.net/sem.css/sem.css' \
