@@ -1,0 +1,7 @@
+location = /sem.css {
+	rewrite ^/sem.css /semcss/;
+}
+
+location = /sem.css/ {
+	rewrite ^/sem.css/(.*) /semcss/$1;
+}
