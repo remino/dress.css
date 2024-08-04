@@ -53,7 +53,7 @@ Much of this stylesheet was inspired from [_new.css_](https://newcss.net/), with
 Add the stylesheet to your HTML and write your content:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/semcss@0.1.0/dist/sem.css">
+<link rel="stylesheet" href="https://unpkg.com/semcss/dist/sem.css">
 ```
 
 To know which HTML tags are handled by this stylesheet with some suggested markup, see _[Elements](https://remino.net/semcss/elements/)_.
