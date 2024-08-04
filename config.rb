@@ -13,7 +13,6 @@ activate :reslib_title
 activate :reslib_url, base_url: app.data.site.url
 
 configure :build do
-	activate :asset_hash, exts: %w(.css .js)
 	activate :gzip
 	activate :reslib_minify
 
