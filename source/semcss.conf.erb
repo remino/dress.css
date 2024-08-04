@@ -1,7 +1,7 @@
 location = /sem.css {
-	rewrite ^/sem\.css /semcss/;
+	return 301 /sem.css/;
 }
 
-location = /sem.css/ {
-	rewrite ^/sem\.css/(.*) /semcss/$1;
+location /sem.css/ {
+	rewrite ^/sem\.css/(.*) /semcss/$1 permanent;
 }
