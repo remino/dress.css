@@ -4,6 +4,9 @@
 	padding-block: calc(var(--sc-m-v) / 4 - var(--sc-bs))
 	padding-inline: calc(var(--sc-m-v) / 2)
 
+%cursor-pointer
+	cursor: pointer
+
 [disabled]
 	cursor: not-allowed
 	filter: grayscale(1)
@@ -23,11 +26,11 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit']
+	@extend %cursor-pointer
 	@extend %input-block
 	appearance: none
 	border-radius: var(--sc-br)
 	border: 0
-	cursor: pointer
 
 	&:has(+ &)
 		margin-inline-end: calc(var(--sc-m-v) / 2)
@@ -90,7 +93,7 @@ textarea
 	color: var(--sc-fg)
 
 label
-	cursor: pointer
+	@extend %cursor-pointer
 	display: flex
 	flex-flow: column
 
@@ -114,7 +117,7 @@ legend
 	font-weight: bold
 
 select
-	cursor: pointer
+	@extend %cursor-pointer
 	display: flex
 	flex-flow: row nowrap
 
