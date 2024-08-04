@@ -1,0 +1,12 @@
+@media print
+	a
+		color: inherit
+		text-decoration: none
+
+		&:not([href^='#'], [href^='/'])
+			&::after
+				content: ' <' attr(href) '>'
+				display: inline
+
+	mark
+		border: 1px solid

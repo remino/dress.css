@@ -40,7 +40,7 @@ Much of this stylesheet was inspired from [_new.css_](https://newcss.net/), with
 - **Readable**: Focus on the content, not the style.
 - **Responsive**: Uses relative units, works well on all screen sizes.
 - **Accessible**: Uses semantic HTML elements and ARIA roles.
-- **Printable**: Looks good on paper.
+- **Printable**: Looks good on paper. Shows external link URLs.
 - **Localizable**: Works both with left-to-right and right-to-left languages.
 - **Customizable**: Add your own styles on top of it, or add a theme by changing variables.
 
