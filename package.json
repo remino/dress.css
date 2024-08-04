@@ -27,7 +27,7 @@
 		"yaml": "^2.4.2"
 	},
 	"files": [
-		"dist/*"
+		"dist/sem.css"
 	],
 	"homepage": "https://remino.net/semcss/",
 	"keywords": [
