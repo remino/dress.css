@@ -12,10 +12,6 @@ activate :reslib_i18n
 activate :reslib_title
 activate :reslib_url, base_url: app.data.site.url
 
-activate :autoprefixer do |prefix|
-	prefix.browsers = 'last 2 versions'
-end
-
 configure :build do
 	activate :asset_hash, exts: %w(.css .js)
 	activate :gzip
