@@ -11,6 +11,10 @@ By Rémino Rem <https://remino.net/>
 - [Minimal class-less CSS for semantic HTML.](#minimal-class-less-css-for-semantic-html)
 - [Just write HTML and make it look good](#just-write-html-and-make-it-look-good)
 - [Features](#features)
+- [Installation](#installation)
+	- [HTML](#html)
+	- [NPM](#npm)
+	- [Download](#download)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -49,13 +53,37 @@ Much of this stylesheet was inspired from [_new.css_](https://newcss.net/), with
 
 ---
 
-## Usage
+## Installation
+
+There are many ways to include this stylesheet in your code. Here are a few examples:
+
+### HTML
 
 Add the stylesheet to your HTML and write your content:
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/semcss/dist/sem.css">
 ```
+
+### NPM
+
+Install the package from NPM:
+
+```bash
+npm install semcss
+```
+
+Then the stylesheet file should be available at `node_modules/semcss/dist/sem.css`.
+
+Use the file in your Sass files, or include it in your CSS, etc.
+
+### Download
+
+Download the `sem.css` file from the [GitHub releases](https://github.com/remino/semcss/releases).
+
+---
+
+## Usage
 
 To know which HTML tags are handled by this stylesheet with some suggested markup, see _[Elements](https://remino.net/semcss/elements/)_.
 
