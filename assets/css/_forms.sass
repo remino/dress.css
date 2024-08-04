@@ -35,11 +35,15 @@ input[type='submit']
 a[role='button'],
 button[type='submit'],
 input[type='submit']
-	background: var(--sc-lk)
-	color: var(--sc-lk-tx)
+	background: var(--sc-bt-1)
+	color: var(--sc-bt-1-tx)
 
-	&:focus, &:hover
-		background: var(--sc-lk-2)
+	&:not([disabled])
+		&:focus, &:hover
+			background: var(--sc-bt-1-h)
+
+		&:active
+			background: var(--sc-bt-1)
 
 button,
 html,
@@ -50,11 +54,15 @@ select
 button,
 input[type='button'],
 input[type='reset']
-	background: var(--sc-bt)
-	color: var(--sc-bt-tx)
+	background: var(--sc-bt-2)
+	color: var(--sc-bt-2-tx)
 
-	&:focus, &:hover
-		background: var(--sc-bt-2)
+	&:not([disabled])
+		&:focus, &:hover
+			background: var(--sc-bt-2-h)
+
+		&:active
+			background: var(--sc-bt-2)
 
 fieldset
 	background: var(--sc-bg-2)
