@@ -1,3 +1,27 @@
+@keyframes sc-fade-out
+	0%
+		opacity: 1
+	100%
+		opacity: 0
+
+:target
+	position: relative
+
+	&::before
+		animation: sc-fade-out 4s ease-in-out forwards
+		align-items: center
+		color: var(--sc-lk)
+		content: '▶︎'
+		display: flex
+		font-size: 0.8rem
+		height: var(--sc-lh)
+		justify-content: center
+		left: 0
+		margin-left: -1.5em
+		pointer-events: none
+		position: absolute
+		top: 0
+
 a
 	color: var(--sc-lk)
 
