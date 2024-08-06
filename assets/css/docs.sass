@@ -1,31 +1,32 @@
-footer:last-of-type
-	> nav
-		align-items: center
-		display: flex
-		flex-flow: row
-		gap: calc(var(--sc-lh) * 1rem)
-		justify-content: flex-start
-		margin-block: 0
-		min-height: calc(var(--sc-lh) * 2rem)
-
-		> a
-			align-items: flex-start
-			display: inline-flex
-			flex-flow: column
+body
+	> footer:last-of-type
+		> nav
+			align-items: center
+			display: flex
+			flex-flow: row
+			gap: calc(var(--sc-lh) * 1rem)
 			justify-content: flex-start
-			position: relative
+			margin-block: 0
+			min-height: calc(var(--sc-lh) * 2rem)
 
-			&::after
-				content: ''
-				display: block
-				inset: 0
-				position: absolute
-				z-index: 10
+			> a
+				align-items: flex-start
+				display: inline-flex
+				flex-flow: column
+				justify-content: flex-start
+				position: relative
 
-			> object
-				display: inline-block
-				height: calc(var(--sc-lh) * 1rem)
-				width: auto
+				&::after
+					content: ''
+					display: block
+					inset: 0
+					position: absolute
+					z-index: 10
 
-		> menu
-			margin-block-start: 0.9em
+				> object
+					display: inline-block
+					height: calc(var(--sc-lh) * 1rem)
+					width: auto
+
+			> menu
+				margin-block-start: 0.9em
