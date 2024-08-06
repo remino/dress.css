@@ -110,7 +110,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the ISC License. See `LICENSE.txt` in the code repo for more information.
+Distributed under the ISC License. See _[License](https://remino.net/semcss/license/)_.
 
 [Back to top](#sem-css-semantic-style)
 
