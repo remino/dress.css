@@ -4,3 +4,5 @@ header
 		menu
 			- top_level_pages.each do |page|
 				li= link_to nav_item_title(page), page.url
+			li = link_to 'GitHub', 'https://github.com/remino/semcss', target: '_blank'
+			li = link_to 'npm', 'https://www.npmjs.com/package/semcss', target: '_blank'
