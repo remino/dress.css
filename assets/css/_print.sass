@@ -1,4 +1,8 @@
 @media print
+	:root
+		--sc-bg: #fff
+		--sc-fg: #000
+
 	a
 		text-decoration: none
 
@@ -9,8 +13,27 @@
 			&::after
 				content: ' <' attr(href) '>'
 				display: inline
-				font-size: 0.8em
+				font-size: 0.8rem
 				font-weight: normal
+				text-transform: none
+
+	a[role='button'],
+	button,
+	input[type='button'],
+	input[type='reset'],
+	input[type='submit']
+		border: solid var(--sc-bs) var(--sc-fg)
+		color: var(--sc-fg)
+		padding-block: calc(var(--sc-m-v) / 4 - var(--sc-bs))
+		padding-inline: calc(var(--sc-m-v) / 2)
+
+	button[type='submit'],
+	input[type='submit']
+		border-width: calc(var(--sc-bs) * 2)
+		color: var(--sc-fg)
+		padding-block: calc(var(--sc-m-v) / 4 - var(--sc-bs) * 2)
+		padding-inline: calc(var(--sc-m-v) / 2 - var(--sc-bs))
 
 	mark
 		border: 1px solid
+		color: inherit
