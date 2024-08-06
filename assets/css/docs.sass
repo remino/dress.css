@@ -1,9 +1,12 @@
-footer
+footer:last-of-type
 	> nav
-		align-items: flex-start
+		align-items: center
 		display: flex
 		flex-flow: row
-		margin-block: var(--sc-m-v)
+		gap: calc(var(--sc-lh) * 1rem)
+		justify-content: flex-start
+		margin-block: 0
+		min-height: calc(var(--sc-lh) * 2rem)
 
 		> a
 			align-items: flex-start
@@ -23,3 +26,6 @@ footer
 				display: inline-block
 				height: calc(var(--sc-lh) * 1rem)
 				width: auto
+
+		> menu
+			margin-block-start: 0.9em
