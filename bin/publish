@@ -9,7 +9,7 @@ main() {
 
 	npm version "$1"
 	git push origin --all && git push origin --tags
-	mansite --build deploy
+	mansite -b deploy
 	npm run build
 	gh release create ` git tag | tail -1 ` --generate-notes dist/sem.css
 	npm publish --otp "$2"
