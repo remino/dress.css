@@ -7,6 +7,9 @@ p
 	| Below are all the tags style by <mark><strong>sem.css</strong></mark> along with
 	  markup samples. Tag names are linked to documentation on
 		the <a href="https://developer.mozilla.org/">Mozilla Developer Network (MDN)</a>.
+		For legibility, code samples were highlighted using
+		<a href="https://github.com/rouge-ruby/rouge">Rouge</a>—that ability is not
+		part of this stylesheet.
 
 nav
 	ol
@@ -30,6 +33,15 @@ nav
 					a href="#footer" Footer
 		li
 			a href="#code" Code
+			ol
+				li
+					a href="#pre" Preformatted Text
+				li
+					a href="#precode" Code Block
+				li
+					a href="#codeinline" Inline Code
+				li
+					a href="#kbd" Keyboard Input
 		li
 			a href="#blockquote" Block Quotation
 		li
@@ -174,29 +186,53 @@ hr
 
 h2#code Code
 
-h3 Preformatted Text (Code Block) <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre"><code>&lt;pre&gt;</code></a>
+h3#pre Preformatted Text <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre"><code>&lt;pre&gt;</code></a>
+
+pre
+	| C U B I C
+	  U \     U \
+	  B   C U B I C
+	  I   U   I   U
+	  C U B I C   B
+	    \ I     \ I
+	      C U B I C
+
+= code 'html'
+	| <pre>
+	    C U B I C
+	    U \     U \
+	    B   C U B I C
+	    I   U   I   U
+	    C U B I C   B
+	      \ I     \ I
+	        C U B I C
+	  </pre>
+
+h3#pre Code Block
 
 p
-	| Using <code>&lt;code&gt;</code> to wrap code in <code>&lt;pre&gt;</code> is
-	  not necessary. But if it is, its style will be reset to match the container,
-		thus making no difference in style.
+	| Many libraries, including code highlighters, use the <code>&lt;code&gt;</code> tag
+		in conjunction with the <code>&lt;pre&gt;</code> tag to display code blocks.
+
+pre
+	code
+		| alert('Hello World!');
 
 = code 'html'
-	| alert('Hello World!');
+	| <pre>
+	    <code>
+	      alert('Hello World!');
+	    </code>
+	  </pre>
 
-= code 'html'
-	| <code>
-	    alert('Hello World!');
-	  </code>
-
-h3 Inline Code <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code"><code>&lt;code&gt;</code></a>
+h3#inlinecode Inline Code <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code"><code>&lt;code&gt;</code></a>
 
 p <code>echo hello</code>
 
 = code 'html'
 	| <code>echo hello</code>
 
-h3 Keyboard Input <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd"><code>&lt;kbd&gt;</code></a>
+h3#kbd Keyboard Input <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd"><code>&lt;kbd&gt;</code></a>
 
 p <kbd>Ctrl+C</kbd>
 
