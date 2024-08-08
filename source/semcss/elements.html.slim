@@ -78,22 +78,22 @@ h3#hyperlink Hyperlink
 p
 	a(href="javascript:void(0)") Click me
 
-pre
-	| &lt;a href="#"&gt;Click me&lt;/a&gt;
+= code 'html'
+	| <a href="#">Click me</a>
 
 h3#buttonlink Button Link
 
 a[role="button" href="javascript:void(0)"] Download
 
-pre
-	| &lt;a role="button" href="https://example.com/file.zip"&gt;Download&lt;/a&gt;
+= code 'html'
+	| <a role="button" href="https://example.com/file.zip">Download</a>
 
 h3#newwindow New Window Link
 
 a[href="javascript:void(0)" target="_blank" onclick="return false"] Shop Now
 
-pre
-	| &lt;a href="https://example.com/" target="_blank"&gt;Shop Now&lt;/a&gt;
+= code 'html'
+	| <a href="https://example.com/" target="_blank">Shop Now</a>
 
 nav
 	a[href="#"] Back to top
@@ -110,13 +110,13 @@ blockquote
 	h5 Heading 5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h5"><code>&lt;h5&gt;</code></a>
 	h6 Heading 6 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h6"><code>&lt;h6&gt;</code></a>
 
-pre
-	| &lt;h1&gt;Heading 1&lt;/h1&gt;
-	  &lt;h2&gt;Heading 2&lt;/h2&gt;
-	  &lt;h3&gt;Heading 3&lt;/h3&gt;
-	  &lt;h4&gt;Heading 4&lt;/h4&gt;
-	  &lt;h5&gt;Heading 5&lt;/h5&gt;
-	  &lt;h6&gt;Heading 6&lt;/h6&gt;
+= code 'html'
+	| <h1>Heading 1</h1>
+	  <h2>Heading 2</h2>
+	  <h3>Heading 3</h3>
+	  <h4>Heading 4</h4>
+	  <h5>Heading 5</h5>
+	  <h6>Heading 6</h6>
 
 nav
 	a[href="#"] Back to top
@@ -138,16 +138,16 @@ p
 	| Some special styling is applied to the <code>&lt;header&gt;</code> tag.
 		That can be seen at the <a href="#">top of this page</a>.
 
-pre
-	| &lt;header&gt;
-	    &lt;h1&gt;Header&lt;/h1&gt;
-	    &lt;nav&gt;
-	      &lt;menu&gt;
-	        &lt;li&gt;&lt;a href="#header"&gt;Header&lt;/a&gt;&lt;/li&gt;
-	        &lt;li&gt;&lt;a href="#footer"&gt;Footer&lt;/a&gt;&lt;/li&gt;
-	      &lt;/menu&gt;
-	    &lt;/nav&gt;
-	  &lt;/header&gt;
+= code 'html'
+	| <header>
+	    <h1>Header</h1>
+	    <nav>
+	      <menu>
+	        <li><a href="#header">Header</a></li>
+	        <li><a href="#footer">Footer</a></li>
+	      </menu>
+	    </nav>
+	  </header>
 
 h3#footer Footer <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"><code>&lt;footer&gt;</code></a>
 
@@ -156,16 +156,16 @@ p
 	  to <code>&lt;footer&gt;</code>. That can also been seen at the
 		<a href="#end">bottom of this page</a>.
 
-pre
-	| &lt;footer&gt;
-	    &lt;p&gt;&copy; 2024&lt;/p&gt;
-	    &lt;nav&gt;
-	      &lt;menu&gt;
-	        &lt;li&gt;&lt;a href="#terms"&gt;Terms of Use&lt;/a&gt;&lt;/li&gt;
-	        &lt;li&gt;&lt;a href="#privacy"&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
-	      &lt;/menu&gt;
-	    &lt;/nav&gt;
-	  &lt;/footer&gt;
+= code 'html'
+	| <footer>
+	    <p>&copy; 2024</p>
+	    <nav>
+	      <menu>
+	        <li><a href="#terms">Terms of Use</a></li>
+	        <li><a href="#privacy">Privacy Policy</a></li>
+	      </menu>
+	    </nav>
+	  </footer>
 
 nav
 	a[href="#"] Back to top
@@ -181,27 +181,27 @@ p
 	  not necessary. But if it is, its style will be reset to match the container,
 		thus making no difference in style.
 
-pre
+= code 'html'
 	| alert('Hello World!');
 
-pre
-	| &lt;code&gt;
+= code 'html'
+	| <code>
 	    alert('Hello World!');
-	  &lt;/code&gt;
+	  </code>
 
 h3 Inline Code <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code"><code>&lt;code&gt;</code></a>
 
 p <code>echo hello</code>
 
-pre
-	| &lt;code&gt;echo hello&lt;/code&gt;
+= code 'html'
+	| <code>echo hello</code>
 
 h3 Keyboard Input <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd"><code>&lt;kbd&gt;</code></a>
 
 p <kbd>Ctrl+C</kbd>
 
-pre
-	| &lt;kbd&gt;Ctrl+C&lt;/kbd&gt;
+= code 'html'
+	| <kbd>Ctrl+C</kbd>
 
 nav
 	a[href="#"] Back to top
@@ -214,11 +214,11 @@ blockquote
 	| “What goes up must come down.”<br><br>
 		— Isaac Newton
 
-pre
-	| &lt;blockquote&gt;
-	    “What goes up must come down.”&lt;br&gt;&lt;br&gt;
+= code 'html'
+	| <blockquote>
+	    “What goes up must come down.”<br><br>
 	    — Isaac Newton
-	  &lt;/blockquote&gt;
+	  </blockquote>
 
 nav
 	a[href="#"] Back to top
@@ -238,17 +238,17 @@ ul
 	li Unordered list item 2
 	li Unordered list item 3
 
-pre
-	| &lt;ul&gt;
-	    &lt;li&gt;Unordered list item 1
-	      &lt;ul&gt;
-	        &lt;li&gt;Nested unordered list item 1&lt;/li&gt;
-	        &lt;li&gt;Nested unordered list item 2&lt;/li&gt;
-	      &lt;/ul&gt;
-	    &lt;/li&gt;
-	    &lt;li&gt;Unordered list item 2&lt;/li&gt;
-	    &lt;li&gt;Unordered list item 3&lt;/li&gt;
-	  &lt;/ul&gt;
+= code 'html'
+	| <ul>
+	    <li>Unordered list item 1
+	      <ul>
+	        <li>Nested unordered list item 1</li>
+	        <li>Nested unordered list item 2</li>
+	      </ul>
+	    </li>
+	    <li>Unordered list item 2</li>
+	    <li>Unordered list item 3</li>
+	  </ul>
 
 h3#ol Ordered List <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"><code>&lt;ol&gt;</code></a>
 
@@ -261,17 +261,17 @@ ol
 	li Ordered list item 2
 	li Ordered list item 3
 
-pre
-	| &lt;ol&gt;
-	    &lt;li&gt;Ordered list item 1
-	      &lt;ol&gt;
-	        &lt;li&gt;Nested ordered list item 1&lt;/li&gt;
-	        &lt;li&gt;Nested ordered list item 2&lt;/li&gt;
-	      &lt;/ol&gt;
-	    &lt;/li&gt;
-	    &lt;li&gt;Ordered list item 2&lt;/li&gt;
-	    &lt;li&gt;Ordered list item 3&lt;/li&gt;
-	  &lt;/ol&gt;
+= code 'html'
+	| <ol>
+	    <li>Ordered list item 1
+	      <ol>
+	        <li>Nested ordered list item 1</li>
+	        <li>Nested ordered list item 2</li>
+	      </ol>
+	    </li>
+	    <li>Ordered list item 2</li>
+	    <li>Ordered list item 3</li>
+	  </ol>
 
 h3#menu Menu List <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu"><code>&lt;menu&gt;</code></a>
 
@@ -284,17 +284,17 @@ menu
 	li Menu list item 2
 	li Menu list item 3
 
-pre
-	| &lt;menu&gt;
-	    &lt;li&gt;Menu list item 1
-	      &lt;ul&gt;
-	        &lt;li&gt;Nested menu list item 1&lt;/li&gt;
-	        &lt;li&gt;Nested menu list item 2&lt;/li&gt;
-	      &lt;/ul&gt;
-	    &lt;/li&gt;
-	    &lt;li&gt;Menu list item 2&lt;/li&gt;
-	    &lt;li&gt;Menu list item 3&lt;/li&gt;
-	  &lt;/menu&gt;
+= code 'html'
+	| <menu>
+	    <li>Menu list item 1
+	      <ul>
+	        <li>Nested menu list item 1</li>
+	        <li>Nested menu list item 2</li>
+	      </ul>
+	    </li>
+	    <li>Menu list item 2</li>
+	    <li>Menu list item 3</li>
+	  </menu>
 
 h3#dl Description List <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl"><code>&lt;dl&gt;</code></a>
 
@@ -306,15 +306,15 @@ dl
 	dt Term 3
 	dd Definition 3
 
-pre
-	| &lt;dl&gt;
-	    &lt;dt&gt;Term 1&lt;/dt&gt;
-	    &lt;dd&gt;Definition 1&lt;/dd&gt;
-	    &lt;dt&gt;Term 2&lt;/dt&gt;
-	    &lt;dd&gt;Definition 2&lt;/dd&gt;
-	    &lt;dt&gt;Term 3&lt;/dt&gt;
-	    &lt;dd&gt;Definition 3&lt;/dd&gt;
-	  &lt;/dl&gt;
+= code 'html'
+	| <dl>
+	    <dt>Term 1</dt>
+	    <dd>Definition 1</dd>
+	    <dt>Term 2</dt>
+	    <dd>Definition 2</dd>
+	    <dt>Term 3</dt>
+	    <dd>Definition 3</dd>
+	  </dl>
 
 nav
 	a[href="#"] Back to top
@@ -349,41 +349,41 @@ table
 			td Data 8
 			td Data 9
 
-pre
-	| &lt;table&gt;
-	    &lt;caption&gt;Table Caption&lt;/caption&gt;
-	    &lt;thead&gt;
-	      &lt;tr&gt;
-	        &lt;th&gt;Header 1&lt;/th&gt;
-	        &lt;th&gt;Header 2&lt;/th&gt;
-	        &lt;th&gt;Header 3&lt;/th&gt;
-	      &lt;/tr&gt;
-	    &lt;/thead&gt;
-	    &lt;tfoot&gt;
-	      &lt;tr&gt;
-	        &lt;th&gt;Footer 1&lt;/th&gt;
-	        &lt;th&gt;Footer 2&lt;/th&gt;
-	        &lt;th&gt;Footer 3&lt;/th&gt;
-	      &lt;/tr&gt;
-	    &lt;/tfoot&gt;
-	    &lt;tbody&gt;
-	      &lt;tr&gt;
-	        &lt;td&gt;Data 1&lt;/td&gt;
-	        &lt;td&gt;Data 2&lt;/td&gt;
-	        &lt;td&gt;Data 3&lt;/td&gt;
-	      &lt;/tr&gt;
-	      &lt;tr&gt;
-	        &lt;td&gt;Data 4&lt;/td&gt;
-	        &lt;td&gt;Data 5&lt;/td&gt;
-	        &lt;td&gt;Data 6&lt;/td&gt;
-	      &lt;/tr&gt;
-	      &lt;tr&gt;
-	        &lt;td&gt;Data 7&lt;/td&gt;
-	        &lt;td&gt;Data 8&lt;/td&gt;
-	        &lt;td&gt;Data 9&lt;/td&gt;
-	      &lt;/tr&gt;
-	    &lt;/tbody&gt;
-	  &lt;/table&gt;
+= code 'html'
+	| <table>
+	    <caption>Table Caption</caption>
+	    <thead>
+	      <tr>
+	        <th>Header 1</th>
+	        <th>Header 2</th>
+	        <th>Header 3</th>
+	      </tr>
+	    </thead>
+	    <tfoot>
+	      <tr>
+	        <th>Footer 1</th>
+	        <th>Footer 2</th>
+	        <th>Footer 3</th>
+	      </tr>
+	    </tfoot>
+	    <tbody>
+	      <tr>
+	        <td>Data 1</td>
+	        <td>Data 2</td>
+	        <td>Data 3</td>
+	      </tr>
+	      <tr>
+	        <td>Data 4</td>
+	        <td>Data 5</td>
+	        <td>Data 6</td>
+	      </tr>
+	      <tr>
+	        <td>Data 7</td>
+	        <td>Data 8</td>
+	        <td>Data 9</td>
+	      </tr>
+	    </tbody>
+	  </table>
 
 nav
 	a[href="#"] Back to top
@@ -396,11 +396,11 @@ details
 	summary Click to show details
 	p Here are all the details!
 
-pre
-	| &lt;details&gt;
-	    &lt;summary&gt;Click to show details&lt;/summary&gt;
-	    &lt;p&gt;Here are all the details!&lt;/p&gt;
-	  &lt;/details&gt;
+= code 'html'
+	| <details>
+	    <summary>Click to show details</summary>
+	    <p>Here are all the details!</p>
+	  </details>
 
 nav
 	a[href="#"] Back to top
@@ -413,11 +413,11 @@ figure
 	= image_tag '/semcss/triangles.svg'
 	figcaption A display of colourful triangles.
 
-pre
-	| &lt;figure&gt;
-	    &lt;img src="triangles.svg"&gt;
-	    &lt;figcaption&gt;A display of colourful triangles.&lt;/figcaption&gt;
-	  &lt;/figure&gt;
+= code 'html'
+	| <figure>
+	    <img src="triangles.svg">
+	    <figcaption>A display of colourful triangles.</figcaption>
+	  </figure>
 
 hr
 
@@ -426,8 +426,8 @@ h2#mark Mark Text (Highlighted Text) <a href="https://developer.mozilla.org/en-U
 p
 	mark highlighted text
 
-pre
-	| &lt;mark&gt;highlighted text&lt;/mark&gt;
+= code 'html'
+	| <mark>highlighted text</mark>
 
 nav
 	a[href="#"] Back to top
@@ -439,8 +439,8 @@ h2#hr Thematic Break (Horizontal Rule) <a href="https://developer.mozilla.org/en
 figure
 	hr
 
-pre
-	| &lt;hr&gt;
+= code 'html'
+	| <hr>
 
 nav
 	a[href="#"] Back to top
@@ -468,12 +468,12 @@ form[onsubmit="return false" method="post"]
 		input
 		small Input your favourite name.
 
-pre
-	| &lt;label&gt;
-	    &lt;span&gt;Name&lt;/span&gt;
-	    &lt;input&gt;
-	    &lt;small&gt;Enter any name you identifies you best.&lt;/small&gt;
-	  &lt;/label&gt;
+= code 'html'
+	| <label>
+	    <span>Name</span>
+	    <input>
+	    <small>Enter any name you identifies you best.</small>
+	  </label>
 
 h3#textarea Textarea <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a>
 
@@ -482,11 +482,11 @@ form[onsubmit="return false" method="post"]
 		span Message
 		textarea(rows="4")
 
-pre
-	| &lt;label&gt;
-	    &lt;span&gt;Message&lt;/span&gt;
-	    &lt;textarea rows="4"&gt;&lt;/textarea&gt;
-	  &lt;/label&gt;
+= code 'html'
+	| <label>
+	    <span>Message</span>
+	    <textarea rows="4"></textarea>
+	  </label>
 
 h3#select Select <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select"><code>&lt;select&gt;</code></a>
 
@@ -497,14 +497,14 @@ form[onsubmit="return false" method="post"]
 			option Option A
 			option Option B
 
-pre
-	| &lt;label&gt;
-	    &lt;span&gt;Choose one&lt;/span&gt;
-	    &lt;select&gt;
-	      &lt;option&gt;Option A&lt;/option&gt;
-	      &lt;option&gt;Option B&lt;/option&gt;
-	    &lt;/select&gt;
-	  &lt;/label&gt;
+= code 'html'
+	| <label>
+	    <span>Choose one</span>
+	    <select>
+	      <option>Option A</option>
+	      <option>Option B</option>
+	    </select>
+	  </label>
 
 h3#checkbox Checkbox <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox"><code>&lt;input type="checkbox"&gt;</code></a>
 
@@ -513,11 +513,11 @@ form[onsubmit="return false" method="post"]
 		input type="checkbox" name="agree" value="1"
 		span I agree
 
-pre
-	| &lt;label&gt;
-	    &lt;input type="checkbox" name="agree" value="1"&gt;
-	    &lt;span&gt;I agree&lt;/span&gt;
-	  &lt;/label&gt;
+= code 'html'
+	| <label>
+	    <input type="checkbox" name="agree" value="1">
+	    <span>I agree</span>
+	  </label>
 
 h3#radio Radio <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio"><code>&lt;input type="radio"&gt;</code></a>
 
@@ -529,15 +529,15 @@ form[onsubmit="return false" method="post"]
 		input type="radio" name="be" value="0"
 		span Not to be
 
-pre
-	| &lt;label&gt;
-	    &lt;input type="radio" name="be" value="1"&gt;
-	    &lt;span&gt;To be&lt;/span&gt;
-	  &lt;/label&gt;
-	  &lt;label&gt;
-	    &lt;input type="radio" name="be" value="0"&gt;
-	    &lt;span&gt;Not to be&lt;/span&gt;
-	  &lt;/label&gt;
+= code 'html'
+	| <label>
+	    <input type="radio" name="be" value="1">
+	    <span>To be</span>
+	  </label>
+	  <label>
+	    <input type="radio" name="be" value="0">
+	    <span>Not to be</span>
+	  </label>
 
 h3#fieldset Field Set <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset"><code>&lt;fieldset&gt;</code></a>
 
@@ -550,18 +550,18 @@ fieldset
 		input type="checkbox" name="skills" value="css"
 		span CSS
 
-pre
-	| &lt;fieldset&gt;
-	    &lt;legend&gt;Skills&lt;/legend&gt;
-	    &lt;label&gt;
-	      &lt;input type="checkbox" name="skills" value="html"&gt;
-	      &lt;span&gt;HTML&lt;/span&gt;
-	    &lt;/label&gt;
-	    &lt;label&gt;
-	      &lt;input type="checkbox" name="skills" value="css"&gt;
-	      &lt;span&gt;CSS&lt;/span&gt;
-	    &lt;/label&gt;
-	  &lt;/fieldset&gt;
+= code 'html'
+	| <fieldset>
+	    <legend>Skills</legend>
+	    <label>
+	      <input type="checkbox" name="skills" value="html">
+	      <span>HTML</span>
+	    </label>
+	    <label>
+	      <input type="checkbox" name="skills" value="css">
+	      <span>CSS</span>
+	    </label>
+	  </fieldset>
 
 h3#buttons Buttons
 
@@ -578,10 +578,10 @@ form[onsubmit="return false" method="post"]
 	button[disabled] Disabled
 	button[type="submit"] Submit
 
-pre
-	| &lt;input type="reset" value="Reset"&gt;
-	  &lt;button disabled&gt;Disabled&lt;/button&gt;
-	  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+= code 'html'
+	| <input type="reset" value="Reset">
+	  <button disabled>Disabled</button>
+	  <button type="submit">Submit</button>
 
 nav
 	a[href="#"] Back to top

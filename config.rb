@@ -11,6 +11,7 @@ activate :reslib_date
 activate :reslib_i18n
 activate :reslib_title
 activate :reslib_url, base_url: app.data.site.url
+activate :syntax
 
 configure :build do
 	activate :gzip
