@@ -1,6 +1,6 @@
 # sem.css: Semantic Style
 
-## Minimal class-less CSS for semantic HTML.
+**Minimal class-less CSS for semantic HTML.**
 
 [Site](https://remino.net/semcss/)
 | [Code Repo](https://github.com/remino/semcss)
@@ -8,7 +8,6 @@
 
 By Rémino Rem <https://remino.net/>
 
-- [Minimal class-less CSS for semantic HTML.](#minimal-class-less-css-for-semantic-html)
 - [Just write HTML and make it look good](#just-write-html-and-make-it-look-good)
 - [Features](#features)
 - [Installation](#installation)

@@ -58,6 +58,8 @@ GEM
     in_threads (1.6.0)
     kramdown (2.4.0)
       rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -122,7 +124,6 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
-    redcarpet (3.6.0)
     rexml (3.3.4)
       strscan
     rouge (3.30.0)
@@ -154,13 +155,13 @@ PLATFORMS
 DEPENDENCIES
   htmlcompressor
   image_optim (~> 0.31.2)
+  kramdown-parser-gfm
   middleman (~> 4.2)
   middleman-livereload
   middleman-minify-html (~> 3.4)
   middleman-reslib!
   middleman-syntax
   psych (< 4)
-  redcarpet
   slim (~> 4)
   terser
   tzinfo-data

@@ -1,0 +1,597 @@
+---
+title: Elements
+---
+# <%= current_page.data.title %>
+
+Below are all the tags style by **<mark>sem.css</mark>** along with markup samples.
+
+For legibility, code samples were highlighted using [Rouge](https://github.com/rouge-ruby/rouge)—that ability is not part of this stylesheet.
+
+<nav markdown=1>
+* Table of Contents
+{:toc}
+</nav>
+
+---
+
+## Links {#links}
+
+### Hyperlink `<a>` {#hyperlink}
+
+<a href="javascript:void(0)">Click me</a>
+
+```html
+<a href="https://example.com/">Click me</a>
+```
+
+### Button Link `<a role="button">` {#buttonlink}
+
+<a role="button" href="https://example.com/file.zip">Download</a>
+
+```html
+<a role="button" href="https://example.com/file.zip">Download</a>
+```
+
+### New Window Link `<a target="_blank">` {#newwindow}
+
+<a href="javascript:void(0)" target="_blank">Shop Now</a>
+
+```html
+<a href="https://example.com/shop/" target="_blank">Shop Now</a>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Headings `<h1>…<h6>` {#headings}
+
+<blockquote>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+</blockquote>
+
+```html
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Page Sections {#sections}
+
+In **<mark>sem.css</mark>**, some special formatting is used in the header and the footer of the page to ease navigation and readability. Menu (`<menu>`) in navigation (`<nav>`) is rendered horizontally.
+
+### Header `<header>`
+
+Some special styling is applied to the `<header>` tag. That can be seen at the [top of this page](#).
+
+```html
+<header>
+	<h1>Header</h1>
+	<nav>
+		<menu>
+			<li><a href="#header">Header</a></li>
+			<li><a href="#footer">Footer</a></li>
+		</menu>
+	</nav>
+</header>
+```
+
+### Footer `<footer>`
+
+Like the `<header>` tag, some special formatting is applied to `<footer>`. That can also been seen at the [bottom of this page](#).
+
+```html
+<footer>
+	<p>&copy; 2024</p>
+	<nav>
+		<menu>
+			<li><a href="#terms">Terms of Use</a></li>
+			<li><a href="#privacy">Privacy Policy</a></li>
+		</menu>
+	</nav>
+</footer>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Code {#code}
+
+### Preformatted Text `<pre>` {#pre}
+
+<pre>
+	C U B I C
+	U \     U \
+	B   C U B I C
+	I   U   I   U
+	C U B I C   B
+		\ I     \ I
+			C U B I C
+</pre>
+
+```html
+<pre>
+	C U B I C
+	U \     U \
+	B   C U B I C
+	I   U   I   U
+	C U B I C   B
+		\ I     \ I
+			C U B I C
+</pre>
+```
+
+### Code Block `<pre><code>` {#precode}
+
+Many libraries, including code highlighters, use the `<code>` tag in conjunction with the `<pre>` tag to display code blocks.
+
+```html
+alert('Hello World!');
+```
+
+```html
+<pre><code>
+alert('Hello World!');
+</code></pre>
+```
+
+### Inline Code `<code>` {#inlinecode}
+
+`echo hello`
+
+```html
+<code>echo hello</code>
+```
+
+### Keyboard Input `<kbd>` {#kbd}
+
+<kbd>Ctrl+C</kbd>
+
+```html
+<kbd>Ctrl+C</kbd>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Block Quotation `<blockquote>` {#blockquote}
+
+<blockquote>
+	“What goes up must come down.”<br><br>
+	— Isaac Newton
+</blockquote>
+
+```html
+<blockquote>
+	“What goes up must come down.”<br><br>
+	— Isaac Newton
+</blockquote>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Lists {#lists}
+
+### Unordered List `<ul>` {#ul}
+
+- Unordered list item 1
+	- Nested unordered list item 1
+	- Nested unordered list item 2
+- Unordered list item 2
+- Unordered list item 3
+
+```html
+<ul>
+	<li>Unordered list item 1
+		<ul>
+			<li>Nested unordered list item 1</li>
+			<li>Nested unordered list item 2</li>
+		</ul>
+	</li>
+	<li>Unordered list item 2</li>
+	<li>Unordered list item 3</li>
+</ul>
+```
+
+### Ordered List `<ol>` {#ol}
+
+1. Ordered list item 1
+	1. Nested ordered list item 1
+	2. Nested ordered list item 2
+2. Ordered list item 2
+3. Ordered list item 3
+
+```html
+<ol>
+	<li>Ordered list item 1
+		<ol>
+			<li>Nested ordered list item 1</li>
+			<li>Nested ordered list item 2</li>
+		</ol>
+	</li>
+	<li>Ordered list item 2</li>
+	<li>Ordered list item 3</li>
+</ol>
+```
+
+### Menu List `<menu>` {#menu}
+
+<menu>
+	<li>Menu list item 1
+		<ul>
+			<li>Nested menu list item 1</li>
+			<li>Nested menu list item 2</li>
+		</ul>
+	</li>
+	<li>Menu list item 2</li>
+	<li>Menu list item 3</li>
+</menu>
+
+```html
+<menu>
+	<li>Menu list item 1
+		<ul>
+			<li>Nested menu list item 1</li>
+			<li>Nested menu list item 2</li>
+		</ul>
+	</li>
+	<li>Menu list item 2</li>
+	<li>Menu list item 3</li>
+</menu>
+```
+
+### Description List `<dl>` {#dl}
+
+Term 1
+: Definition 1
+
+Term 2
+: Definition 2
+
+Term 3
+: Definition 3
+
+```html
+<dl>
+	<dt>Term 1</dt>
+	<dd>Definition 1</dd>
+	<dt>Term 2</dt>
+	<dd>Definition 2</dd>
+	<dt>Term 3</dt>
+	<dd>Definition 3</dd>
+</dl>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Table `<table>` {#table}
+
+<table>
+	<caption>Table Caption</caption>
+	<thead>
+		<tr>
+			<th>Header 1</th>
+			<th>Header 2</th>
+			<th>Header 3</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Footer 1</th>
+			<th>Footer 2</th>
+			<th>Footer 3</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>Data 1</td>
+			<td>Data 2</td>
+			<td>Data 3</td>
+		</tr>
+		<tr>
+			<td>Data 4</td>
+			<td>Data 5</td>
+			<td>Data 6</td>
+		</tr>
+		<tr>
+			<td>Data 7</td>
+			<td>Data 8</td>
+			<td>Data 9</td>
+		</tr>
+	</tbody>
+</table>
+
+```html
+<table>
+	<caption>Table Caption</caption>
+	<thead>
+		<tr>
+			<th>Header 1</th>
+			<th>Header 2</th>
+			<th>Header 3</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Footer 1</th>
+			<th>Footer 2</th>
+			<th>Footer 3</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>Data 1</td>
+			<td>Data 2</td>
+			<td>Data 3</td>
+		</tr>
+		<tr>
+			<td>Data 4</td>
+			<td>Data 5</td>
+			<td>Data 6</td>
+		</tr>
+		<tr>
+			<td>Data 7</td>
+			<td>Data 8</td>
+			<td>Data 9</td>
+		</tr>
+	</tbody>
+</table>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Details Disclosure `<details>` {#details}
+
+<details>
+	<summary>Click to show details</summary>
+	<p>Here are all the details!</p>
+</details>
+
+```html
+<details>
+	<summary>Click to show details</summary>
+	<p>Here are all the details!</p>
+</details>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Figure `<figure>` {#figure}
+
+<figure markdown=1>
+![](https://remino.net/semcss/triangles.svg)
+<figcaption>A display of colourful triangles.</figcaption>
+</figure>
+
+```html
+<figure>
+	<img src="triangles.svg">
+	<figcaption>A display of colourful triangles.</figcaption>
+</figure>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Mark Text (Highlighted Text) `<mark>` {#mark}
+
+<mark>highlighted text</mark>
+
+```html
+<mark>highlighted text</mark>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Thematic Break (Horizontal Rule) `<hr>` {#hr}
+
+<figure markdown=1>
+---
+</figure>
+
+```html
+<hr>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Form `<form>` {#form}
+
+There is some styling for forms in **<mark>sem.css</mark>** for the most common controls. It works best with the suggested markup below, wrapping every input field into a `<label>` for better usability. However, forms are notorious for how finicky they are with styling, accessibility, and inconsistencies between browsers. For anything more complex, as this stylesheet is basic, you may need to look for a different styling system better suited for your needs.
+
+### Input `<input>` {#input}
+
+Works with “textual” input fields like `text` (the default type) and `password`.
+
+<form onsubmit="return false" method="post">
+	<label>
+		<span>Name</span>
+		<input>
+		<small>Enter any name you identifies you best.</small>
+	</label>
+</form>
+
+```html
+<label>
+	<span>Name</span>
+	<input>
+	<small>Enter any name you identifies you best.</small>
+</label>
+```
+
+### Textarea `<textarea>` {#textarea}
+
+<form onsubmit="return false" method="post">
+	<label>
+		<span>Message</span>
+		<textarea rows="4"></textarea>
+	</label>
+</form>
+
+```html
+<label>
+	<span>Message</span>
+	<textarea rows="4"></textarea>
+</label>
+```
+
+### Select `<select>` {#select}
+
+<form onsubmit="return false" method="post">
+	<label>
+		<span>Choose one</span>
+		<select>
+			<option>Option A</option>
+			<option>Option B</option>
+		</select>
+	</label>
+</form>
+
+```html
+<label>
+	<span>Choose one</span>
+	<select>
+		<option>Option A</option>
+		<option>Option B</option>
+	</select>
+</label>
+```
+
+### Checkbox `<input type="checkbox">` {#checkbox}
+
+<form onsubmit="return false" method="post">
+	<label>
+		<input type="checkbox" name="agree" value="1">
+		<span>I agree</span>
+	</label>
+</form>
+
+```html
+<label>
+	<input type="checkbox" name="agree" value="1">
+	<span>I agree</span>
+</label>
+```
+
+### Radio `<input type="radio">` {#radio}
+
+<form onsubmit="return false" method="post">
+	<label>
+		<input type="radio" name="be" value="1">
+		<span>To be</span>
+	</label>
+	<label>
+		<input type="radio" name="be" value="0">
+		<span>Not to be</span>
+	</label>
+</form>
+
+```html
+<label>
+	<input type="radio" name="be" value="1">
+	<span>To be</span>
+</label>
+<label>
+	<input type="radio" name="be" value="0">
+	<span>Not to be</span>
+</label>
+```
+
+### Field Set `<fieldset>` {#fieldset}
+
+<form onsubmit="return false" method="post">
+	<fieldset>
+		<legend>Skills</legend>
+		<label>
+			<input type="checkbox" name="skills" value="html">
+			<span>HTML</span>
+		</label>
+		<label>
+			<input type="checkbox" name="skills" value="css">
+			<span>CSS</span>
+		</label>
+	</fieldset>
+</form>
+
+```html
+<fieldset>
+	<legend>Skills</legend>
+	<label>
+		<input type="checkbox" name="skills" value="html">
+		<span>HTML</span>
+	</label>
+	<label>
+		<input type="checkbox" name="skills" value="css">
+		<span>CSS</span>
+	</label>
+</fieldset>
+```
+
+### Buttons {#buttons}
+
+Including `<button>` as well as `<input>` with `type="button"`, `type="reset"`, and `type="submit`.
+
+<form onsubmit="return false" method="post">
+	<input type="reset" value="Reset">
+	<button disabled>Disabled</button>
+	<button type="submit">Submit</button>
+</form>
+
+```html
+<input type="reset" value="Reset">
+<button disabled>Disabled</button>
+<button type="submit">Submit</button>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>

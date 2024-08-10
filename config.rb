@@ -69,6 +69,13 @@ set :build_dir, app.data.site.build_dir
 set :css_dir, app.data.site.prefix
 set :images_dir, app.data.site.prefix
 set :js_dir, app.data.site.prefix
-set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, smartypants: true, with_toc_data: true
+set :markdown_engine, :kramdown
+
+set :markdown,
+	hard_wrap: false,
+	highlight: true,
+	input: 'GFM',
+	smart_quotes: true,
+	toc_levels: '2..3'
+
 set :relative_links, false
