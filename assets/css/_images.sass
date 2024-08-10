@@ -5,3 +5,35 @@ figure
 		display: block
 		height: auto
 		max-width: 100%
+
+	&:has(figure)
+		align-items: flex-end
+		box-sizing: border-box
+		display: flex
+		flex-flow: row wrap
+		gap: var(--sc-m-v)
+		justify-content: center
+		margin-inline: calc(-50vw + 50% + var(--sc-m-v))
+		width: calc(100vw - var(--sc-m-v) * 2)
+
+		> figure
+			flex: 1 1 calc(var(--sc-mw) / 2)
+			margin: 0
+			max-width: calc(var(--sc-mw) / 3 * 2)
+
+			> :first-child
+				--sc-m-t: 0
+
+			> :last-child
+				--sc-m-b: 0
+
+		// make top figcaption full width
+		> figcaption
+			--sc-m-b: 0
+			--sc-m-t: 0
+			padding-inline: calc((100vw - var(--sc-mw) - var(--sc-m-v) * 2) / 2)
+			box-sizing: border-box
+			width: var(--sc-mw)
+			flex-basis: 100%
+			flex-grow: 1
+			flex-shrink: 0

@@ -404,10 +404,12 @@ Term 3
 
 ---
 
-## Figure `<figure>` {#figure}
+## Figures {#figure}
 
-<figure markdown=1>
-![](https://remino.net/semcss/triangles.svg)
+### Single Figure `<figure>` {#singlefigure}
+
+<figure>
+<%= image_tag '/semcss/triangles.svg' %>
 <figcaption>A display of colourful triangles.</figcaption>
 </figure>
 
@@ -415,6 +417,44 @@ Term 3
 <figure>
 	<img src="triangles.svg">
 	<figcaption>A display of colourful triangles.</figcaption>
+</figure>
+```
+
+### Nested Figures `<figure><figure>` {#nestedfigures}
+
+Ideal for displaying multiple images side by side. Collapsed into a single column on narrow displays. Formatted automatically when a single set of figures are nested into another.
+
+<figure>
+<figure>
+<%= image_tag 'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><rect x="0" y="0" width="100" height="50" fill="hsl(212 100% 44%)"/></svg>' %>
+<figcaption>Blue</figcaption>
+</figure>
+<figure>
+<%= image_tag 'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><rect x="0" y="0" width="100" height="50" fill="hsl(320 100% 64%)"/></svg>' %>
+<figcaption>Pink</figcaption>
+</figure>
+<figure>
+<%= image_tag 'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><rect x="0" y="0" width="100" height="50" fill="hsl(270 100% 64%)"/></svg>' %>
+<figcaption>Purple</figcaption>
+</figure>
+<figcaption>A set of electric colours.</figcaption>
+</figure>
+
+```html
+<figure>
+	<figure>
+		<img src="blue.svg">
+		<figcaption>Blue</figcaption>
+	</figure>
+	<figure>
+		<img src="pink.svg">
+		<figcaption>Pink</figcaption>
+	</figure>
+	<figure>
+		<img src="purple.svg">
+		<figcaption>Purple</figcaption>
+	</figure>
+	<figcaption>A self of electric colours.</figcaption>
 </figure>
 ```
 
