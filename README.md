@@ -32,7 +32,7 @@ This simple stylesheet was born from three things:
 
 Much of this stylesheet was inspired from [_new.css_](https://newcss.net/), with a few changes to vertical rhythm and markup for button links, and no external fonts.
 
-[Back to top](#sem-css-semantic-style)
+[Back to top](#)
 
 ---
 
@@ -48,7 +48,7 @@ Much of this stylesheet was inspired from [_new.css_](https://newcss.net/), with
 - **Localizable**: Works both with left-to-right and right-to-left languages.
 - **Customizable**: Add your own styles on top of it, or add a theme by changing variables.
 
-[Back to top](#sem-css-semantic-style)
+[Back to top](#)
 
 ---
 
@@ -86,7 +86,7 @@ Download the `sem.css` file from the [GitHub releases](https://github.com/remino
 
 To know which HTML tags are handled by this stylesheet with some suggested markup, see _[Elements](https://remino.net/semcss/elements/)_.
 
-[Back to top](#sem-css-semantic-style)
+[Back to top](#)
 
 ---
 
@@ -103,7 +103,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a pull request
 
-[Back to top](#sem-css-semantic-style)
+[Back to top](#)
 
 ---
 
@@ -111,5 +111,5 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the ISC License. See _[License](https://remino.net/semcss/license/)_.
 
-[Back to top](#sem-css-semantic-style)
+[Back to top](#)
 
