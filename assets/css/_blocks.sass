@@ -52,6 +52,12 @@ blockquote
 	margin-inline-end: 0
 	padding-inline-start: calc(var(--sc-p) - var(--sc-border-left))
 
+	> :first-child
+		margin-block-start: 0
+
+	> :last-child
+		margin-block-end: 0
+
 details, pre
 	border: var(--sc-bs) solid var(--sc-bg-3)
 	border-radius: var(--sc-br)
