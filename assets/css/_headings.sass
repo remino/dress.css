@@ -1,5 +1,22 @@
+@keyframes sc-target-fade
+	from
+		text-decoration: underline
+		text-decoration-thickness: calc(var(--sc-bs) * 4)
+		text-decoration-color: var(--sc-ac)
+		text-underline-offset: calc(var(--sc-bs) * 4)
+	to
+		text-decoration: underline
+		text-decoration-thickness: calc(var(--sc-bs) * 4)
+		text-decoration-color: rgba(0 0 0 / 0)
+		text-underline-offset: calc(var(--sc-bs) * 4)
+
 h1, h2, h3, h4, h5, h6
 	--sc-m-t: calc(var(--sc-m-v))
+
+	&:target
+		animation: sc-target-fade 2s 1s ease-out backwards
+		margin-top: calc(var(--sc-m-t) * -1)
+		padding-top: calc(var(--sc-m-t) * 1)
 
 	& + *
 		margin-block-start: 0
