@@ -437,7 +437,14 @@ Term 3
 
 ### Nested Figures `<figure><figure>` {#nestedfigures}
 
-Ideal for displaying multiple images side by side. Collapsed into a single column on narrow displays. Formatted automatically when a single set of figures are nested into another.
+Ideal for displaying multiple images side by side, or to enlarge a single figure. Collapsed into a single column on narrow displays. Formatted automatically when a single set of figures are nested into another. When only one figure is nested, it will be displayed wider than a normal figure.
+
+<figure>
+<figure>
+<%= image_tag 'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200"><rect x="0" y="0" width="600" height="200" fill="hsl(300 100.0% 50.0%"/></svg>' %>
+<figcaption>Wide Fuschia</figcaption>
+</figure>
+</figure>
 
 <figure>
 <figure>
@@ -456,6 +463,13 @@ Ideal for displaying multiple images side by side. Collapsed into a single colum
 </figure>
 
 ```html
+<figure>
+	<figure>
+		<img src="fuchsia.svg">
+		<figcaption>Wide Fuchsia</figcaption>
+	</figure>
+</figure>
+
 <figure>
 	<figure>
 		<img src="blue.svg">
