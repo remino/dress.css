@@ -205,14 +205,13 @@ script
 			alert('Thank you! The data has been sent nowhere.')
 		})
 
-		const applyValidity = event => {
-			const target = event.currentTarget || event.target
-			const submit = target.querySelector('button[type="submit"]')
-			submit.disabled = !target.checkValidity()
+		const applyValidity = ({ currentTarget }) => {
+			const submit = currentTarget.querySelector('button[type="submit"]')
+			submit.disabled = !currentTarget.checkValidity()
 		}
 
 		document.getElementById('form').addEventListener('input', applyValidity)
 		document.getElementById('form').addEventListener('change', applyValidity)
-		document.getElementById('form').addEventListener('reset', event => {
-			setTimeout(applyValidity, 10, event)
+		document.getElementById('form').addEventListener('reset', ({ currentTarget }) => {
+			setTimeout(applyValidity, 10, { currentTarget })
 		})
