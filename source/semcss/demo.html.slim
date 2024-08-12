@@ -206,5 +206,4 @@ script[defer]
 		document.getElementById('form').addEventListener('input', ({ currentTarget }) => {
 	    const submit = currentTarget.querySelector('button[type="submit"]')
 	    submit.disabled = !currentTarget.checkValidity()
-			console.log(submit.disabled)
 	  })
