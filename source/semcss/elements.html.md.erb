@@ -533,6 +533,26 @@ Works with “textual” input fields like `text` (the default type) and `passwo
 </label>
 ```
 
+### Multiple Inputs {#multiinput}
+
+Labels may also contain multiple textual `<input>` fields. Clicking on the label will focus on its first input field. However, note this is not valid HTML5 and may present accessibility issues. Use with caution. You may consider using multiple fields in a `<fieldset>` instead.
+
+<form onsubmit="return false" method="post">
+	<label>
+		<span>Full Name</span>
+		<input placeholder="Given Name">
+		<input placeholder="Family Name">
+	</label>
+</form>
+
+```html
+<label>
+	<span>Full Name</span>
+	<input placeholder="Given Name">
+	<input placeholder="Family Name">
+</label>
+```
+
 ### Textarea `<textarea>` {#textarea}
 
 <form onsubmit="return false" method="post">

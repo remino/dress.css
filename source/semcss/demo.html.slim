@@ -137,15 +137,18 @@ h2 Sign Up for our Newsletter!
 
 p Get all the lorem ipsum in your inbox.
 
-form[onsubmit="return false" method="post"]
+p <mark><strong>Note</strong></mark> This form is only a demonstration and does not send any data. The submit button is only enabled when all required fields are filled out correctly.
+
+form#form[method="post"]
 	label
-		span Name
-		input type="text"
-		small Input the name with which we should greet you.
+		span Full Name <small><mark><strong>required</strong></mark></small>
+		input[type="text" placeholder="Given Name" required]
+		input[type="text" placeholder="Family Name" required]
 
 	label
-		span Email
-		input type="email"
+		span Email <small><mark><strong>required</strong></mark></small>
+		input[type="email" placeholder="name@example.com" required]
+		small Please ensure your email address is correct.
 
 	label
 		span Country of Residence
@@ -192,4 +195,16 @@ form[onsubmit="return false" method="post"]
 		small Tell us what you think about our service.
 
 	input type="reset" value="Reset"
-	button[type="submit"] Submit
+	button[type="submit" disabled] Submit
+
+script[defer]
+	| document.getElementById('form').addEventListener('submit', event => {
+	    event.preventDefault()
+			event.stopPropagation()
+	  })
+
+		document.getElementById('form').addEventListener('input', ({ currentTarget }) => {
+	    const submit = currentTarget.querySelector('button[type="submit"]')
+	    submit.disabled = !currentTarget.checkValidity()
+			console.log(submit.disabled)
+	  })

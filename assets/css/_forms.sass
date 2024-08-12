@@ -100,9 +100,9 @@ label
 
 	input,
 	select,
-	small,
-	span,
-	textarea
+	textarea,
+	> small,
+	> span
 		display: block
 
 	small
@@ -113,6 +113,18 @@ label
 		flex-flow: row
 		gap: calc(var(--sc-p) / 2)
 		justify-content: flex-start
+
+	&:has(input:nth-of-type(2))
+		column-gap: calc(var(--sc-m-v) / 4)
+		flex-flow: row
+		flex-wrap: wrap
+
+		input
+			flex-grow: 1
+			flex-shrink: 1
+
+		span
+			width: 100%
 
 legend
 	font-weight: bold
