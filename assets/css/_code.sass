@@ -2,9 +2,12 @@ code, kbd
 	background: var(--sc-bg-2)
 	border: var(--sc-bs) solid var(--sc-bg-3)
 	border-radius: var(--sc-br)
+	display: inline
 	font-size: calc(var(--sc-cs) * 1em)
-	padding-block: calc(var(--sc-p) / 8)
-	padding-inline: calc(var(--sc-p) / 4)
+	line-height: 1
+	padding-block: calc(var(--sc-m-v) / 8 - var(--sc-bs))
+	padding-inline: calc(var(--sc-m-v) / 4 - var(--sc-bs))
+	margin-block-start: calc(var(--sc-m-v) / 8 - var(--sc-bs) * -1)
 
 kbd
 	--sc-border-bottom: calc(var(--sc-bs) * 3) solid var(--sc-bg-3)
@@ -20,8 +23,9 @@ pre
 		font-size: 1em
 		display: block
 		line-height: inherit
+		margin: 0
 		padding: 0
 
 pre, textarea
 	font-size: calc(var(--sc-cs) * 1rem)
-	line-height: calc(var(--sc-lh) / var(--sc-cs))
+	line-height: calc(var(--sc-lh) / var(--sc-cs) * 0.9rem)
