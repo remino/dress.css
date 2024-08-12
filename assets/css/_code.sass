@@ -2,7 +2,7 @@ code, kbd
 	background: var(--sc-bg-2)
 	border: var(--sc-bs) solid var(--sc-bg-3)
 	border-radius: var(--sc-br)
-	font-size: 0.96em
+	font-size: calc(var(--sc-cs) * 1em)
 	padding-block: calc(var(--sc-p) / 8)
 	padding-inline: calc(var(--sc-p) / 4)
 
@@ -11,14 +11,17 @@ kbd
 	border-block-end: var(--sc-border-bottom)
 
 pre
-	font-size: 0.96rem
-	line-height: calc(var(--sc-lh) / 0.96)
 	overflow-x: auto
 
 	code
 		background: none
 		border: none
 		border-radius: 0
+		font-size: 1em
 		display: block
 		line-height: inherit
 		padding: 0
+
+pre, textarea
+	font-size: calc(var(--sc-cs) * 1rem)
+	line-height: calc(var(--sc-lh) / var(--sc-cs))
