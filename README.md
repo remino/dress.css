@@ -15,6 +15,7 @@ By Rémino Rem <https://remino.net/>
 	- [NPM](#npm)
 	- [Download](#download)
 - [Usage](#usage)
+- [Browser Support](#browser-support)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -87,6 +88,19 @@ Download the `sem.css` file from the [GitHub releases](https://github.com/remino
 To know which HTML tags are handled by this stylesheet with some suggested markup, see _[Elements](https://remino.net/semcss/elements/)_.
 
 [Back to top](#)
+
+---
+
+## Browser Support
+
+The **<mark>sem.css</mark>** stylesheet was checked with [`doiuse`](https://www.npmjs.com/package/doiuse):
+
+```
+❯ doiuse -b 'defaults' -v dist/sem.css
+[doiuse] Browsers: Firefox 129, Firefox 128, Chrome for Android 127, Firefox for Android 127, Android Browser 127, Chrome 127, Edge 127, Firefox 127, Chrome 126, Edge 126, Chrome 125, Firefox 115, Opera 111, Opera 110, Chrome 109, Opera Mobile 80, Samsung Internet 25, Samsung Internet 24, Safari on iOS 17, Safari on iOS 17, Safari 17, Safari 17, Safari on iOS 16, UC Browser for Android 15, Safari on iOS 15, QQ Browser 14, KaiOS Browser 3, KaiOS Browser 2, Opera Mini NaN
+```
+
+While **<mark>sem.css</mark>** should work in the latest version of major browsers, it seems to have issues in some less-popular mobile versions, like Opera Mini.
 
 ---
 
