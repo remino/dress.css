@@ -39,7 +39,7 @@ Much of this stylesheet was inspired from [_new.css_](https://newcss.net/), with
 
 ## Features
 
-- **Small**: Around 2.5 KiB, gzipped.
+- **Small**: Around 3 KiB, gzipped.
 - **Class-less**: No need to add classes to your HTML elements.
 - **Modern**: Uses CSS variables, viewport sizes, and flexbox.
 - **Readable**: Focus on the content, not the style.
