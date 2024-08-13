@@ -1,4 +1,7 @@
 aside
+	margin-block: calc(var(--sc-m-v) * 2)
+	padding-block: calc(var(--sc-m-v) * 2)
+
 	> :first-child
 		--sc-m-t: 0
 
@@ -10,12 +13,12 @@ aside, footer, header
 	margin-inline-start: calc(0px - (50vw - 50%))
 	padding-inline-start: calc(50vw - 50%)
 	padding-inline-end: calc(50vw - 50%)
-	padding-block: var(--sc-m-v)
 	width: 100%
 
 footer, header
 	--sc-m-b: 0
 	--sc-m-t: 0
+	padding-block: var(--sc-m-v)
 
 	h1, h2, h3, h4, h5, h6
 		--sc-m-t: 0
