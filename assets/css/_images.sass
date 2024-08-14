@@ -1,11 +1,15 @@
 figure
 	margin-inline: calc(var(--sc-lh) * 1.5rem)
 
-	img, object, svg
+	img, object, svg, video
 		display: block
 		height: auto
 		margin-inline: auto
 		max-width: 100%
+
+  >
+    a[target="_blank"]:has(img, object, svg, video)::after
+      display: none
 
 	&:has(figure)
 		align-items: flex-end
