@@ -18,9 +18,9 @@ figure
 		display: flex
 		flex-flow: row wrap
 		gap: var(--sc-m-v)
-		inline-size: calc(100vw - var(--sc-m-v) * 2)
+		inline-size: calc(100vi - var(--sc-m-v) * 2)
 		justify-content: center
-		margin-inline: calc(-50vw + 50% + var(--sc-m-v))
+		margin-inline: calc(-50vi + 50% + var(--sc-m-v))
 
 		> figure
 			flex: 1 1 calc(var(--sc-mw) / 2)
@@ -37,12 +37,12 @@ figure
 		> figcaption
 			--sc-m-b: 0
 			--sc-m-t: 0
-			padding-inline: calc((100vw - var(--sc-mw) - var(--sc-m-v) * 2) / 2)
 			box-sizing: border-box
 			inline-size: var(--sc-mw)
 			flex-basis: 100%
 			flex-grow: 1
 			flex-shrink: 0
+			padding-inline: calc((100vi - var(--sc-mw) - var(--sc-m-v) * 2) / 2)
 
 video
 	display: block
