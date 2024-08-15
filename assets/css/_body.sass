@@ -1,6 +1,5 @@
 body,
 html
-	inline-size: 100%
 	margin: 0
 	padding: 0
 
@@ -8,13 +7,14 @@ body
 	align-items: center
 	background: var(--sc-bg)
 	block-size: auto
-	box-sizing: content-box
+	box-sizing: border-box
 	color: var(--sc-fg)
 	font-family: var(--sc-ff)
 	font-size: 1rem
+	inline-size: max-content
 	margin-block: 0
 	margin-inline: auto
-	max-inline-size: var(--sc-mw)
+	max-inline-size: min(var(--sc-mw), 100%)
 	min-block-size: 100%
 	padding-block: 0
 	padding-inline: var(--sc-p)
@@ -28,7 +28,8 @@ textarea
 
 html
 	font-size: var(--sc-fs)
+	inline-size: 100%
 	line-height: var(--sc-lh)
-	min-block-size: 100vh
+	min-block-size: 100%
 	scroll-behavior: smooth
 	tab-size: var(--sc-ts)
