@@ -14,7 +14,7 @@ body
 	inline-size: max-content
 	margin-block: 0
 	margin-inline: auto
-	max-inline-size: min(var(--sc-mw), calc(100% - env(safe-area-inset-left) - env(safe-area-inset-right)))
+	max-inline-size: min(calc(var(--sc-mw) + var(--sc-mp) * 2), calc(100% - env(safe-area-inset-left) - env(safe-area-inset-right)))
 	min-block-size: 100%
 	padding-block: 0
 	padding-inline: var(--sc-p)
