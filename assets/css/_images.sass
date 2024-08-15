@@ -2,10 +2,11 @@ figure
 	margin-inline: calc(var(--sc-lh) * 1.5rem)
 
 	img, object, svg, video
+		block-size: auto
 		display: block
-		height: auto
 		margin-inline: auto
-		max-width: 100%
+		max-block-size: var(--sc-mw)
+		max-inline-size: 100%
 
 	>
 		a[target="_blank"]:has(img, object, svg, video)::after
@@ -17,14 +18,14 @@ figure
 		display: flex
 		flex-flow: row wrap
 		gap: var(--sc-m-v)
+		inline-size: calc(100vw - var(--sc-m-v) * 2)
 		justify-content: center
 		margin-inline: calc(-50vw + 50% + var(--sc-m-v))
-		width: calc(100vw - var(--sc-m-v) * 2)
 
 		> figure
 			flex: 1 1 calc(var(--sc-mw) / 2)
 			margin: 0
-			max-width: calc(var(--sc-mw) / 6 * 7)
+			max-inline-size: calc(var(--sc-mw) / 6 * 7)
 
 			> :first-child
 				--sc-m-t: 0
@@ -38,11 +39,11 @@ figure
 			--sc-m-t: 0
 			padding-inline: calc((100vw - var(--sc-mw) - var(--sc-m-v) * 2) / 2)
 			box-sizing: border-box
-			width: var(--sc-mw)
+			inline-size: var(--sc-mw)
 			flex-basis: 100%
 			flex-grow: 1
 			flex-shrink: 0
 
 video
 	display: block
-	max-width: 100%
+	max-inline-size: 100%
