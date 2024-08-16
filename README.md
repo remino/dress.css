@@ -102,6 +102,8 @@ The **<mark>sem.css</mark>** stylesheet was checked with [`doiuse`](https://www.
 
 While **<mark>sem.css</mark>** should work in the latest version of major browsers, it seems to have issues in some less-popular mobile versions, like Opera Mini. This stylesheet is not meant for legacy support.
 
+[Back to top](#)
+
 ---
 
 ## Contributing
