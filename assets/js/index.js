@@ -1,5 +1,14 @@
 import init from '@remino/reslib/lib/init.js'
 
+const disableLinks = () => {
+	document.querySelectorAll('a[data-disabled]').forEach(link => {
+		link.addEventListener('click', event => {
+			event.preventDefault()
+			event.stopPropagation()
+		})
+	})
+}
+
 const disableNoSubmitForms = () => {
 	document.querySelectorAll('form[data-nosubmit]').forEach(form => {
 		form.addEventListener('submit', event => {
@@ -35,6 +44,7 @@ const setupSignupForm = () => {
 
 init({
 	parallel: [
+		disableLinks,
 		disableNoSubmitForms,
 		setupSignupForm,
 	]
