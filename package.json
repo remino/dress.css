@@ -2,6 +2,7 @@
 	"description": "Minimal class-less CSS for semantic HTML",
 	"devDependencies": {
 		"@lopatnov/rollup-plugin-uglify": "^2.1.5",
+		"@remino/reslib": "git+https://github.com/remino/reslib.git#v0.3.34",
 		"@rollup/plugin-commonjs": "^24.1.0",
 		"@rollup/plugin-node-resolve": "^15.2.3",
 		"@rollup/plugin-terser": "^0.4.4",

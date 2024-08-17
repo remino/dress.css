@@ -52,11 +52,11 @@ activate :external_pipeline,
 	source: ".build/css",
 	latency: 2
 
-# activate :external_pipeline,
-# 	name: :js,
-# 	command: "pnpm run #{build? ? 'js:build' : 'js:watch'}",
-# 	source: ".build/js",
-# 	latency: 2
+activate :external_pipeline,
+	name: :js,
+	command: "pnpm run #{build? ? 'js:build' : 'js:watch'}",
+	source: ".build/js",
+	latency: 2
 
 ignore '.DS_Store'
 

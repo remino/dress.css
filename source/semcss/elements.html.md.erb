@@ -551,7 +551,7 @@ There is some styling for forms in **<mark>sem.css</mark>** for the most common 
 
 Works with “textual” input fields like `text` (the default type) and `password`.
 
-<form onsubmit="return false" method="post">
+<form data-nosubmit method="post">
 	<label>
 		<span>Name</span>
 		<input>
@@ -571,7 +571,7 @@ Works with “textual” input fields like `text` (the default type) and `passwo
 
 Labels may also contain multiple textual `<input>` fields. Clicking on the label will focus on its first input field. However, note this is not valid HTML5 and may present accessibility issues. Use with caution. You may consider using multiple fields in a `<fieldset>` instead.
 
-<form onsubmit="return false" method="post">
+<form data-nosubmit method="post">
 	<label>
 		<span>Full Name</span>
 		<input placeholder="Given Name">
@@ -589,7 +589,7 @@ Labels may also contain multiple textual `<input>` fields. Clicking on the label
 
 ### Textarea `<textarea>` {#textarea}
 
-<form onsubmit="return false" method="post">
+<form data-nosubmit method="post">
 	<label>
 		<span>Message</span>
 		<textarea rows="4"></textarea>
@@ -605,7 +605,7 @@ Labels may also contain multiple textual `<input>` fields. Clicking on the label
 
 ### Select `<select>` {#select}
 
-<form onsubmit="return false" method="post">
+<form data-nosubmit method="post">
 	<label>
 		<span>Choose one</span>
 		<select>
@@ -627,7 +627,7 @@ Labels may also contain multiple textual `<input>` fields. Clicking on the label
 
 ### Checkbox `<input type="checkbox">` {#checkbox}
 
-<form onsubmit="return false" method="post">
+<form data-nosubmit method="post">
 	<label>
 		<input type="checkbox" name="agree" value="1">
 		<span>I agree</span>
@@ -643,7 +643,7 @@ Labels may also contain multiple textual `<input>` fields. Clicking on the label
 
 ### Radio `<input type="radio">` {#radio}
 
-<form onsubmit="return false" method="post">
+<form data-nosubmit method="post">
 	<label>
 		<input type="radio" name="be" value="1">
 		<span>To be</span>
@@ -667,7 +667,7 @@ Labels may also contain multiple textual `<input>` fields. Clicking on the label
 
 ### Field Set `<fieldset>` {#fieldset}
 
-<form onsubmit="return false" method="post">
+<form data-nosubmit method="post">
 	<fieldset>
 		<legend>Skills</legend>
 		<label>
@@ -699,7 +699,7 @@ Labels may also contain multiple textual `<input>` fields. Clicking on the label
 
 Including `<button>` as well as `<input>` with `type="button"`, `type="reset"`, and `type="submit"`.
 
-<form onsubmit="return false" method="post">
+<form data-nosubmit method="post">
 	<input type="reset" value="Reset">
 	<button disabled>Disabled</button>
 	<button type="submit">Submit</button>

@@ -139,7 +139,7 @@ p Get all the lorem ipsum in your inbox.
 
 p <mark><strong>Note</strong></mark> This form is only a demonstration and does not send any data. The submit button is only enabled when all required fields are filled out correctly.
 
-form#form[method="post"]
+form#signup[method="post"]
 	label
 		span Full Name <small><mark><strong>required</strong></mark></small>
 		input[type="text" placeholder="Given Name" required]
@@ -196,22 +196,3 @@ form#form[method="post"]
 
 	input type="reset" value="Reset"
 	button[type="submit" disabled] Submit
-
-script
-	| document.getElementById('form').addEventListener('submit', event => {
-			event.preventDefault()
-			event.stopPropagation()
-
-			alert('Thank you! The data has been sent nowhere.')
-		})
-
-		const applyValidity = ({ currentTarget }) => {
-			const submit = currentTarget.querySelector('button[type="submit"]')
-			submit.disabled = !currentTarget.checkValidity()
-		}
-
-		document.getElementById('form').addEventListener('input', applyValidity)
-		document.getElementById('form').addEventListener('change', applyValidity)
-		document.getElementById('form').addEventListener('reset', ({ currentTarget }) => {
-			setTimeout(applyValidity, 10, { currentTarget })
-		})
