@@ -14,15 +14,23 @@ const sassPlugin = sass({
 	},
 })
 
-export default {
-	input: 'assets/js/index.js',
-	output: {
-		compact: true,
-		file: `.build/js/${prefix}/script.js`,
-		format: 'iife',
-	},
+const options = {
 	watch: {
 		clearScreen: false,
 	},
 	plugins: [nodeResolve(), commonjs(), sassPlugin, terser(), uglify()],
 }
+
+const file = name => ({
+	...options,
+	input: `assets/js/${name}.js`,
+	output: {
+		compact: true,
+		file: `.build/js/${prefix}/${name}.js`,
+		format: 'iife',
+	},
+})
+
+export default [
+	file('docs'),
+]

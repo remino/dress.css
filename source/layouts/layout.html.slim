@@ -5,7 +5,7 @@ html(lang="en")
 		= partial 'head'
 		= stylesheet_link_tag 'sem'
 		= stylesheet_link_tag 'docs'
-		= javascript_include_tag 'script', defer: true
+		= javascript_include_tag 'docs', defer: true
 		= yield_content :head
 		= partial 'nav/htmlhead'
 	body
