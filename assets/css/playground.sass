@@ -1,0 +1,29 @@
+playground-app
+	display: flex
+	gap: calc(var(--sc-lh) * 1rem)
+	flex-flow: column nowrap
+
+	iframe, .cm-editor
+		min-height: calc(var(--sc-lh) * 10rem)
+
+	> form > fieldset > div
+		background: var(--sc-bg)
+
+	form, menu, nav
+		margin: 0
+
+	form
+		> :first-child
+			margin-top: 0
+
+	iframe
+		border: 0
+		margin: 0
+		width: 100%
+
+	menu
+		display: flex
+		gap: calc(var(--sc-lh) * 1rem)
+		flex-flow: row wrap
+		list-style: none
+		padding: 0

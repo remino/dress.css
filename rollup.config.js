@@ -31,6 +31,4 @@ const file = name => ({
 	},
 })
 
-export default [
-	file('docs'),
-]
+export default ['docs', 'playground'].map(file)
