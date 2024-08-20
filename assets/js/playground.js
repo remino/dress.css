@@ -6,6 +6,8 @@ import { dracula } from 'thememirror'
 
 class PlaygroundApp extends HTMLElement {
 	connectedCallback() {
+		const doc = this.innerHTML
+
 		this.innerHTML = `
 			<nav>
 				<menu>
@@ -22,7 +24,6 @@ class PlaygroundApp extends HTMLElement {
 		`
 
 		const iframes = this.querySelectorAll('iframe')
-		const doc = '<h1>Hello!</h1>\n\n<p>Edit me!</p>Proident proident amet magna nisi adipisicing ullamco amet in.Proident proident amet magna nisi adipisicing ullamco amet in.Proident proident amet magna nisi adipisicing ullamco amet in.Proident proident amet magna nisi adipisicing ullamco amet in.Proident proident amet magna nisi adipisicing ullamco amet in.\n'
 
 		iframes[0].srcdoc = `
 			<!DOCTYPE html>
