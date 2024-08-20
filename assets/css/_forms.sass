@@ -93,6 +93,38 @@ textarea
 	box-sizing: border-box
 	color: var(--sc-fg)
 
+input[type="checkbox"],
+input[type="radio"]
+	appearance: none
+	aspect-ratio: 1
+	background: var(--sc-bg-2)
+	border: solid var(--sc-bs) var(--sc-bg-3)
+	display: inline-block
+	height: auto
+	margin: 0
+	padding: 0
+	vertical-align: baseline
+	width: 1rem
+
+	&:checked
+		background-color: var(--sc-bt-1)
+		background-position: center
+		background-repeat: no-repeat
+		background-size: 80%
+		border-color: var(--sc-bt-1)
+
+input[type="checkbox"]
+	border-radius: var(--sc-br)
+
+	&:checked
+		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>')
+
+input[type="radio"]
+	border-radius: 50%
+
+	&:checked
+		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><circle cx="12" cy="12" r="8"/></svg>')
+
 label
 	@extend %cursor-pointer
 	display: flex
