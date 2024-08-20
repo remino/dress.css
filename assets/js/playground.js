@@ -22,7 +22,7 @@ class PlaygroundApp extends HTMLElement {
 		`
 
 		const iframes = this.querySelectorAll('iframe')
-		const doc = '<h1>Hello!</h1>\n\n<p>Edit me!</p>\n'
+		const doc = '<h1>Hello!</h1>\n\n<p>Edit me!</p>Proident proident amet magna nisi adipisicing ullamco amet in.Proident proident amet magna nisi adipisicing ullamco amet in.Proident proident amet magna nisi adipisicing ullamco amet in.Proident proident amet magna nisi adipisicing ullamco amet in.Proident proident amet magna nisi adipisicing ullamco amet in.\n'
 
 		iframes[0].srcdoc = `
 			<!DOCTYPE html>
@@ -58,11 +58,12 @@ class PlaygroundApp extends HTMLElement {
 			parent: this.querySelector('div'),
 			state: this.state,
 		})
+
+		this.editor.requestMeasure()
 	}
 
 	updateOutput() {
 		const htmlSrc = this.editor.state.doc.toString()
-		console.log(htmlSrc)
 		const iframes = this.querySelectorAll('iframe')
 
 		iframes.forEach(iframe => {
@@ -73,8 +74,20 @@ class PlaygroundApp extends HTMLElement {
 	}
 }
 
+const resizeEditor = () => {
+	// Resize editor using JavaScript because CodeMirror 6 is stubborn,
+	// unlike a normal <textarea>.
+	const editor = document.querySelector('playground-app fieldset#editor > div')
+	const frame = document.querySelector('playground-app iframe')
+	const { width } = window.getComputedStyle(frame)
+	editor.style.setProperty('width', width)
+}
+
 const startApp = () => {
 	customElements.define('playground-app', PlaygroundApp)
+
+	window.addEventListener('resize', resizeEditor)
+	resizeEditor()
 }
 
 init({
