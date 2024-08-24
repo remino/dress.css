@@ -5,6 +5,10 @@ import { html } from '@codemirror/lang-html'
 import { dracula } from 'thememirror'
 
 class PlaygroundApp extends HTMLElement {
+	get iframe() {
+		return this.querySelector('iframe')
+	}
+
 	connectedCallback() {
 		const doc = this.innerHTML
 
@@ -18,8 +22,7 @@ class PlaygroundApp extends HTMLElement {
 			</nav>
 			<form>
 				<fieldset id="editor"><legend>HTML Editor</legend><div></div></fieldset>
-				<fieldset id="semcss"><legend>With <mark><strong>sem.css</strong></mark></legend><output><iframe></iframe></output></fieldset>
-				<fieldset id="nostyle"><legend>Without Stylesheet</legend><output><iframe></iframe></output></fieldset>
+				<fieldset id="semcss"><legend><select><option>With sem.css</option><option>Without sem.css</option></select></legend><output><iframe></iframe></output></fieldset>
 			</form>
 		`
 
@@ -28,21 +31,19 @@ class PlaygroundApp extends HTMLElement {
 		iframes[0].srcdoc = `
 			<!DOCTYPE html>
 			<html>
-			<title>With sem.css</title>
+			<title>Preview</title>
 			<link rel="stylesheet" href="/semcss/sem.css">
-			<body>${doc}</body>
-		`
-
-		iframes[1].srcdoc = `
-			<!DOCTYPE html>
-			<html>
-			<title>With no stylesheet</title>
 			<body>${doc}</body>
 		`
 
 		this.querySelector('form').addEventListener('submit', event => {
 			event.preventDefault()
 			event.stopPropagation()
+		})
+
+		this.querySelector('select').addEventListener('change', event => {
+			const withSemCss = event.target.value === 'With sem.css'
+			this.iframe.contentDocument.styleSheets[0].disabled = !withSemCss
 		})
 
 		this.state = EditorState.create({
@@ -65,13 +66,10 @@ class PlaygroundApp extends HTMLElement {
 
 	updateOutput() {
 		const htmlSrc = this.editor.state.doc.toString()
-		const iframes = this.querySelectorAll('iframe')
 
-		iframes.forEach(iframe => {
-			iframe.contentDocument.body.innerHTML = htmlSrc || ''
-			iframe.style.setProperty('height', 'auto')
-			iframe.style.setProperty('height', `${iframe.contentDocument.documentElement.scrollHeight}px`)
-		})
+		this.iframe.contentDocument.body.innerHTML = htmlSrc || ''
+		this.iframe.style.setProperty('height', 'auto')
+		this.iframe.style.setProperty('height', `${this.iframe.contentDocument.documentElement.scrollHeight}px`)
 	}
 }
 
