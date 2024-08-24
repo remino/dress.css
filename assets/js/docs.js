@@ -1,5 +1,22 @@
 import init from '@remino/reslib/lib/init.js'
 
+const addCodeBlockCopyButton = () => {
+	document.querySelectorAll('div.highlight').forEach(block => {
+		const button = document.createElement('button')
+		const label = 'Copy'
+		button.classList.add('copy')
+		button.textContent = label
+		button.addEventListener('click', () => {
+			navigator.clipboard.writeText(block.querySelector('code').textContent)
+			button.textContent = 'Copied!'
+			setTimeout(() => {
+				button.textContent = label
+			}, 1000)
+		})
+		block.appendChild(button)
+	})
+}
+
 const disableLinks = () => {
 	document.querySelectorAll('a[data-disabled]').forEach(link => {
 		link.addEventListener('click', event => {
@@ -44,8 +61,9 @@ const setupSignupForm = () => {
 
 init({
 	parallel: [
+		addCodeBlockCopyButton,
 		disableLinks,
 		disableNoSubmitForms,
 		setupSignupForm,
-	]
+	],
 })
