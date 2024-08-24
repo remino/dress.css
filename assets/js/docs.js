@@ -4,12 +4,14 @@ const addCodeBlockCopyButton = () => {
 	document.querySelectorAll('div.highlight').forEach(block => {
 		const button = document.createElement('button')
 		const label = 'Copy'
+
 		button.classList.add('copy')
 		button.textContent = label
 
 		button.addEventListener('click', () => {
 			navigator.clipboard.writeText(block.querySelector('code').textContent)
-			button.addAttribute('aria-live', 'assertive')
+
+			button.setAttribute('aria-live', 'assertive')
 			button.textContent = 'Copied!'
 
 			setTimeout(() => {
