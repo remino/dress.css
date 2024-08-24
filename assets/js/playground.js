@@ -37,6 +37,7 @@ class PlaygroundApp extends HTMLElement {
 		this.querySelector('select').addEventListener('change', event => {
 			const withSemCss = event.target.value === 'With sem.css'
 			this.iframe.contentDocument.styleSheets[0].disabled = !withSemCss
+			this.resizeOutput()
 		})
 
 		this.state = EditorState.create({
@@ -61,6 +62,11 @@ class PlaygroundApp extends HTMLElement {
 		const htmlSrc = this.editor.state.doc.toString()
 
 		this.iframe.contentDocument.body.innerHTML = htmlSrc || ''
+
+		this.resizeOutput()
+	}
+
+	resizeOutput() {
 		this.iframe.style.setProperty('height', 'auto')
 		this.iframe.style.setProperty('height', `${this.iframe.contentDocument.documentElement.scrollHeight}px`)
 	}
