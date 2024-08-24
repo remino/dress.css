@@ -13,13 +13,6 @@ class PlaygroundApp extends HTMLElement {
 		const doc = this.innerHTML
 
 		this.innerHTML = `
-			<nav>
-				<menu>
-					<li><a href="#editor">Editor</a></li>
-					<li><a href="#semcss">With sem.css</a></li>
-					<li><a href="#nostyle">Without Stylesheet</a></li>
-				</menu>
-			</nav>
 			<form>
 				<fieldset id="editor"><legend>HTML Editor</legend><div></div></fieldset>
 				<fieldset id="semcss"><legend><select><option>With sem.css</option><option>Without sem.css</option></select></legend><output><iframe></iframe></output></fieldset>
