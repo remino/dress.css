@@ -6,13 +6,18 @@ const addCodeBlockCopyButton = () => {
 		const label = 'Copy'
 		button.classList.add('copy')
 		button.textContent = label
+
 		button.addEventListener('click', () => {
 			navigator.clipboard.writeText(block.querySelector('code').textContent)
+			button.addAttribute('aria-live', 'assertive')
 			button.textContent = 'Copied!'
+
 			setTimeout(() => {
 				button.textContent = label
+				button.removeAttribute('aria-live')
 			}, 1000)
 		})
+
 		block.appendChild(button)
 	})
 }
