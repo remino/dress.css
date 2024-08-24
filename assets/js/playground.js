@@ -59,9 +59,11 @@ class PlaygroundApp extends HTMLElement {
 	}
 
 	updateOutput() {
-		const htmlSrc = this.editor.state.doc.toString()
+		const htmlSrc = this.editor.state.doc.toString() || ''
 
-		this.iframe.contentDocument.body.innerHTML = htmlSrc || ''
+		if (this.iframe.contentDocument.body.innerHTML === htmlSrc) return
+
+		this.iframe.contentDocument.body.innerHTML = htmlSrc
 
 		this.resizeOutput()
 	}
