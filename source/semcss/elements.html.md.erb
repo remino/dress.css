@@ -113,17 +113,19 @@ Like the `<header>` tag, some special formatting is applied to `<footer>`. That 
 ### Aside `<aside>` {#aside}
 
 <aside markdown=1>
-# Side Notes
+#### Side Notes
 
 This information is related to the main content, but not essential.
 </aside>
 
 ```html
 <aside>
-	<h1>Side Notes</h1>
+	<h4>Side Notes</h4>
 	<p>This information is related to the main content, but not essential.</p>
 </aside>
 ```
+
+**Note:** Heading hierarchy isn't meant to be reset in sectioning elements such as `<aside>` and `<section>`. Doing so is considered non-comforing. See [_HTML Living Standard_ §4.3.11](https://html.spec.whatwg.org/multipage/sections.html#headings-and-outlines).
 
 <nav markdown=1>
 [Back to top](#)
