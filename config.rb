@@ -75,7 +75,8 @@ set :markdown,
 	hard_wrap: false,
 	highlight: true,
 	input: 'GFM',
-	smart_quotes: true,
+  smart_quotes: %w[lsquo rsquo ldquo rdquo],
+  smartypants: true,
 	toc_levels: '2..3'
 
 set :relative_links, false
