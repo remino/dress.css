@@ -29,6 +29,7 @@ build_brotli_main() {
 _find() {
 	find "$1" \
 		\( \
+			-type f \
 			-iname '*.css' \
 			-or -iname '*.html' \
 			-or -iname '*.js' \
