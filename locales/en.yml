@@ -4,5 +4,5 @@ en:
     items:
       index: Home
   title:
-    site: 'sem.css : RÉMINO'
+    site: 'dress.css : RÉMINO'
     page: '%{page} : %{site}'

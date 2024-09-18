@@ -15,7 +15,7 @@ class PlaygroundApp extends HTMLElement {
 		this.innerHTML = `
 			<form>
 				<fieldset id="editor"><legend>HTML Editor</legend><div></div></fieldset>
-				<fieldset id="semcss"><legend><select><option>With sem.css</option><option>Without sem.css</option></select></legend><output><iframe></iframe></output></fieldset>
+				<fieldset id="dress.css"><legend><select><option>With dress.css</option><option>Without dress.css</option></select></legend><output><iframe></iframe></output></fieldset>
 			</form>
 		`
 
@@ -25,7 +25,7 @@ class PlaygroundApp extends HTMLElement {
 			<!DOCTYPE html>
 			<html>
 			<title>Preview</title>
-			<link rel="stylesheet" href="/semcss/sem.css">
+			<link rel="stylesheet" href="/dress.css/dress.css">
 			<body>${doc}</body>
 		`
 
@@ -35,7 +35,7 @@ class PlaygroundApp extends HTMLElement {
 		})
 
 		this.querySelector('select').addEventListener('change', event => {
-			const withSemCss = event.target.value === 'With sem.css'
+			const withSemCss = event.target.value === 'With dress.css'
 			this.iframe.contentDocument.styleSheets[0].disabled = !withSemCss
 			this.resizeOutput()
 		})

@@ -1,11 +1,14 @@
 header
-	h1= data.site.title
+	h1
+		object type="image/svg+xml" data="/dress.css/ld.svg"
+			img src="/dress.css/ld.svg" alt=""
+		= data.site.title
 
 	nav
 		menu
-			li = link_to 'Home', '/semcss/'
-			li = link_to 'Elements', '/semcss/elements/'
-			li = link_to 'Demo', '/semcss/demo/'
-			li = link_to 'Playground', '/semcss/playground/'
-			li = link_to 'GitHub', 'https://github.com/remino/semcss', target: '_blank'
-			li = link_to 'npm', 'https://www.npmjs.com/package/semcss', target: '_blank'
+			li = link_to 'Home', '/dress.css/'
+			li = link_to 'Elements', '/dress.css/elements/'
+			li = link_to 'Demo', '/dress.css/demo/'
+			li = link_to 'Playground', '/dress.css/playground/'
+			li = link_to 'GitHub', 'https://github.com/remino/dress.css', target: '_blank'
+			li = link_to 'npm', 'https://www.npmjs.com/package/dress.css', target: '_blank'

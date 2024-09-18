@@ -1,14 +1,16 @@
-# sem.css: Semantic Style
+![](dress.svg)
 
-**Minimal class-less CSS for semantic HTML.**
+# dress.css
 
-[Site](https://remino.net/semcss/)
-| [Code Repo](https://github.com/remino/semcss)
-| [NPM Package](https://www.npmjs.com/package/semcss)
+The little black dress of CSS.
+
+[Site](https://remino.net/dress.css/)
+| [Code Repo](https://github.com/remino/dress.css)
+| [NPM Package](https://www.npmjs.com/package/dress.css)
 
 By Rémino Rem <https://remino.net/>
 
-- [Just write HTML and make it look good](#just-write-html-and-make-it-look-good)
+- [Minimal style for semantic HTML](#minimal-style-for-semantic-html)
 - [Features](#features)
 - [Installation](#installation)
 	- [HTML](#html)
@@ -21,9 +23,9 @@ By Rémino Rem <https://remino.net/>
 
 ---
 
-## Just write HTML and make it look good
+## Minimal style for semantic HTML
 
-Introducing **<mark>sem.css</mark>**, a minimalist class-less stylesheet that makes your pages look good only by writing HTML.
+Introducing **<mark>dress.css</mark>**, a minimalist class-less stylesheet that makes your pages look good only by writing HTML.
 
 This simple stylesheet was born from three things:
 
@@ -32,6 +34,8 @@ This simple stylesheet was born from three things:
 - How writing CSS for simple pages is painful or at least time-consuming.
 
 Much of this stylesheet was inspired from [_new.css_](https://newcss.net/), with a few changes to vertical rhythm and markup for button links, and no external fonts.
+
+This stylesheet was formerly known as **sem.css** in version 1.2.4, and renamed as **dress.css** in version 2.0.0.
 
 [Back to top](#)
 
@@ -62,7 +66,7 @@ There are many ways to include this stylesheet in your code. Here are a few exam
 Add the stylesheet to your HTML and write your content:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/semcss/dist/sem.css">
+<link rel="stylesheet" href="https://unpkg.com/dress.css/dist/dress.css">
 ```
 
 ### NPM
@@ -70,22 +74,22 @@ Add the stylesheet to your HTML and write your content:
 Install the package from NPM:
 
 ```bash
-npm install semcss
+npm install dress.css
 ```
 
-Then the stylesheet file should be available at `node_modules/semcss/dist/sem.css`.
+Then the stylesheet file should be available at `node_modules/dress.css/dist/dress.css`.
 
 Use the file in your Sass files, or include it in your CSS, etc.
 
 ### Download
 
-Download the `sem.css` file from the [GitHub releases](https://github.com/remino/semcss/releases).
+Download the `dress.css` file from the [GitHub releases](https://github.com/remino/dress.css/releases).
 
 ---
 
 ## Usage
 
-To know which HTML tags are handled by this stylesheet with some suggested markup, see _[Elements](https://remino.net/semcss/elements/)_.
+To know which HTML tags are handled by this stylesheet with some suggested markup, see _[Elements](https://remino.net/dress.css/elements/)_.
 
 [Back to top](#)
 
@@ -93,14 +97,14 @@ To know which HTML tags are handled by this stylesheet with some suggested marku
 
 ## Browser Support
 
-The **<mark>sem.css</mark>** stylesheet was checked with [`doiuse`](https://www.npmjs.com/package/doiuse):
+The **<mark>dress.css</mark>** stylesheet was checked with [`doiuse`](https://www.npmjs.com/package/doiuse):
 
 ```
-❯ doiuse -b 'defaults' -v dist/sem.css
+❯ doiuse -b 'defaults' -v dist/dress.css
 [doiuse] Browsers: Firefox 129, Firefox 128, Chrome for Android 127, Firefox for Android 127, Android Browser 127, Chrome 127, Edge 127, Firefox 127, Chrome 126, Edge 126, Chrome 125, Firefox 115, Opera 111, Opera 110, Chrome 109, Opera Mobile 80, Samsung Internet 25, Samsung Internet 24, Safari on iOS 17, Safari on iOS 17, Safari 17, Safari 17, Safari on iOS 16, UC Browser for Android 15, Safari on iOS 15, QQ Browser 14, KaiOS Browser 3, KaiOS Browser 2, Opera Mini NaN
 ```
 
-While **<mark>sem.css</mark>** should work in the latest version of major browsers, it seems to have issues in some less-popular mobile versions, like Opera Mini. This stylesheet is not meant for legacy support.
+While **<mark>dress.css</mark>** should work in the latest version of major browsers, it seems to have issues in some less-popular mobile versions, like Opera Mini. This stylesheet is not meant for legacy support.
 
 [Back to top](#)
 
@@ -125,7 +129,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the ISC License. See _[License](https://remino.net/semcss/license/)_.
+Distributed under the ISC License. See _[License](https://remino.net/dress.css/license/)_.
 
 [Back to top](#)
 

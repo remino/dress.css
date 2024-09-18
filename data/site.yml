@@ -1,5 +1,5 @@
 build_dir: deploy/public
-description: 'Minimal class-less CSS for semantic HTML'
-prefix: semcss
-title: sem.css
+description: 'The little black dress of CSS.'
+prefix: dress.css
+title: dress.css
 url: https://remino.net/

@@ -37,6 +37,20 @@ body
 			> menu
 				margin-block-start: 0.8em
 
+	> header
+		object
+			display: inline
+			margin-right: calc(var(--sc-m-v) / 2)
+			vertical-align: middle
+			margin-bottom: 12px
+
+		+ p:has(img)
+			img
+				margin: 0
+
+			+ h1
+				margin-block-start: 0
+
 div.highlight
 	position: relative
 

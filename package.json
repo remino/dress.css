@@ -1,5 +1,5 @@
 {
-	"description": "Minimal class-less CSS for semantic HTML",
+	"description": "The little black dress of CSS",
 	"devDependencies": {
 		"@codemirror/lang-html": "^6.4.9",
 		"@lopatnov/rollup-plugin-uglify": "^2.1.5",
@@ -31,17 +31,17 @@
 		"yaml": "^2.4.2"
 	},
 	"files": [
-		"dist/sem.css"
+		"dist/dress.css"
 	],
-	"homepage": "https://remino.net/semcss/",
+	"homepage": "https://remino.net/dress.css/",
 	"keywords": [
 		"css",
 		"boilerplate"
 	],
 	"license": "ISC",
-	"name": "semcss",
+	"name": "dress.css",
 	"scripts": {
-		"build": "npm run css:build && npx postcss .build/sass-css/sem.css -o dist/sem.css",
+		"build": "npm run css:build && npx postcss .build/sass-css/dress.css -o dist/dress.css",
 		"css:build": "npm run css:sass && pnpm run css:postcss",
 		"css:postcss": "npx postcss .build/sass-css/ --dir .build/css/$( grep -F prefix: data/site.yml | cut -d ' ' -f 2 )/",
 		"css:sass": "npx sass --no-source-map --load-path=node_modules/ assets/css/:.build/sass-css/",
@@ -50,7 +50,7 @@
 		"js:watch": "npx rollup --config rollup.config.js --watch"
 	},
 	"type": "module",
-	"version": "1.2.4",
+	"version": "2.0.0",
 	"watch": {
 		"css:build": {
 			"extensions": "css,sass,scss",

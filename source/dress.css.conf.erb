@@ -1,0 +1,9 @@
+<% %w(dresscss semcss sem.css).each do |name| %>
+location = /<%= name %> {
+	return 301 /dress.css/;
+}
+
+location /<%= name %>/ {
+	rewrite ^/<%= Regexp.escape(name) %>/(.*) /dress.css/$1 permanent;
+}
+<% end %>
