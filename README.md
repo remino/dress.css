@@ -6,7 +6,7 @@ The little black dress of CSS.
 
 [Site](https://remino.net/dress.css/)
 | [Code Repo](https://github.com/remino/dress.css)
-| [NPM Package](https://www.npmjs.com/package/dress.css)
+| [NPM Package](https://www.npmjs.com/package/@remino/dress.css)
 
 By Rémino Rem <https://remino.net/>
 
