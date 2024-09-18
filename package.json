@@ -39,7 +39,7 @@
 		"boilerplate"
 	],
 	"license": "ISC",
-	"name": "dress.css",
+	"name": "@remino/dress.css",
 	"scripts": {
 		"build": "npm run css:build && npx postcss .build/sass-css/dress.css -o dist/dress.css",
 		"css:build": "npm run css:sass && pnpm run css:postcss",
