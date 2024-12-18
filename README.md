@@ -18,6 +18,9 @@ By Rémino Rem <https://remino.net/>
   - [Download](#download)
 - [Usage](#usage)
 - [Browser Support](#browser-support)
+- [Tests](#tests)
+  - [Visual Regression Testing](#visual-regression-testing)
+  - [Web Site Response Testing](#web-site-response-testing)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -123,6 +126,25 @@ browsers, it seems to have issues in some less-popular mobile versions, like
 Opera Mini. This stylesheet is not meant for legacy support.
 
 [Back to top](#)
+
+---
+
+## Tests
+
+### Visual Regression Testing
+
+```sh
+npm t
+```
+
+### Web Site Response Testing
+
+Using the
+[Bash Automated Testing System (Bats)](https://github.com/bats-core/bats-core):
+
+```sh
+bats tests
+```
 
 ---
 
