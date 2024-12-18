@@ -39,50 +39,50 @@ svg,
 table,
 ul,
 video
-	margin-block-start: var(--sc-m-t)
-	margin-block-end: var(--sc-m-b)
+	margin-block-start: var(--dc-m-t)
+	margin-block-end: var(--dc-m-b)
 
 blockquote, details, pre
-	background: var(--sc-bg-2)
+	background: var(--dc-bg-2)
 	box-sizing: border-box
-	padding-block: var(--sc-p)
-	padding-inline: var(--sc-p)
+	padding-block: var(--dc-p)
+	padding-inline: var(--dc-p)
 
 blockquote
-	--sc-border-left: calc(var(--sc-bs) * 4)
-	border-inline-start: var(--sc-border-left) solid var(--sc-bg-3)
+	--dc-border-left: calc(var(--dc-bs) * 4)
+	border-inline-start: var(--dc-border-left) solid var(--dc-bg-3)
 	margin-inline-start: 0
 	margin-inline-end: 0
-	padding-block: var(--sc-m-t) var(--sc-m-b)
-	padding-inline-start: calc(var(--sc-p) - var(--sc-border-left))
+	padding-block: var(--dc-m-t) var(--dc-m-b)
+	padding-inline-start: calc(var(--dc-p) - var(--dc-border-left))
 
 	> :first-child
-		--sc-m-t: 0
+		--dc-m-t: 0
 
 	> :last-child
-		--sc-m-b: 0
+		--dc-m-b: 0
 
 details, pre
-	border: var(--sc-bs) solid var(--sc-bg-3)
-	border-radius: var(--sc-br)
+	border: var(--dc-bs) solid var(--dc-bg-3)
+	border-radius: var(--dc-br)
 
 details
-	padding-block: calc(var(--sc-p) / 2)
+	padding-block: calc(var(--dc-p) / 2)
 	padding-block-start: 0
 
 	&[open]
 		padding-block-end: 0
 
 hr
-	--sc-m-b: calc((var(--sc-m-v) * 2) - var(--sc-bs))
-	--sc-m-t: calc(var(--sc-m-v) * 2)
+	--dc-m-b: calc((var(--dc-m-v) * 2) - var(--dc-bs))
+	--dc-m-t: calc(var(--dc-m-v) * 2)
 	border: 0
-	border-block-start: var(--sc-bs) solid var(--sc-bg-3)
+	border-block-start: var(--dc-bs) solid var(--dc-bg-3)
 
 summary
 	cursor: pointer
 	font-weight: bold
-	padding-block: calc(var(--sc-p) / 2)
-	padding-inline: var(--sc-p)
-	margin-block-end: calc(var(--sc-m-v) * -0.5)
-	margin-inline: calc(var(--sc-m-v) * -1)
+	padding-block: calc(var(--dc-p) / 2)
+	padding-inline: var(--dc-p)
+	margin-block-end: calc(var(--dc-m-v) * -0.5)
+	margin-inline: calc(var(--dc-m-v) * -1)

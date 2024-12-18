@@ -1,21 +1,21 @@
 :focus
-	border-radius: var(--sc-br)
-	box-shadow: 0 0 0 calc(var(--sc-fs) / 4) var(--sc-bt-1-h)
-	box-shadow: 0 0 0 calc(var(--sc-fs) / 4) color(from var(--sc-bt-1-h) srgb r g b / 0.4)
-	outline: solid var(--sc-bs) color-mix(in srgb, var(--sc-fg), var(--sc-bt-1) 75%)
+	border-radius: var(--dc-br)
+	box-shadow: 0 0 0 calc(var(--dc-fs) / 4) var(--dc-bt-1-h)
+	box-shadow: 0 0 0 calc(var(--dc-fs) / 4) color(from var(--dc-bt-1-h) srgb r g b / 0.4)
+	outline: solid var(--dc-bs) color-mix(in srgb, var(--dc-fg), var(--dc-bt-1) 75%)
 	outline-offset: 0
 
 a
-	color: var(--sc-lk)
+	color: var(--dc-lk)
 
 	&:visited
-		color: var(--sc-lk-v)
+		color: var(--dc-lk-v)
 
 	&:hover, &:focus
-		color: var(--sc-lk-h)
+		color: var(--dc-lk-h)
 
 	&:active
-		color: var(--sc-lk-a)
+		color: var(--dc-lk-a)
 
 	&[role='button']
 		display: inline-block
@@ -30,7 +30,7 @@ a
 			content: ''
 			display: inline-block
 			height: 0.8em
-			margin-inline-start: calc(var(--sc-p) / 8)
+			margin-inline-start: calc(var(--dc-p) / 8)
 			text-decoration: none
 			vertical-align: middle
 			width: auto

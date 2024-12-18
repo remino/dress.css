@@ -1,58 +1,58 @@
 
 :root
-	--sc-bg: rgb(255 255 255)
-	--sc-bg-2: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 5%)
-	--sc-bg-3: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 10%)
-	--sc-fg: rgb(0 0 0)
+	--dc-bg: rgb(255 255 255)
+	--dc-bg-2: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 5%)
+	--dc-bg-3: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 10%)
+	--dc-fg: rgb(0 0 0)
 
-	--sc-lk: hsl(212 100% 44%)
-	--sc-lk-h: hsl(212 97% 34%)
-	--sc-lk-v: hsl(270 100% 46%)
-	--sc-lk-a: hsl(320 100% 48%)
-	--sc-lk-tx: hsl(0 0% 100%)
-	--sc-bt-1: hsl(212 100% 40%)
-	--sc-bt-1-h: hsl(212 100% 47.1%)
-	--sc-bt-1-a: hsl(212 97% 36%)
-	--sc-bt-1-tx: var(--sc-bg)
-	--sc-bt-2: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 10%)
-	--sc-bt-2-h: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 15%)
-	--sc-bt-2-tx: var(--sc-fg)
-	--sc-ac: hsl(167 100% 54% / 60%)
-	--sc-ac-tx: hsl(187 71% 16%)
+	--dc-lk: hsl(212 100% 44%)
+	--dc-lk-h: hsl(212 97% 34%)
+	--dc-lk-v: hsl(270 100% 46%)
+	--dc-lk-a: hsl(320 100% 48%)
+	--dc-lk-tx: hsl(0 0% 100%)
+	--dc-bt-1: hsl(212 100% 40%)
+	--dc-bt-1-h: hsl(212 100% 47.1%)
+	--dc-bt-1-a: hsl(212 97% 36%)
+	--dc-bt-1-tx: var(--dc-bg)
+	--dc-bt-2: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 10%)
+	--dc-bt-2-h: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 15%)
+	--dc-bt-2-tx: var(--dc-fg)
+	--dc-ac: hsl(167 100% 54% / 60%)
+	--dc-ac-tx: hsl(187 71% 16%)
 
 	// Main (Body) Padding
-	--sc-mp: calc(var(--sc-lh) * 2rem)
+	--dc-mp: calc(var(--dc-lh) * 2rem)
 	// Main (Body) Width: Includes padding
-	--sc-mw: 50rem
+	--dc-mw: 50rem
 
-	--sc-bs: 1px
-	--sc-br: 0.25rem
-	--sc-m-f: 1rem
-	--sc-m-v: calc(var(--sc-lh) * var(--sc-m-f))
-	--sc-p-f: 1rem
-	--sc-p: calc(var(--sc-lh) * var(--sc-p-f) - var(--sc-bs))
-	--sc-m-t: var(--sc-m-v)
-	--sc-m-b: var(--sc-m-v)
+	--dc-bs: 1px
+	--dc-br: 0.25rem
+	--dc-m-f: 1rem
+	--dc-m-v: calc(var(--dc-lh) * var(--dc-m-f))
+	--dc-p-f: 1rem
+	--dc-p: calc(var(--dc-lh) * var(--dc-p-f) - var(--dc-bs))
+	--dc-m-t: var(--dc-m-v)
+	--dc-m-b: var(--dc-m-v)
 
-	--sc-fs: clamp(16px, 1.2vmin, 22px)
-	--sc-ff: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif
-	--sc-ff-mono: ui-monospace, Menlo, Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace
-	--sc-lh: 1.6
-	--sc-ts: 2
-	--sc-cs: 0.9
+	--dc-fs: clamp(16px, 1.2vmin, 22px)
+	--dc-ff: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif
+	--dc-ff-mono: ui-monospace, Menlo, Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace
+	--dc-lh: 1.6
+	--dc-ts: 2
+	--dc-cs: 0.9
 
 	@media (prefers-color-scheme: dark)
-		--sc-bg: rgb(0 0 0)
-		--sc-fg: rgb(255 255 255)
-		--sc-bg-2: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 15%)
-		--sc-bg-3: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 30%)
+		--dc-bg: rgb(0 0 0)
+		--dc-fg: rgb(255 255 255)
+		--dc-bg-2: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 15%)
+		--dc-bg-3: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 30%)
 
-		--sc-lk: hsl(212 100% 60%)
-		--sc-lk-v: hsl(270 100% 64%)
-		--sc-lk-h: hsl(212 100% 48%)
-		--sc-lk-a: hsl(320 100% 64%)
-		--sc-bt-1-tx: var(--sc-fg)
-		--sc-bt-2: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 30%)
-		--sc-bt-2-h: color-mix(in srgb, var(--sc-bg), var(--sc-fg) 20%)
-		--sc-ac: hsl(167 100% 63% / 50%)
-		--sc-ac-tx: rgb(var(--sc-fg-rgb))
+		--dc-lk: hsl(212 100% 60%)
+		--dc-lk-v: hsl(270 100% 64%)
+		--dc-lk-h: hsl(212 100% 48%)
+		--dc-lk-a: hsl(320 100% 64%)
+		--dc-bt-1-tx: var(--dc-fg)
+		--dc-bt-2: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 30%)
+		--dc-bt-2-h: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 20%)
+		--dc-ac: hsl(167 100% 63% / 50%)
+		--dc-ac-tx: rgb(var(--dc-fg-rgb))

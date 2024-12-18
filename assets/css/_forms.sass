@@ -1,8 +1,8 @@
 %input-block
-	line-height: var(--sc-lh)
-	margin-block: calc(var(--sc-m-v) / 4)
-	padding-block: calc(var(--sc-m-v) / 4 - var(--sc-bs))
-	padding-inline: calc(var(--sc-m-v) / 2)
+	line-height: var(--dc-lh)
+	margin-block: calc(var(--dc-m-v) / 4)
+	padding-block: calc(var(--dc-m-v) / 4 - var(--dc-bs))
+	padding-inline: calc(var(--dc-m-v) / 2)
 
 %cursor-pointer
 	cursor: pointer
@@ -18,7 +18,7 @@ button,
 input,
 select,
 textarea
-	border-radius: var(--sc-br)
+	border-radius: var(--dc-br)
 	font-size: 1rem
 
 a[role='button'],
@@ -29,52 +29,52 @@ input[type='submit']
 	@extend %cursor-pointer
 	@extend %input-block
 	appearance: none
-	border-radius: var(--sc-br)
+	border-radius: var(--dc-br)
 	border: 0
-	padding-block: calc(var(--sc-m-v) / 4)
+	padding-block: calc(var(--dc-m-v) / 4)
 
 	&:has(+ &)
-		margin-inline-end: calc(var(--sc-m-v) / 2)
+		margin-inline-end: calc(var(--dc-m-v) / 2)
 
 a[role='button'],
 button[type='submit'],
 input[type='submit']
-	background: var(--sc-bt-1)
-	color: var(--sc-bt-1-tx)
+	background: var(--dc-bt-1)
+	color: var(--dc-bt-1-tx)
 
 	&:not([disabled])
 		&:focus, &:hover
-			background: var(--sc-bt-1-h)
+			background: var(--dc-bt-1-h)
 
 		&:active
-			background: var(--sc-bt-1-a)
+			background: var(--dc-bt-1-a)
 
 button,
 html,
 input,
 select
-	font-family: var(--sc-ff)
+	font-family: var(--dc-ff)
 
 button,
 input[type='button'],
 input[type='reset']
-	background: var(--sc-bt-2)
-	color: var(--sc-bt-2-tx)
+	background: var(--dc-bt-2)
+	color: var(--dc-bt-2-tx)
 
 	&:not([disabled])
 		&:focus, &:hover
-			background: var(--sc-bt-2-h)
+			background: var(--dc-bt-2-h)
 
 		&:active
-			background: var(--sc-bt-2)
+			background: var(--dc-bt-2)
 
 fieldset
-	background: var(--sc-bg-2)
-	border: var(--sc-bs) solid var(--sc-bg-3)
-	border-radius: var(--sc-br)
+	background: var(--dc-bg-2)
+	border: var(--dc-bs) solid var(--dc-bg-3)
+	border-radius: var(--dc-br)
 	margin-inline: 0
-	padding-block: var(--sc-p) calc(var(--sc-m-v) / 2 * 3 - var(--sc-bs))
-	padding-inline: var(--sc-p)
+	padding-block: var(--dc-p) calc(var(--dc-m-v) / 2 * 3 - var(--dc-bs))
+	padding-inline: var(--dc-p)
 
 	> legend + *
 		margin-block-start: 0
@@ -87,18 +87,18 @@ select,
 textarea
 	@extend %input-block
 	appearance: none
-	background: var(--sc-bg-2)
-	border: var(--sc-bs) solid var(--sc-bg-3)
-	border-radius: var(--sc-br)
+	background: var(--dc-bg-2)
+	border: var(--dc-bs) solid var(--dc-bg-3)
+	border-radius: var(--dc-br)
 	box-sizing: border-box
-	color: var(--sc-fg)
+	color: var(--dc-fg)
 
 input[type="checkbox"],
 input[type="radio"]
 	appearance: none
 	aspect-ratio: 1
-	background: var(--sc-bg-2)
-	border: solid var(--sc-bs) var(--sc-bg-3)
+	background: var(--dc-bg-2)
+	border: solid var(--dc-bs) var(--dc-bg-3)
 	display: inline-block
 	height: auto
 	margin: 0
@@ -107,17 +107,17 @@ input[type="radio"]
 	width: 1rem
 
 	&:checked
-		background-color: var(--sc-bt-1)
+		background-color: var(--dc-bt-1)
 		background-position: center
 		background-repeat: no-repeat
 		background-size: 80%
-		border-color: var(--sc-bt-1)
+		border-color: var(--dc-bt-1)
 
 	&:not([disabled])
 		cursor: pointer
 
 input[type="checkbox"]
-	border-radius: var(--sc-br)
+	border-radius: var(--dc-br)
 
 	&:checked
 		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>')
@@ -141,7 +141,7 @@ label
 		display: block
 
 	small
-		line-height: calc(var(--sc-lh) * 1rem)
+		line-height: calc(var(--dc-lh) * 1rem)
 
 	&:has([disabled])
 		cursor: not-allowed
@@ -154,11 +154,11 @@ label
 	&:has(input[type='checkbox'], input[type='radio'])
 		align-items: center
 		flex-flow: row
-		gap: calc(var(--sc-p) / 2)
+		gap: calc(var(--dc-p) / 2)
 		justify-content: flex-start
 
 	&:has(input:nth-of-type(2))
-		column-gap: calc(var(--sc-m-v) / 4)
+		column-gap: calc(var(--dc-m-v) / 4)
 		flex-flow: row
 		flex-wrap: wrap
 
@@ -178,11 +178,11 @@ select
 	background-position: right center
 	background-repeat: no-repeat
 	background-size: auto 100%
-	padding-inline-end: calc(var(--sc-m-v) / 2 + 24px)
+	padding-inline-end: calc(var(--dc-m-v) / 2 + 24px)
 
 	@media (prefers-color-scheme: dark)
 		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 12 7 15 10"/><polyline points="9 14 12 17 15 14"/></svg>')
 
 textarea
-	margin-block: calc(var(--sc-m-v) / 2)
-	padding: var(--sc-p)
+	margin-block: calc(var(--dc-m-v) / 2)
+	padding: var(--dc-p)

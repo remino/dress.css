@@ -1,17 +1,17 @@
 @keyframes sc-target-fade
 	from
 		text-decoration: underline
-		text-decoration-thickness: calc(var(--sc-bs) * 4)
-		text-decoration-color: var(--sc-ac)
-		text-underline-offset: calc(var(--sc-bs) * 4)
+		text-decoration-thickness: calc(var(--dc-bs) * 4)
+		text-decoration-color: var(--dc-ac)
+		text-underline-offset: calc(var(--dc-bs) * 4)
 	to
 		text-decoration: underline
-		text-decoration-thickness: calc(var(--sc-bs) * 4)
+		text-decoration-thickness: calc(var(--dc-bs) * 4)
 		text-decoration-color: rgba(0 0 0 / 0)
-		text-underline-offset: calc(var(--sc-bs) * 4)
+		text-underline-offset: calc(var(--dc-bs) * 4)
 
 h1, h2, h3, h4, h5, h6
-	--sc-m-t: calc(var(--sc-m-v) * 2)
+	--dc-m-t: calc(var(--dc-m-v) * 2)
 
 	&:target
 		animation: sc-target-fade 2s 1s ease-out backwards
@@ -20,11 +20,11 @@ h1, h2, h3, h4, h5, h6
 		margin-block-start: 0
 
 h1
-	line-height: calc(var(--sc-lh) * 2rem)
+	line-height: calc(var(--dc-lh) * 2rem)
 	font-size: 2rem
 
 h2, h3, h4, h5, h6
-	line-height: calc(var(--sc-lh) * 1rem)
+	line-height: calc(var(--dc-lh) * 1rem)
 
 h2
 	font-size: 1.5rem
