@@ -3,7 +3,7 @@ import { dirname } from 'path'
 import { chromium } from 'playwright'
 import { fileURLToPath, pathToFileURL } from 'url'
 
-test('visual regression', async ({ page }) => {
+test('visual regression of all styled elements', async ({ page }) => {
 	const thisFile = fileURLToPath(import.meta.url)
 	const snapshotsDir = `${dirname(thisFile)}/snapshots`
 
