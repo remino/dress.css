@@ -9,4 +9,5 @@ build/
 deploy/
 dist/
 node_modules/
+test-results/
 /*.tgz

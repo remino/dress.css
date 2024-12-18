@@ -3,6 +3,7 @@
 	"devDependencies": {
 		"@codemirror/lang-html": "^6.4.9",
 		"@lopatnov/rollup-plugin-uglify": "^2.1.5",
+		"@playwright/test": "^1.49.1",
 		"@remino/reslib": "git+https://github.com/remino/reslib.git#v0.3.34",
 		"@rollup/plugin-commonjs": "^24.1.0",
 		"@rollup/plugin-node-resolve": "^15.2.3",
@@ -47,7 +48,9 @@
 		"css:sass": "npx sass --no-source-map --load-path=node_modules/ assets/css/:.build/sass-css/",
 		"css:watch": "npm-watch css:build",
 		"js:build": "npx rollup --config rollup.config.js",
-		"js:watch": "npx rollup --config rollup.config.js --watch"
+		"js:watch": "npx rollup --config rollup.config.js --watch",
+		"test": "npm run test:visual",
+		"test:visual": "npx playwright test"
 	},
 	"type": "module",
 	"version": "2.0.0",
