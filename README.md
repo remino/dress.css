@@ -139,11 +139,10 @@ npm t
 
 ### Web Site Response Testing
 
-Using the
-[Bash Automated Testing System (Bats)](https://github.com/bats-core/bats-core):
+Using the [Hurl](https://hurl.dev/):
 
 ```sh
-bats tests
+hurl --test tests/responses.hurl
 ```
 
 ---
