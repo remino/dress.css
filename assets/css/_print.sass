@@ -34,6 +34,14 @@
 		padding-block: calc(var(--dc-m-v) / 4 - var(--dc-bs) * 2)
 		padding-inline: calc(var(--dc-m-v) / 2 - var(--dc-bs))
 
+	footer, header
+		nav
+			menu
+				display: none
+
 	mark
 		border: 1px solid
 		color: inherit
+
+	nav:has(a[href="#"]):not(:has(a:not([href="#"])))
+		display: none
