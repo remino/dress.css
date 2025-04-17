@@ -50,7 +50,8 @@
 		"js:build": "npx rollup --config rollup.config.js",
 		"js:watch": "npx rollup --config rollup.config.js --watch",
 		"test": "npm run test:visual",
-		"test:visual": "npx playwright test"
+		"test:visual": "playwright test",
+		"test:visual:update": "playwright test --update-snapshots"
 	},
 	"type": "module",
 	"version": "2.0.0",
