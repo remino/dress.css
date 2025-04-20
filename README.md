@@ -31,6 +31,11 @@ By Rémino Rem <https://remino.net/>
 Introducing **<mark>dress.css</mark>**, a minimalist class-less stylesheet that
 makes your pages look good only by writing HTML.
 
+In fashion, the Little White Dress (LWD) is a go-to outfit for daytime, while a
+[Little Black Dress (LBD)](https://en.wikipedia.org/wiki/Little_black_dress) is
+a timeless choice for evenings. Practical and stylish defaults. This is the CSS
+version of those for webpages.
+
 This simple stylesheet was born from three things:
 
 - How the rendering of HTML without CSS hasn't changed much since the first Web
