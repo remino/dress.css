@@ -37,17 +37,16 @@
 	--dress-bs: 1px
 	--dress-br: 0.25rem
 
+	// 1rch unit set in a variable as not all browsers support the rch unit yet
+	--dress-1rch: 1rch
+
 	// Block (vertical) margin
 	--dress-m-b: 1rlh
-	--dress-m-i: 2ch
-	// Override with 2rch as rch is not yet supported in Firefox
-	--dress-m-i: 2rch
+	--dress-m-i: calc(var(--dress-1rch) * 2)
 
 	// Block (vertical) and inline (horizontal) padding
 	--dress-p-b: calc(1rlh - var(--dress-bs))
-	--dress-p-i: calc(2ch - var(--dress-bs))
-	// Override with 2rch as rch is not yet supported in Firefox
-	--dress-p-i: calc(2rch - var(--dress-bs))
+	--dress-p-i: calc(var(--dress-1rch) * 2 - var(--dress-bs))
 
 	// Block start (top) margin
 	--dress-m-bs: var(--dress-m-b)
@@ -93,3 +92,7 @@
 		// Accent background and text colours
 		--dress-ac: hsl(167 100% 63% / 50%)
 		--dress-ac-tx: rgb(var(--dress-fg-rgb))
+
+	// Override with 1ch as rch is not yet supported in Firefox.
+	@supports (-moz-appearance: none)
+		--dress-1rch: 1ch
