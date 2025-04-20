@@ -1,58 +1,95 @@
-
 :root
+	// Background & foreground colours
 	--dc-bg: rgb(255 255 255)
 	--dc-bg-2: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 5%)
 	--dc-bg-3: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 10%)
 	--dc-fg: rgb(0 0 0)
 
+	// Link colours for normal, hover, visited, and active
 	--dc-lk: hsl(212 100% 44%)
 	--dc-lk-h: hsl(212 97% 34%)
 	--dc-lk-v: hsl(270 100% 46%)
 	--dc-lk-a: hsl(320 100% 48%)
 	--dc-lk-tx: hsl(0 0% 100%)
+
+	// Primary button colours for normal, hover, active backgrounds, and text
 	--dc-bt-1: hsl(212 100% 40%)
 	--dc-bt-1-h: hsl(212 100% 47.1%)
 	--dc-bt-1-a: hsl(212 97% 36%)
 	--dc-bt-1-tx: var(--dc-bg)
+
+	// Secondary button colours
 	--dc-bt-2: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 10%)
 	--dc-bt-2-h: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 15%)
 	--dc-bt-2-tx: var(--dc-fg)
+
+	// Accent background and text colours
 	--dc-ac: hsl(167 100% 54% / 60%)
 	--dc-ac-tx: hsl(187 71% 16%)
 
-	// Main (Body) Padding
+	// Main (<body>) Padding
 	--dc-mp: calc(var(--dc-lh) * 2rem)
-	// Main (Body) Width: Includes padding
+
+	// Main (<body>) Width: Includes padding
 	--dc-mw: 50rem
 
+	// Border size
 	--dc-bs: 1px
 	--dc-br: 0.25rem
+
+	// Margin factor
 	--dc-m-f: 1rem
+
+	// Vertical margin
 	--dc-m-v: calc(var(--dc-lh) * var(--dc-m-f))
+
+	// Padding factor
 	--dc-p-f: 1rem
+
+	// Padding size
 	--dc-p: calc(var(--dc-lh) * var(--dc-p-f) - var(--dc-bs))
+
+	// Top margin
 	--dc-m-t: var(--dc-m-v)
+
+	// Bottom margin
 	--dc-m-b: var(--dc-m-v)
 
+	// Font size
 	--dc-fs: clamp(16px, 1.2vmin, 22px)
+
+	// Font stacks for normal text and monospace
 	--dc-ff: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif
 	--dc-ff-mono: ui-monospace, Menlo, Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace
+
+	// Line height
 	--dc-lh: 1.6
+
+	// Tab size
 	--dc-ts: 2
+
+	// Code size relative to main font size (1rem)
 	--dc-cs: 0.9
 
+	// Overrides for dark mode
 	@media (prefers-color-scheme: dark)
+		// Background & foreground colours
 		--dc-bg: rgb(0 0 0)
 		--dc-fg: rgb(255 255 255)
 		--dc-bg-2: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 15%)
 		--dc-bg-3: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 30%)
 
+		// Link colours for normal, hover, visited, and active
 		--dc-lk: hsl(212 100% 60%)
 		--dc-lk-v: hsl(270 100% 64%)
 		--dc-lk-h: hsl(212 100% 48%)
 		--dc-lk-a: hsl(320 100% 64%)
+
+		// Primary and secondary button colours
 		--dc-bt-1-tx: var(--dc-fg)
 		--dc-bt-2: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 30%)
 		--dc-bt-2-h: color-mix(in srgb, var(--dc-bg), var(--dc-fg) 20%)
+
+		// Accent background and text colours
 		--dc-ac: hsl(167 100% 63% / 50%)
 		--dc-ac-tx: rgb(var(--dc-fg-rgb))
