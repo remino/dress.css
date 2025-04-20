@@ -1,8 +1,8 @@
 %input-block
 	line-height: var(--dress-lh)
-	margin-block: calc(var(--dress-m-v) / 4)
-	padding-block: calc(var(--dress-m-v) / 4 - var(--dress-bs))
-	padding-inline: calc(var(--dress-m-v) / 2)
+	margin-block: calc(var(--dress-m-b) / 4)
+	padding-block: calc(var(--dress-m-b) / 4 - var(--dress-bs))
+	padding-inline: calc(var(--dress-m-b) / 2)
 
 %cursor-pointer
 	cursor: pointer
@@ -31,10 +31,10 @@ input[type='submit']
 	appearance: none
 	border-radius: var(--dress-br)
 	border: 0
-	padding-block: calc(var(--dress-m-v) / 4)
+	padding-block: calc(var(--dress-m-b) / 4)
 
 	&:has(+ &)
-		margin-inline-end: calc(var(--dress-m-v) / 2)
+		margin-inline-end: calc(var(--dress-m-b) / 2)
 
 a[role='button'],
 button[type='submit'],
@@ -73,7 +73,7 @@ fieldset
 	border: var(--dress-bs) solid var(--dress-bg-3)
 	border-radius: var(--dress-br)
 	margin-inline: 0
-	padding-block: var(--dress-p) calc(var(--dress-m-v) / 2 * 3 - var(--dress-bs))
+	padding-block: var(--dress-p) calc(var(--dress-m-b) / 2 * 3 - var(--dress-bs))
 	padding-inline: var(--dress-p)
 
 	> legend + *
@@ -158,7 +158,7 @@ label
 		justify-content: flex-start
 
 	&:has(input:nth-of-type(2))
-		column-gap: calc(var(--dress-m-v) / 4)
+		column-gap: calc(var(--dress-m-b) / 4)
 		flex-flow: row
 		flex-wrap: wrap
 
@@ -178,11 +178,11 @@ select
 	background-position: right center
 	background-repeat: no-repeat
 	background-size: auto 100%
-	padding-inline-end: calc(var(--dress-m-v) / 2 + 24px)
+	padding-inline-end: calc(var(--dress-m-b) / 2 + 24px)
 
 	@media (prefers-color-scheme: dark)
 		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 12 7 15 10"/><polyline points="9 14 12 17 15 14"/></svg>')
 
 textarea
-	margin-block: calc(var(--dress-m-v) / 2)
+	margin-block: calc(var(--dress-m-b) / 2)
 	padding: var(--dress-p)

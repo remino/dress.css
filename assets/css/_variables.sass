@@ -40,8 +40,8 @@
 	// Margin factor
 	--dress-m-f: 1rem
 
-	// Vertical margin
-	--dress-m-v: calc(var(--dress-lh) * var(--dress-m-f))
+	// Block (vertical) margin
+	--dress-m-b: calc(var(--dress-lh) * var(--dress-m-f))
 
 	// Padding factor
 	--dress-p-f: 1rem
@@ -49,11 +49,11 @@
 	// Padding size
 	--dress-p: calc(var(--dress-lh) * var(--dress-p-f) - var(--dress-bs))
 
-	// Top margin
-	--dress-m-t: var(--dress-m-v)
+	// Block start (top) margin
+	--dress-m-bs: var(--dress-m-b)
 
-	// Bottom margin
-	--dress-m-b: var(--dress-m-v)
+	// Block end (bottom) margin
+	--dress-m-be: var(--dress-m-b)
 
 	// Font size
 	--dress-fs: clamp(16px, 1.2vmin, 22px)

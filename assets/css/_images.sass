@@ -17,10 +17,10 @@ figure
 		box-sizing: border-box
 		display: flex
 		flex-flow: row wrap
-		gap: var(--dress-m-v)
-		inline-size: calc(100vi - var(--dress-m-v) * 2)
+		gap: var(--dress-m-b)
+		inline-size: calc(100vi - var(--dress-m-b) * 2)
 		justify-content: center
-		margin-inline: calc(-50vi + 50% + var(--dress-m-v))
+		margin-inline: calc(-50vi + 50% + var(--dress-m-b))
 
 		> figure
 			flex: 1 1 calc(var(--dress-mw) / 2)
@@ -28,21 +28,21 @@ figure
 			max-inline-size: calc(var(--dress-mw) / 6 * 7)
 
 			> :first-child
-				--dress-m-t: 0
+				--dress-m-bs: 0
 
 			> :last-child
-				--dress-m-b: 0
+				--dress-m-be: 0
 
 		// make top figcaption full width
 		> figcaption
-			--dress-m-b: 0
-			--dress-m-t: 0
+			--dress-m-be: 0
+			--dress-m-bs: 0
 			box-sizing: border-box
 			inline-size: var(--dress-mw)
 			flex-basis: 100%
 			flex-grow: 1
 			flex-shrink: 0
-			padding-inline: calc((100vi - var(--dress-mw) - var(--dress-m-v) * 2) / 2)
+			padding-inline: calc((100vi - var(--dress-mw) - var(--dress-m-b) * 2) / 2)
 
 video
 	display: block

@@ -39,8 +39,8 @@ svg,
 table,
 ul,
 video
-	margin-block-start: var(--dress-m-t)
-	margin-block-end: var(--dress-m-b)
+	margin-block-start: var(--dress-m-bs)
+	margin-block-end: var(--dress-m-be)
 
 blockquote, details, pre
 	background: var(--dress-bg-2)
@@ -53,14 +53,14 @@ blockquote
 	border-inline-start: var(--dress-border-left) solid var(--dress-bg-3)
 	margin-inline-start: 0
 	margin-inline-end: 0
-	padding-block: var(--dress-m-t) var(--dress-m-b)
+	padding-block: var(--dress-m-bs) var(--dress-m-be)
 	padding-inline-start: calc(var(--dress-p) - var(--dress-border-left))
 
 	> :first-child
-		--dress-m-t: 0
+		--dress-m-bs: 0
 
 	> :last-child
-		--dress-m-b: 0
+		--dress-m-be: 0
 
 details, pre
 	border: var(--dress-bs) solid var(--dress-bg-3)
@@ -74,8 +74,8 @@ details
 		padding-block-end: 0
 
 hr
-	--dress-m-b: calc((var(--dress-m-v) * 2) - var(--dress-bs))
-	--dress-m-t: calc(var(--dress-m-v) * 2)
+	--dress-m-be: calc((var(--dress-m-b) * 2) - var(--dress-bs))
+	--dress-m-bs: calc(var(--dress-m-b) * 2)
 	border: 0
 	border-block-start: var(--dress-bs) solid var(--dress-bg-3)
 
@@ -84,5 +84,5 @@ summary
 	font-weight: bold
 	padding-block: calc(var(--dress-p) / 2)
 	padding-inline: var(--dress-p)
-	margin-block-end: calc(var(--dress-m-v) * -0.5)
-	margin-inline: calc(var(--dress-m-v) * -1)
+	margin-block-end: calc(var(--dress-m-b) * -0.5)
+	margin-inline: calc(var(--dress-m-b) * -1)
