@@ -1,5 +1,5 @@
 {
-	"description": "The little black dress of CSS",
+	"description": "The little dress of CSS",
 	"devDependencies": {
 		"@codemirror/lang-html": "^6.4.9",
 		"@lopatnov/rollup-plugin-uglify": "^2.1.5",

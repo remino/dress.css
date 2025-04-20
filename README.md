@@ -2,7 +2,7 @@
 
 # dress.css
 
-The little black dress of CSS.
+The little dress of CSS.
 
 [Site](https://remino.net/dress.css/) |
 [Code Repo](https://github.com/remino/dress.css) |
