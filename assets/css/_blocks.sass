@@ -39,50 +39,50 @@ svg,
 table,
 ul,
 video
-	margin-block-start: var(--dc-m-t)
-	margin-block-end: var(--dc-m-b)
+	margin-block-start: var(--dress-m-t)
+	margin-block-end: var(--dress-m-b)
 
 blockquote, details, pre
-	background: var(--dc-bg-2)
+	background: var(--dress-bg-2)
 	box-sizing: border-box
-	padding-block: var(--dc-p)
-	padding-inline: var(--dc-p)
+	padding-block: var(--dress-p)
+	padding-inline: var(--dress-p)
 
 blockquote
-	--dc-border-left: calc(var(--dc-bs) * 4)
-	border-inline-start: var(--dc-border-left) solid var(--dc-bg-3)
+	--dress-border-left: calc(var(--dress-bs) * 4)
+	border-inline-start: var(--dress-border-left) solid var(--dress-bg-3)
 	margin-inline-start: 0
 	margin-inline-end: 0
-	padding-block: var(--dc-m-t) var(--dc-m-b)
-	padding-inline-start: calc(var(--dc-p) - var(--dc-border-left))
+	padding-block: var(--dress-m-t) var(--dress-m-b)
+	padding-inline-start: calc(var(--dress-p) - var(--dress-border-left))
 
 	> :first-child
-		--dc-m-t: 0
+		--dress-m-t: 0
 
 	> :last-child
-		--dc-m-b: 0
+		--dress-m-b: 0
 
 details, pre
-	border: var(--dc-bs) solid var(--dc-bg-3)
-	border-radius: var(--dc-br)
+	border: var(--dress-bs) solid var(--dress-bg-3)
+	border-radius: var(--dress-br)
 
 details
-	padding-block: calc(var(--dc-p) / 2)
+	padding-block: calc(var(--dress-p) / 2)
 	padding-block-start: 0
 
 	&[open]
 		padding-block-end: 0
 
 hr
-	--dc-m-b: calc((var(--dc-m-v) * 2) - var(--dc-bs))
-	--dc-m-t: calc(var(--dc-m-v) * 2)
+	--dress-m-b: calc((var(--dress-m-v) * 2) - var(--dress-bs))
+	--dress-m-t: calc(var(--dress-m-v) * 2)
 	border: 0
-	border-block-start: var(--dc-bs) solid var(--dc-bg-3)
+	border-block-start: var(--dress-bs) solid var(--dress-bg-3)
 
 summary
 	cursor: pointer
 	font-weight: bold
-	padding-block: calc(var(--dc-p) / 2)
-	padding-inline: var(--dc-p)
-	margin-block-end: calc(var(--dc-m-v) * -0.5)
-	margin-inline: calc(var(--dc-m-v) * -1)
+	padding-block: calc(var(--dress-p) / 2)
+	padding-inline: var(--dress-p)
+	margin-block-end: calc(var(--dress-m-v) * -0.5)
+	margin-inline: calc(var(--dress-m-v) * -1)
