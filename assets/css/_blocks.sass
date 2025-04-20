@@ -45,8 +45,8 @@ video
 blockquote, details, pre
 	background: var(--dress-bg-2)
 	box-sizing: border-box
-	padding-block: var(--dress-p)
-	padding-inline: var(--dress-p)
+	padding-block: var(--dress-p-b)
+	padding-inline: var(--dress-p-b)
 
 blockquote
 	--dress-border-left: calc(var(--dress-bs) * 4)
@@ -54,7 +54,7 @@ blockquote
 	margin-inline-start: 0
 	margin-inline-end: 0
 	padding-block: var(--dress-m-bs) var(--dress-m-be)
-	padding-inline-start: calc(var(--dress-p) - var(--dress-border-left))
+	padding-inline-start: calc(var(--dress-p-b) - var(--dress-border-left))
 
 	> :first-child
 		--dress-m-bs: 0
@@ -67,7 +67,7 @@ details, pre
 	border-radius: var(--dress-br)
 
 details
-	padding-block: calc(var(--dress-p) / 2)
+	padding-block: calc(var(--dress-p-b) / 2)
 	padding-block-start: 0
 
 	&[open]
@@ -82,7 +82,7 @@ hr
 summary
 	cursor: pointer
 	font-weight: bold
-	padding-block: calc(var(--dress-p) / 2)
-	padding-inline: var(--dress-p)
+	padding-block: calc(var(--dress-p-b) / 2)
+	padding-inline: var(--dress-p-b)
 	margin-block-end: calc(var(--dress-m-b) * -0.5)
 	margin-inline: calc(var(--dress-m-b) * -1)

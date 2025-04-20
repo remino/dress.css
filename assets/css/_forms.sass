@@ -73,8 +73,8 @@ fieldset
 	border: var(--dress-bs) solid var(--dress-bg-3)
 	border-radius: var(--dress-br)
 	margin-inline: 0
-	padding-block: var(--dress-p) calc(var(--dress-m-b) / 2 * 3 - var(--dress-bs))
-	padding-inline: var(--dress-p)
+	padding-block: var(--dress-p-b) calc(var(--dress-m-b) / 2 * 3 - var(--dress-bs))
+	padding-inline: var(--dress-p-b)
 
 	> legend + *
 		margin-block-start: 0
@@ -154,7 +154,7 @@ label
 	&:has(input[type='checkbox'], input[type='radio'])
 		align-items: center
 		flex-flow: row
-		gap: calc(var(--dress-p) / 2)
+		gap: calc(var(--dress-p-b) / 2)
 		justify-content: flex-start
 
 	&:has(input:nth-of-type(2))
@@ -185,4 +185,4 @@ select
 
 textarea
 	margin-block: calc(var(--dress-m-b) / 2)
-	padding: var(--dress-p)
+	padding: var(--dress-p-b)
