@@ -42,7 +42,11 @@ For legibility, code samples were highlighted using [Rouge](https://github.com/r
 
 **In links wrapping images** in a `<figure>`, the icon will not show.
 
-**In print,** the URL of the link will be displayed instead of the icon.
+🖨️ **In print,** the URL of the link will be displayed instead of the icon:
+
+<blockquote>
+Shop Now<small>&lt;https://example.com/shop/&gt;</small>
+</blockquote>
 
 <nav markdown=1>
 [Back to top](#)
@@ -135,9 +139,9 @@ This information is related to the main content, but not essential.
 
 ---
 
-### Nav `<nav>` {#nav}
+### Navigation Section `<nav>` {#nav}
 
-There is usually no styling applied on `<nav>`.
+There is no styling on screen applied on `<nav>`.
 
 ```html
 <nav>
@@ -145,10 +149,32 @@ There is usually no styling applied on `<nav>`.
 </nav>
 ```
 
-**In print**, however, to reduce visual clutter on page:
+🖨️ **In print**, however, some style is applied to reduce clutter on the page:
 
-- They are invisible when they only contain a link to a page's anchor: `<a href="#example">Example</a>`
 - When used in `<header>` or `<footer>`, their `<menu>` is invisible.
+- They are invisible when they only contain a link to a page's anchor.
+
+```html
+<header>
+	<nav>
+		<!--
+			This <menu> will be invisible in print
+			because it is in a <nav> in a header or footer.
+		-->
+		<menu>
+			<li><a href="/">Home</a></li>
+		</menu>
+	</nav>
+</header>
+
+<!--
+	This <nav> will be invisible in print
+	because it only has an anchor link.
+-->
+<nav>
+	<a href="#example">Example section</a>
+</nav>
+```
 
 <nav markdown=1>
 [Back to top](#)
