@@ -39,9 +39,15 @@
 
 	// Block (vertical) margin
 	--dress-m-b: 1rlh
+	--dress-m-i: 2ch
+	// Override with 2rch as rch is not yet supported in Firefox
+	--dress-m-i: 2rch
 
 	// Block (vertical) and inline (horizontal) padding
 	--dress-p-b: calc(1rlh - var(--dress-bs))
+	--dress-p-i: calc(2ch - var(--dress-bs))
+	// Override with 2rch as rch is not yet supported in Firefox
+	--dress-p-i: calc(2rch - var(--dress-bs))
 
 	// Block start (top) margin
 	--dress-m-bs: var(--dress-m-b)

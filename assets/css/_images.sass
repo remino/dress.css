@@ -1,5 +1,5 @@
 figure
-	margin-inline: calc(var(--dress-lh) * 1.5rem)
+	margin-inline: calc(var(--dress-p-i) * 2)
 
 	img, object, svg, video
 		block-size: auto
@@ -18,9 +18,9 @@ figure
 		display: flex
 		flex-flow: row wrap
 		gap: var(--dress-m-b)
-		inline-size: calc(100vi - var(--dress-m-b) * 2)
+		inline-size: calc(100vi - var(--dress-m-i) * 2)
 		justify-content: center
-		margin-inline: calc(-50vi + 50% + var(--dress-m-b))
+		margin-inline: calc(-50vi + 50% + var(--dress-m-i))
 
 		> figure
 			flex: 1 1 calc(var(--dress-mw) / 2)
@@ -42,7 +42,7 @@ figure
 			flex-basis: 100%
 			flex-grow: 1
 			flex-shrink: 0
-			padding-inline: calc((100vi - var(--dress-mw) - var(--dress-m-b) * 2) / 2)
+			padding-inline: calc((100vi - var(--dress-mw) - var(--dress-m-i) * 2) / 2)
 
 video
 	display: block
