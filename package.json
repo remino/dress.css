@@ -22,7 +22,7 @@
 		"postcss-cli": "^10.1.0",
 		"postcss-load-config": "^4.0.2",
 		"postcss-value-parser": "^4.2.0",
-		"rollup": "^3.29.4",
+		"rollup": "^3.29.5",
 		"rollup-plugin-postcss": "^4.0.2",
 		"rollup-plugin-sass": "^1.12.22",
 		"sass": "^1.77.1",
