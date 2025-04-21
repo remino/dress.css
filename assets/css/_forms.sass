@@ -153,12 +153,12 @@ label
 
 	&:has(input[type='checkbox'], input[type='radio'])
 		align-items: center
+		column-gap: var(--dress-gap)
 		flex-flow: row
-		gap: calc(var(--dress-p-b) / 2)
 		justify-content: flex-start
 
 	&:has(input:nth-of-type(2))
-		column-gap: calc(var(--dress-m-b) / 4)
+		column-gap: var(--dress-gap)
 		flex-flow: row
 		flex-wrap: wrap
 
