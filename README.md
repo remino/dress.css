@@ -82,7 +82,9 @@ examples:
 Add the stylesheet to your HTML and write your content:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@remino/dress.css/dist/dress.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@remino/dress.css/dist/dress.css" />
 ```
 
 ### NPM
@@ -142,7 +144,7 @@ npm t
 
 ### Web Site Response Testing
 
-Using the [Hurl](https://hurl.dev/):
+Using [Hurl](https://hurl.dev/):
 
 ```sh
 hurl --test tests/responses.hurl
