@@ -90,7 +90,7 @@ Add the stylesheet to your HTML and write your content:
 Install the package from NPM:
 
 ```bash
-npm install dress.css
+npm install @remino/dress.css
 ```
 
 Then the stylesheet file should be available at
