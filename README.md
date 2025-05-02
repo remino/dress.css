@@ -82,9 +82,7 @@ examples:
 Add the stylesheet to your HTML and write your content:
 
 ```html
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/@remino/dress.css/dist/dress.css" />
+<link rel="stylesheet" href="https://unpkg.com/@remino/dress.css/dist/dress.css" />
 ```
 
 ### NPM
