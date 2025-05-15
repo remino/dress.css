@@ -48,6 +48,30 @@ For legibility, code samples were highlighted using [Rouge](https://github.com/r
 Shop Now<small>&lt;https://example.com/shop/&gt;</small>
 </blockquote>
 
+### Skip Navigation ("skipnav") `<body><a href="#…">` {#skipnav}
+
+For the accessibility of screen reader users, it's common to add a link at the very beginning of the page to skip the header and menu and go straight to the main content. It remains hidden until the user tabs to it, and it is still visible to the screen reader.
+
+When a link is the first child element of `<body>` and points to a section to the page other than `#`, it will be treated and rendered as such "skipnav" link.
+
+<blockquote>
+<a href="#main" data-disabled>Skip to main content</a>
+</blockquote>
+
+```html
+<body>
+	<!-- Skipnav link: first child of <body> and points to section on page. -->
+	<a href="#main">Skip to main navigation</a>
+
+	<header>
+		<!-- Menu -->
+	</header>
+	<main id="main">
+		<!-- ... -->
+	</main>
+</body>
+```
+
 <nav markdown=1>
 [Back to top](#)
 </nav>

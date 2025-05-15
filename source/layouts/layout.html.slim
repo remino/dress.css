@@ -9,8 +9,9 @@ html(lang="en")
 		= yield_content :head
 		= partial 'nav/htmlhead'
 	body
+		a[href="#main"] Skip to main content
 		= partial 'nav/header'
 		= partial 'header'
-		= yield
+		main#main = yield
 		= partial 'footer'
 		= partial 'nav/footer'
