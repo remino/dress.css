@@ -44,7 +44,7 @@ This simple stylesheet was born from three things:
   browser in 1991.
 - How common readers in some browsers (like the one in Safari) simplifies the
   styling the pages to focus on legibility.
-- How writing CSS for simple pages is painful or at least time-consuming.
+- How writing CSS for simple pages is dreadful or at least time-consuming.
 
 Much of this stylesheet was inspired from [_new.css_](https://newcss.net/), with
 a few changes to vertical rhythm and markup for button links, and no external
