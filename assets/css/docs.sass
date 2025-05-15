@@ -44,12 +44,24 @@ body
 			vertical-align: middle
 			margin-bottom: 12px
 
-		+ p:has(img)
-			img
-				margin: 0
+		+ main
+			p:has(img):has(+ h1)
+				img
+					display: block
+					margin: 0 auto
 
-			+ h1
-				margin-block-start: 0
+				+ h1
+					margin-block-start: 0
+					text-align: center
+
+					+ p
+						text-align: center
+
+						+ p
+							text-align: center
+
+							+ p
+								text-align: center
 
 div.highlight
 	position: relative
