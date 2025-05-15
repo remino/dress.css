@@ -94,7 +94,7 @@ npm install @remino/dress.css
 ```
 
 Then the stylesheet file should be available at
-`node_modules/dress.css/dist/dress.css`.
+`node_modules/@remino/dress.css/dist/dress.css`.
 
 Use the file in your Sass files, or include it in your CSS, etc.
 
