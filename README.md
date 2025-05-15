@@ -10,6 +10,8 @@ The little dress of CSS.
 
 By Rémino Rem <https://remino.net/>
 
+---
+
 - [Minimal style for semantic HTML](#minimal-style-for-semantic-html)
 - [Features](#features)
 - [Installation](#installation)
