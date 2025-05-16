@@ -116,7 +116,7 @@ When a link is the first child element of `<body>` and points to a section to th
 
 ## Page Sections {#sections}
 
-In **<mark>dress.css</mark>**, some special formatting is used in the header and the footer of the page to ease navigation and readability. Menu (`<menu>`) in navigation (`<nav>`) is rendered horizontally.
+In **<mark>dress.css</mark>**, some special formatting is used in the header and the footer of the page to ease navigation and readability. Menus (`<menu>`) as well as unordered lists (`<ul>`) in navigation (`<nav>`) are rendered horizontally.
 
 ### Header `<header>`
 
@@ -126,11 +126,15 @@ Some special styling is applied to the `<header>` tag. That can be seen at the [
 <header>
 	<h1>Header</h1>
 	<nav>
-		<menu>
+		<ul>
 			<li><a href="#header">Header</a></li>
 			<li><a href="#footer">Footer</a></li>
-		</menu>
+		</ul>
 	</nav>
+	<menu>
+		<li><button onclick="document.documentElement.classList.toggle('dark')">Toggle theme</button></li>
+		<li><button onclick="document.getElementById('settings').openModal()">Settings</button></li>
+	</menu>
 </header>
 ```
 
@@ -142,11 +146,15 @@ Like the `<header>` tag, some special formatting is applied to `<footer>`. That 
 <footer>
 	<p>&copy; 2024</p>
 	<nav>
-		<menu>
+		<ul>
 			<li><a href="#terms">Terms of Use</a></li>
 			<li><a href="#privacy">Privacy Policy</a></li>
-		</menu>
+		</ul>
 	</nav>
+	<menu>
+		<li><button onclick="window.print()">Print</button></li>
+		<li><button onclick="prompt('Copy URL:', location.href)">Share</button></li>
+	</menu>
 </footer>
 ```
 
