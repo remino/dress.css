@@ -33,10 +33,14 @@ a
 
 	&[download]
 		&::after
-			background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='#000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3'/></svg>")
+			background-image: var(--dress-i-dl-d)
 
 			@media (prefers-color-scheme: dark)
-				background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='#fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3'/></svg>")
+				background-image: var(--dress-i-dl-l)
+
+		&[role='button']
+			&::after
+				background-image: var(--dress-i-dl-l)
 
 	&[role='button']
 		display: inline-block
@@ -44,10 +48,14 @@ a
 
 	&[target="_blank"]
 		&::after
-			background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M14 3h7v7'/><path d='M3 10v11a1 1 0 0 0 1 1h11'/><path d='M10 14l10-10'/></svg>")
+			background-image: var(--dress-i-xln-d)
 
 			@media (prefers-color-scheme: dark)
-				background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M14 3h7v7'/><path d='M3 10v11a1 1 0 0 0 1 1h11'/><path d='M10 14l10-10'/></svg>")
+				background-image: var(--dress-i-xln-l)
+
+		&[role='button']
+			&::after
+				background-image: var(--dress-i-xln-l)
 
 body
 	> a[href^="#"]:not([href="#"]):first-child
