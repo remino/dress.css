@@ -59,7 +59,10 @@
 	--dress-m-be: var(--dress-m-b)
 
 	// Font size
-	--dress-fs: clamp(16px, 1.2vmin, 22px)
+	--dress-fs-min: 16px
+	--dress-fs-var: 1.2vmin
+	--dress-fs-max: 22px
+	--dress-fs: clamp(var(--dress-fs-min), var(--dress-fs-var), var(--dress-fs-max))
 
 	// Font stacks for normal text and monospace
 	--dress-ff: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif
