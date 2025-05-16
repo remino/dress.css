@@ -51,18 +51,15 @@ a
 
 body
 	> a[href^="#"]:not([href="#"]):first-child
-		background: #000
+		background: var(--dress-bg-2)
+		border-radius: var(--dress-br)
+		border: solid var(--dress-bs) var(--dress-bg-3)
 		color: #fff
-		left: 0
+		display: block
+		inset: calc(var(--dress-p-b) * -2) auto auto calc(var(--dress-p-i) / 2)
 		padding: calc(var(--dress-p-b) / 8) calc(var(--dress-p-i) / 2)
 		position: absolute
-		top: -40px
-		inset: calc(var(--dress-p-b) * -2) auto auto calc(var(--dress-p-i) / 2)
 		z-index: 1
-		display: block
-		background: var(--dress-bg-2)
-		border: solid var(--dress-bs) var(--dress-bg-3)
-		border-radius: var(--dress-br)
 
 		&:focus
 			top: calc(var(--dress-p-b) / 2)
