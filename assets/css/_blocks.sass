@@ -82,9 +82,13 @@ body:has(> main)
 			align-content: center
 			flex: 1
 
-			> h1, h2, h3, h4, h5, h6
-				&:first-child
-					--dress-m-bs: var(--dress-m-b)
+			> h1:first-child,
+			> h2:first-child,
+			> h3:first-child,
+			> h4:first-child,
+			> h5:first-child,
+			> h6:first-child
+				--dress-m-bs: var(--dress-m-b)
 
 details, pre
 	border: var(--dress-bs) solid var(--dress-bg-3)
