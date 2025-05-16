@@ -824,3 +824,39 @@ Including `<button>` as well as `<input>` with `type="button"`, `type="reset"`, 
 <nav markdown=1>
 [Back to top](#)
 </nav>
+
+## Dialog `<dialog>` {#dialog}
+
+Styling is applied to the `<dialog>` and its backdrop.
+
+Additionally, formatting is applied to a `<menu>` of actions in a `<form>` when formatted as the code sample below.
+
+<button onclick="document.getElementById('dialogExample').showModal()">Open Dialog</button>
+
+<dialog id="dialogExample">
+	<form method="dialog">
+		<p><strong>Hello!</strong> This is a native dialog.</p>
+		<menu>
+			<button value="cancel">Cancel</button>
+			<button type="submit" value="ok">OK</button>
+		</menu>
+	</form>
+</dialog>
+
+```html
+<button onclick="document.getElementById('dialogExample').showModal()">Open Dialog</button>
+
+<dialog id="dialogExample">
+	<form method="dialog">
+		<p><strong>Hello!</strong> This is a native dialog.</p>
+		<menu>
+			<button value="cancel">Cancel</button>
+			<button type="submit" value="ok">OK</button>
+		</menu>
+	</form>
+</dialog>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
