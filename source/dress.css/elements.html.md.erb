@@ -26,28 +26,30 @@ For legibility, code samples were highlighted using [Rouge](https://github.com/r
 
 ### Button Link `<a role="button">` {#buttonlink}
 
-<a role="button" href="#disabled" data-disabled>Sign up now</a>
+<a role="button" href="#disabled" data-disabled>Sign Up</a>
 
 ```html
-<a role="button" href="https://example.com/signup">Sign up now</a>
+<a role="button" href="https://example.com/signup">Sign Up</a>
 ```
 
 ### Download Link `<a download>` {#download}
 
-<a href="doc.md" download data-disabled>Save Markdown source</a>  
-<a role="button" href="doc.pdf" download data-disabled>Download PDF</a>
+<a role="button" href="#disabled" download data-disabled>Download PDF</a>  
+<a href="#disabled" download data-disabled>Save source</a>
 
 ```html
-<a href="doc.md" download>Save Markdown source</a>  
 <a role="button" href="doc.pdf" download>Download PDF</a>
+<a href="doc.md" download>Save source</a>
 ```
 
 ### New Window Link `<a target="_blank">` {#newwindow}
 
-<a href="#disabled" data-disabled target="_blank">Shop Now</a>
+<a role="button" href="#disabled" data-disabled target="_blank">Shop Now</a>  
+<a href="#disabled" data-disabled target="_blank">Submit Review</a>
 
 ```html
-<a href="https://example.com/shop/" target="_blank">Shop Now</a>
+<a role="button" href="https://example.com/shop/" target="_blank">Shop Now</a>
+<a href="https://example.com/review/" target="_blank">Submit Review</a>
 ```
 
 **In links wrapping images** in a `<figure>`, the icon will not show.
