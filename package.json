@@ -54,7 +54,7 @@
 		"test:visual:update": "playwright test --update-snapshots"
 	},
 	"type": "module",
-	"version": "3.3.1",
+	"version": "3.4.0",
 	"watch": {
 		"css:build": {
 			"extensions": "css,sass,scss",
