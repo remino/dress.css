@@ -1,6 +1,8 @@
 @media print
 	:root
 		--dress-bg: #fff
+		--dress-bg-2: transparent
+		--dress-bg-3: #000
 		--dress-fg: #000
 		--dress-fs: var(--dress-fs-min)
 
@@ -23,10 +25,21 @@
 	input[type='button'],
 	input[type='reset'],
 	input[type='submit']
+		background: transparent
 		border: solid var(--dress-bs) var(--dress-fg)
 		color: var(--dress-fg)
 		padding-block: calc(var(--dress-m-b) / 4 - var(--dress-bs))
 		padding-inline: calc(var(--dress-m-i) / 2)
+
+	a
+		&[download],
+		&[target="_blank"]
+			&::after
+				display: none
+
+	aside
+		border-block-end: solid var(--dress-bs) var(--dress-bg-3)
+		border-block-start: solid var(--dress-bs) var(--dress-bg-3)
 
 	button[type='submit'],
 	input[type='submit']
@@ -40,8 +53,9 @@
 			display: none
 
 	mark
+		background: transparent
 		border: 1px solid
 		color: inherit
 
-	nav:has(a[href^="#"]):not(:has(a:not([href^="#"])))
+	nav:has(a[href^="#"]):not(:has(a:not([href^="#"]), a:nth-child(2), li:nth-child(2)))
 		display: none
