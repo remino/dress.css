@@ -120,13 +120,13 @@ input[type="checkbox"]
 	border-radius: var(--dress-br)
 
 	&:checked
-		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>')
+		background-image: var(--dress-i-cb)
 
 input[type="radio"]
 	border-radius: 50%
 
 	&:checked
-		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><circle cx="12" cy="12" r="8"/></svg>')
+		background-image: var(--dress-i-rb)
 
 label
 	@extend %cursor-pointer
@@ -174,14 +174,14 @@ legend
 
 select
 	@extend %cursor-pointer
-	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 12 7 15 10"/><polyline points="9 14 12 17 15 14"/></svg>')
+	background-image: var(--dress-i-sel-d)
 	background-position: right center
 	background-repeat: no-repeat
 	background-size: auto 100%
 	padding-inline-end: calc(var(--dress-m-i) / 2 + 24px)
 
 	@media (prefers-color-scheme: dark)
-		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 12 7 15 10"/><polyline points="9 14 12 17 15 14"/></svg>')
+		background-image: var(--dress-i-sel-l)
 
 textarea
 	margin-block: calc(var(--dress-m-b) / 2)
