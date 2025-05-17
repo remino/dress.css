@@ -1,8 +1,12 @@
 @media print
+	:focus-visible
+		box-shadow: none
+		outline: none
+
 	a
 		text-decoration: none
 
-		&:link, &:visited
+		&, &:link, &:visited
 			color: inherit
 
 		&:not([href^='#'], [href^='/'])
@@ -16,6 +20,7 @@
 	a[role='button'],
 	button,
 	input[type='button'],
+	input[type='file']::-webkit-file-upload-button,
 	input[type='reset'],
 	input[type='submit']
 		background: transparent
@@ -23,6 +28,10 @@
 		color: var(--dress-fg)
 		padding-block: calc(var(--dress-m-b) / 4 - var(--dress-bs))
 		padding-inline: calc(var(--dress-m-i) / 2)
+
+		&:not([disabled])
+			&, &:focus, &:hover
+				background: transparent
 
 	a
 		&[download],
@@ -40,6 +49,10 @@
 		color: var(--dress-fg)
 		padding-block: calc(var(--dress-m-b) / 4 - var(--dress-bs) * 2)
 		padding-inline: calc(var(--dress-m-i) / 2 - var(--dress-bs))
+
+		&:not([disabled])
+			&, &:focus, &:hover
+				background: transparent
 
 	footer, header
 		menu, nav ul
