@@ -59,7 +59,7 @@ as **dress.css** in version 2.0.0.
 
 ## Features
 
-- **Small**: Around 3 KiB, gzipped.
+- **Small**: Around 4 KiB, gzipped.
 - **Class-less**: No need to add classes to your HTML elements.
 - **Modern**: Uses CSS variables, viewport sizes, and flexbox.
 - **Readable**: Focus on the content, not the style.
