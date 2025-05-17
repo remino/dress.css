@@ -19,6 +19,7 @@
 		"minify": "^10.5.2",
 		"npm-watch": "^0.11.0",
 		"postcss": "^8.4.38",
+		"postcss-banner": "^4.0.1",
 		"postcss-cli": "^10.1.0",
 		"postcss-load-config": "^4.0.2",
 		"postcss-value-parser": "^4.2.0",
