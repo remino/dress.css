@@ -24,6 +24,20 @@ const addCodeBlockCopyButton = () => {
 	})
 }
 
+const addHeadingAnchorLinks = () => {
+	document.querySelectorAll('[id]:is(h1, h2, h3, h4, h5, h6)').forEach(el => {
+		const link = document.createElement('a')
+		link.classList.add('anchor-link')
+		link.setAttribute(
+			'href',
+			`${document.location.href.replace(/#.*$/, '')}#${el.id}`
+		)
+		link.textContent = '#'
+		link.title = 'Link to this page section'
+		el.insertBefore(link, el.firstChild)
+	})
+}
+
 const disableLinks = () => {
 	document.querySelectorAll('a[data-disabled]').forEach(link => {
 		link.addEventListener('click', event => {
@@ -83,6 +97,7 @@ const setupDialog = () => {
 init({
 	parallel: [
 		addCodeBlockCopyButton,
+		addHeadingAnchorLinks,
 		disableLinks,
 		disableNoSubmitForms,
 		setupDialog,

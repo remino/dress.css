@@ -66,6 +66,24 @@ body
 div.highlight
 	position: relative
 
+h1, h2, h3, h4, h5, h6
+	&[id]
+		position: relative
+
+		&:hover
+			.anchor-link
+				opacity: 1
+
+		.anchor-link
+			--anchor-link-width: 2rem
+			color: var(--dress-bg-2)
+			margin-inline-start: calc(var(--anchor-link-width) * -1)
+			opacity: 0
+			position: absolute
+			text-align: center
+			text-decoration: none
+			inline-size: var(--anchor-link-width)
+
 .copy
 	inset: 0 0 auto auto
 	margin: 0
