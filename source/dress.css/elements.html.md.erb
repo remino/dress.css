@@ -921,7 +921,7 @@ Labels may also contain multiple fields. Clicking on the label will focus on its
 </fieldset>
 ```
 
-### Output {#output}
+### Output `<output>` {#output}
 
 Styling on `<output>` is made to match the same height than an usual `<input>` field for consistency.
 
@@ -933,7 +933,7 @@ Styling on `<output>` is made to match the same height than an usual `<input>` f
 <output>42</output>
 ```
 
-### Progress Indicator {#progress}
+### Progress Indicator `<progress>` {#progress}
 
 <form data-nosubmit method="post">
   <label>
@@ -949,7 +949,7 @@ Styling on `<output>` is made to match the same height than an usual `<input>` f
 </label>
 ```
 
-### Meter {#meter}
+### Meter `<meter>` {#meter}
 
 The `<meter>` value shares the colour of main buttons (`--dress-bt-1`), links (`--dress-lk`), and accents (`--dress-ac`) depending of how high or low it is.
 
@@ -985,7 +985,7 @@ Including `<button>` as well as `<input>` with `type="button"`, `type="reset"`, 
 <button type="submit">Submit</button>
 ```
 
-### Button set `<menu><button>` {#buttonset}
+### Button Set `<menu><button>` {#buttonset}
 
 Using `<menu>` as a direct descendant of a `<form>` or `<fieldset>` is assumed to be meant for a toolbar with a set of action buttons and is formatted as such.
 
@@ -1023,7 +1023,7 @@ Additionally, formatting is applied to a `<menu>` of actions in a `<form>` when 
 	<form method="dialog">
 		<p><strong>Hello!</strong> This is a native dialog.</p>
 		<menu>
-			<button value="cancel">Cancel</button>
+			<button value="cancel" autofocus>Cancel</button>
 			<button type="submit" value="ok">OK</button>
 		</menu>
 	</form>
@@ -1036,7 +1036,7 @@ Additionally, formatting is applied to a `<menu>` of actions in a `<form>` when 
 	<form method="dialog">
 		<p><strong>Hello!</strong> This is a native dialog.</p>
 		<menu>
-			<button value="cancel">Cancel</button>
+			<button value="cancel" autofocus>Cancel</button>
 			<button type="submit" value="ok">OK</button>
 		</menu>
 	</form>
