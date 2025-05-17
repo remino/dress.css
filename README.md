@@ -59,7 +59,7 @@ as **dress.css** in version 2.0.0.
 
 ## Features
 
-- **Small**: Around 4 KiB, gzipped.
+- **Small**: Around 5 KiB, gzipped.
 - **Class-less**: No need to add classes to your HTML elements.
 - **Modern**: Uses CSS variables, viewport sizes, and flexbox.
 - **Readable**: Focus on the content, not the style.
@@ -84,7 +84,9 @@ examples:
 Add the stylesheet to your HTML and write your content:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@remino/dress.css/dist/dress.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@remino/dress.css/dist/dress.css" />
 ```
 
 ### NPM
