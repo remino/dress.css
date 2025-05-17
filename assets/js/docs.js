@@ -56,6 +56,20 @@ const disableNoSubmitForms = () => {
 	})
 }
 
+const setupDialog = () => {
+	const dialogOpen = document.getElementById('dialogOpen')
+
+	if (!dialogOpen) return
+
+	dialogOpen.addEventListener('click', () => {
+		const dialog = document.getElementById('dialogExample')
+
+		if (!dialog) return
+
+		dialog.showModal()
+	})
+}
+
 const setupSignupForm = () => {
 	const form = document.getElementById('signup')
 
@@ -77,20 +91,6 @@ const setupSignupForm = () => {
 	form.addEventListener('change', applyValidity)
 	form.addEventListener('reset', ({ currentTarget }) => {
 		setTimeout(applyValidity, 10, { currentTarget })
-	})
-}
-
-const setupDialog = () => {
-	const dialogOpen = document.getElementById('dialogOpen')
-
-	if (!dialogOpen) return
-
-	dialogOpen.addEventListener('click', () => {
-		const dialog = document.getElementById('dialogExample')
-
-		if (!dialog) return
-
-		dialog.showModal()
 	})
 }
 
