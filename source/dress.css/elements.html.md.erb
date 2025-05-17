@@ -985,6 +985,26 @@ Including `<button>` as well as `<input>` with `type="button"`, `type="reset"`, 
 <button type="submit">Submit</button>
 ```
 
+### Button set `<menu><button>` {#buttonset}
+
+Using `<menu>` as a direct descendant of a `<form>` or `<fieldset>` is assumed to be meant for a toolbar with a set of action buttons and is formatted as such.
+
+<form data-nosubmit method="post">
+	<menu>
+		<li><button>Preview</button></li>
+		<li><button type="submit">Save</button></li>
+	</menu>
+</form>
+
+```html
+<form>
+	<menu>
+		<li><button>Preview</button></li>
+		<li><button type="submit">Save</button></li>
+	</menu>
+</form>
+```
+
 <nav markdown=1>
 [Back to top](#)
 </nav>
