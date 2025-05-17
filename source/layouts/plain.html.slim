@@ -1,0 +1,9 @@
+- content_for :head
+  = stylesheet_link_tag 'dress'
+  sass:
+    \:root
+      --dress-mw-min: 20rem
+
+= wrap_layout :layout
+	= yield
+

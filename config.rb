@@ -33,6 +33,7 @@ configure :build do
 
 	ignore '*.map'
 	ignore '/nav/*'
+	ignore '/tests/*'
 	ignore '/index.html'
 end
 
@@ -64,12 +65,14 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 page '/*.xml', layout: false
 page '/index.html', layout: false
+page '/tests/*', layout: 'plain'
 
 set :build_dir, app.data.site.build_dir
 set :css_dir, app.data.site.prefix
 set :images_dir, app.data.site.prefix
 set :js_dir, app.data.site.prefix
 set :markdown_engine, :kramdown
+set :layout, 'page'
 
 set :markdown,
 	hard_wrap: false,

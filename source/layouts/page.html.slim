@@ -1,0 +1,15 @@
+- content_for :head
+  = partial 'head'
+  = stylesheet_link_tag 'dress'
+  = stylesheet_link_tag 'docs'
+  = javascript_include_tag 'docs', defer: true
+  = partial 'nav/htmlhead'
+
+= wrap_layout :layout
+  a[href="#main"] Skip to main content
+  = partial 'nav/header'
+  = partial 'header'
+  main#main = yield
+  = partial 'footer'
+  = partial 'nav/footer'
+
