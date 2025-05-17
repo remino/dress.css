@@ -68,7 +68,7 @@ as **dress.css** in version 2.0.0.
 - **Printable**: Looks good on paper. Shows external link URLs.
 - **Localizable**: Works both with left-to-right and right-to-left languages.
 - **Customizable**: Add your own styles on top of it, or add a theme by changing
-  variables.
+  [variables](https://github.com/remino/dress.css/blob/main/assets/css/_variables.sass).
 
 [Back to top](#)
 
