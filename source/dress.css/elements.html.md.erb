@@ -671,44 +671,78 @@ Video above is from [_Retrosurfing_](https://remino.net/retrosurfing/).
 
 There is some styling for forms in **<mark>dress.css</mark>** for the most common controls. It works best with the suggested markup below, wrapping every input field into a `<label>` for better usability. However, forms are notorious for how finicky they are with styling, accessibility, and inconsistencies between browsers. For anything more complex, as this stylesheet is basic, you may need to look for a different styling system better suited for your needs.
 
-### Input `<input>` {#input}
+### Text Input `<input>` {#input}
 
-Works with “textual” input fields like `text` (the default type) and `password`.
+Works with basic “textual” input fields including the following:
 
+- `text` (the default type)
+- `email`
+- `number`
+- `password`
+- `search`
+- `tel`
+- `url`
+
+<nav>
+  <form data-nosubmit method="post">
+    <label>
+      <span>Search</span>
+      <input type="search">
+    </label>
+  </form>
+</nav>
 <form data-nosubmit method="post">
 	<label>
-		<span>Name</span>
+		<span>Username</span>
 		<input>
-		<small>Enter any name that identifies you best.</small>
+		<small>Can also be your email address or phone number.</small>
+	</label>
+	<label>
+		<span>Password</span>
+		<input type="password">
 	</label>
 </form>
 
 ```html
-<label>
-	<span>Name</span>
-	<input>
-	<small>Enter any name that identifies you best.</small>
-</label>
+<nav>
+  <form method="post">
+    <label>
+      <span>Search</span>
+      <input type="search">
+    </label>
+  </form>
+</nav>
+<form method="post">
+	<label>
+		<span>Username</span>
+		<input>
+		<small>Can also be your email address or phone number.</small>
+	</label>
+	<label>
+		<span>Password</span>
+		<input type="password">
+	</label>
+</form>
 ```
 
-### Multiple Inputs {#multiinput}
+### Date & Time Input {#datetime}
 
-Labels may also contain multiple textual `<input>` fields. Clicking on the label will focus on its first input field. However, note this is not valid HTML5 and may present accessibility issues. Use with caution. You may consider using multiple fields in a `<fieldset>` instead.
+Basic styling is applied to date and time inputs for consistency.
 
 <form data-nosubmit method="post">
-	<label>
-		<span>Full Name</span>
-		<input placeholder="Given Name">
-		<input placeholder="Family Name">
-	</label>
+<label><span><code>time</code></span><input type="time"></label>
+<label><span><code>date</code></span><input type="date"></label>
+<label><span><code>datetime-local</code></span><input type="datetime-local"></label>
+<label><span><code>month</code></span><input type="month"></label>
+<label><span><code>week</code></span><input type="week"></label>
 </form>
 
 ```html
-<label>
-	<span>Full Name</span>
-	<input placeholder="Given Name">
-	<input placeholder="Family Name">
-</label>
+<label><span><code>time</code></span><input type="time"></label>
+<label><span><code>date</code></span><input type="date"></label>
+<label><span><code>datetime-local</code></span><input type="datetime-local"></label>
+<label><span><code>month</code></span><input type="month"></label>
+<label><span><code>week</code></span><input type="week"></label>
 ```
 
 ### Textarea `<textarea>` {#textarea}
@@ -789,6 +823,74 @@ Labels may also contain multiple textual `<input>` fields. Clicking on the label
 </label>
 ```
 
+### File Selection `<input type="file">` {#file}
+
+<form data-nosubmit method="post">
+  <label>
+    <span>Select profile avatar</span>
+    <input type="file" name="avatar" />
+  </label>
+</form>
+
+```html
+<label>
+  <span>Select profile avatar</span>
+  <input type="file" name="avatar" />
+</label>
+```
+
+### Colour `<input type="color">` {#color}
+
+<form data-nosubmit method="post">
+  <label>
+    <span>Favourite colour</span>
+    <input type="color" name="color" value="#d53bb8" />
+  </label>
+</form>
+
+```html
+<label>
+  <span>Favourite colour</span>
+  <input type="color" name="color" value="#d53bb8" />
+</label>
+```
+
+### Range `<input type="range">` {#range}
+
+<form data-nosubmit method="post">
+  <label>
+    <span>Volume</span>
+    <input type="range" name="volume" min="0" max="11" step="1" value="9" />
+  </label>
+</form>
+
+```html
+<label>
+  <span>Volume</span>
+  <input type="range" name="volume" min="0" max="11" step="1" value="9" />
+</label>
+```
+
+### Composite Inputs {#composite}
+
+Labels may also contain multiple fields. Clicking on the label will focus on its first input field. However, note this is not valid HTML5 and may present accessibility issues. Use with caution. You may consider using multiple fields in a `<fieldset>` instead.
+
+<form data-nosubmit method="post">
+	<label>
+		<span>Full Name</span>
+		<input placeholder="Given Name">
+		<input placeholder="Family Name">
+	</label>
+</form>
+
+```html
+<label>
+	<span>Full Name</span>
+	<input placeholder="Given Name">
+	<input placeholder="Family Name">
+</label>
+```
+
 ### Field Set `<fieldset>` {#fieldset}
 
 <form data-nosubmit method="post">
@@ -817,6 +919,54 @@ Labels may also contain multiple textual `<input>` fields. Clicking on the label
 		<span>CSS</span>
 	</label>
 </fieldset>
+```
+
+### Output {#output}
+
+Styling on `<output>` is made to match the same height than an usual `<input>` field for consistency.
+
+<blockquote>
+  <output>42</output>
+</blockquote>
+
+```html
+<output>42</output>
+```
+
+### Progress Indicator {#progress}
+
+<form data-nosubmit method="post">
+  <label>
+    <span>Uploading…</span>
+    <progress max="100" value="75"></progress>
+  </label>
+</form>
+
+```html
+<label>
+  <span>Uploading…</span>
+  <progress max="100" value="75"></progress>
+</label>
+```
+
+### Meter {#meter}
+
+The `<meter>` value shares the colour of main buttons (`--dress-bt-1`), links (`--dress-lk`), and accents (`--dress-ac`) depending of how high or low it is.
+
+<meter min="0" max="100" low="20" high="60" optimum="80" value="0">0%</meter>
+<meter min="0" max="100" low="20" high="60" optimum="80" value="10">10%</meter>
+<meter min="0" max="100" low="20" high="60" optimum="80" value="30">30%</meter>
+<meter min="0" max="100" low="20" high="60" optimum="80" value="70">70%</meter>
+<meter min="0" max="100" low="20" high="60" optimum="80" value="90">90%</meter>
+<meter min="0" max="100" low="20" high="60" optimum="80" value="100">100%</meter>
+
+```html
+<meter min="0" max="100" low="20" high="60" optimum="80" value="0">0%</meter>
+<meter min="0" max="100" low="20" high="60" optimum="80" value="10">10%</meter>
+<meter min="0" max="100" low="20" high="60" optimum="80" value="30">30%</meter>
+<meter min="0" max="100" low="20" high="60" optimum="80" value="70">70%</meter>
+<meter min="0" max="100" low="20" high="60" optimum="80" value="90">90%</meter>
+<meter min="0" max="100" low="20" high="60" optimum="80" value="100">100%</meter>
 ```
 
 ### Buttons {#buttons}

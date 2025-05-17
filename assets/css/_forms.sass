@@ -116,17 +116,127 @@ input[type="radio"]
 	&:not([disabled])
 		cursor: pointer
 
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="file"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+meter,
+meter::-webkit-meter-bar,
+progress
+	block-size: calc(var(--dress-m-b) / 2 + 1lh)
+
+input[type="color"]
+	background-color: transparent
+	cursor: pointer
+	padding: 0
+	inline-size: 4rem
+
+	&::-moz-color-swatch
+		border-radius: var(--dress-br)
+		border: none
+
+	&::-webkit-color-swatch
+		border-radius: var(--dress-br)
+		border: none
+
+	&::-webkit-color-swatch-wrapper
+		border-radius: var(--dress-br)
+		padding: 0
+
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"]
+	text-align: left
+
+	&::-webkit-datetime-edit
+		align-content: center
+		block-size: 1lh
+		display: block
+		text-align: left
+
+	&::-webkit-date-and-time-value
+		display: block
+		text-align: left
+
 input[type="checkbox"]
 	border-radius: var(--dress-br)
 
 	&:checked
 		background-image: var(--dress-i-cb)
 
+input[type="file"]
+	align-content: center
+	background: transparent
+	border: none
+	padding: 0
+
+	&::-webkit-file-upload-button
+		background: var(--dress-bt-2)
+		block-size: calc(var(--dress-m-b) / 4 - var(--dress-bs) + 1lh)
+		border-radius: var(--dress-br)
+		border: none
+		box-sizing: content-box
+		color: var(--dress-bt-2-tx)
+		cursor: pointer
+		padding: calc(var(--dress-m-b) / 4) calc(var(--dress-m-i) / 2)
+		transition: all var(--dress-ad) var(--dress-at)
+
+		&:hover
+			background: var(--dress-bt-2-h)
+
 input[type="radio"]
 	border-radius: 50%
 
 	&:checked
 		background-image: var(--dress-i-rb)
+
+input[type="range"]
+	--dress-track-size: 0.5rem
+	--dress-thumb-size: 1lh
+	background: transparent
+	block-size: calc(var(--dress-m-b) / 2 - var(--dress-bs) + 1lh)
+	border: none
+	cursor: pointer
+	padding-inline: 0
+
+	&::-moz-range-thumb
+		background: var(--dress-bt-1)
+		border: none
+		border-radius: 50%
+		inline-size: var(--dress-thumb-size)
+		block-size: var(--dress-thumb-size)
+		transition: background var(--dress-ad) var(--dress-at)
+
+		&:hover
+			background: var(--dress-bt-1-h)
+	
+	&::-moz-range-track
+		background: var(--dress-bg-3)
+		block-size: var(--dress-track-size)
+		border-radius: 1rem
+
+	&::-webkit-slider-runnable-track
+		background: var(--dress-bg-3)
+		block-size: var(--dress-track-size)
+		border-radius: 1rem
+
+	&::-webkit-slider-thumb
+		appearance: none
+		inline-size: var(--dress-thumb-size)
+		block-size: var(--dress-thumb-size)
+		border-radius: 50%
+		background: var(--dress-bt-1)
+		border: none
+		margin-top: calc(var(--dress-thumb-size) * -1 / 2 + var(--dress-track-size) / 2)
+		transition: background var(--dress-ad) var(--dress-at)
+
+		&:hover
+			background: var(--dress-bt-1-h)
 
 label
 	@extend %cursor-pointer
@@ -171,6 +281,49 @@ label
 
 legend
 	font-weight: bold
+
+meter,
+progress
+	appearance: none
+	background: var(--dress-bg-3)
+	border-radius: var(--dress-br)
+	border: none
+	inline-size: 100%
+	line-height: var(--dress-lh)
+	margin-block: calc(var(--dress-m-b) / 4)
+	overflow: hidden
+
+meter
+	&::-webkit-meter-bar
+		background: var(--dress-bg-3)
+
+	&::-webkit-meter-optimum-value
+		background: var(--dress-bt-1)
+	
+	&::-webkit-meter-suboptimum-value
+		background: var(--dress-lk)
+	
+	&::-webkit-meter-even-less-good-value
+		background: var(--dress-ac)
+
+	&:-moz-meter-optimum::-moz-meter-bar
+		background: var(--dress-bt-1)
+
+	&:-moz-meter-sub-optimum::-moz-meter-bar
+		background: var(--dress-lk)
+
+	&:-moz-meter-sub-sub-optimum::-moz-meter-bar
+		background: var(--dress-ac)
+
+progress
+	&::-moz-progress-bar
+		background: var(--dress-bt-1)
+
+	&::-webkit-progress-bar
+		background: transparent
+
+	&::-webkit-progress-value
+		background: var(--dress-bt-1)
 
 select
 	@extend %cursor-pointer
