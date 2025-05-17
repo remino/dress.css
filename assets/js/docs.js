@@ -32,6 +32,7 @@ const addHeadingAnchorLinks = () => {
 			'href',
 			`${document.location.href.replace(/#.*$/, '')}#${el.id}`
 		)
+		link.setAttribute('aria-hidden', 'true')
 		link.textContent = '#'
 		link.title = 'Link to this page section'
 		el.insertBefore(link, el.firstChild)
