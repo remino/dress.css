@@ -117,3 +117,12 @@
 		// Accent background and text colours
 		--dress-ac: hsl(167 100% 63% / 50%)
 		--dress-ac-tx: var(--dress-fg)
+
+  // Overrides for print
+  @media print
+    :root
+      --dress-bg: #fff
+      --dress-bg-2: transparent
+      --dress-bg-3: #000
+      --dress-fg: #000
+      --dress-fs: var(--dress-fs-min)
