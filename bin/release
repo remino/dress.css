@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+release_main() {
+	set -euo pipefail
+
+	E_ARGS=16
+	E_CD_FAILED=17
+
+	[ $# -lt 1 ] && echo "Usage: release <npm_otp>" && exit
+
+	cd "$(dirname "$0")" || exit $E_CD_FAILED
+	cd .. || exit $E_CD_FAILED
+
+	_require npm git op
+
+	OTP="$1"
+	TAG="$(git tag | tail -1)"
+
+	set -x
+
+	npm run build
+	./mansite build
+	./mansite deploy
+	git push origin --all
+	git push origin --tags
+	npm publish --otp "$OTP"
+	gh release create --generate-notes "$TAG"
+	gh release upload "$TAG" dist/dress.css
+}
+
+_require() {
+	local missing_bin=0
+
+	for bin in "$@"; do
+		if ! which "$bin" >/dev/null 2>&1; then
+			missing_bin=1
+			_error "Required: $bin"
+		fi
+	done
+
+	if [ $missing_bin -ne 0 ]; then
+		_fatal "$E_MISSING_APP" "One or more executables or apps are missing."
+	fi
+}
+
+release_main "$@"
