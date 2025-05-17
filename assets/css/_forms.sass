@@ -199,7 +199,8 @@ input[type="file"]
 		box-sizing: content-box
 		color: var(--dress-bt-2-tx)
 		cursor: pointer
-		padding: calc(var(--dress-m-b) / 4) calc(var(--dress-m-i) / 2)
+		padding-block: calc(var(--dress-m-b) / 4)
+		padding-inline: calc(var(--dress-m-i) / 2)
 		transition: all var(--dress-ad) var(--dress-at)
 
 		&:hover
@@ -248,7 +249,7 @@ input[type="range"]
 		border-radius: 50%
 		background: var(--dress-bt-1)
 		border: none
-		margin-top: calc(var(--dress-thumb-size) * -1 / 2 + var(--dress-track-size) / 2)
+		margin-block-start: calc(var(--dress-thumb-size) * -1 / 2 + var(--dress-track-size) / 2)
 		transition: background var(--dress-ad) var(--dress-at)
 
 		&:hover
