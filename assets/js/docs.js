@@ -66,11 +66,26 @@ const setupSignupForm = () => {
 	})
 }
 
+const setupDialog = () => {
+	const dialogOpen = document.getElementById('dialogOpen')
+
+	if (!dialogOpen) return
+
+	dialogOpen.addEventListener('click', () => {
+		const dialog = document.getElementById('dialogExample')
+
+		if (!dialog) return
+
+		dialog.showModal()
+	})
+}
+
 init({
 	parallel: [
 		addCodeBlockCopyButton,
 		disableLinks,
 		disableNoSubmitForms,
+		setupDialog,
 		setupSignupForm,
 	],
 })
