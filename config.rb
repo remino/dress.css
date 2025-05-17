@@ -65,7 +65,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 page '/*.xml', layout: false
 page '/index.html', layout: false
-page '/tests/*', layout: 'plain'
+page '/tests/*', layout: 'main'
 
 set :build_dir, app.data.site.build_dir
 set :css_dir, app.data.site.prefix
