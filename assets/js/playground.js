@@ -26,6 +26,7 @@ class PlaygroundApp extends HTMLElement {
 			<html>
 			<title>Preview</title>
 			<link rel="stylesheet" href="/dress.css/dress.css">
+			<style>*, *::after, *::before { transition: all 0.2s; }</style>
 			<body>${doc}</body>
 		`
 
