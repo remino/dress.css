@@ -73,9 +73,10 @@ h1, h2, h3, h4, h5, h6
 	&[id]
 		position: relative
 
-		&:hover
-			.anchor-link
-				opacity: 1
+		&:hover .anchor-link,
+		&:target .anchor-link,
+		.anchor-link:focus
+			opacity: 1
 
 		.anchor-link
 			--anchor-link-width: 2rem
