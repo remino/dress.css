@@ -71,7 +71,10 @@ class PlaygroundApp extends HTMLElement {
 
 	resizeOutput() {
 		this.iframe.style.setProperty('height', 'auto')
-		this.iframe.style.setProperty('height', `${this.iframe.contentDocument.documentElement.scrollHeight}px`)
+		this.iframe.style.setProperty(
+			'height',
+			`${this.iframe.contentDocument.documentElement.scrollHeight}px`
+		)
 	}
 }
 
@@ -92,7 +95,5 @@ const startApp = () => {
 }
 
 init({
-	parallel: [
-		startApp,
-	],
+	parallel: [startApp],
 })
