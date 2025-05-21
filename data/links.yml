@@ -1,5 +1,6 @@
 ---
 overrides:
   CHANGELOG.md: /dress.css/updates/
+  https://remino.net: /
   https://remino.net/: /
   https://remino.net/dress.css/: /dress.css/
