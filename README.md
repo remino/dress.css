@@ -12,6 +12,8 @@ By Rémino Rem <https://remino.net/>
 
 ---
 
+<!-- mtoc-start -->
+
 - [Minimal style for semantic HTML](#minimal-style-for-semantic-html)
 - [Features](#features)
 - [Installation](#installation)
@@ -25,6 +27,8 @@ By Rémino Rem <https://remino.net/>
   - [Web Site Response Testing](#web-site-response-testing)
 - [Contributing](#contributing)
 - [License](#license)
+
+<!-- mtoc-end -->
 
 ---
 
