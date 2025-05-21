@@ -44,6 +44,17 @@ figure
 			flex-shrink: 0
 			padding-inline: calc((100vi - var(--dress-mw) - var(--dress-m-i) * 2) / 2)
 
+:focus-visible
+	img
+		border-radius: var(--dress-br)
+		box-shadow: 0 0 0 calc(var(--dress-fs) / 4) var(--dress-bt-1-h)
+		box-shadow: 0 0 0 calc(var(--dress-fs) / 4) color(from var(--dress-bt-1-h) srgb r g b / 0.4)
+		outline: solid var(--dress-bs) color-mix(in srgb, var(--dress-fg), var(--dress-bt-1) 75%)
+		outline-offset: 0
+
+img
+	border: 0
+
 video
 	display: block
 	max-inline-size: 100%
