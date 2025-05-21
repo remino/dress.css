@@ -16,19 +16,20 @@ By Rémino Rem <https://remino.net/>
 
 <!-- mtoc-start -->
 
-- [Minimal style for semantic HTML](#minimal-style-for-semantic-html)
-- [Features](#features)
-- [Installation](#installation)
-  - [HTML](#html)
-  - [NPM](#npm)
-  - [Download](#download)
-- [Usage](#usage)
-- [Browser Support](#browser-support)
-- [Tests](#tests)
-  - [Visual Regression Testing](#visual-regression-testing)
-  - [Web Site Response Testing](#web-site-response-testing)
-- [Contributing](#contributing)
-- [License](#license)
+* [Minimal style for semantic HTML](#minimal-style-for-semantic-html)
+* [Features](#features)
+* [Installation](#installation)
+  * [HTML](#html)
+  * [NPM](#npm)
+  * [Download](#download)
+* [Usage](#usage)
+* [Browser Support](#browser-support)
+* [Tests](#tests)
+  * [Visual Regression Testing](#visual-regression-testing)
+  * [Web Site Response Testing](#web-site-response-testing)
+* [Updates](#updates)
+* [Contributing](#contributing)
+* [License](#license)
 
 <!-- mtoc-end -->
 
@@ -160,6 +161,12 @@ Using [Hurl](https://hurl.dev/):
 ```sh
 hurl --test tests/responses.hurl
 ```
+
+---
+
+## Updates
+
+See [CHANGELOG](CHANGELOG.md).
 
 ---
 
