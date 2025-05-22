@@ -39,7 +39,8 @@
 
 ## v4.3.0
 
-- Rename `--dress-ac` variable to `--dress-ax`.
+- Rename `--dress-ac` variable to `--dress-ax`
+- Fix block gap in in horizontal `<menu>`
 
 ## v4.2.0
 
