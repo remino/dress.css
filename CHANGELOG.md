@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+* [v4.3.2](#v432)
 * [v4.3.1](#v431)
 * [v4.3.0](#v430)
 * [v4.2.0](#v420)
@@ -38,9 +39,13 @@
 
 <!-- mtoc-end -->
 
-## v4.3.1
+## v4.3.2
 
 - Fix max width of `<dialog>`
+
+## v4.3.1
+
+- Fix styling in `<dialog><menu>`
 
 ## v4.3.0
 
