@@ -31,6 +31,7 @@ const elements = {
 	datetime: {},
 	details: {},
 	dialog: {},
+	'dialog-wide': {},
 	dl: {},
 	download: {},
 	fieldset: {},

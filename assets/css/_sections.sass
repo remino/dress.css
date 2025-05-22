@@ -46,8 +46,9 @@ body
 
 dialog
 	background: var(--dress-bg-2)
-	border: solid var(--dress-bs) var(--dress-bg-3)
 	border-radius: var(--dress-br)
+	border: solid var(--dress-bs) var(--dress-bg-3)
+	max-inline-size: min(var(--dress-mw) - var(--dress-m-b) * 4, 100% - env(safe-area-inset-left) - env(safe-area-inset-right) - var(--dress-m-b) * 4)
 	padding-block: calc(var(--dress-p-b) / 2)
 	padding-inline: var(--dress-p-i)
 
