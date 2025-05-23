@@ -46,6 +46,7 @@ const elements = {
 	iframe: {},
 	inert: {},
 	inlinecode: {},
+	insdel: {},
 	input: {},
 	kbd: {},
 	mark: {},

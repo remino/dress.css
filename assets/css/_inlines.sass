@@ -2,11 +2,20 @@ abbr[title]
 	cursor: help
 	text-decoration: underline dotted
 
+del, ins, mark
+	padding-block: calc(var(--dress-p-b) / 8)
+	padding-inline: calc(var(--dress-p-i) / 4)
+
+del
+	background: var(--dress-del)
+
+ins
+	background: var(--dress-ins)
+	text-decoration: none
+
 mark
 	background: var(--dress-ax)
 	color: var(--dress-ax-tx)
-	padding-block: calc(var(--dress-p-b) / 8)
-	padding-inline: calc(var(--dress-p-i) / 4)
 
 q
 	font-style: italic

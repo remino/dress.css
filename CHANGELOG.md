@@ -42,7 +42,7 @@
 
 ## v4.4.0
 
-- Add style for `popover`, `<iframe>`, `<q>`, `<samp>`
+- Add style for `popover`, `<del>`, `<iframe>`, `<ins>`, `<q>`, `<samp>`
 - Adjust padding of `<dialog>`
 - Add shadow under `<dialog>` & `popover`
 - Adjust style of `<mark>` in dark theme
