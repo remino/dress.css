@@ -53,7 +53,7 @@
 		"test": "npm run test:visual",
 		"test:visual": "playwright test",
 		"test:visual:update": "playwright test --update-snapshots",
-		"version": "sed -i '' -E '1,/^## /s/^## .*/## v'$npm_package_version'/' README.md"
+		"version": "sed -i '' -E '1,/^## /s/^## .*/## v'$npm_package_version'/' README.md && git add README.md"
 	},
 	"type": "module",
 	"version": "4.3.2",
