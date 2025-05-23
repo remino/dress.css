@@ -14,6 +14,64 @@ For legibility, code samples were highlighted using [Rouge](https://github.com/r
 
 ---
 
+## Text {#text}
+
+### Headings `<h1>…<h6>` {#headings}
+
+<blockquote>
+<h1>Heading 1 <code>&lt;h1&gt;</code></h1>
+<h2>Heading 2 <code>&lt;h2&gt;</code></h2>
+<h3>Heading 3 <code>&lt;h3&gt;</code></h3>
+<h4>Heading 4 <code>&lt;h4&gt;</code></h4>
+<h5>Heading 5 <code>&lt;h5&gt;</code></h5>
+<h6>Heading 6 <code>&lt;h6&gt;</code></h6>
+</blockquote>
+
+```html
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+```
+
+### Abbreviation `<abbr>` {#abbr}
+
+<abbr title="little black dress">LBD</abbr>
+
+```html
+<abbr title="little black dress">LBD</abbr>
+```
+
+### Mark Text (Highlighted Text) `<mark>` {#mark}
+
+<mark>highlighted text</mark>
+<mark><a href="#" data-disabled>highlighted text with link</a></mark>
+
+```html
+<mark>highlighted text</mark>
+<mark><a href="#main">highlighted text with link</a></mark>
+```
+
+### Inserted & Deleted Text `<ins>` `<del>` {#insdel}
+
+<p>
+  Our sale ends <del>Sunday</del> <ins>Monday</ins>.
+</p>
+
+```html
+<p>
+  Our sale ends <del>Sunday</del> <ins>Monday</ins>.
+</p>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
 ## Links {#links}
 
 ### Hyperlink `<a>` {#hyperlink}
@@ -90,24 +148,488 @@ When a link is the first child element of `<body>` and points to a section to th
 
 ---
 
-## Headings `<h1>…<h6>` {#headings}
+## Lists {#lists}
+
+### Unordered List `<ul>` {#ul}
+
+- Unordered list item 1
+	- Nested unordered list item 1
+	- Nested unordered list item 2
+- Unordered list item 2
+- Unordered list item 3
+
+```html
+<ul>
+	<li>Unordered list item 1
+		<ul>
+			<li>Nested unordered list item 1</li>
+			<li>Nested unordered list item 2</li>
+		</ul>
+	</li>
+	<li>Unordered list item 2</li>
+	<li>Unordered list item 3</li>
+</ul>
+```
+
+### Ordered List `<ol>` {#ol}
+
+1. Ordered list item 1
+	1. Nested ordered list item 1
+	2. Nested ordered list item 2
+2. Ordered list item 2
+3. Ordered list item 3
+
+```html
+<ol>
+	<li>Ordered list item 1
+		<ol>
+			<li>Nested ordered list item 1</li>
+			<li>Nested ordered list item 2</li>
+		</ol>
+	</li>
+	<li>Ordered list item 2</li>
+	<li>Ordered list item 3</li>
+</ol>
+```
+
+### Menu List `<menu>` {#menu}
+
+<menu>
+	<li>Menu list item 1
+		<ul>
+			<li>Nested menu list item 1</li>
+			<li>Nested menu list item 2</li>
+		</ul>
+	</li>
+	<li>Menu list item 2</li>
+	<li>Menu list item 3</li>
+</menu>
+
+```html
+<menu>
+	<li>Menu list item 1
+		<ul>
+			<li>Nested menu list item 1</li>
+			<li>Nested menu list item 2</li>
+		</ul>
+	</li>
+	<li>Menu list item 2</li>
+	<li>Menu list item 3</li>
+</menu>
+```
+
+### Description List `<dl>` {#dl}
+
+Term 1
+: Definition 1
+
+Term 2
+: Definition 2
+
+Term 3
+: Definition 3
+
+```html
+<dl>
+	<dt>Term 1</dt>
+	<dd>Definition 1</dd>
+	<dt>Term 2</dt>
+	<dd>Definition 2</dd>
+	<dt>Term 3</dt>
+	<dd>Definition 3</dd>
+</dl>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Quotes
+
+### Inline Quotation `<q>` {#q}
+
+<q>Tech is fine, but I’d rather talk about fashion.</q>
+
+```html
+<q>Tech is fine, but I’d rather talk about fashion.</q>
+```
+
+### Block Quotation `<blockquote>` {#blockquote}
 
 <blockquote>
-<h1>Heading 1 <code>&lt;h1&gt;</code></h1>
-<h2>Heading 2 <code>&lt;h2&gt;</code></h2>
-<h3>Heading 3 <code>&lt;h3&gt;</code></h3>
-<h4>Heading 4 <code>&lt;h4&gt;</code></h4>
-<h5>Heading 5 <code>&lt;h5&gt;</code></h5>
-<h6>Heading 6 <code>&lt;h6&gt;</code></h6>
+	“Simplicity is the keynote of all true elegance.”<br>
+	&mdash; Coco Chanel
 </blockquote>
 
 ```html
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
+<blockquote>
+	“Simplicity is the keynote of all true elegance.”<br>
+	&mdash; Coco Chanel
+</blockquote>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Code {#code}
+
+### Preformatted Text `<pre>` {#pre}
+
+<pre>
+C U B I C
+U \     U \
+B   C U B I C
+I   U   I   U
+C U B I C   B
+  \ I     \ I
+    C U B I C
+</pre>
+
+```html
+<pre>
+C U B I C
+U \     U \
+B   C U B I C
+I   U   I   U
+C U B I C   B
+  \ I     \ I
+    C U B I C
+</pre>
+```
+
+### Code Block `<pre><code>` {#precode}
+
+Many libraries, including code highlighters, use the `<code>` tag nested in a `<pre>` tag to display code blocks.
+
+```html
+alert('Hello World!');
+```
+
+```html
+<pre><code>
+alert('Hello World!');
+</code></pre>
+```
+
+### Inline Code `<code>` {#inlinecode}
+
+`echo hello`
+
+```html
+<code>echo hello</code>
+```
+
+### Keyboard Input `<kbd>` {#kbd}
+
+<kbd>Ctrl+C</kbd>
+
+```html
+<kbd>Ctrl+C</kbd>
+```
+
+### Sample Output `<samp>` {#samp}
+
+<samp>Press F1 to continue</samp>
+
+```html
+<samp>Press F1 to continue</samp>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Embeds (Media) {#embeds}
+
+### Single Figure `<figure>` {#figure}
+
+A `<figure>` will display embedded content, including `<img>`, `<picture>`, `<svg>`, `<video>`, `<object>`, and `<embed>` as a block.
+
+Those elements are not shown as blocks outside of a `<figure>`, as there are cases when embedded content is meant to be inlined.
+
+<figure>
+<a href="https://en.wikipedia.org/wiki/Triangle" target="_blank"><%= image_tag '/dress.css/triangles.svg' %></a>
+<figcaption>A display of colourful triangles. (Click for more about triangles.)</figcaption>
+</figure>
+
+```html
+<figure>
+	<a href="https://en.wikipedia.org/wiki/Triangle" target="_blank"><img src="triangles.svg"></a>
+	<figcaption>A display of colourful triangles. (Click for more about triangles.)</figcaption>
+</figure>
+```
+
+### Nested Figures `<figure><figure>` {#nestedfigures}
+
+Ideal for displaying multiple images side by side, or to enlarge a single figure. Collapsed into a single column on narrow displays. Formatted automatically when a single set of figures are nested into another. When only one figure is nested, it will be displayed wider than a normal figure.
+
+<figure>
+<figure>
+<%= image_tag 'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200"><rect x="0" y="0" width="600" height="200" fill="hsl(300 100.0% 50.0%"/></svg>' %>
+<figcaption>Wide Fuschia</figcaption>
+</figure>
+</figure>
+
+<figure>
+<figure>
+<%= image_tag 'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><rect x="0" y="0" width="100" height="50" fill="hsl(212 100% 44%)"/></svg>' %>
+<figcaption>Blue</figcaption>
+</figure>
+<figure>
+<%= image_tag 'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><rect x="0" y="0" width="100" height="50" fill="hsl(320 100% 64%)"/></svg>' %>
+<figcaption>Pink</figcaption>
+</figure>
+<figure>
+<%= image_tag 'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><rect x="0" y="0" width="100" height="50" fill="hsl(270 100% 64%)"/></svg>' %>
+<figcaption>Purple</figcaption>
+</figure>
+<figcaption>A set of electric colours.</figcaption>
+</figure>
+
+```html
+<figure>
+	<figure>
+		<img src="fuchsia.svg">
+		<figcaption>Wide Fuchsia</figcaption>
+	</figure>
+</figure>
+
+<figure>
+	<figure>
+		<img src="blue.svg">
+		<figcaption>Blue</figcaption>
+	</figure>
+	<figure>
+		<img src="pink.svg">
+		<figcaption>Pink</figcaption>
+	</figure>
+	<figure>
+		<img src="purple.svg">
+		<figcaption>Purple</figcaption>
+	</figure>
+	<figcaption>A set of electric colours.</figcaption>
+</figure>
+```
+
+### Video `<video>` {#video}
+
+Videos may be embedded on their own, or in a `<figure>`.
+
+<video controls src="/retrosurfing/browsing.hevc.mp4">
+<source src="/retrosurfing/browsing.hevc.mp4" type="video/mp4; codecs=hvc1">
+<source src="/retrosurfing/browsing.h264.mp4" type="video/mp4">
+</video>
+
+```html
+<video controls src="video.mp4"></video>
+```
+
+Video above is from [_Retrosurfing_](https://remino.net/retrosurfing/).
+
+### Inline Frame `<iframe>` {#iframe}
+
+Unless the `width` is set on an `<iframe>`, it will default to take the whole width of the `<body>`.
+
+<iframe
+  srcdoc='
+    <style>
+      body {
+        align-items: center;
+        background: pink;
+        display: flex;
+        font-size: 5rem;
+        height: 100vh;
+        justify-content: center;
+        margin: 0;
+      }
+    </style>
+    👗
+  '
+  height="200"
+	width="400"
+></iframe>
+
+```html
+<iframe src="dress.html" height="200" width="400">Dress</iframe>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Blocks
+
+### Thematic Break (Horizontal Rule) `<hr>` {#hr}
+
+<figure markdown=1>
+---
+</figure>
+
+```html
+<hr>
+```
+
+### Table `<table>` {#table}
+
+<table>
+	<caption>Table Caption</caption>
+	<thead>
+		<tr>
+			<th>Header 1</th>
+			<th>Header 2</th>
+			<th>Header 3</th>
+			<th>Header 4</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Footer 1</th>
+			<th>Footer 2</th>
+			<th>Footer 3</th>
+			<th>Footer 4</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>Data 1</td>
+			<td>Data 2</td>
+			<td>Data 3</td>
+			<td>Data 4</td>
+		</tr>
+		<tr>
+			<td>Data 5</td>
+			<td>Data 6</td>
+			<td>Data 7</td>
+			<td>Data 8</td>
+		</tr>
+		<tr>
+			<td>Data 9</td>
+			<td>Data 10</td>
+			<td>Data 11</td>
+			<td>Data 12</td>
+		</tr>
+	</tbody>
+</table>
+
+```html
+<table>
+	<caption>Table Caption</caption>
+	<thead>
+		<tr>
+			<th>Header 1</th>
+			<th>Header 2</th>
+			<th>Header 3</th>
+			<th>Header 4</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Footer 1</th>
+			<th>Footer 2</th>
+			<th>Footer 3</th>
+			<th>Footer 4</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>Data 1</td>
+			<td>Data 2</td>
+			<td>Data 3</td>
+			<td>Data 4</td>
+		</tr>
+		<tr>
+			<td>Data 5</td>
+			<td>Data 6</td>
+			<td>Data 7</td>
+			<td>Data 8</td>
+		</tr>
+		<tr>
+			<td>Data 9</td>
+			<td>Data 10</td>
+			<td>Data 11</td>
+			<td>Data 12</td>
+		</tr>
+	</tbody>
+</table>
+```
+
+### Details Disclosure `<details>` {#details}
+
+<details>
+	<summary>Click to show details</summary>
+	<p>Here are all the details!</p>
+</details>
+
+```html
+<details>
+	<summary>Click to show details</summary>
+	<p>Here are all the details!</p>
+</details>
+```
+
+<nav markdown=1>
+[Back to top](#)
+</nav>
+
+---
+
+## Popups {#popups}
+
+### Dialog `<dialog>` {#dialog}
+
+Styling is applied to the `<dialog>` and its backdrop.
+
+Additionally, formatting is applied to a `<menu>` of actions in a `<form>` when formatted as the code sample below.
+
+<button id="dialogOpen">Open Dialog</button>
+
+<dialog id="dialogExample">
+	<form method="dialog">
+		<p><strong>Hello!</strong> This is a native dialog.</p>
+		<menu>
+			<li><button value="cancel" autofocus>Cancel</button></li>
+			<li><button type="submit" value="ok">OK</button></li>
+		</menu>
+	</form>
+</dialog>
+
+```html
+<button onclick="document.getElementById('dialogExample').showModal()">Open Dialog</button>
+
+<dialog id="dialogExample">
+	<form method="dialog">
+		<p><strong>Hello!</strong> This is a native dialog.</p>
+		<menu>
+			<li><button value="cancel" autofocus>Cancel</button></li>
+			<li><button type="submit" value="ok">OK</button></li>
+		</menu>
+	</form>
+</dialog>
+```
+
+### Popover `popover` {#popover}
+
+<button popovertarget="detailsPopover">Show Popover</button>
+
+<div popover id="detailsPopover">
+  <p><strong>Hello!</strong> This is a popover.</p>
+</div>
+
+```html
+<button popovertarget="detailsPopover">Show Popover</button>
+
+<div popover id="detailsPopover">
+  <p><strong>Hello!</strong> This is a popover.</p>
+</div>
 ```
 
 <nav markdown=1>
@@ -231,488 +753,6 @@ This is ideal for pages with little content that needs to fill up the whole heig
 ```
 
 🖨️ **In print,** the layout of `<body>` remains unaffected.
-
-<nav markdown=1>
-[Back to top](#)
-</nav>
-
----
-
-## Code {#code}
-
-### Preformatted Text `<pre>` {#pre}
-
-<pre>
-C U B I C
-U \     U \
-B   C U B I C
-I   U   I   U
-C U B I C   B
-  \ I     \ I
-    C U B I C
-</pre>
-
-```html
-<pre>
-C U B I C
-U \     U \
-B   C U B I C
-I   U   I   U
-C U B I C   B
-  \ I     \ I
-    C U B I C
-</pre>
-```
-
-### Code Block `<pre><code>` {#precode}
-
-Many libraries, including code highlighters, use the `<code>` tag nested in a `<pre>` tag to display code blocks.
-
-```html
-alert('Hello World!');
-```
-
-```html
-<pre><code>
-alert('Hello World!');
-</code></pre>
-```
-
-### Inline Code `<code>` {#inlinecode}
-
-`echo hello`
-
-```html
-<code>echo hello</code>
-```
-
-### Keyboard Input `<kbd>` {#kbd}
-
-<kbd>Ctrl+C</kbd>
-
-```html
-<kbd>Ctrl+C</kbd>
-```
-
-### Sample Output `<samp>` {#samp}
-
-<samp>Press F1 to continue</samp>
-
-```html
-<samp>Press F1 to continue</samp>
-```
-
-<nav markdown=1>
-[Back to top](#)
-</nav>
-
----
-
-## Quotes
-
-### Inline Quotation `<q>` {#q}
-
-<q>Tech is fine, but I’d rather talk about fashion.</q>
-
-```html
-<q>Tech is fine, but I’d rather talk about fashion.</q>
-```
-
-### Block Quotation `<blockquote>` {#blockquote}
-
-<blockquote>
-	“Simplicity is the keynote of all true elegance.”<br>
-	&mdash; Coco Chanel
-</blockquote>
-
-```html
-<blockquote>
-	“Simplicity is the keynote of all true elegance.”<br>
-	&mdash; Coco Chanel
-</blockquote>
-```
-
-<nav markdown=1>
-[Back to top](#)
-</nav>
-
----
-
-## Lists {#lists}
-
-### Unordered List `<ul>` {#ul}
-
-- Unordered list item 1
-	- Nested unordered list item 1
-	- Nested unordered list item 2
-- Unordered list item 2
-- Unordered list item 3
-
-```html
-<ul>
-	<li>Unordered list item 1
-		<ul>
-			<li>Nested unordered list item 1</li>
-			<li>Nested unordered list item 2</li>
-		</ul>
-	</li>
-	<li>Unordered list item 2</li>
-	<li>Unordered list item 3</li>
-</ul>
-```
-
-### Ordered List `<ol>` {#ol}
-
-1. Ordered list item 1
-	1. Nested ordered list item 1
-	2. Nested ordered list item 2
-2. Ordered list item 2
-3. Ordered list item 3
-
-```html
-<ol>
-	<li>Ordered list item 1
-		<ol>
-			<li>Nested ordered list item 1</li>
-			<li>Nested ordered list item 2</li>
-		</ol>
-	</li>
-	<li>Ordered list item 2</li>
-	<li>Ordered list item 3</li>
-</ol>
-```
-
-### Menu List `<menu>` {#menu}
-
-<menu>
-	<li>Menu list item 1
-		<ul>
-			<li>Nested menu list item 1</li>
-			<li>Nested menu list item 2</li>
-		</ul>
-	</li>
-	<li>Menu list item 2</li>
-	<li>Menu list item 3</li>
-</menu>
-
-```html
-<menu>
-	<li>Menu list item 1
-		<ul>
-			<li>Nested menu list item 1</li>
-			<li>Nested menu list item 2</li>
-		</ul>
-	</li>
-	<li>Menu list item 2</li>
-	<li>Menu list item 3</li>
-</menu>
-```
-
-### Description List `<dl>` {#dl}
-
-Term 1
-: Definition 1
-
-Term 2
-: Definition 2
-
-Term 3
-: Definition 3
-
-```html
-<dl>
-	<dt>Term 1</dt>
-	<dd>Definition 1</dd>
-	<dt>Term 2</dt>
-	<dd>Definition 2</dd>
-	<dt>Term 3</dt>
-	<dd>Definition 3</dd>
-</dl>
-```
-
-<nav markdown=1>
-[Back to top](#)
-</nav>
-
----
-
-## Table `<table>` {#table}
-
-<table>
-	<caption>Table Caption</caption>
-	<thead>
-		<tr>
-			<th>Header 1</th>
-			<th>Header 2</th>
-			<th>Header 3</th>
-			<th>Header 4</th>
-		</tr>
-	</thead>
-	<tfoot>
-		<tr>
-			<th>Footer 1</th>
-			<th>Footer 2</th>
-			<th>Footer 3</th>
-			<th>Footer 4</th>
-		</tr>
-	</tfoot>
-	<tbody>
-		<tr>
-			<td>Data 1</td>
-			<td>Data 2</td>
-			<td>Data 3</td>
-			<td>Data 4</td>
-		</tr>
-		<tr>
-			<td>Data 5</td>
-			<td>Data 6</td>
-			<td>Data 7</td>
-			<td>Data 8</td>
-		</tr>
-		<tr>
-			<td>Data 9</td>
-			<td>Data 10</td>
-			<td>Data 11</td>
-			<td>Data 12</td>
-		</tr>
-	</tbody>
-</table>
-
-```html
-<table>
-	<caption>Table Caption</caption>
-	<thead>
-		<tr>
-			<th>Header 1</th>
-			<th>Header 2</th>
-			<th>Header 3</th>
-			<th>Header 4</th>
-		</tr>
-	</thead>
-	<tfoot>
-		<tr>
-			<th>Footer 1</th>
-			<th>Footer 2</th>
-			<th>Footer 3</th>
-			<th>Footer 4</th>
-		</tr>
-	</tfoot>
-	<tbody>
-		<tr>
-			<td>Data 1</td>
-			<td>Data 2</td>
-			<td>Data 3</td>
-			<td>Data 4</td>
-		</tr>
-		<tr>
-			<td>Data 5</td>
-			<td>Data 6</td>
-			<td>Data 7</td>
-			<td>Data 8</td>
-		</tr>
-		<tr>
-			<td>Data 9</td>
-			<td>Data 10</td>
-			<td>Data 11</td>
-			<td>Data 12</td>
-		</tr>
-	</tbody>
-</table>
-```
-
-<nav markdown=1>
-[Back to top](#)
-</nav>
-
----
-
-## Details Disclosure `<details>` {#details}
-
-<details>
-	<summary>Click to show details</summary>
-	<p>Here are all the details!</p>
-</details>
-
-```html
-<details>
-	<summary>Click to show details</summary>
-	<p>Here are all the details!</p>
-</details>
-```
-
-<nav markdown=1>
-[Back to top](#)
-</nav>
-
----
-
-## Embeds {#embeds}
-
-### Single Figure `<figure>` {#figure}
-
-A `<figure>` will display embedded content, including `<img>`, `<picture>`, `<svg>`, `<video>`, `<object>`, and `<embed>` as a block.
-
-Those elements are not shown as blocks outside of a `<figure>`, as there are cases when embedded content is meant to be inlined.
-
-<figure>
-<a href="https://en.wikipedia.org/wiki/Triangle" target="_blank"><%= image_tag '/dress.css/triangles.svg' %></a>
-<figcaption>A display of colourful triangles. (Click for more about triangles.)</figcaption>
-</figure>
-
-```html
-<figure>
-	<a href="https://en.wikipedia.org/wiki/Triangle" target="_blank"><img src="triangles.svg"></a>
-	<figcaption>A display of colourful triangles. (Click for more about triangles.)</figcaption>
-</figure>
-```
-
-### Nested Figures `<figure><figure>` {#nestedfigures}
-
-Ideal for displaying multiple images side by side, or to enlarge a single figure. Collapsed into a single column on narrow displays. Formatted automatically when a single set of figures are nested into another. When only one figure is nested, it will be displayed wider than a normal figure.
-
-<figure>
-<figure>
-<%= image_tag 'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200"><rect x="0" y="0" width="600" height="200" fill="hsl(300 100.0% 50.0%"/></svg>' %>
-<figcaption>Wide Fuschia</figcaption>
-</figure>
-</figure>
-
-<figure>
-<figure>
-<%= image_tag 'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><rect x="0" y="0" width="100" height="50" fill="hsl(212 100% 44%)"/></svg>' %>
-<figcaption>Blue</figcaption>
-</figure>
-<figure>
-<%= image_tag 'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><rect x="0" y="0" width="100" height="50" fill="hsl(320 100% 64%)"/></svg>' %>
-<figcaption>Pink</figcaption>
-</figure>
-<figure>
-<%= image_tag 'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><rect x="0" y="0" width="100" height="50" fill="hsl(270 100% 64%)"/></svg>' %>
-<figcaption>Purple</figcaption>
-</figure>
-<figcaption>A set of electric colours.</figcaption>
-</figure>
-
-```html
-<figure>
-	<figure>
-		<img src="fuchsia.svg">
-		<figcaption>Wide Fuchsia</figcaption>
-	</figure>
-</figure>
-
-<figure>
-	<figure>
-		<img src="blue.svg">
-		<figcaption>Blue</figcaption>
-	</figure>
-	<figure>
-		<img src="pink.svg">
-		<figcaption>Pink</figcaption>
-	</figure>
-	<figure>
-		<img src="purple.svg">
-		<figcaption>Purple</figcaption>
-	</figure>
-	<figcaption>A set of electric colours.</figcaption>
-</figure>
-```
-
-### Video `<video>` {#video}
-
-Videos may be embedded on their own, or in a `<figure>`.
-
-<video controls src="/retrosurfing/browsing.hevc.mp4">
-<source src="/retrosurfing/browsing.hevc.mp4" type="video/mp4; codecs=hvc1">
-<source src="/retrosurfing/browsing.h264.mp4" type="video/mp4">
-</video>
-
-```html
-<video controls src="video.mp4"></video>
-```
-
-Video above is from [_Retrosurfing_](https://remino.net/retrosurfing/).
-
-### Inline Frame `<iframe>` {#iframe}
-
-Unless the `width` is set on an `<iframe>`, it will default to take the whole width of the `<body>`.
-
-<iframe
-  srcdoc='
-    <style>
-      body {
-        align-items: center;
-        background: pink;
-        display: flex;
-        font-size: 5rem;
-        height: 100vh;
-        justify-content: center;
-        margin: 0;
-      }
-    </style>
-    👗
-  '
-  height="200"
-	width="400"
-></iframe>
-
-```html
-<iframe src="dress.html" height="200" width="400">Dress</iframe>
-```
-
-<nav markdown=1>
-[Back to top](#)
-</nav>
-
----
-
-## Inlines {#inlines}
-
-### Abbreviation `<abbr>` {#abbr}
-
-<abbr title="little black dress">LBD</abbr>
-
-```html
-<abbr title="little black dress">LBD</abbr>
-```
-
-### Mark Text (Highlighted Text) `<mark>` {#mark}
-
-<mark>highlighted text</mark>
-<mark><a href="#" data-disabled>highlighted text with link</a></mark>
-
-```html
-<mark>highlighted text</mark>
-<mark><a href="#main">highlighted text with link</a></mark>
-```
-
-### Inserted & Deleted Text `<ins>` `<del>` {#insdel}
-
-<p>
-  Our sale ends <del>Sunday</del> <ins>Monday</ins>.
-</p>
-
-```html
-<p>
-  Our sale ends <del>Sunday</del> <ins>Monday</ins>.
-</p>
-```
-
-<nav markdown=1>
-[Back to top](#)
-</nav>
-
----
-
-## Thematic Break (Horizontal Rule) `<hr>` {#hr}
-
-<figure markdown=1>
----
-</figure>
-
-```html
-<hr>
-```
 
 <nav markdown=1>
 [Back to top](#)
@@ -1056,62 +1096,6 @@ Using `<menu>` as a direct descendant of a `<form>` or `<fieldset>` is assumed t
 		<li><button type="submit">Save</button></li>
 	</menu>
 </form>
-```
-
-<nav markdown=1>
-[Back to top](#)
-</nav>
-
----
-
-## Popups {#popups}
-
-### Dialog `<dialog>` {#dialog}
-
-Styling is applied to the `<dialog>` and its backdrop.
-
-Additionally, formatting is applied to a `<menu>` of actions in a `<form>` when formatted as the code sample below.
-
-<button id="dialogOpen">Open Dialog</button>
-
-<dialog id="dialogExample">
-	<form method="dialog">
-		<p><strong>Hello!</strong> This is a native dialog.</p>
-		<menu>
-			<li><button value="cancel" autofocus>Cancel</button></li>
-			<li><button type="submit" value="ok">OK</button></li>
-		</menu>
-	</form>
-</dialog>
-
-```html
-<button onclick="document.getElementById('dialogExample').showModal()">Open Dialog</button>
-
-<dialog id="dialogExample">
-	<form method="dialog">
-		<p><strong>Hello!</strong> This is a native dialog.</p>
-		<menu>
-			<li><button value="cancel" autofocus>Cancel</button></li>
-			<li><button type="submit" value="ok">OK</button></li>
-		</menu>
-	</form>
-</dialog>
-```
-
-### Popover `<… popover>` {#popover}
-
-<button popovertarget="detailsPopover">Show Popover</button>
-
-<div popover id="detailsPopover">
-  <p><strong>Hello!</strong> This is a popover.</p>
-</div>
-
-```html
-<button popovertarget="detailsPopover">Show Popover</button>
-
-<div popover id="detailsPopover">
-  <p><strong>Hello!</strong> This is a popover.</p>
-</div>
 ```
 
 <nav markdown=1>
