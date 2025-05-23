@@ -43,6 +43,7 @@ const elements = {
 	hidden: {},
 	hr: {},
 	hyperlink: {},
+	iframe: {},
 	inert: {},
 	inlinecode: {},
 	input: {},

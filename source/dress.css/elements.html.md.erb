@@ -546,7 +546,7 @@ Term 3
 
 ---
 
-## Media {#media}
+## Embeds {#embeds}
 
 ### Single Figure `<figure>` {#figure}
 
@@ -628,6 +628,33 @@ Videos may be embedded on their own, or in a `<figure>`.
 ```
 
 Video above is from [_Retrosurfing_](https://remino.net/retrosurfing/).
+
+### Inline Frame `<iframe>` {#iframe}
+
+Unless the `width` is set on an `<iframe>`, it will default to take the whole width of the `<body>`.
+
+<iframe
+  srcdoc='
+    <style>
+      body {
+        align-items: center;
+        background: pink;
+        display: flex;
+        font-size: 5rem;
+        height: 100vh;
+        justify-content: center;
+        margin: 0;
+      }
+    </style>
+    👗
+  '
+  height="200"
+	width="400"
+></iframe>
+
+```html
+<iframe src="dress.html" height="200" width="400">Dress</iframe>
+```
 
 <nav markdown=1>
 [Back to top](#)
