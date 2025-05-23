@@ -47,11 +47,17 @@ body
 			vertical-align: middle
 			width: auto
 
+			@media (prefers-color-scheme: light)
+				filter: invert(1)
+
 		+ main
 			p:has(img):has(+ h1)
 				img
 					display: block
 					margin: 0 auto
+
+				@media (prefers-color-scheme: light)
+					filter: invert(1)
 
 				+ h1
 					margin-block-start: 0
