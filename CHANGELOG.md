@@ -47,6 +47,7 @@
 - Add shadow under `<dialog>` & `popover`
 - Adjust style of `<mark>` in dark theme
 - Have `<figure>` work with `<embed>` & `<picture>`
+- Update logo
 
 ## v4.3.2
 

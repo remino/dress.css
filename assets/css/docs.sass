@@ -38,11 +38,14 @@ body
 				margin-block-start: 0.8em
 
 	> header
-		object
+		h1 img
+			--height: calc(var(--dress-lh) * 3rem)
 			display: inline
-			margin-right: calc(var(--dress-m-b) / 2)
-			vertical-align: middle
+			height: var(--height)
 			margin-bottom: 12px
+			margin-inline-end: calc(var(--dress-m-i) / 2)
+			vertical-align: middle
+			width: auto
 
 		+ main
 			p:has(img):has(+ h1)
