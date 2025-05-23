@@ -43,6 +43,7 @@
 ## v4.4.0
 
 - Adjust padding of `<dialog>`
+- Add style for `popover`
 
 ## v4.3.2
 

@@ -1003,7 +1003,9 @@ Using `<menu>` as a direct descendant of a `<form>` or `<fieldset>` is assumed t
 
 ---
 
-## Dialog `<dialog>` {#dialog}
+## Popups {#popups}
+
+### Dialog `<dialog>` {#dialog}
 
 Styling is applied to the `<dialog>` and its backdrop.
 
@@ -1033,6 +1035,22 @@ Additionally, formatting is applied to a `<menu>` of actions in a `<form>` when 
 		</menu>
 	</form>
 </dialog>
+```
+
+### Popover `<… popover>` {#popover}
+
+<button popovertarget="detailsPopover">Show Popover</button>
+
+<div popover id="detailsPopover">
+  <p><strong>Hello!</strong> This is a popover.</p>
+</div>
+
+```html
+<button popovertarget="detailsPopover">Show Popover</button>
+
+<div popover id="detailsPopover">
+  <p><strong>Hello!</strong> This is a popover.</p>
+</div>
 ```
 
 <nav markdown=1>
