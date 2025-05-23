@@ -62,6 +62,7 @@ const elements = {
 	q: {},
 	radio: {},
 	range: {},
+	samp: {},
 	select: {},
 	singlefigure: {},
 	skipnav: {},

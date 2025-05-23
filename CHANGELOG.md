@@ -42,10 +42,9 @@
 
 ## v4.4.0
 
+- Add style for `popover`, `<q>`, `<samp>`
 - Adjust padding of `<dialog>`
-- Add style for `popover`
 - Add shadow under `<dialog>` & `popover`
-- Add style for `<q>`
 
 ## v4.3.2
 
