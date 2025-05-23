@@ -59,6 +59,7 @@ const elements = {
 	pre: {},
 	precode: {},
 	progress: {},
+	q: {},
 	radio: {},
 	range: {},
 	select: {},
