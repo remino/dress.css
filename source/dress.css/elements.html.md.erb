@@ -550,6 +550,10 @@ Term 3
 
 ### Single Figure `<figure>` {#figure}
 
+A `<figure>` will display embedded content, including `<img>`, `<picture>`, `<svg>`, `<video>`, `<object>`, and `<embed>` as a block.
+
+Those elements are not shown as blocks outside of a `<figure>`, as there are cases when embedded content is meant to be inlined.
+
 <figure>
 <a href="https://en.wikipedia.org/wiki/Triangle" target="_blank"><%= image_tag '/dress.css/triangles.svg' %></a>
 <figcaption>A display of colourful triangles. (Click for more about triangles.)</figcaption>

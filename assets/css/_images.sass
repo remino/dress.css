@@ -1,7 +1,7 @@
 figure
 	margin-inline: calc(var(--dress-p-i) * 2)
 
-	img, object, svg, video
+	embed, img, object, picture, svg, video
 		block-size: auto
 		display: block
 		margin-inline: auto
@@ -9,7 +9,7 @@ figure
 		max-inline-size: 100%
 
 	>
-		a[target="_blank"]:has(img, object, svg, video)::after
+		a[target="_blank"]:has(embed, img, object, picture, svg, video)::after
 			display: none
 
 	&:has(figure)
@@ -45,14 +45,14 @@ figure
 			padding-inline: calc((100vi - var(--dress-mw) - var(--dress-m-i) * 2) / 2)
 
 :focus-visible
-	img
+	img, picture
 		border-radius: var(--dress-br)
 		box-shadow: 0 0 0 calc(var(--dress-fs) / 4) var(--dress-bt-1-h)
 		box-shadow: 0 0 0 calc(var(--dress-fs) / 4) color(from var(--dress-bt-1-h) srgb r g b / 0.4)
 		outline: solid var(--dress-bs) color-mix(in srgb, var(--dress-fg), var(--dress-bt-1) 75%)
 		outline-offset: 0
 
-img
+img, picture
 	border: 0
 
 video
