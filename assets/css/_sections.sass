@@ -44,27 +44,6 @@ body
 			> h6:first-child
 				--dress-m-bs: var(--dress-m-b)
 
-dialog
-	background: var(--dress-bg-2)
-	border-radius: var(--dress-br)
-	border: solid var(--dress-bs) var(--dress-bg-3)
-	max-inline-size: min(var(--dress-mw) - var(--dress-m-b) * 4, 100% - env(safe-area-inset-left) - env(safe-area-inset-right) - var(--dress-m-b) * 4)
-	padding-block: calc(var(--dress-p-b) / 2)
-	padding-inline: var(--dress-p-i)
-
-	&::backdrop
-		background: color-mix(in srgb, var(--dress-bg) 80%, transparent)
-
-	> :first-child
-		margin-block-start: 0
-
-	> :last-child
-		margin-block-end: 0
-
-	> form > menu
-		justify-content: center
-		margin: 0
-
 footer, header
 	--dress-m-be: 0
 	--dress-m-bs: 0
