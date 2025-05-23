@@ -69,6 +69,17 @@ body
 div.highlight
 	position: relative
 
+	@media (pointer: fine)
+		.copy
+			opacity: 0
+
+			&:focus
+				opacity: 1
+
+		&:hover
+			.copy
+				opacity: 1
+
 h1, h2, h3, h4, h5, h6
 	&[id]
 		position: relative
@@ -94,6 +105,7 @@ h1, h2, h3, h4, h5, h6
 	position: absolute
 	transform-origin: 100% 0
 	transform: scale(0.8)
+	transition: all var(--dress-ad) var(--dress-at)
 
 	@media print
 		display: none
