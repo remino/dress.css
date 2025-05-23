@@ -27,6 +27,9 @@
 	--dress-ax: hsl(167 100% 54% / 60%)
 	--dress-ax-tx: hsl(187 71% 16%)
 
+	// Shadow colour
+	--dress-sh: color-mix(in srgb, var(--dress-fg) 20%, transparent)
+
 	// Line height
 	--dress-lh: 1.6
 
@@ -133,6 +136,9 @@
 		// Accent background and text colours
 		--dress-ax: hsl(167 100% 63% / 50%)
 		--dress-ax-tx: var(--dress-fg)
+
+		// Shadow colour
+		--dress-sh: var(--dress-bg)
 
 	// Overrides for print
 	@media print

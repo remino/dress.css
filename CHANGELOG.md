@@ -44,6 +44,7 @@
 
 - Adjust padding of `<dialog>`
 - Add style for `popover`
+- Add shadow under `<dialog>` & `popover`
 
 ## v4.3.2
 

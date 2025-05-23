@@ -55,7 +55,7 @@ const elements = {
 	newwindow: {},
 	ol: {},
 	output: {},
-	popover: {},
+	popover: { maxDiffPixelRatio: 0.01 },
 	pre: {},
 	precode: {},
 	progress: {},
