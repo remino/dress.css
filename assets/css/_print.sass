@@ -29,9 +29,18 @@
 		padding-block: calc(var(--dress-m-b) / 4 - var(--dress-bs))
 		padding-inline: calc(var(--dress-m-i) / 2)
 
+	a[role='button'],
+	button,
+	input[type='button'],
+	input[type='reset'],
+	input[type='submit']
 		&:not([disabled])
 			&, &:focus, &:hover
 				background: transparent
+
+	input[type='file']:not([disabled])::-webkit-file-upload-button
+		&, &:focus, &:hover
+			background: transparent
 
 	a
 		&[download],
