@@ -43,8 +43,12 @@ input[type='submit']
 	color: var(--dress-bt-1-tx)
 
 	&:not([disabled])
-		&:focus, &:hover
+		&:focus
 			background: var(--dress-bt-1-h)
+
+		@media (hover: hover)
+			&:hover
+				background: var(--dress-bt-1-h)
 
 		&:active
 			background: var(--dress-bt-1-a)
@@ -62,11 +66,15 @@ input[type='reset']
 	color: var(--dress-bt-2-tx)
 
 	&:not([disabled])
-		&:focus, &:hover
+		&:focus
 			background: var(--dress-bt-2-h)
 
+		@media (hover: hover)
+			&:hover
+				background: var(--dress-bt-2-h)
+
 		&:active
-			background: var(--dress-bt-2)
+			background: var(--dress-bt-2-a)
 
 fieldset
 	background: var(--dress-bg-2)
@@ -203,8 +211,12 @@ input[type="file"]
 		padding-inline: calc(var(--dress-m-i) / 2)
 		transition: all var(--dress-ad) var(--dress-at)
 
-		&:hover
-			background: var(--dress-bt-2-h)
+		@media (hover: hover)
+			&:hover
+				background: var(--dress-bt-2-h)
+
+		&:active
+			background: var(--dress-bt-2-a)
 
 input[type="radio"]
 	border-radius: 50%
@@ -229,8 +241,9 @@ input[type="range"]
 		block-size: var(--dress-thumb-size)
 		transition: background var(--dress-ad) var(--dress-at)
 
-		&:hover
-			background: var(--dress-bt-1-h)
+		@media (hover: hover)
+			&:hover
+				background: var(--dress-bt-1-h)
 	
 	&::-moz-range-track
 		background: var(--dress-bg-3)
@@ -252,8 +265,9 @@ input[type="range"]
 		margin-block-start: calc(var(--dress-thumb-size) * -1 / 2 + var(--dress-track-size) / 2)
 		transition: background var(--dress-ad) var(--dress-at)
 
-		&:hover
-			background: var(--dress-bt-1-h)
+		@media (hover: hover)
+			&:hover
+				background: var(--dress-bt-1-h)
 
 label
 	@extend %cursor-pointer

@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+* [v4.4.1](#v441)
 * [v4.4.0](#v440)
 * [v4.3.2](#v432)
 * [v4.3.1](#v431)
@@ -39,6 +40,11 @@
 * [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## v4.4.1
+
+- Avoid hover state on links and buttons for mobile
+- Add `--dress-bt-2-a` variable
 
 ## v4.4.0
 
