@@ -45,6 +45,7 @@
 
 - Avoid hover state on links and buttons for mobile
 - Add `--dress-bt-2-a` variable
+- Set `max-width` on `<iframe>`
 
 ## v4.4.0
 

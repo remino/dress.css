@@ -44,6 +44,7 @@ const elements = {
 	hr: {},
 	hyperlink: {},
 	iframe: {},
+	'iframe-wide': {},
 	inert: {},
 	inlinecode: {},
 	insdel: {},
