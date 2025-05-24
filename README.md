@@ -171,11 +171,15 @@ Using [Hurl](https://hurl.dev/):
 hurl --test tests/responses.hurl
 ```
 
+[Back to top](#)
+
 ---
 
 ## Updates
 
 See [CHANGELOG](CHANGELOG.md).
+
+[Back to top](#)
 
 ---
 
