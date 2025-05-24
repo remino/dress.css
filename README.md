@@ -95,6 +95,11 @@ Add the stylesheet to your HTML and write your content:
 <link rel="stylesheet" href="https://unpkg.com/@remino/dress.css/dist/dress.css" />
 ```
 
+In `<link>`, you can use either one of the CDN URLs below:
+
+- <https://unpkg.com/@remino/dress.css/dist/dress.css>
+- <https://cdn.jsdelivr.net/npm/@remino/dress.css/dist/dress.css>
+
 ### NPM
 
 Install the package from NPM:
@@ -114,7 +119,12 @@ Use the file in your Sass files, or include it in your CSS, etc.
 ### Download
 
 Download the `dress.css` file from the
-[GitHub releases](https://github.com/remino/dress.css/releases).
+[GitHub releases](https://github.com/remino/dress.css/releases) or directly at
+this URL:
+
+- <https://github.com/remino/dress.css/releases/latest/download/dress.css>
+
+[Back to top](#)
 
 ---
 
