@@ -56,7 +56,7 @@
 		"version": "sed -i '' -E '1,/^## /s/^## .*/## v'$npm_package_version'/' README.md && git add README.md"
 	},
 	"type": "module",
-	"version": "4.4.1",
+	"version": "4.4.2",
 	"watch": {
 		"css:build": {
 			"extensions": "css,sass,scss",
