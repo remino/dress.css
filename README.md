@@ -90,6 +90,7 @@ examples:
 
 Add the stylesheet to your HTML and write your content:
 
+<!-- prettier-ignore -->
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@remino/dress.css/dist/dress.css" />
 ```
