@@ -16,6 +16,7 @@ activate :reslib_url, base_url: app.data.site.url
 activate :syntax
 
 configure :build do
+  activate :asset_hash, exts: %w(.css .png .js .svg), ignore: [/(apple|favicon)/]
 	activate :gzip
 	activate :reslib_minify
 
