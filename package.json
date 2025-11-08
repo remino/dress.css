@@ -3,7 +3,7 @@
 	"devDependencies": {
 		"@codemirror/lang-html": "^6.4.9",
 		"@lopatnov/rollup-plugin-uglify": "^2.1.5",
-		"@playwright/test": "^1.49.1",
+		"@playwright/test": "^1.56.1",
 		"@remino/reslib": "git+https://github.com/remino/reslib.git#v0.3.34",
 		"@rollup/plugin-commonjs": "^24.1.0",
 		"@rollup/plugin-node-resolve": "^15.2.3",
