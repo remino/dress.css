@@ -1,0 +1,149 @@
+@import url('./themes/pastie.css') screen and (prefers-color-scheme: light);
+@import url('./themes/dracula.css') screen and (prefers-color-scheme: dark);
+
+body {
+	> footer > nav {
+		align-items: center;
+		display: flex;
+		flex-flow: row;
+		gap: calc(var(--dress-lh) * 1rem);
+		justify-content: flex-start;
+		margin-block: 0;
+		min-height: calc(var(--dress-lh) * 2rem);
+
+		> a {
+			align-items: flex-start;
+			display: inline-flex;
+			flex-flow: column;
+			justify-content: flex-start;
+			position: relative;
+
+			&::after {
+				content: '';
+				display: block;
+				inset: 0;
+				position: absolute;
+				z-index: 10;
+			}
+
+			> object {
+				display: inline-block;
+				height: calc(var(--dress-lh) * 1rem);
+				inline-size: auto;
+			}
+		}
+
+		> ul {
+			margin-block-start: 0.8em;
+		}
+	}
+
+	> header {
+		h1 img {
+			--height: calc(var(--dress-lh) * 3rem);
+			display: inline;
+			height: var(--height);
+			margin-block-end: 12px;
+			margin-inline-end: calc(var(--dress-m-i) / 2);
+			vertical-align: middle;
+			width: auto;
+
+			@media (prefers-color-scheme: light) {
+				filter: invert(1);
+			}
+		}
+
+		+ main {
+			p:has(img):has(+ h1) {
+				img {
+					display: block;
+					margin: 0 auto;
+				}
+
+				@media (prefers-color-scheme: light) {
+					filter: invert(1);
+				}
+
+				+ h1 {
+					margin-block-start: 0;
+					text-align: center;
+
+					+ h2 {
+						text-align: center;
+
+						+ p {
+							text-align: center;
+
+							+ p {
+								text-align: center;
+
+								+ p {
+									text-align: center;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+div.highlight {
+	position: relative;
+
+	@media (pointer: fine) {
+		.copy {
+			opacity: 0;
+
+			&:focus {
+				opacity: 1;
+			}
+		}
+
+		&:hover .copy {
+			opacity: 1;
+		}
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	&[id] {
+		position: relative;
+
+		&:hover .anchor-link,
+		&:target .anchor-link,
+		.anchor-link:focus {
+			opacity: 1;
+		}
+
+		.anchor-link {
+			--anchor-link-width: 2rem;
+			color: var(--dress-bg-2);
+			margin-inline-start: calc(var(--anchor-link-width) * -1);
+			opacity: 0;
+			position: absolute;
+			text-align: center;
+			text-decoration: none;
+			inline-size: var(--anchor-link-width);
+		}
+	}
+}
+
+.copy {
+	inset: 0 0 auto auto;
+	margin: 0;
+	position: absolute;
+	transform: scale(0.8);
+	transform-origin: 100% 0;
+	transition: all var(--dress-ad) var(--dress-at);
+
+	@media print {
+		display: none;
+	}
+}

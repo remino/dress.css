@@ -1,0 +1,17 @@
+---
+import '../styles/test.css'
+const { title = 'dress.css test' } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{title}</title>
+		<link rel="stylesheet" href="/dress.css/dress.css" />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

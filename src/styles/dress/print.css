@@ -1,0 +1,127 @@
+	@media print {
+		:focus-visible {
+			box-shadow: none;
+			outline: none;
+		}
+
+		a {
+			text-decoration: none;
+
+			&,
+			&:link,
+			&:visited {
+				color: inherit;
+			}
+
+			&:not([href^='#'], [href^='/'])::after {
+				content: ' <' attr(href) '>';
+				display: inline;
+				font-size: 0.8rem;
+				font-weight: normal;
+				text-transform: none;
+			}
+
+			&[download],
+			&[target='_blank'] {
+				&::after {
+					display: none;
+				}
+			}
+		}
+
+		a[role='button'],
+		button,
+		input[type='button'],
+		input[type='file']::-webkit-file-upload-button,
+		input[type='reset'],
+		input[type='submit'] {
+			background: transparent;
+			border: solid var(--dress-bs) var(--dress-fg);
+			color: var(--dress-fg);
+			padding-block: calc(var(--dress-m-b) / 4 - var(--dress-bs));
+			padding-inline: calc(var(--dress-m-i) / 2);
+		}
+
+		a[role='button'],
+		button,
+		input[type='button'],
+		input[type='reset'],
+		input[type='submit'] {
+			&:not([disabled]) {
+				&,
+				&:focus,
+				&:hover {
+					background: transparent;
+				}
+			}
+		}
+
+		input[type='file']:not([disabled])::-webkit-file-upload-button {
+			&,
+			&:focus,
+			&:hover {
+				background: transparent;
+			}
+		}
+
+		aside {
+			border-block-end: solid var(--dress-bs) var(--dress-bg-3);
+			border-block-start: solid var(--dress-bs) var(--dress-bg-3);
+		}
+
+		button[type='submit'],
+		input[type='submit'] {
+			border-width: calc(var(--dress-bs) * 2);
+			color: var(--dress-fg);
+			padding-block: calc(var(--dress-m-b) / 4 - var(--dress-bs) * 2);
+			padding-inline: calc(var(--dress-m-i) / 2 - var(--dress-bs));
+
+			&:not([disabled]) {
+				&,
+				&:focus,
+				&:hover {
+					background: transparent;
+				}
+			}
+		}
+
+		del,
+		ins,
+		mark {
+			background: transparent;
+		}
+
+		del,
+		ins {
+			padding: 0;
+		}
+
+		footer,
+		header {
+			menu,
+			nav ul {
+				display: none;
+			}
+		}
+
+		footer {
+			border-block-start: solid var(--dress-bs) var(--dress-bg-3);
+		}
+
+		header {
+			border-block-end: solid var(--dress-bs) var(--dress-bg-3);
+		}
+
+		ins {
+			text-decoration: underline;
+		}
+
+		mark {
+			border: 1px solid;
+			color: inherit;
+		}
+
+		nav:has(a[href^='#']):not(:has(a:not([href^='#']), a:nth-child(2), li:nth-child(2))) {
+			display: none;
+		}
+	}

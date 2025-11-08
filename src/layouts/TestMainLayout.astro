@@ -1,0 +1,10 @@
+---
+import TestBodyLayout from './TestBodyLayout.astro'
+const { title = 'dress.css test' } = Astro.props
+---
+
+<TestBodyLayout title={title}>
+	<main>
+		<slot />
+	</main>
+</TestBodyLayout>

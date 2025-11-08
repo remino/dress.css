@@ -1,0 +1,26 @@
+---
+import TestMainLayout from '../../../layouts/TestMainLayout.astro'
+---
+
+<TestMainLayout title="Dialog Wide">
+<style>
+body {
+	background: var(--dress-bg-2);
+}
+</style>
+
+<dialog id="dialogExample">
+	<form method="dialog">
+		<p><strong>Hello!</strong></p>
+    <p>Dolor sit irure officia sit nisi labore pariatur tempor consequat sunt exercitation ullamco. Labore Lorem ullamco proident ullamco sit in ipsum consequat mollit cupidatat sit.</p>
+		<menu>
+			<li><button value="cancel" autofocus>I want to go back home</button></li>
+			<li><button type="submit" value="ok">Hey! Nice to meet you</button></li>
+		</menu>
+	</form>
+</dialog>
+
+<script>
+document.getElementById('dialogExample').showModal()
+</script>
+</TestMainLayout>

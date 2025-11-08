@@ -1,0 +1,18 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro'
+import '../../styles/playground.css'
+import playgroundScript from '../../scripts/playground.ts?url'
+
+const title = 'Playground'
+---
+
+<PageLayout title={title} pathname="/dress.css/playground/">
+	<script slot="head" type="module" src={playgroundScript} />
+
+	<h1>{title}</h1>
+
+	<playground-app>
+		<h1>Hello!</h1>
+		<p>Edit me!</p>
+	</playground-app>
+</PageLayout>

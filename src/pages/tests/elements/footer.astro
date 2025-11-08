@@ -1,0 +1,20 @@
+---
+import TestBodyLayout from '../../../layouts/TestBodyLayout.astro'
+---
+
+<TestBodyLayout title="Footer">
+<main></main>
+<footer>
+	<p>&copy; 2024</p>
+	<nav>
+		<ul>
+			<li><a href="#terms">Terms of Use</a></li>
+			<li><a href="#privacy">Privacy Policy</a></li>
+		</ul>
+	</nav>
+	<menu>
+		<li><button onclick="window.print()">Print</button></li>
+		<li><button onclick="prompt('Copy URL:', location.href)">Share</button></li>
+	</menu>
+</footer>
+</TestBodyLayout>

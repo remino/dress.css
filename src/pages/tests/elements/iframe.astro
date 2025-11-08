@@ -1,0 +1,24 @@
+---
+import TestMainLayout from '../../../layouts/TestMainLayout.astro'
+---
+
+<TestMainLayout title="Iframe">
+<iframe
+  srcdoc='
+    <style>
+      body {
+        align-items: center;
+        background: pink;
+        display: flex;
+        font-size: 5rem;
+        height: 100vh;
+        justify-content: center;
+        margin: 0;
+      }
+    </style>
+    👗
+  '
+  height="200"
+	width="300"
+></iframe>
+</TestMainLayout>

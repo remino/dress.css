@@ -1,0 +1,28 @@
+---
+import TestMainLayout from '../../../layouts/TestMainLayout.astro'
+---
+
+<TestMainLayout title="Min Width">
+<style is:inline>
+:root {
+	--dress-bg-2: transparent;
+	--dress-bg-3: transparent;
+	--dress-mw-min: 22rem;
+}
+
+body {
+	background-color: var(--dress-fg);
+}
+
+h1 {
+	background: var(--dress-fg);
+	color: var(--dress-bg);
+}
+
+main {
+	background: var(--dress-bg);
+}
+</style>
+
+<h1>min-width</h1>
+</TestMainLayout>

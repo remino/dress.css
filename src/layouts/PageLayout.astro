@@ -1,0 +1,86 @@
+---
+import BaseLayout from './BaseLayout.astro'
+import '../styles/docs.css'
+import { siteConfig } from '../config/site.ts'
+import docsScript from '../scripts/docs.ts?url'
+
+interface Props {
+	title?: string
+	description?: string
+	image?: string
+	pathname?: string
+	includeDocsScript?: boolean
+}
+
+const {
+	title,
+	description,
+	image,
+	pathname,
+	includeDocsScript = true,
+} = Astro.props as Props
+
+const navItems = [
+	{ label: 'Home', href: '/dress.css/' },
+	{ label: 'Updates', href: '/dress.css/updates/' },
+	{ label: 'Elements', href: '/dress.css/elements/' },
+	{ label: 'Demo', href: '/dress.css/demo/' },
+	{ label: 'Playground', href: '/dress.css/playground/' },
+	{
+		label: 'Variables',
+		href: 'https://github.com/remino/dress.css/blob/main/assets/css/_variables.sass',
+		external: true,
+	},
+	{ label: 'GitHub', href: 'https://github.com/remino/dress.css', external: true },
+	{
+		label: 'npm',
+		href: 'https://www.npmjs.com/package/@remino/dress.css',
+		external: true,
+	},
+]
+---
+
+<BaseLayout {title} {description} {image} {pathname}>
+	{includeDocsScript && (
+		<script slot="head" type="module" src={docsScript} />
+	)}
+	<slot slot="head" name="head" />
+
+	<a href="#main">Skip to main content</a>
+	<header>
+		<h1><img src="/dress.css/dress.svg" alt="" role="presentation" />{siteConfig.title}</h1>
+		<nav aria-label="Main">
+			<ul>
+				{navItems.map(item => (
+					<li>
+						<a
+							href={item.href}
+							target={item.external ? '_blank' : undefined}
+							rel={item.external ? 'noreferrer noopener' : undefined}
+						>{item.label}</a>
+					</li>
+				))}
+			</ul>
+		</nav>
+	</header>
+	<main id="main">
+		<slot />
+	</main>
+	<footer id="end">
+		<nav aria-label="Footer">
+			<a href="/">
+				<object type="image/svg+xml" data="/dress.css/remino.svg">
+					<img src="/dress.css/remino.svg" alt="RÉMINO" />
+				</object>
+			</a>
+			<ul>
+				<li>
+					<a href="/dress.css/license/">License</a>
+				</li>
+				<li>
+					<a href="#">Back to Top</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+</BaseLayout>

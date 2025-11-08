@@ -1,0 +1,30 @@
+---
+import TestMainLayout from '../../../layouts/TestMainLayout.astro'
+---
+
+<TestMainLayout title="Max Width">
+<style is:inline>
+:root {
+	--dress-bg-2: transparent;
+	--dress-bg-3: transparent;
+	--dress-mw: 22rem;
+	--dress-mw-min: 0;
+}
+
+body {
+	background-color: var(--dress-fg);
+}
+
+h1 {
+	background: var(--dress-fg);
+	color: var(--dress-bg);
+}
+
+main {
+	background: var(--dress-bg);
+}
+</style>
+
+<h1>max-width</h1>
+<p>Dolore exercitation cupidatat nostrud. Adipisicing laboris magna sit veniam ea duis quis. Officia est fugiat consectetur dolor est non. Est esse esse et fugiat nisi sint proident deserunt ad irure.</p>
+</TestMainLayout>

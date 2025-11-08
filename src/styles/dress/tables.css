@@ -1,0 +1,36 @@
+	caption {
+		font-weight: bold;
+		padding-block: calc(var(--dress-p-b) / 2);
+		padding-inline: calc(var(--dress-p-i) / 2);
+	}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+		display: block;
+		inline-size: 100%;
+		overflow-x: auto;
+	}
+
+	tbody {
+		tr:nth-child(even) {
+			background: var(--dress-bg-2);
+		}
+	}
+
+	td,
+	th {
+		border: var(--dress-bs) solid var(--dress-bg-3);
+		padding-block: calc(var(--dress-p-b) / 2);
+		padding-inline: calc(var(--dress-p-i) / 2);
+	}
+
+	tfoot,
+	thead {
+		background: var(--dress-bg-2);
+	}
+
+	th {
+		font-weight: bold;
+		text-align: center;
+	}

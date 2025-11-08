@@ -1,0 +1,111 @@
+	address,
+	area,
+	article,
+	aside,
+	audio,
+	blockquote,
+	datalist,
+	details,
+	dl,
+	fieldset,
+	figcaption,
+	figure,
+	form,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	header,
+	hr,
+	iframe,
+	img,
+	label,
+	menu,
+	meter,
+	nav,
+	object,
+	ol,
+	optgroup,
+	option,
+	output,
+	p,
+	pre,
+	progress,
+	ruby,
+	section,
+	svg,
+	table,
+	ul,
+	video {
+		margin-block-end: var(--dress-m-be);
+		margin-block-start: var(--dress-m-bs);
+	}
+
+	blockquote,
+	details,
+	pre {
+		background: var(--dress-bg-2);
+		box-sizing: border-box;
+		padding-block: var(--dress-p-b);
+		padding-inline: var(--dress-p-i);
+	}
+
+	blockquote {
+		--dress-border-left: calc(var(--dress-bs) * 4);
+		border-inline-start: var(--dress-border-left) solid var(--dress-bg-3);
+		margin-inline: 0;
+		padding-block: var(--dress-m-bs) var(--dress-m-be);
+		padding-inline-start: calc(var(--dress-p-i) - var(--dress-border-left));
+
+		> :first-child {
+			--dress-m-bs: 0;
+		}
+
+		> :last-child {
+			--dress-m-be: 0;
+		}
+	}
+
+	details,
+	pre {
+		border: var(--dress-bs) solid var(--dress-bg-3);
+		border-radius: var(--dress-br);
+	}
+
+	details {
+		padding-block: calc(var(--dress-p-b) / 2);
+		padding-block-start: 0;
+
+		&[open] {
+			padding-block-end: 0;
+		}
+	}
+
+	hr {
+		--dress-m-be: calc((var(--dress-m-b) * 2) - var(--dress-bs));
+		--dress-m-bs: calc(var(--dress-m-b) * 2);
+		border: 0;
+		border-block-start: var(--dress-bs) solid var(--dress-bg-3);
+	}
+
+	iframe {
+		background: transparent;
+		border: 0;
+		display: block;
+		max-width: 100%;
+
+		&:not([width]) {
+			width: 100%;
+		}
+	}
+
+	summary {
+		cursor: pointer;
+		font-weight: bold;
+		margin-block-end: calc(var(--dress-m-b) * -0.5);
+		margin-inline: calc(var(--dress-m-i) * -1);
+		padding-block: calc(var(--dress-p-b) / 2);
+		padding-inline: var(--dress-p-i);
+	}
