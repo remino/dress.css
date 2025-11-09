@@ -5,6 +5,7 @@ export default defineConfig({
 	timeout: 30_000,
 	retries: process.env.CI ? 1 : 0,
 	fullyParallel: true,
+	workers: 16,
 	use: {
 		baseURL: 'http://127.0.0.1:4321',
 		viewport: { width: 400, height: 400 },
