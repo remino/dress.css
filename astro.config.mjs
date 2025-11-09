@@ -4,7 +4,7 @@ import remarkToc from 'remark-toc'
 
 export default defineConfig({
 	output: 'static',
-	outDir: './site',
+	outDir: './deploy/public',
 	devToolbar: {
 		enabled: process.env.ASTRO_DEV_TOOLBAR_ENABLED !== '0',
 	},

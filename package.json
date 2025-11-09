@@ -16,7 +16,8 @@
 		"test": "npm run test:visual",
 		"test:visual": "playwright test",
 		"test:visual:ui": "playwright test --ui",
-		"test:visual:update": "playwright test --update-snapshots"
+		"test:visual:update": "playwright test --update-snapshots",
+		"worktree:init": "bash ./scripts/init-deploy-worktree.sh"
 	},
 	"files": [
 		"dist/dress.css"
@@ -57,3 +58,4 @@
 		"vite": "^5.4.8"
 	}
 }
+
