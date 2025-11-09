@@ -10,9 +10,6 @@ export default defineConfig({
 	devToolbar: {
 		enabled: process.env.ASTRO_DEV_TOOLBAR_ENABLED !== '0',
 	},
-	build: {
-		exclude: ['/tests/*', '/tests/*/*'],
-	},
 	markdown: {
 		rehypePlugins: [],
 		remarkPlugins: [
