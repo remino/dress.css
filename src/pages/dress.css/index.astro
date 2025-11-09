@@ -1,13 +1,8 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro'
-import MarkdownIt from 'markdown-it'
-import rawReadme from '../../../README.md?raw'
-
-const md = new MarkdownIt({ html: true, linkify: true })
-const readme = rawReadme.replace(/public\/dress\.css/gi, '/dress.css')
-const readmeHtml = md.render(readme)
+import ReadmeContent from '../../../README.md'
 ---
 
 <PageLayout title="dress.css" pathname="/dress.css/">
-	<article class="readme" set:html={readmeHtml} />
+	<ReadmeContent />
 </PageLayout>
