@@ -1,0 +1,10 @@
+<% ['dresscss', 'semcss', 'sem.css'].forEach(alias => { %>
+location = /<%= alias %> {
+	return 301 /dress.css/;
+}
+
+location /<%= alias %>/ {
+	rewrite ^/<%= alias.replace('.', '\\.') %>/(.*) /dress.css/$1 permanent;
+}
+<% }); %>
+

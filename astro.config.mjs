@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config'
 import remarkCustomHeadingId from 'remark-custom-heading-id'
 import remarkToc from 'remark-toc'
+import nginxConfig from './src/integrations/nginxConfig.ts'
 
 export default defineConfig({
 	output: 'static',
@@ -17,4 +18,10 @@ export default defineConfig({
 			assetsDir: 'assets',
 		},
 	},
+	integrations: [
+		nginxConfig({
+			template: 'src/nginx.conf.ejs',
+			output: 'nginx/dress.css.conf',
+		}),
+	],
 })
