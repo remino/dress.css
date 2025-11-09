@@ -1,8 +1,10 @@
 import { defineConfig } from 'astro/config'
 import remarkCustomHeadingId from 'remark-custom-heading-id'
 import remarkToc from 'remark-toc'
+import rehypeExternalLinks from 'rehype-external-links'
 import nginxConfig from './src/integrations/nginxConfig.ts'
 import removeTests from './src/integrations/removeTests.ts'
+import { siteConfig } from './src/config/site.ts'
 
 export default defineConfig({
 	output: 'static',
@@ -11,7 +13,17 @@ export default defineConfig({
 		enabled: process.env.ASTRO_DEV_TOOLBAR_ENABLED !== '0',
 	},
 	markdown: {
-		rehypePlugins: [],
+		rehypePlugins: [
+			[
+				rehypeExternalLinks,
+				{
+					target: '_blank',
+					rel: ['noopener', 'noreferrer'],
+					test: ({ properties: { href } }) =>
+						/^https?:\/\//.test(href) && !href.startsWith(siteConfig.url),
+				},
+			],
+		],
 		remarkPlugins: [
 			remarkCustomHeadingId,
 			[remarkToc, { heading: 'Table of Contents' }],
