@@ -34,7 +34,6 @@ export default [
 		astroPlugin.configs?.['flat/recommended'] ??
 			astroPlugin.configs?.recommended,
 	),
-	prettier,
 	{
 		files: ['**/*.{js,jsx,mjs,cjs}'],
 		languageOptions: {
@@ -65,4 +64,5 @@ export default [
 		},
 		rules: tsRules,
 	},
+	prettier,
 ]
