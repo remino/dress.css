@@ -90,8 +90,24 @@ documentation site).
 npm install
 npm run dev        # Start the Astro dev server
 npm run build:css  # Build dist/dress.css
-npm run build:site # Build the documentation site to site/
+npm run build:site # Build the documentation site to deploy/public/
 npm run build      # Run both builds
+```
+
+### Publishing the static site
+
+Deploy artifacts live in `deploy/public/` (docs) and `deploy/nginx/` (rewrite
+rules). Set up an orphan `deploy` branch once:
+
+```bash
+npm run worktree:init   # creates deploy/ as a git worktree on branch "deploy"
+```
+
+Then publish builds with:
+
+```bash
+npm run publish:site    # rebuild + git add/commit inside deploy/
+(cd deploy && git push origin deploy)
 ```
 
 ---
