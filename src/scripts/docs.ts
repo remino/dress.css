@@ -1,7 +1,7 @@
 import init from '@remino/reslib/lib/init.js'
 
 const addCodeBlockCopyButton = () => {
-	document.querySelectorAll<HTMLElement>('div.highlight').forEach(block => {
+	document.querySelectorAll<HTMLElement>('div.highlight').forEach((block) => {
 		const code = block.querySelector('code')
 
 		if (!code) return
@@ -36,7 +36,7 @@ const addCodeBlockCopyButton = () => {
 const addHeadingAnchorLinks = () => {
 	document
 		.querySelectorAll<HTMLElement>('[id]:is(h1, h2, h3, h4, h5, h6)')
-		.forEach(heading => {
+		.forEach((heading) => {
 			const link = document.createElement('a')
 			link.classList.add('anchor-link')
 			link.href = `${window.location.href.replace(/#.*$/, '')}#${heading.id}`
@@ -48,21 +48,25 @@ const addHeadingAnchorLinks = () => {
 }
 
 const disableLinks = () => {
-	document.querySelectorAll<HTMLAnchorElement>('a[data-disabled]').forEach(link => {
-		link.addEventListener('click', event => {
-			event.preventDefault()
-			event.stopPropagation()
+	document
+		.querySelectorAll<HTMLAnchorElement>('a[data-disabled]')
+		.forEach((link) => {
+			link.addEventListener('click', (event) => {
+				event.preventDefault()
+				event.stopPropagation()
+			})
 		})
-	})
 }
 
 const disableNoSubmitForms = () => {
-	document.querySelectorAll<HTMLFormElement>('form[data-nosubmit]').forEach(form => {
-		form.addEventListener('submit', event => {
-			event.preventDefault()
-			event.stopPropagation()
+	document
+		.querySelectorAll<HTMLFormElement>('form[data-nosubmit]')
+		.forEach((form) => {
+			form.addEventListener('submit', (event) => {
+				event.preventDefault()
+				event.stopPropagation()
+			})
 		})
-	})
 }
 
 const setupDialog = () => {
@@ -71,7 +75,9 @@ const setupDialog = () => {
 	if (!dialogOpen) return
 
 	dialogOpen.addEventListener('click', () => {
-		const dialog = document.getElementById('dialogExample') as HTMLDialogElement | null
+		const dialog = document.getElementById(
+			'dialogExample',
+		) as HTMLDialogElement | null
 
 		dialog?.showModal()
 	})
@@ -82,7 +88,7 @@ const setupSignupForm = () => {
 
 	if (!form) return
 
-	form.addEventListener('submit', event => {
+	form.addEventListener('submit', (event) => {
 		event.preventDefault()
 		event.stopPropagation()
 
@@ -94,7 +100,9 @@ const setupSignupForm = () => {
 
 		if (!currentTarget) return
 
-		const submit = currentTarget.querySelector<HTMLButtonElement>('button[type="submit"]')
+		const submit = currentTarget.querySelector<HTMLButtonElement>(
+			'button[type="submit"]',
+		)
 
 		if (!submit) return
 
@@ -103,13 +111,15 @@ const setupSignupForm = () => {
 
 	form.addEventListener('input', applyValidity)
 	form.addEventListener('change', applyValidity)
-	form.addEventListener('reset', event => {
+	form.addEventListener('reset', (event) => {
 		const currentTarget = event.currentTarget as HTMLFormElement | null
 
 		if (!currentTarget) return
 
 		setTimeout(() => {
-			const submit = currentTarget.querySelector<HTMLButtonElement>('button[type="submit"]')
+			const submit = currentTarget.querySelector<HTMLButtonElement>(
+				'button[type="submit"]',
+			)
 
 			if (!submit) return
 

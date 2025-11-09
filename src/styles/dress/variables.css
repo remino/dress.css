@@ -1,92 +1,100 @@
+:root {
+	--dress-bg: rgb(255 255 255);
+	--dress-bg-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 5%);
+	--dress-bg-3: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
+	--dress-fg: rgb(0 0 0);
+	--dress-lk: hsl(212 100% 44%);
+	--dress-lk-h: hsl(212 97% 34%);
+	--dress-lk-v: hsl(270 100% 46%);
+	--dress-lk-a: hsl(320 100% 48%);
+	--dress-lk-tx: hsl(0 0% 100%);
+	--dress-bt-1: hsl(212 100% 40%);
+	--dress-bt-1-h: hsl(212 100% 47.1%);
+	--dress-bt-1-a: hsl(212 97% 36%);
+	--dress-bt-1-tx: var(--dress-bg);
+	--dress-bt-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 10%);
+	--dress-bt-2-h: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
+	--dress-bt-2-a: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 20%);
+	--dress-bt-2-tx: var(--dress-fg);
+	--dress-ax: hsl(167 100% 54% / 60%);
+	--dress-ax-tx: hsl(187 71% 16%);
+	--dress-del: hsl(330 100% 54% / 60%);
+	--dress-ins: hsl(140 100% 54% / 60%);
+	--dress-sh: color-mix(in srgb, var(--dress-fg) 20%, transparent);
+	--dress-lh: 1.6;
+	--dress-mp: var(--dress-s-i);
+	--dress-mw: 50rem;
+	--dress-mw-min: 0;
+	--dress-mw-f: max-content;
+	--dress-bs: 1px;
+	--dress-br: 0.25rem;
+	--dress-s-b: calc(var(--dress-lh) * 1rem);
+	--dress-s-i: 1.6rem;
+	--dress-m-b: var(--dress-s-b);
+	--dress-m-i: var(--dress-s-i);
+	--dress-p-b: calc(var(--dress-s-b) - var(--dress-bs));
+	--dress-p-i: calc(var(--dress-s-i) - var(--dress-bs));
+	--dress-m-bs: var(--dress-m-b);
+	--dress-m-be: var(--dress-m-b);
+	--dress-fs-min: 16px;
+	--dress-fs-var: 1.2vmin;
+	--dress-fs-max: 22px;
+	--dress-fs: clamp(
+		var(--dress-fs-min),
+		var(--dress-fs-var),
+		var(--dress-fs-max)
+	);
+	--dress-ff:
+		system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--dress-ff-mono:
+		ui-monospace, Menlo, Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono',
+		'Courier New', Courier, monospace;
+	--dress-ts: 2;
+	--dress-cs: 1;
+	--dress-gap: calc(var(--dress-m-i) / 2);
+	--dress-so: calc(var(--dress-m-bs) * 2);
+	--dress-ad: 0.08s;
+	--dress-ad-h: calc(var(--dress-ad) / 2);
+	--dress-at: ease-in-out;
+	--dress-i-dl-d: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="%23000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4m4-5 5 5 5-5m-5 5V3"/></svg>');
+	--dress-i-dl-l: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4m4-5 5 5 5-5m-5 5V3"/></svg>');
+	--dress-i-xln-d: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="%23000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 3h7v7"/><path d="M3 10v11a1 1 0 0 0 1 1h11"/><path d="M10 14 20 4"/></svg>');
+	--dress-i-xln-l: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 3h7v7"/><path d="M3 10v11a1 1 0 0 0 1 1h11"/><path d="M10 14 20 4"/></svg>');
+	--dress-i-cb: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>');
+	--dress-i-rb: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23fff"><circle cx="12" cy="12" r="8"/></svg>');
+	--dress-i-sel-d: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 12 7 15 10"/><polyline points="9 14 12 17 15 14"/></svg>');
+	--dress-i-sel-l: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 12 7 15 10"/><polyline points="9 14 12 17 15 14"/></svg>');
+}
+
+@media (prefers-color-scheme: dark) {
 	:root {
-		--dress-bg: rgb(255 255 255);
-		--dress-bg-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 5%);
-		--dress-bg-3: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
-		--dress-fg: rgb(0 0 0);
-		--dress-lk: hsl(212 100% 44%);
-		--dress-lk-h: hsl(212 97% 34%);
-		--dress-lk-v: hsl(270 100% 46%);
-		--dress-lk-a: hsl(320 100% 48%);
-		--dress-lk-tx: hsl(0 0% 100%);
-		--dress-bt-1: hsl(212 100% 40%);
-		--dress-bt-1-h: hsl(212 100% 47.1%);
-		--dress-bt-1-a: hsl(212 97% 36%);
-		--dress-bt-1-tx: var(--dress-bg);
-		--dress-bt-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 10%);
-		--dress-bt-2-h: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
-		--dress-bt-2-a: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 20%);
-		--dress-bt-2-tx: var(--dress-fg);
-		--dress-ax: hsl(167 100% 54% / 60%);
-		--dress-ax-tx: hsl(187 71% 16%);
-		--dress-del: hsl(330 100% 54% / 60%);
-		--dress-ins: hsl(140 100% 54% / 60%);
-		--dress-sh: color-mix(in srgb, var(--dress-fg) 20%, transparent);
-		--dress-lh: 1.6;
-		--dress-mp: var(--dress-s-i);
-		--dress-mw: 50rem;
-		--dress-mw-min: 0;
-		--dress-mw-f: max-content;
-		--dress-bs: 1px;
-		--dress-br: 0.25rem;
-		--dress-s-b: calc(var(--dress-lh) * 1rem);
-		--dress-s-i: 1.6rem;
-		--dress-m-b: var(--dress-s-b);
-		--dress-m-i: var(--dress-s-i);
-		--dress-p-b: calc(var(--dress-s-b) - var(--dress-bs));
-		--dress-p-i: calc(var(--dress-s-i) - var(--dress-bs));
-		--dress-m-bs: var(--dress-m-b);
-		--dress-m-be: var(--dress-m-b);
-		--dress-fs-min: 16px;
-		--dress-fs-var: 1.2vmin;
-		--dress-fs-max: 22px;
-		--dress-fs: clamp(var(--dress-fs-min), var(--dress-fs-var), var(--dress-fs-max));
-		--dress-ff: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		--dress-ff-mono: ui-monospace, Menlo, Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace;
-		--dress-ts: 2;
-		--dress-cs: 1;
-		--dress-gap: calc(var(--dress-m-i) / 2);
-		--dress-so: calc(var(--dress-m-bs) * 2);
-		--dress-ad: 0.08s;
-		--dress-ad-h: calc(var(--dress-ad) / 2);
-		--dress-at: ease-in-out;
-		--dress-i-dl-d: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="%23000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4m4-5 5 5 5-5m-5 5V3"/></svg>');
-		--dress-i-dl-l: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4m4-5 5 5 5-5m-5 5V3"/></svg>');
-		--dress-i-xln-d: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="%23000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 3h7v7"/><path d="M3 10v11a1 1 0 0 0 1 1h11"/><path d="M10 14 20 4"/></svg>');
-		--dress-i-xln-l: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 3h7v7"/><path d="M3 10v11a1 1 0 0 0 1 1h11"/><path d="M10 14 20 4"/></svg>');
-		--dress-i-cb: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>');
-		--dress-i-rb: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23fff"><circle cx="12" cy="12" r="8"/></svg>');
-		--dress-i-sel-d: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 12 7 15 10"/><polyline points="9 14 12 17 15 14"/></svg>');
-		--dress-i-sel-l: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 12 7 15 10"/><polyline points="9 14 12 17 15 14"/></svg>');
+		--dress-bg: rgb(0 0 0);
+		--dress-fg: rgb(255 255 255);
+		--dress-bg-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
+		--dress-bg-3: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 30%);
+		--dress-lk: hsl(212 100% 60%);
+		--dress-lk-v: hsl(270 100% 64%);
+		--dress-lk-h: hsl(212 100% 48%);
+		--dress-lk-a: hsl(320 100% 64%);
+		--dress-bt-1-tx: var(--dress-fg);
+		--dress-bt-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 30%);
+		--dress-bt-2-h: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 20%);
+		--dress-bt-2-a: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 10%);
+		--dress-ax: hsl(167 100% 63% / 20%);
+		--dress-ax-tx: var(--dress-fg);
+		--dress-del: hsl(330 100% 63% / 20%);
+		--dress-ins: hsl(140 100% 63% / 20%);
+		--dress-sh: var(--dress-bg);
 	}
+}
 
-	@media (prefers-color-scheme: dark) {
-		:root {
-			--dress-bg: rgb(0 0 0);
-			--dress-fg: rgb(255 255 255);
-			--dress-bg-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
-			--dress-bg-3: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 30%);
-			--dress-lk: hsl(212 100% 60%);
-			--dress-lk-v: hsl(270 100% 64%);
-			--dress-lk-h: hsl(212 100% 48%);
-			--dress-lk-a: hsl(320 100% 64%);
-			--dress-bt-1-tx: var(--dress-fg);
-			--dress-bt-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 30%);
-			--dress-bt-2-h: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 20%);
-			--dress-bt-2-a: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 10%);
-			--dress-ax: hsl(167 100% 63% / 20%);
-			--dress-ax-tx: var(--dress-fg);
-			--dress-del: hsl(330 100% 63% / 20%);
-			--dress-ins: hsl(140 100% 63% / 20%);
-			--dress-sh: var(--dress-bg);
-		}
+@media print {
+	:root {
+		--dress-bg: #fff;
+		--dress-bg-2: transparent;
+		--dress-bg-3: #000;
+		--dress-fg: #000;
+		--dress-fs: var(--dress-fs-min);
 	}
-
-	@media print {
-		:root {
-			--dress-bg: #fff;
-			--dress-bg-2: transparent;
-			--dress-bg-3: #000;
-			--dress-fg: #000;
-			--dress-fs: var(--dress-fs-min);
-		}
-	}
+}

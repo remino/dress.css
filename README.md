@@ -42,7 +42,10 @@ states out of the box. Earlier releases were known as **sem.css**.
 ### HTML (CDN)
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@remino/dress.css/dist/dress.css" />
+<link
+	rel="stylesheet"
+	href="https://unpkg.com/@remino/dress.css/dist/dress.css"
+/>
 ```
 
 Mirrors:
@@ -96,16 +99,10 @@ npm run build      # Run both builds
 
 ### Publishing the static site
 
-Deploy artifacts live in `deploy/public/` (docs) and `deploy/nginx/` (rewrite
-rules). Set up an orphan `deploy` branch once:
+Deploy artifacts live in `deploy/public/` (docs) and `deploy/nginx/`.
 
 ```bash
-npm run worktree:init   # creates deploy/ as a git worktree on branch "deploy"
-```
-
-Then publish builds with:
-
-```bash
+npm run worktree:init   # create a deploy/ worktree on an orphan branch
 npm run publish:site    # rebuild + git add/commit inside deploy/
 (cd deploy && git push origin deploy)
 ```

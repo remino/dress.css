@@ -84,7 +84,7 @@ const pageEvals = async (page: Page) => {
 	await page.evaluate(async () => {
 		await Promise.all([
 			document.fonts.ready,
-			...Array.from(document.getAnimations()).map(anim => anim.finished),
+			...Array.from(document.getAnimations()).map((anim) => anim.finished),
 		])
 
 		const video = document.querySelector<HTMLVideoElement>('video')

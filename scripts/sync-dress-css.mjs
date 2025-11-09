@@ -13,7 +13,7 @@ const sources = [
 const destination = join(projectRoot, 'public', 'dress.css', 'dress.css')
 mkdirSync(dirname(destination), { recursive: true })
 
-const source = sources.find(path => existsSync(path))
+const source = sources.find((path) => existsSync(path))
 
 if (!source) {
 	console.error('Unable to find dress.css in dist/ or src/.')

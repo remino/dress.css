@@ -39,14 +39,14 @@ class PlaygroundApp extends HTMLElement {
 
 		const form = this.querySelector('form')
 
-		form?.addEventListener('submit', event => {
+		form?.addEventListener('submit', (event) => {
 			event.preventDefault()
 			event.stopPropagation()
 		})
 
 		const select = this.querySelector('select')
 
-		select?.addEventListener('change', event => {
+		select?.addEventListener('change', (event) => {
 			const target = event.target as HTMLSelectElement
 			const withDressCss = target.value === 'With dress.css'
 			const stylesheet = iframe.contentDocument?.styleSheets.item(0)
@@ -95,16 +95,13 @@ class PlaygroundApp extends HTMLElement {
 		if (!doc) return
 
 		iframe.style.setProperty('height', 'auto')
-		iframe.style.setProperty(
-			'height',
-			`${doc.documentElement.scrollHeight}px`
-		)
+		iframe.style.setProperty('height', `${doc.documentElement.scrollHeight}px`)
 	}
 }
 
 const resizeEditor = () => {
 	const editor = document.querySelector<HTMLElement>(
-		'playground-app fieldset#editor > div'
+		'playground-app fieldset#editor > div',
 	)
 	const frame = document.querySelector<HTMLElement>('playground-app iframe')
 

@@ -1,19 +1,19 @@
-	dd {
-		margin-inline-start: calc(var(--dress-lh) * 1.5rem);
-	}
+dd {
+	margin-inline-start: calc(var(--dress-lh) * 1.5rem);
+}
 
-	dt {
-		font-weight: bold;
-	}
+dt {
+	font-weight: bold;
+}
+
+menu,
+ol,
+ul {
+	padding-inline-start: calc(var(--dress-lh) * 1.5rem);
 
 	menu,
 	ol,
 	ul {
-		padding-inline-start: calc(var(--dress-lh) * 1.5rem);
-
-		menu,
-		ol,
-		ul {
-			margin: 0;
-		}
+		margin: 0;
 	}
+}

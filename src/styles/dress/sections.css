@@ -1,72 +1,72 @@
-	aside {
-		margin-block: calc(var(--dress-m-b) * 2);
-		padding-block: calc(var(--dress-m-b) * 2);
+aside {
+	margin-block: calc(var(--dress-m-b) * 2);
+	padding-block: calc(var(--dress-m-b) * 2);
 
-		> :first-child {
-			--dress-m-bs: 0;
-		}
-
-		> :last-child {
-			--dress-m-be: 0;
-		}
-	}
-
-	aside,
-	footer,
-	header {
-		background: var(--dress-bg-2);
-		inline-size: 100%;
-		margin-inline-start: calc(0px - (50vi - 50%));
-		padding-inline-end: calc(50vi - 50%);
-		padding-inline-start: calc(50vi - 50%);
-	}
-
-	footer,
-	header {
-		--dress-m-be: 0;
+	> :first-child {
 		--dress-m-bs: 0;
-		padding-block: var(--dress-m-b);
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			--dress-m-bs: 0;
-		}
-
-		h1 {
-			--dress-m-be: 0;
-		}
-
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			--dress-m-be: calc(var(--dress-m-b) * 0.5);
-		}
-
-		figure {
-			margin-inline: 0;
-		}
-
-		menu,
-		nav ul {
-			column-gap: var(--dress-m-b);
-			display: flex;
-			flex-flow: row wrap;
-			list-style-type: none;
-			margin: 0;
-			padding-inline: 0;
-		}
 	}
 
-	footer {
-		margin-block-start: calc(var(--dress-m-b) * 2);
+	> :last-child {
+		--dress-m-be: 0;
+	}
+}
+
+aside,
+footer,
+header {
+	background: var(--dress-bg-2);
+	inline-size: 100%;
+	margin-inline-start: calc(0px - (50vi - 50%));
+	padding-inline-end: calc(50vi - 50%);
+	padding-inline-start: calc(50vi - 50%);
+}
+
+footer,
+header {
+	--dress-m-be: 0;
+	--dress-m-bs: 0;
+	padding-block: var(--dress-m-b);
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		--dress-m-bs: 0;
 	}
 
-	header {
-		margin-block-end: calc(var(--dress-m-b) * 2);
+	h1 {
+		--dress-m-be: 0;
 	}
+
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		--dress-m-be: calc(var(--dress-m-b) * 0.5);
+	}
+
+	figure {
+		margin-inline: 0;
+	}
+
+	menu,
+	nav ul {
+		column-gap: var(--dress-m-b);
+		display: flex;
+		flex-flow: row wrap;
+		list-style-type: none;
+		margin: 0;
+		padding-inline: 0;
+	}
+}
+
+footer {
+	margin-block-start: calc(var(--dress-m-b) * 2);
+}
+
+header {
+	margin-block-end: calc(var(--dress-m-b) * 2);
+}

@@ -31,7 +31,11 @@ const navItems = [
 		href: 'https://github.com/remino/dress.css/blob/main/assets/css/_variables.sass',
 		external: true,
 	},
-	{ label: 'GitHub', href: 'https://github.com/remino/dress.css', external: true },
+	{
+		label: 'GitHub',
+		href: 'https://github.com/remino/dress.css',
+		external: true,
+	},
 	{
 		label: 'npm',
 		href: 'https://www.npmjs.com/package/@remino/dress.css',
@@ -41,25 +45,31 @@ const navItems = [
 ---
 
 <BaseLayout {title} {description} {image} {pathname}>
-	{includeDocsScript && (
-		<script slot="head" type="module" src={docsScript} />
-	)}
+	{includeDocsScript && <script slot="head" type="module" src={docsScript} />}
 	<slot slot="head" name="head" />
 
 	<a href="#main">Skip to main content</a>
 	<header>
-		<h1><img src="/dress.css/dress.svg" alt="" role="presentation" />{siteConfig.title}</h1>
+		<h1>
+			<img src="/dress.css/dress.svg" alt="" role="presentation" />{
+				siteConfig.title
+			}
+		</h1>
 		<nav aria-label="Main">
 			<ul>
-				{navItems.map(item => (
-					<li>
-						<a
-							href={item.href}
-							target={item.external ? '_blank' : undefined}
-							rel={item.external ? 'noreferrer noopener' : undefined}
-						>{item.label}</a>
-					</li>
-				))}
+				{
+					navItems.map((item) => (
+						<li>
+							<a
+								href={item.href}
+								target={item.external ? '_blank' : undefined}
+								rel={item.external ? 'noreferrer noopener' : undefined}
+							>
+								{item.label}
+							</a>
+						</li>
+					))
+				}
 			</ul>
 		</nav>
 	</header>

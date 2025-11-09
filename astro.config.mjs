@@ -7,15 +7,18 @@ import removeTests from './src/integrations/removeTests.ts'
 export default defineConfig({
 	output: 'static',
 	outDir: './deploy/public',
-devToolbar: {
-	enabled: process.env.ASTRO_DEV_TOOLBAR_ENABLED !== '0',
-},
-build: {
-	exclude: ['/tests/*', '/tests/*/*'],
-},
-markdown: {
+	devToolbar: {
+		enabled: process.env.ASTRO_DEV_TOOLBAR_ENABLED !== '0',
+	},
+	build: {
+		exclude: ['/tests/*', '/tests/*/*'],
+	},
+	markdown: {
 		rehypePlugins: [],
-		remarkPlugins: [remarkCustomHeadingId, [remarkToc, { heading: 'Table of Contents' }]],
+		remarkPlugins: [
+			remarkCustomHeadingId,
+			[remarkToc, { heading: 'Table of Contents' }],
+		],
 	},
 	vite: {
 		build: {

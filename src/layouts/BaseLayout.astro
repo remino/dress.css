@@ -21,11 +21,14 @@ const pageTitle =
 const canonicalUrl = new URL(pathname.replace(/\/+/g, '/'), siteConfig.url)
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1" />
+		<meta
+			name="viewport"
+			content="viewport-fit=cover, width=device-width, initial-scale=1"
+		/>
 		<title>{pageTitle}</title>
 		<link rel="canonical" href={canonicalUrl} />
 		<meta name="description" content={description} />

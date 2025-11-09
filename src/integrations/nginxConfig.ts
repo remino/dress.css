@@ -28,11 +28,9 @@ export default function nginxConfig(options: Options = {}): AstroIntegration {
 				)
 
 				const template = await readFile(templatePath, 'utf8')
-				const rendered = ejs.render(
-					template,
-					options.variables ?? {},
-					{ filename: templatePath },
-				)
+				const rendered = ejs.render(template, options.variables ?? {}, {
+					filename: templatePath,
+				})
 
 				const outputRelative = options.output ?? DEFAULT_OUTPUT
 				const outputPath = path.join(deployDir, outputRelative)

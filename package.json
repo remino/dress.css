@@ -12,6 +12,7 @@
 		"build:site": "astro build",
 		"preview": "astro preview",
 		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
 		"format": "prettier --check .",
 		"format:fix": "prettier --write .",
 		"test": "npm run test:visual",
@@ -57,6 +58,9 @@
 		"remark-custom-heading-id": "^2.0.0",
 		"remark-toc": "^9.0.0",
 		"typescript": "^5.6.2",
-		"vite": "^5.4.8"
+		"vite": "^5.4.8",
+		"@eslint/js": "^9.10.0",
+		"globals": "^15.5.0",
+		"typescript-eslint": "^8.8.1"
 	}
 }

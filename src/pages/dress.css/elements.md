@@ -3,6 +3,7 @@ layout: ../../layouts/PageLayout.astro
 title: Elements
 description: Examples of HTML elements styled by dress.css.
 ---
+
 # Elements
 
 Below are all the tags style by **<mark>dress.css</mark>** along with markup samples.
@@ -12,7 +13,9 @@ For legibility, code samples were highlighted using [Rouge](https://github.com/r
 ## Table of Contents
 
 ## Text {#text}
+
 ### Headings `<h1>…<h6>` {#headings}
+
 <blockquote>
 <h1>Heading 1 <code>&lt;h1&gt;</code></h1>
 <h2>Heading 2 <code>&lt;h2&gt;</code></h2>
@@ -32,6 +35,7 @@ For legibility, code samples were highlighted using [Rouge](https://github.com/r
 ```
 
 ### Abbreviation `<abbr>` {#abbr}
+
 <abbr title="little black dress">LBD</abbr>
 
 ```html
@@ -39,6 +43,7 @@ For legibility, code samples were highlighted using [Rouge](https://github.com/r
 ```
 
 ### Mark Text (Highlighted Text) `<mark>` {#mark}
+
 <mark>highlighted text</mark>
 <mark><a href="#" data-disabled>highlighted text with link</a></mark>
 
@@ -48,6 +53,7 @@ For legibility, code samples were highlighted using [Rouge](https://github.com/r
 ```
 
 ### Inserted & Deleted Text `<ins>` `<del>` {#insdel}
+
 <p>
   Our sale ends <del>Sunday</del> <ins>Monday</ins>.
 </p>
@@ -61,7 +67,9 @@ Our sale ends <del>Sunday</del> <ins>Monday</ins>.
 ---
 
 ## Links {#links}
+
 ### Hyperlink `<a>` {#hyperlink}
+
 <a href="#disabled" data-disabled>Click me</a>
 
 ```html
@@ -69,6 +77,7 @@ Our sale ends <del>Sunday</del> <ins>Monday</ins>.
 ```
 
 ### Button Link `<a role="button">` {#buttonlink}
+
 <a role="button" href="#disabled" data-disabled>Sign Up</a>
 
 ```html
@@ -76,6 +85,7 @@ Our sale ends <del>Sunday</del> <ins>Monday</ins>.
 ```
 
 ### Download Link `<a download>` {#download}
+
 <a role="button" href="#disabled" download data-disabled>Download PDF</a>  
 <a href="#disabled" download data-disabled>Save source</a>
 
@@ -85,6 +95,7 @@ Our sale ends <del>Sunday</del> <ins>Monday</ins>.
 ```
 
 ### New Window Link `<a target="_blank">` {#newwindow}
+
 <a role="button" href="#disabled" data-disabled target="_blank">Shop Now</a>  
 <a href="#disabled" data-disabled target="_blank">Submit Review</a>
 
@@ -102,6 +113,7 @@ Shop Now<small>&lt;https://example.com/shop/&gt;</small>
 </blockquote>
 
 ### Skip Navigation ("skipnav") `<body><a href="#…">` {#skipnav}
+
 For the accessibility of screen reader users, it's common to add a link at the very beginning of the page to skip the header and its menu, and go straight to the main content. It remains hidden until the user tabs to it, yet it is always visible to the screen reader.
 
 When a link is the first child element of <code>&lt;body&gt;</code> and points to a section to the page other than <code>#</code>, it will be treated and rendered as such "skipnav" link.
@@ -129,16 +141,19 @@ When a link is the first child element of <code>&lt;body&gt;</code> and points t
 ---
 
 ## Lists {#lists}
+
 ### Unordered List `<ul>` {#ul}
+
 - Unordered list item 1
-	- Nested unordered list item 1
-	- Nested unordered list item 2
+  - Nested unordered list item 1
+  - Nested unordered list item 2
 - Unordered list item 2
 - Unordered list item 3
 
 ```html
 <ul>
-	<li>Unordered list item 1
+	<li>
+		Unordered list item 1
 		<ul>
 			<li>Nested unordered list item 1</li>
 			<li>Nested unordered list item 2</li>
@@ -150,15 +165,17 @@ When a link is the first child element of <code>&lt;body&gt;</code> and points t
 ```
 
 ### Ordered List `<ol>` {#ol}
+
 1. Ordered list item 1
-	1. Nested ordered list item 1
-	2. Nested ordered list item 2
+   1. Nested ordered list item 1
+   2. Nested ordered list item 2
 2. Ordered list item 2
 3. Ordered list item 3
 
 ```html
 <ol>
-	<li>Ordered list item 1
+	<li>
+		Ordered list item 1
 		<ol>
 			<li>Nested ordered list item 1</li>
 			<li>Nested ordered list item 2</li>
@@ -170,6 +187,7 @@ When a link is the first child element of <code>&lt;body&gt;</code> and points t
 ```
 
 ### Menu List `<menu>` {#menu}
+
 <menu>
 	<li>Menu list item 1
 		<ul>
@@ -183,7 +201,8 @@ When a link is the first child element of <code>&lt;body&gt;</code> and points t
 
 ```html
 <menu>
-	<li>Menu list item 1
+	<li>
+		Menu list item 1
 		<ul>
 			<li>Nested menu list item 1</li>
 			<li>Nested menu list item 2</li>
@@ -195,6 +214,7 @@ When a link is the first child element of <code>&lt;body&gt;</code> and points t
 ```
 
 ### Description List `<dl>` {#dl}
+
 Term 1
 : Definition 1
 
@@ -222,6 +242,7 @@ Term 3
 ## Quotes
 
 ### Inline Quotation `<q>` {#q}
+
 <q>Tech is fine, but I’d rather talk about fashion.</q>
 
 ```html
@@ -229,6 +250,7 @@ Term 3
 ```
 
 ### Block Quotation `<blockquote>` {#blockquote}
+
 <blockquote>
 	“Simplicity is the keynote of all true elegance.”<br>
 	&mdash; Coco Chanel
@@ -236,7 +258,7 @@ Term 3
 
 ```html
 <blockquote>
-	“Simplicity is the keynote of all true elegance.”<br>
+	“Simplicity is the keynote of all true elegance.”<br />
 	&mdash; Coco Chanel
 </blockquote>
 ```
@@ -246,7 +268,9 @@ Term 3
 ---
 
 ## Code {#code}
+
 ### Preformatted Text `<pre>` {#pre}
+
 <pre>
 C U B I C
 U \     U \
@@ -270,6 +294,7 @@ C U B I C   B
 ```
 
 ### Code Block `<pre><code>` {#precode}
+
 Many libraries, including code highlighters, use the <code>&lt;code&gt;</code> tag nested in a <code>&lt;pre&gt;</code> tag to display code blocks.
 
 ```html
@@ -283,6 +308,7 @@ alert('Hello World!');
 ```
 
 ### Inline Code `<code>` {#inlinecode}
+
 <code>echo hello</code>
 
 ```html
@@ -290,6 +316,7 @@ alert('Hello World!');
 ```
 
 ### Keyboard Input `<kbd>` {#kbd}
+
 <kbd>Ctrl+C</kbd>
 
 ```html
@@ -297,6 +324,7 @@ alert('Hello World!');
 ```
 
 ### Sample Output `<samp>` {#samp}
+
 <samp>Press F1 to continue</samp>
 
 ```html
@@ -308,7 +336,9 @@ alert('Hello World!');
 ---
 
 ## Embeds (Media) {#embeds}
+
 ### Single Figure `<figure>` {#figure}
+
 A <code>&lt;figure&gt;</code> will display embedded content, including <code>&lt;img&gt;</code>, <code>&lt;picture&gt;</code>, <code>&lt;svg&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;object&gt;</code>, and <code>&lt;embed&gt;</code> as a block.
 
 Those elements are not shown as blocks outside of a <code>&lt;figure&gt;</code>, as there are cases when embedded content is meant to be inlined.
@@ -320,12 +350,17 @@ Those elements are not shown as blocks outside of a <code>&lt;figure&gt;</code>,
 
 ```html
 <figure>
-	<a href="https://en.wikipedia.org/wiki/Triangle" target="_blank"><img src="triangles.svg"></a>
-	<figcaption>A display of colourful triangles. (Click for more about triangles.)</figcaption>
+	<a href="https://en.wikipedia.org/wiki/Triangle" target="_blank"
+		><img src="triangles.svg"
+	/></a>
+	<figcaption>
+		A display of colourful triangles. (Click for more about triangles.)
+	</figcaption>
 </figure>
 ```
 
 ### Nested Figures `<figure><figure>` {#nestedfigures}
+
 Ideal for displaying multiple images side by side, or to enlarge a single figure. Collapsed into a single column on narrow displays. Formatted automatically when a single set of figures are nested into another. When only one figure is nested, it will be displayed wider than a normal figure.
 
 <figure>
@@ -354,22 +389,22 @@ Ideal for displaying multiple images side by side, or to enlarge a single figure
 ```html
 <figure>
 	<figure>
-		<img src="fuchsia.svg">
+		<img src="fuchsia.svg" />
 		<figcaption>Wide Fuchsia</figcaption>
 	</figure>
 </figure>
 
 <figure>
 	<figure>
-		<img src="blue.svg">
+		<img src="blue.svg" />
 		<figcaption>Blue</figcaption>
 	</figure>
 	<figure>
-		<img src="pink.svg">
+		<img src="pink.svg" />
 		<figcaption>Pink</figcaption>
 	</figure>
 	<figure>
-		<img src="purple.svg">
+		<img src="purple.svg" />
 		<figcaption>Purple</figcaption>
 	</figure>
 	<figcaption>A set of electric colours.</figcaption>
@@ -377,6 +412,7 @@ Ideal for displaying multiple images side by side, or to enlarge a single figure
 ```
 
 ### Video `<video>` {#video}
+
 Videos may be embedded on their own, or in a <code>&lt;figure&gt;</code>.
 
 <video controls src="/bits/retrosurfing/browsing.hevc.mp4" poster="/bits/retrosurfing/browsing.avif">
@@ -391,6 +427,7 @@ Videos may be embedded on their own, or in a <code>&lt;figure&gt;</code>.
 Video above is from [_Retrosurfing_](https://remino.net/bits/retrosurfing/).
 
 ### Inline Frame `<iframe>` {#iframe}
+
 Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will default to take the whole width of the <code>&lt;body&gt;</code>.
 
 <iframe
@@ -423,15 +460,17 @@ Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will 
 ## Blocks
 
 ### Thematic Break (Horizontal Rule) `<hr>` {#hr}
+
 <figure>
 <hr />
 </figure>
 
 ```html
-<hr>
+<hr />
 ```
 
 ### Table `<table>` {#table}
+
 <table>
 	<caption>Table Caption</caption>
 	<thead>
@@ -474,7 +513,9 @@ Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will 
 
 ```html
 <table>
-	<caption>Table Caption</caption>
+	<caption>
+		Table Caption
+	</caption>
 	<thead>
 		<tr>
 			<th>Header 1</th>
@@ -515,6 +556,7 @@ Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will 
 ```
 
 ### Details Disclosure `<details>` {#details}
+
 <details>
 	<summary>Click to show details</summary>
 	<p>Here are all the details!</p>
@@ -532,7 +574,9 @@ Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will 
 ---
 
 ## Popups {#popups}
+
 ### Dialog `<dialog>` {#dialog}
+
 Styling is applied to the <code>&lt;dialog&gt;</code> and its backdrop.
 
 Additionally, formatting is applied to a <code>&lt;menu&gt;</code> of actions in a <code>&lt;form&gt;</code> when formatted as the code sample below.
@@ -550,7 +594,9 @@ Additionally, formatting is applied to a <code>&lt;menu&gt;</code> of actions in
 </dialog>
 
 ```html
-<button onclick="document.getElementById('dialogExample').showModal()">Open Dialog</button>
+<button onclick="document.getElementById('dialogExample').showModal()">
+	Open Dialog
+</button>
 
 <dialog id="dialogExample">
 	<form method="dialog">
@@ -564,6 +610,7 @@ Additionally, formatting is applied to a <code>&lt;menu&gt;</code> of actions in
 ```
 
 ### Popover `popover` {#popover}
+
 <button popovertarget="detailsPopover">Show Popover</button>
 
 <div popover id="detailsPopover">
@@ -574,7 +621,7 @@ Additionally, formatting is applied to a <code>&lt;menu&gt;</code> of actions in
 <button popovertarget="detailsPopover">Show Popover</button>
 
 <div popover id="detailsPopover">
-  <p><strong>Hello!</strong> This is a popover.</p>
+	<p><strong>Hello!</strong> This is a popover.</p>
 </div>
 ```
 
@@ -583,6 +630,7 @@ Additionally, formatting is applied to a <code>&lt;menu&gt;</code> of actions in
 ---
 
 ## Page Sections {#sections}
+
 In **<mark>dress.css</mark>**, some special formatting is used in the header and the footer of the page to ease navigation and readability. Menus (<code>&lt;menu&gt;</code>) as well as unordered lists (<code>&lt;ul&gt;</code>) in navigation (<code>&lt;nav&gt;</code>) are rendered horizontally.
 
 ### Header `&lt;header&gt;`
@@ -599,8 +647,16 @@ Some special styling is applied to the <code>&lt;header&gt;</code> tag. That can
 		</ul>
 	</nav>
 	<menu>
-		<li><button onclick="document.documentElement.classList.toggle('dark')">Toggle theme</button></li>
-		<li><button onclick="document.getElementById('settings').openModal()">Settings</button></li>
+		<li>
+			<button onclick="document.documentElement.classList.toggle('dark')">
+				Toggle theme
+			</button>
+		</li>
+		<li>
+			<button onclick="document.getElementById('settings').openModal()">
+				Settings
+			</button>
+		</li>
 	</menu>
 </header>
 ```
@@ -626,6 +682,7 @@ Like the <code>&lt;header&gt;</code> tag, some special formatting is applied to 
 ```
 
 ### Aside `<aside>` {#aside}
+
 <aside>
 <h4>Side Notes</h4>
 <p>This information is related to the main content, but not essential.</p>
@@ -641,6 +698,7 @@ Like the <code>&lt;header&gt;</code> tag, some special formatting is applied to 
 **Note:** Heading hierarchy isn't meant to be reset in sectioning elements such as <code>&lt;aside&gt;</code> and <code>&lt;section&gt;</code>. Doing so is considered non-comforing. See [_HTML Living Standard_ §4.3.11](https://html.spec.whatwg.org/multipage/sections.html#headings-and-outlines).
 
 ### Navigation Section `<nav>` {#nav}
+
 There is no styling on screen applied on <code>&lt;nav&gt;</code>.
 
 ```html
@@ -677,6 +735,7 @@ There is no styling on screen applied on <code>&lt;nav&gt;</code>.
 ```
 
 ### Main `<main>` {#main-section}
+
 There is no visual styling applied on <code>&lt;main&gt;</code> itself.
 
 However, when <code>&lt;body&gt;</code> has a <code>&lt;main&gt;</code>, the body of the page will be rendered using a flex layout and expand to take the whole height of the viewport. This sets the header at the top of the page, the footer at the bottom, and centres <code>&lt;main&gt;</code> and its content, when the content of the body is shorter than the viewport of the browser.
@@ -698,9 +757,11 @@ This is ideal for pages with little content that needs to fill up the whole heig
 ---
 
 ## Form `<form>` {#form}
+
 There is some styling for forms in **<mark>dress.css</mark>** for the most common controls. It works best with the suggested markup below, wrapping every input field into a <code>&lt;label&gt;</code> for better usability. However, forms are notorious for how finicky they are with styling, accessibility, and inconsistencies between browsers. For anything more complex, as this stylesheet is basic, you may need to look for a different styling system better suited for your needs.
 
 ### Text Input `<input>` {#input}
+
 Works with basic “textual” input fields including the following:
 
 - <code>text</code> (the default type)
@@ -736,24 +797,25 @@ Works with basic “textual” input fields including the following:
 	<form method="post">
 		<label>
 			<span>Search</span>
-			<input type="search">
+			<input type="search" />
 		</label>
 	</form>
 </nav>
 <form method="post">
 	<label>
 		<span>Username</span>
-		<input>
+		<input />
 		<small>Can also be your email address or phone number.</small>
 	</label>
 	<label>
 		<span>Password</span>
-		<input type="password">
+		<input type="password" />
 	</label>
 </form>
 ```
 
 ### Date & Time Input {#datetime}
+
 Basic styling is applied to date and time inputs for consistency.
 
 <form data-nosubmit method="post">
@@ -765,14 +827,30 @@ Basic styling is applied to date and time inputs for consistency.
 </form>
 
 ```html
-<label><span><code>time</code></span><input type="time"></label>
-<label><span><code>date</code></span><input type="date"></label>
-<label><span><code>datetime-local</code></span><input type="datetime-local"></label>
-<label><span><code>month</code></span><input type="month"></label>
-<label><span><code>week</code></span><input type="week"></label>
+<label
+	><span><code>time</code></span
+	><input type="time"
+/></label>
+<label
+	><span><code>date</code></span
+	><input type="date"
+/></label>
+<label
+	><span><code>datetime-local</code></span
+	><input type="datetime-local"
+/></label>
+<label
+	><span><code>month</code></span
+	><input type="month"
+/></label>
+<label
+	><span><code>week</code></span
+	><input type="week"
+/></label>
 ```
 
 ### Textarea `<textarea>` {#textarea}
+
 <form data-nosubmit method="post">
 	<label>
 		<span>Message</span>
@@ -788,6 +866,7 @@ Basic styling is applied to date and time inputs for consistency.
 ```
 
 ### Select `<select>` {#select}
+
 <form data-nosubmit method="post">
 	<label>
 		<span>Choose one</span>
@@ -809,6 +888,7 @@ Basic styling is applied to date and time inputs for consistency.
 ```
 
 ### Checkbox `<input type="checkbox">` {#checkbox}
+
 <form data-nosubmit method="post">
 	<label>
 		<input type="checkbox" name="agree" value="1">
@@ -818,12 +898,13 @@ Basic styling is applied to date and time inputs for consistency.
 
 ```html
 <label>
-	<input type="checkbox" name="agree" value="1">
+	<input type="checkbox" name="agree" value="1" />
 	<span>I agree</span>
 </label>
 ```
 
 ### Radio `<input type="radio">` {#radio}
+
 <form data-nosubmit method="post">
 	<label>
 		<input type="radio" name="be" value="1">
@@ -837,16 +918,17 @@ Basic styling is applied to date and time inputs for consistency.
 
 ```html
 <label>
-	<input type="radio" name="be" value="1">
+	<input type="radio" name="be" value="1" />
 	<span>To be</span>
 </label>
 <label>
-	<input type="radio" name="be" value="0">
+	<input type="radio" name="be" value="0" />
 	<span>Not to be</span>
 </label>
 ```
 
 ### File Selection `<input type="file">` {#file}
+
 <form data-nosubmit method="post">
 	<label>
 		<span>Select profile avatar</span>
@@ -862,6 +944,7 @@ Basic styling is applied to date and time inputs for consistency.
 ```
 
 ### Colour `<input type="color">` {#color}
+
 <form data-nosubmit method="post">
 	<label>
 		<span>Favourite colour</span>
@@ -877,6 +960,7 @@ Basic styling is applied to date and time inputs for consistency.
 ```
 
 ### Range `<input type="range">` {#range}
+
 <form data-nosubmit method="post">
 	<label>
 		<span>Volume</span>
@@ -892,6 +976,7 @@ Basic styling is applied to date and time inputs for consistency.
 ```
 
 ### Composite Inputs {#composite}
+
 Labels may also contain multiple fields. Clicking on the label will focus on its first input field. However, note this is not valid HTML5 and may present accessibility issues. Use with caution. You may consider using multiple fields in a <code>&lt;fieldset&gt;</code> instead.
 
 <form data-nosubmit method="post">
@@ -905,12 +990,13 @@ Labels may also contain multiple fields. Clicking on the label will focus on its
 ```html
 <label>
 	<span>Full Name</span>
-	<input placeholder="Given Name">
-	<input placeholder="Family Name">
+	<input placeholder="Given Name" />
+	<input placeholder="Family Name" />
 </label>
 ```
 
 ### Field Set `<fieldset>` {#fieldset}
+
 <form data-nosubmit method="post">
 	<fieldset>
 		<legend>Skills</legend>
@@ -929,17 +1015,18 @@ Labels may also contain multiple fields. Clicking on the label will focus on its
 <fieldset>
 	<legend>Skills</legend>
 	<label>
-		<input type="checkbox" name="skills" value="html">
+		<input type="checkbox" name="skills" value="html" />
 		<span>HTML</span>
 	</label>
 	<label>
-		<input type="checkbox" name="skills" value="css">
+		<input type="checkbox" name="skills" value="css" />
 		<span>CSS</span>
 	</label>
 </fieldset>
 ```
 
 ### Output `<output>` {#output}
+
 Styling on <code>&lt;output&gt;</code> is made to match the same height than an usual <code>&lt;input&gt;</code> field for consistency.
 
 <blockquote>
@@ -951,6 +1038,7 @@ Styling on <code>&lt;output&gt;</code> is made to match the same height than an 
 ```
 
 ### Progress Indicator `<progress>` {#progress}
+
 <form data-nosubmit method="post">
 	<label>
 		<span>Uploading…</span>
@@ -966,6 +1054,7 @@ Styling on <code>&lt;output&gt;</code> is made to match the same height than an 
 ```
 
 ### Meter `<meter>` {#meter}
+
 The <code>&lt;meter&gt;</code> value shares the colour of main buttons (<code>--dress-bt-1</code>), links (<code>--dress-lk</code>), and accents (<code>--dress-ax</code>) depending of how high or low it is.
 
 <meter min="0" max="100" low="20" high="60" optimum="80" value="0">0%</meter>
@@ -981,10 +1070,13 @@ The <code>&lt;meter&gt;</code> value shares the colour of main buttons (<code>--
 <meter min="0" max="100" low="20" high="60" optimum="80" value="30">30%</meter>
 <meter min="0" max="100" low="20" high="60" optimum="80" value="70">70%</meter>
 <meter min="0" max="100" low="20" high="60" optimum="80" value="90">90%</meter>
-<meter min="0" max="100" low="20" high="60" optimum="80" value="100">100%</meter>
+<meter min="0" max="100" low="20" high="60" optimum="80" value="100">
+	100%
+</meter>
 ```
 
 ### Buttons {#buttons}
+
 Including <code>&lt;button&gt;</code> as well as <code>&lt;input&gt;</code> with <code>type=&quot;button&quot;</code>, <code>type=&quot;reset&quot;</code>, and <code>type=&quot;submit&quot;</code>.
 
 <form data-nosubmit method="post">
@@ -994,12 +1086,13 @@ Including <code>&lt;button&gt;</code> as well as <code>&lt;input&gt;</code> with
 </form>
 
 ```html
-<input type="reset" value="Reset">
+<input type="reset" value="Reset" />
 <button disabled>Disabled</button>
 <button type="submit">Submit</button>
 ```
 
 ### Button Set `<menu><button>` {#buttonset}
+
 Using <code>&lt;menu&gt;</code> as a direct descendant of a <code>&lt;form&gt;</code> or <code>&lt;fieldset&gt;</code> is assumed to be meant for a toolbar with a set of action buttons and is formatted as such.
 
 <form data-nosubmit method="post">
@@ -1025,6 +1118,7 @@ Using <code>&lt;menu&gt;</code> as a direct descendant of a <code>&lt;form&gt;</
 ## Properties {#properties}
 
 ### Inert `inert` {#inert}
+
 Any element with the <code>inert</code> Boolean attribute will have its content appear faded.
 
 <nav inert><a href="javascript:history.go(-1)">Go Back</a></nav>
@@ -1036,6 +1130,7 @@ Any element with the <code>inert</code> Boolean attribute will have its content 
 <p><a href="#">Back to top</a></p>
 
 ### Hidden `hidden` {#hidden}
+
 Hide any element by adding a <code>hidden</code> Boolean attribute.
 
 This is standard in modern HTML. However, for consistency across browsers, this stylesheet is also handling the attribute on its own.

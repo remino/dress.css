@@ -1,76 +1,76 @@
-	@keyframes dress-target-fade {
-		from {
-			text-decoration: underline;
-			text-decoration-color: var(--dress-ax);
-			text-decoration-thickness: calc(var(--dress-bs) * 4);
-			text-underline-offset: calc(var(--dress-bs) * 4);
-		}
-
-		to {
-			text-decoration: underline;
-			text-decoration-color: rgba(0 0 0 / 0);
-			text-decoration-thickness: calc(var(--dress-bs) * 4);
-			text-underline-offset: calc(var(--dress-bs) * 4);
-		}
+@keyframes dress-target-fade {
+	from {
+		text-decoration: underline;
+		text-decoration-color: var(--dress-ax);
+		text-decoration-thickness: calc(var(--dress-bs) * 4);
+		text-underline-offset: calc(var(--dress-bs) * 4);
 	}
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		--dress-m-bs: calc(var(--dress-m-b) * 2);
-		scroll-margin-block-start: var(--dress-so);
+	to {
+		text-decoration: underline;
+		text-decoration-color: rgba(0 0 0 / 0);
+		text-decoration-thickness: calc(var(--dress-bs) * 4);
+		text-underline-offset: calc(var(--dress-bs) * 4);
+	}
+}
 
-		&:target {
-			animation: dress-target-fade 2s 1s ease-out backwards;
-		}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	--dress-m-bs: calc(var(--dress-m-b) * 2);
+	scroll-margin-block-start: var(--dress-so);
 
-		& + * {
-			margin-block-start: 0;
-		}
+	&:target {
+		animation: dress-target-fade 2s 1s ease-out backwards;
 	}
 
-	h1 {
-		font-size: 2rem;
-		line-height: calc(var(--dress-lh) * 2rem);
+	& + * {
+		margin-block-start: 0;
 	}
+}
 
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		line-height: calc(var(--dress-lh) * 1rem);
+h1 {
+	font-size: 2rem;
+	line-height: calc(var(--dress-lh) * 2rem);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: calc(var(--dress-lh) * 1rem);
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+h5,
+h6 {
+	text-transform: uppercase;
+
+	code,
+	kbd {
+		text-transform: initial;
 	}
+}
 
-	h2 {
-		font-size: 1.5rem;
-	}
+h5 {
+	font-size: 0.875rem;
+}
 
-	h3 {
-		font-size: 1.25rem;
-	}
-
-	h4 {
-		font-size: 1rem;
-	}
-
-	h5,
-	h6 {
-		text-transform: uppercase;
-
-		code,
-		kbd {
-			text-transform: initial;
-		}
-	}
-
-	h5 {
-		font-size: 0.875rem;
-	}
-
-	h6 {
-		font-size: 0.75rem;
-	}
+h6 {
+	font-size: 0.75rem;
+}
