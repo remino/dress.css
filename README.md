@@ -41,11 +41,9 @@ states out of the box. Earlier releases were known as **sem.css**.
 
 ### HTML (CDN)
 
+<!-- prettier-ignore -->
 ```html
-<link
-	rel="stylesheet"
-	href="https://unpkg.com/@remino/dress.css/dist/dress.css"
-/>
+<link rel="stylesheet" href="https://unpkg.com/@remino/dress.css/dist/dress.css">
 ```
 
 Mirrors:
