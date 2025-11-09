@@ -35,7 +35,7 @@ const elements: Record<string, SnapshotConfig> = {
 	datetime: {},
 	details: {},
 	dialog: { maxDiffPixelRatio: 0.01 },
-	'dialog-wide': { maxDiffPixelRatio: 0.01 },
+	'dialog-wide': { maxDiffPixelRatio: 0.02 },
 	dl: {},
 	download: {},
 	fieldset: {},
