@@ -633,7 +633,7 @@ Additionally, formatting is applied to a <code>&lt;menu&gt;</code> of actions in
 
 In **<mark>dress.css</mark>**, some special formatting is used in the header and the footer of the page to ease navigation and readability. Menus (<code>&lt;menu&gt;</code>) as well as unordered lists (<code>&lt;ul&gt;</code>) in navigation (<code>&lt;nav&gt;</code>) are rendered horizontally.
 
-### Header `&lt;header&gt;`
+### Header `<header>`
 
 Some special styling is applied to the <code>&lt;header&gt;</code> tag. That can be seen at the [top of this page](#) and can be replicated with the sample below:
 
@@ -661,7 +661,7 @@ Some special styling is applied to the <code>&lt;header&gt;</code> tag. That can
 </header>
 ```
 
-### Footer `&lt;footer&gt;`
+### Footer `<footer>`
 
 Like the <code>&lt;header&gt;</code> tag, some special formatting is applied to <code>&lt;footer&gt;</code>. That can also been seen at the [bottom of this page](#end) and can be replicated with the sample below:
 
