@@ -9,7 +9,7 @@ if [ ! -d "node_modules" ]; then
 	exit 1
 fi
 
-if [ ! -d "$WORKTREE_DIR/.git" ]; then
+if [ ! -e "$WORKTREE_DIR/.git" ]; then
 	echo "deploy/ worktree not initialized. Run npm run worktree:init first." >&2
 	exit 1
 fi
