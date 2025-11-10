@@ -1,4 +1,8 @@
 @media print {
+	* {
+		transition: none !important;
+	}
+
 	:focus-visible {
 		box-shadow: none;
 		outline: none;
