@@ -1,11 +1,11 @@
 :root {
-	/* === Colors: Surface === */
+	/* === Colours: Surface === */
 	/* Base page background colour */
 	--dress-bg: rgb(255 255 255);
 	/* Default body text colour */
 	--dress-fg: rgb(0 0 0);
 
-	/* === Colors: Links === */
+	/* === Colours: Links === */
 	/* Default link colour */
 	--dress-lk: hsl(212 100% 44%);
 	/* Active link colour */
@@ -17,7 +17,7 @@
 	/* Visited link colour */
 	--dress-lk-v: hsl(270 100% 46%);
 
-	/* === Colors: Buttons === */
+	/* === Colours: Buttons === */
 	/* Primary button background */
 	--dress-bt-1: hsl(212 100% 40%);
 	/* Active primary button background */
@@ -25,7 +25,7 @@
 	/* Hover/focus primary button background */
 	--dress-bt-1-h: hsl(212 100% 47.1%);
 
-	/* === Colors: Semantic === */
+	/* === Colours: Semantic === */
 	/* Base tone for negative/destructive accents */
 	--dress-neg: hsl(330 100% 54%);
 	/* Base tone for positive/constructive accents */
@@ -98,7 +98,7 @@
 	/* Data URI for external-link icon */
 	--dress-i-xln: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='M10 14 21 3M3 9v11a1 1 0 0 0 1 1h11M14 3h7v7'/></svg>");
 
-	/* === Derived Colors === */
+	/* === Derived Colours === */
 	/* Raised block background */
 	--dress-bg-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 5%);
 	/* Primary button text colour */
