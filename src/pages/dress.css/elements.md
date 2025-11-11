@@ -1055,7 +1055,7 @@ Styling on <code>&lt;output&gt;</code> is made to match the same height than an 
 
 ### Meter `<meter>` {#meter}
 
-The <code>&lt;meter&gt;</code> value shares the colour of main buttons (<code>--dress-bt-1</code>), links (<code>--dress-lk</code>), and accents (<code>--dress-ax</code>) depending of how high or low it is.
+The <code>&lt;meter&gt;</code> value switches between the semantic palette using <code>--dress-low</code>, <code>--dress-mid</code>, and <code>--dress-hi</code> depending on the value.
 
 <meter min="0" max="100" low="20" high="60" optimum="80" value="0">0%</meter>
 <meter min="0" max="100" low="20" high="60" optimum="80" value="10">10%</meter>

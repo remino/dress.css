@@ -1,7 +1,7 @@
 @keyframes dress-target-fade {
 	from {
 		text-decoration: underline;
-		text-decoration-color: var(--dress-ax);
+		text-decoration-color: var(--dress-mk);
 		text-decoration-thickness: calc(var(--dress-bs) * 4);
 		text-underline-offset: calc(var(--dress-bs) * 4);
 	}

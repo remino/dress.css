@@ -20,8 +20,8 @@ ins {
 }
 
 mark {
-	background: var(--dress-ax);
-	color: var(--dress-ax-tx);
+	background: var(--dress-mk);
+	color: var(--dress-mk-tx);
 
 	a {
 		color: inherit;

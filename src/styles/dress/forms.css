@@ -404,27 +404,27 @@ meter {
 	}
 
 	&::-webkit-meter-optimum-value {
-		background: var(--dress-bt-1);
+		background: var(--dress-hi);
 	}
 
 	&::-webkit-meter-suboptimum-value {
-		background: var(--dress-lk);
+		background: var(--dress-mid);
 	}
 
 	&::-webkit-meter-even-less-good-value {
-		background: var(--dress-ax);
+		background: var(--dress-low);
 	}
 
 	&:-moz-meter-optimum::-moz-meter-bar {
-		background: var(--dress-bt-1);
+		background: var(--dress-hi);
 	}
 
 	&:-moz-meter-sub-optimum::-moz-meter-bar {
-		background: var(--dress-lk);
+		background: var(--dress-mid);
 	}
 
 	&:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-		background: var(--dress-ax);
+		background: var(--dress-low);
 	}
 }
 

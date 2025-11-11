@@ -55,6 +55,7 @@ description: Release notes for dress.css.
 - Migrated from Sass to native CSS with nesting
 - Rebuilt the documentation site with Astro 5
 - Updated the playground tooling to use Vite
+- Introduced semantic colour tokens (`--dress-sec`, `--dress-neg`, `--dress-pos`) with highlight counterparts (`--dress-mk`, `--dress-del`, `--dress-ins`) replacing the old `--dress-ax` pair, and refreshed `<meter>` colours through `--dress-low`, `--dress-mid`, and `--dress-hi`
 
 ## v4.4.3
 
