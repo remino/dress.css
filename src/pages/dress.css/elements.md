@@ -258,7 +258,7 @@ Term 3
 
 ```html
 <blockquote>
-	“Simplicity is the keynote of all true elegance.”<br />
+	“Simplicity is the keynote of all true elegance.”<br>
 	&mdash; Coco Chanel
 </blockquote>
 ```
@@ -350,9 +350,9 @@ Those elements are not shown as blocks outside of a <code>&lt;figure&gt;</code>,
 
 ```html
 <figure>
-	<a href="https://en.wikipedia.org/wiki/Triangle" target="_blank"
-		><img src="triangles.svg"
-	/></a>
+	<a href="https://en.wikipedia.org/wiki/Triangle" target="_blank">
+		<img src="triangles.svg">
+	</a>
 	<figcaption>
 		A display of colourful triangles. (Click for more about triangles.)
 	</figcaption>
@@ -389,22 +389,22 @@ Ideal for displaying multiple images side by side, or to enlarge a single figure
 ```html
 <figure>
 	<figure>
-		<img src="fuchsia.svg" />
+		<img src="fuchsia.svg">
 		<figcaption>Wide Fuchsia</figcaption>
 	</figure>
 </figure>
 
 <figure>
 	<figure>
-		<img src="blue.svg" />
+		<img src="blue.svg">
 		<figcaption>Blue</figcaption>
 	</figure>
 	<figure>
-		<img src="pink.svg" />
+		<img src="pink.svg">
 		<figcaption>Pink</figcaption>
 	</figure>
 	<figure>
-		<img src="purple.svg" />
+		<img src="purple.svg">
 		<figcaption>Purple</figcaption>
 	</figure>
 	<figcaption>A set of electric colours.</figcaption>
@@ -431,7 +431,7 @@ Video above is from [_Retrosurfing_](https://remino.net/bits/retrosurfing/).
 Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will default to take the whole width of the <code>&lt;body&gt;</code>.
 
 <iframe
-  srcdoc='
+  srcdoc="
     <style>
       body {
         align-items: center;
@@ -444,7 +444,7 @@ Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will 
       }
     </style>
     👗
-  '
+  "
   height="200"
 	width="400"
 ></iframe>
@@ -462,11 +462,11 @@ Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will 
 ### Thematic Break (Horizontal Rule) `<hr>` {#hr}
 
 <figure>
-<hr />
+<hr>
 </figure>
 
 ```html
-<hr />
+<hr>
 ```
 
 ### Table `<table>` {#table}
@@ -797,19 +797,19 @@ Works with basic “textual” input fields including the following:
 	<form method="post">
 		<label>
 			<span>Search</span>
-			<input type="search" />
+			<input type="search">
 		</label>
 	</form>
 </nav>
 <form method="post">
 	<label>
 		<span>Username</span>
-		<input />
+		<input>
 		<small>Can also be your email address or phone number.</small>
 	</label>
 	<label>
 		<span>Password</span>
-		<input type="password" />
+		<input type="password">
 	</label>
 </form>
 ```
@@ -827,26 +827,26 @@ Basic styling is applied to date and time inputs for consistency.
 </form>
 
 ```html
-<label
-	><span><code>time</code></span
-	><input type="time"
-/></label>
-<label
-	><span><code>date</code></span
-	><input type="date"
-/></label>
-<label
-	><span><code>datetime-local</code></span
-	><input type="datetime-local"
-/></label>
-<label
-	><span><code>month</code></span
-	><input type="month"
-/></label>
-<label
-	><span><code>week</code></span
-	><input type="week"
-/></label>
+<label>
+	<span><code>time</code></span>
+	<input type="time">
+</label>
+<label>
+	<span><code>date</code></span>
+	<input type="date">
+</label>
+<label>
+	<span><code>datetime-local</code></span>
+	<input type="datetime-local">
+</label>
+<label>
+	<span><code>month</code></span>
+	<input type="month">
+</label>
+<label>
+	<span><code>week</code></span>
+	<input type="week">
+</label>
 ```
 
 ### Textarea `<textarea>` {#textarea}
@@ -898,7 +898,7 @@ Basic styling is applied to date and time inputs for consistency.
 
 ```html
 <label>
-	<input type="checkbox" name="agree" value="1" />
+	<input type="checkbox" name="agree" value="1">
 	<span>I agree</span>
 </label>
 ```
@@ -918,11 +918,11 @@ Basic styling is applied to date and time inputs for consistency.
 
 ```html
 <label>
-	<input type="radio" name="be" value="1" />
+	<input type="radio" name="be" value="1">
 	<span>To be</span>
 </label>
 <label>
-	<input type="radio" name="be" value="0" />
+	<input type="radio" name="be" value="0">
 	<span>Not to be</span>
 </label>
 ```
@@ -939,7 +939,7 @@ Basic styling is applied to date and time inputs for consistency.
 ```html
 <label>
 	<span>Select profile avatar</span>
-	<input type="file" name="avatar" />
+	<input type="file" name="avatar">
 </label>
 ```
 
@@ -955,7 +955,7 @@ Basic styling is applied to date and time inputs for consistency.
 ```html
 <label>
 	<span>Favourite colour</span>
-	<input type="color" name="color" value="#d53bb8" />
+	<input type="color" name="color" value="#d53bb8">
 </label>
 ```
 
@@ -971,7 +971,7 @@ Basic styling is applied to date and time inputs for consistency.
 ```html
 <label>
 	<span>Volume</span>
-	<input type="range" name="volume" min="0" max="11" step="1" value="9" />
+	<input type="range" name="volume" min="0" max="11" step="1" value="9">
 </label>
 ```
 
@@ -990,8 +990,8 @@ Labels may also contain multiple fields. Clicking on the label will focus on its
 ```html
 <label>
 	<span>Full Name</span>
-	<input placeholder="Given Name" />
-	<input placeholder="Family Name" />
+	<input placeholder="Given Name">
+	<input placeholder="Family Name">
 </label>
 ```
 
@@ -1015,11 +1015,11 @@ Labels may also contain multiple fields. Clicking on the label will focus on its
 <fieldset>
 	<legend>Skills</legend>
 	<label>
-		<input type="checkbox" name="skills" value="html" />
+		<input type="checkbox" name="skills" value="html">
 		<span>HTML</span>
 	</label>
 	<label>
-		<input type="checkbox" name="skills" value="css" />
+		<input type="checkbox" name="skills" value="css">
 		<span>CSS</span>
 	</label>
 </fieldset>
@@ -1064,15 +1064,14 @@ The <code>&lt;meter&gt;</code> value shares the colour of main buttons (<code>--
 <meter min="0" max="100" low="20" high="60" optimum="80" value="90">90%</meter>
 <meter min="0" max="100" low="20" high="60" optimum="80" value="100">100%</meter>
 
+<!-- prettier-ignore -->
 ```html
 <meter min="0" max="100" low="20" high="60" optimum="80" value="0">0%</meter>
 <meter min="0" max="100" low="20" high="60" optimum="80" value="10">10%</meter>
 <meter min="0" max="100" low="20" high="60" optimum="80" value="30">30%</meter>
 <meter min="0" max="100" low="20" high="60" optimum="80" value="70">70%</meter>
 <meter min="0" max="100" low="20" high="60" optimum="80" value="90">90%</meter>
-<meter min="0" max="100" low="20" high="60" optimum="80" value="100">
-	100%
-</meter>
+<meter min="0" max="100" low="20" high="60" optimum="80" value="100">100%</meter>
 ```
 
 ### Buttons {#buttons}
@@ -1086,7 +1085,7 @@ Including <code>&lt;button&gt;</code> as well as <code>&lt;input&gt;</code> with
 </form>
 
 ```html
-<input type="reset" value="Reset" />
+<input type="reset" value="Reset">
 <button disabled>Disabled</button>
 <button type="submit">Submit</button>
 ```
