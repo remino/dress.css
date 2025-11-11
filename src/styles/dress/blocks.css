@@ -54,7 +54,7 @@ pre {
 
 blockquote {
 	--dress-border-left: calc(var(--dress-bs) * 4);
-	border-inline-start: var(--dress-border-left) solid var(--dress-bg-3);
+	border-inline-start: var(--dress-border-left) solid var(--dress-dt);
 	margin-inline: 0;
 	padding-block: var(--dress-m-bs) var(--dress-m-be);
 	padding-inline-start: calc(var(--dress-p-i) - var(--dress-border-left));
@@ -70,7 +70,7 @@ blockquote {
 
 details,
 pre {
-	border: var(--dress-bs) solid var(--dress-bg-3);
+	border: var(--dress-bs) solid var(--dress-dt);
 	border-radius: var(--dress-br);
 }
 
@@ -87,7 +87,7 @@ hr {
 	--dress-m-be: calc((var(--dress-m-b) * 2) - var(--dress-bs));
 	--dress-m-bs: calc(var(--dress-m-b) * 2);
 	border: 0;
-	border-block-start: var(--dress-bs) solid var(--dress-bg-3);
+	border-block-start: var(--dress-bs) solid var(--dress-dt);
 }
 
 iframe {

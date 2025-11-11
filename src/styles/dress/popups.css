@@ -1,7 +1,7 @@
 dialog,
 [popover] {
 	background: var(--dress-bg-2);
-	border: solid var(--dress-bs) var(--dress-bg-3);
+	border: solid var(--dress-bs) var(--dress-dt);
 	border-radius: var(--dress-br);
 	box-shadow: 0 calc(var(--dress-m-b) / 2) var(--dress-m-b) var(--dress-sh);
 	color: var(--dress-fg);

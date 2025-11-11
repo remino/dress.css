@@ -69,8 +69,8 @@
 	}
 
 	aside {
-		border-block-end: solid var(--dress-bs) var(--dress-bg-3);
-		border-block-start: solid var(--dress-bs) var(--dress-bg-3);
+		border-block-end: solid var(--dress-bs) var(--dress-dt);
+		border-block-start: solid var(--dress-bs) var(--dress-dt);
 	}
 
 	button[type='submit'],
@@ -113,11 +113,11 @@
 	}
 
 	footer {
-		border-block-start: solid var(--dress-bs) var(--dress-bg-3);
+		border-block-start: solid var(--dress-bs) var(--dress-dt);
 	}
 
 	header {
-		border-block-end: solid var(--dress-bs) var(--dress-bg-3);
+		border-block-end: solid var(--dress-bs) var(--dress-dt);
 	}
 
 	ins {

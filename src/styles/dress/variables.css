@@ -1,7 +1,7 @@
 :root {
 	--dress-bg: rgb(255 255 255);
 	--dress-bg-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 5%);
-	--dress-bg-3: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
+	--dress-dt: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
 	--dress-fg: rgb(0 0 0);
 	--dress-lk: hsl(212 100% 44%);
 	--dress-lk-h: hsl(212 97% 34%);
@@ -77,7 +77,7 @@
 		--dress-bg: rgb(0 0 0);
 		--dress-fg: rgb(255 255 255);
 		--dress-bg-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
-		--dress-bg-3: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 30%);
+		--dress-dt: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 30%);
 		--dress-lk: hsl(212 100% 60%);
 		--dress-lk-v: hsl(270 100% 64%);
 		--dress-lk-h: hsl(212 100% 48%);
@@ -102,7 +102,7 @@
 	:root {
 		--dress-bg: #fff;
 		--dress-bg-2: transparent;
-		--dress-bg-3: #000;
+		--dress-dt: #000;
 		--dress-fg: #000;
 		--dress-fs: var(--dress-fs-min);
 	}

@@ -88,7 +88,7 @@ input[type='reset'] {
 
 fieldset {
 	background: var(--dress-bg-2);
-	border: var(--dress-bs) solid var(--dress-bg-3);
+	border: var(--dress-bs) solid var(--dress-dt);
 	border-radius: var(--dress-br);
 	margin-inline: 0;
 	padding-block: var(--dress-p-b)
@@ -136,7 +136,7 @@ select,
 textarea {
 	appearance: none;
 	background: var(--dress-bg-2);
-	border: var(--dress-bs) solid var(--dress-bg-3);
+	border: var(--dress-bs) solid var(--dress-dt);
 	border-radius: var(--dress-br);
 	box-sizing: border-box;
 	color: var(--dress-fg);
@@ -151,7 +151,7 @@ input[type='radio'] {
 	appearance: none;
 	aspect-ratio: 1;
 	background: var(--dress-bg-2);
-	border: solid var(--dress-bs) var(--dress-bg-3);
+	border: solid var(--dress-bs) var(--dress-dt);
 	display: inline-block;
 	height: auto;
 	margin: 0;
@@ -298,13 +298,13 @@ input[type='range'] {
 	}
 
 	&::-moz-range-track {
-		background: var(--dress-bg-3);
+		background: var(--dress-dt);
 		block-size: var(--dress-track-size);
 		border-radius: 1rem;
 	}
 
 	&::-webkit-slider-runnable-track {
-		background: var(--dress-bg-3);
+		background: var(--dress-dt);
 		block-size: var(--dress-track-size);
 		border-radius: 1rem;
 	}
@@ -389,7 +389,7 @@ legend {
 meter,
 progress {
 	appearance: none;
-	background: var(--dress-bg-3);
+	background: var(--dress-dt);
 	border: none;
 	border-radius: var(--dress-br);
 	inline-size: 100%;
@@ -400,7 +400,7 @@ progress {
 
 meter {
 	&::-webkit-meter-bar {
-		background: var(--dress-bg-3);
+		background: var(--dress-dt);
 	}
 
 	&::-webkit-meter-optimum-value {

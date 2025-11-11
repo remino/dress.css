@@ -33,7 +33,7 @@ body {
 	> a[href^='#']:not([href='#']):first-child {
 		background: var(--dress-bg-2);
 		border-radius: var(--dress-br);
-		border: solid var(--dress-bs) var(--dress-bg-3);
+		border: solid var(--dress-bs) var(--dress-dt);
 		color: var(--dress-fg);
 		display: block;
 		inset-block-start: calc(var(--dress-p-b) * -2);

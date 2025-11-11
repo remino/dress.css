@@ -56,6 +56,7 @@ description: Release notes for dress.css.
 - Rebuilt the documentation site with Astro 5
 - Updated the playground tooling to use Vite
 - Introduced semantic colour tokens (`--dress-sec`, `--dress-neg`, `--dress-pos`) with highlight counterparts (`--dress-mk`, `--dress-del`, `--dress-ins`) replacing the old `--dress-ax` pair, and refreshed `<meter>` colours through `--dress-low`, `--dress-mid`, and `--dress-hi`
+- Renamed `--dress-bg-3` to `--dress-dt` to better describe its role as the shared border/detail colour
 
 ## v4.4.3
 

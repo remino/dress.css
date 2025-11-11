@@ -20,7 +20,7 @@ tbody {
 
 td,
 th {
-	border: var(--dress-bs) solid var(--dress-bg-3);
+	border: var(--dress-bs) solid var(--dress-dt);
 	padding-block: calc(var(--dress-p-b) / 2);
 	padding-inline: calc(var(--dress-p-i) / 2);
 }
