@@ -109,7 +109,7 @@ Our sale ends <del>Sunday</del> <ins>Monday</ins>.
 🖨️ **In print,** the URL of the link will be displayed instead of the icon:
 
 <blockquote>
-Shop Now<small>&lt;https://example.com/shop/&gt;</small>
+Shop Now <small>&lt;https://example.com/shop/&gt;</small>
 </blockquote>
 
 ### Skip Navigation ("skipnav") `<body><a href="#…">` {#skipnav}
