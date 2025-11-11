@@ -44,7 +44,6 @@ const elements: Record<string, SnapshotConfig> = {
 	footer: {},
 	header: {},
 	headings: {},
-	hidden: {},
 	hr: {},
 	hyperlink: {},
 	'hyperlink-long': {},

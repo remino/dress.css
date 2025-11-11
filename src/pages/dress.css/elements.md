@@ -1130,9 +1130,10 @@ Any element with the <code>inert</code> Boolean attribute will have its content 
 
 ### Hidden `hidden` {#hidden}
 
-Hide any element by adding a <code>hidden</code> Boolean attribute.
-
-This is standard in modern HTML. However, for consistency across browsers, this stylesheet is also handling the attribute on its own.
+Starting with v5, dress.css no longer overrides the `hidden` attribute.
+That keeps newer values like `hidden="until-found"` compliant with browser
+behaviour. To hide content, either rely on the native Boolean `hidden`
+attribute or use your own utility class.
 
 ```html
 <p hidden>You can't see me!</p>
