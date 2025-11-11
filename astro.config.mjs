@@ -13,6 +13,7 @@ export default defineConfig({
 		enabled: process.env.ASTRO_DEV_TOOLBAR_ENABLED !== '0',
 	},
 	markdown: {
+		syntaxHighlight: 'prism',
 		rehypePlugins: [
 			[
 				rehypeExternalLinks,
