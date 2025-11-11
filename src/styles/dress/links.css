@@ -23,7 +23,7 @@ a {
 	&[target='_blank'] {
 		&::after {
 			aspect-ratio: 1;
-			background-color: currentColor;
+			background-color: var(--dress-fg);
 			block-size: auto;
 			content: '';
 			display: inline-block;
