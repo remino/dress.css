@@ -133,6 +133,6 @@ Issues and ideas are welcome—please star the project if you enjoy it!
 
 ---
 
-## License
+## Licence
 
-Licensed under the ISC License. See `src/pages/dress.css/license.md`.
+Licensed under the ISC licence. See `LICENSE.md`.

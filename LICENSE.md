@@ -1,14 +1,6 @@
----
-layout: ../../layouts/PageLayout.astro
-title: License
-description: ISC License for dress.css.
----
-
-# License
-
 ISC License
 
-Copyright (c) 2024-2025 Rémino Rem <https://remino.net>
+Copyright © 2024-2025 Rémino Rem <https://remino.net>
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
