@@ -51,7 +51,8 @@
 - Updated the playground tooling to use Vite
 - Introduced semantic colour tokens (`--dress-sec`, `--dress-neg`, `--dress-pos`) with highlight counterparts (`--dress-mk`, `--dress-del`, `--dress-ins`) replacing the old `--dress-ax` pair, and refreshed `<meter>` colours through `--dress-low`, `--dress-mid`, and `--dress-hi`
 - Renamed `--dress-bg-3` to `--dress-dt` to better describe its role as the shared border/detail colour
-- Removed the global `[hidden]` override as it is already implemented in browsers.
+- Split font stacks into `--dress-ff-sans` and `--dress-ff-serif`, plus derived `--dress-ff` and `--dress-ff-h` tokens for body vs heading copy
+- Removed the global `[hidden]` override to keep browser-native behaviours such as `hidden="until-found"`
 
 ## v4.4.3
 

@@ -112,16 +112,19 @@ or the other primary metrics, so you rarely need to override them individually.
 
 ### Typography
 
-| Variable          | Description                                   |
-| ----------------- | --------------------------------------------- |
-| `--dress-ff`      | Sans-serif font stack                         |
-| `--dress-ff-mono` | Monospace font stack                          |
-| `--dress-fs-min`  | Lower bound for `clamp()`                     |
-| `--dress-fs-max`  | Upper bound for `clamp()`                     |
-| `--dress-fs-var`  | Viewport-driven value for `clamp()`           |
-| `--dress-fs`      | Resulting clamp value applied to `<html>`     |
-| `--dress-cs`      | Scale multiplier for inline/preformatted code |
-| `--dress-ts`      | `tab-size` used in `<pre>` and `<code>`       |
+| Variable           | Description                                   |
+| ------------------ | --------------------------------------------- |
+| `--dress-ff-sans`  | Sans-serif font stack                         |
+| `--dress-ff-serif` | Serif font stack                              |
+| `--dress-ff`       | Default font family (points to sans stack)    |
+| `--dress-ff-h`     | Heading font family (points to sans stack)    |
+| `--dress-ff-mono`  | Monospace font stack                          |
+| `--dress-fs-min`   | Lower bound for `clamp()`                     |
+| `--dress-fs-max`   | Upper bound for `clamp()`                     |
+| `--dress-fs-var`   | Viewport-driven value for `clamp()`           |
+| `--dress-fs`       | Resulting clamp value applied to `<html>`     |
+| `--dress-cs`       | Scale multiplier for inline/preformatted code |
+| `--dress-ts`       | `tab-size` used in `<pre>` and `<code>`       |
 
 ### Motion
 

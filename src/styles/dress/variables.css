@@ -54,10 +54,17 @@
 	/* === Typography === */
 	/* Scale factor for monospace samples */
 	--dress-cs: 1;
-	/* Primary font family stack */
-	--dress-ff:
+	/* Sans-serif font stack */
+	--dress-ff-sans:
 		system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/* Serif font stack */
+	--dress-ff-serif:
+		Times, 'Times New Roman', Georgia, 'Liberation Serif', serif;
+	/* Default font family */
+	--dress-ff: var(--dress-ff-sans);
+	/* Heading font family */
+	--dress-ff-h: var(--dress-ff);
 	/* Monospace font family stack */
 	--dress-ff-mono:
 		ui-monospace, Menlo, Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono',
