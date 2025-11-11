@@ -7,7 +7,7 @@
 		"dev": "astro dev",
 		"build": "npm run build:css && npm run build:site",
 		"build:commit": "scripts/commit-build.sh",
-		"build:css": "vite build && node ./scripts/sync-dress-css.mjs",
+		"build:css": "vite build",
 		"build:site": "astro build",
 		"preview": "astro preview",
 		"lint": "eslint .",
