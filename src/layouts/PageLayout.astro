@@ -12,13 +12,21 @@ interface Props {
 	includeDocsScript?: boolean
 }
 
-const {
-	title,
-	description,
-	image,
-	pathname,
-	includeDocsScript = true,
-} = Astro.props as Props
+type FrontmatterProps = Props & {
+	frontmatter?: Partial<Props>
+}
+
+const props = Astro.props as FrontmatterProps
+const frontmatter = props.frontmatter ?? {}
+
+const title = props.title ?? frontmatter.title
+const description = props.description ?? frontmatter.description
+const image = props.image ?? frontmatter.image
+const pathname = props.pathname
+const includeDocsScript =
+	props.includeDocsScript ??
+	frontmatter.includeDocsScript ??
+	true
 
 const navItems = [
 	{ label: 'Home', href: '/dress.css/' },

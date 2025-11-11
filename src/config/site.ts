@@ -5,4 +5,5 @@ export const siteConfig = {
 	prefix: 'dress.css',
 	image: '/dress.css/share.png',
 	twitter: '@remino',
+	publisher: 'RÉMINO',
 }

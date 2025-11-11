@@ -16,8 +16,26 @@ const {
 	pathname = Astro.url.pathname,
 } = Astro.props as Props
 
-const pageTitle =
-	title === siteConfig.title ? title : `${title} · ${siteConfig.title}`
+const titleSegments: string[] = []
+
+if (title && title !== siteConfig.title) {
+	titleSegments.push(title)
+} else if (siteConfig.title) {
+	titleSegments.push(siteConfig.title)
+}
+
+if (
+	siteConfig.title &&
+	titleSegments[titleSegments.length - 1] !== siteConfig.title
+) {
+	titleSegments.push(siteConfig.title)
+}
+
+if (siteConfig.publisher) {
+	titleSegments.push(siteConfig.publisher)
+}
+
+const pageTitle = titleSegments.filter(Boolean).join(' : ')
 const canonicalUrl = new URL(pathname.replace(/\/+/g, '/'), siteConfig.url)
 ---
 
