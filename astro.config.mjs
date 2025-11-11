@@ -26,11 +26,7 @@ export default defineConfig({
 				},
 			],
 		],
-		remarkPlugins: [
-			remarkCustomHeadingId,
-			remarkDeflist,
-			[remarkToc, { heading: 'Table of Contents' }],
-		],
+		remarkPlugins: [remarkCustomHeadingId, remarkDeflist, remarkToc],
 	},
 	vite: {
 		build: {

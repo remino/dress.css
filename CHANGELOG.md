@@ -1,9 +1,3 @@
----
-layout: ../../layouts/PageLayout.astro
-title: Updates
-description: Release notes for dress.css.
----
-
 # CHANGELOG
 
 <!-- mtoc-start -->

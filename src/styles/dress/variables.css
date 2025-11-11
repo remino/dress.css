@@ -1,75 +1,161 @@
 :root {
+	/* === Colors: Surface === */
+	/* Base page background colour */
 	--dress-bg: rgb(255 255 255);
-	--dress-bg-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 5%);
-	--dress-dt: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
+	/* Default body text colour */
 	--dress-fg: rgb(0 0 0);
+
+	/* === Colors: Links === */
+	/* Default link colour */
 	--dress-lk: hsl(212 100% 44%);
-	--dress-lk-h: hsl(212 97% 34%);
-	--dress-lk-v: hsl(270 100% 46%);
+	/* Active link colour */
 	--dress-lk-a: hsl(320 100% 48%);
+	/* Hover/focus link colour */
+	--dress-lk-h: hsl(212 97% 34%);
+	/* Link text colour on coloured backgrounds */
 	--dress-lk-tx: hsl(0 0% 100%);
+	/* Visited link colour */
+	--dress-lk-v: hsl(270 100% 46%);
+
+	/* === Colors: Buttons === */
+	/* Primary button background */
 	--dress-bt-1: hsl(212 100% 40%);
-	--dress-bt-1-h: hsl(212 100% 47.1%);
+	/* Active primary button background */
 	--dress-bt-1-a: hsl(212 97% 36%);
-	--dress-bt-1-tx: var(--dress-bg);
-	--dress-bt-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 10%);
-	--dress-bt-2-h: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
-	--dress-bt-2-a: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 20%);
-	--dress-bt-2-tx: var(--dress-fg);
-	--dress-sec: hsl(167 100% 54%);
-	--dress-sec-tx: hsl(187 71% 16%);
-	--dress-mk: color-mix(in srgb, var(--dress-sec) 60%, transparent);
-	--dress-mk-tx: var(--dress-sec-tx);
+	/* Hover/focus primary button background */
+	--dress-bt-1-h: hsl(212 100% 47.1%);
+
+	/* === Colors: Semantic === */
+	/* Base tone for negative/destructive accents */
 	--dress-neg: hsl(330 100% 54%);
-	--dress-del: color-mix(in srgb, var(--dress-neg) 60%, transparent);
+	/* Base tone for positive/constructive accents */
 	--dress-pos: hsl(140 100% 54%);
-	--dress-ins: color-mix(in srgb, var(--dress-pos) 60%, transparent);
-	--dress-low: var(--dress-neg);
-	--dress-mid: var(--dress-sec);
-	--dress-hi: var(--dress-pos);
-	--dress-sh: color-mix(in srgb, var(--dress-fg) 20%, transparent);
-	--dress-lh: 1.6;
-	--dress-mp: var(--dress-s-i);
-	--dress-mw: 50rem;
-	--dress-mw-min: 0;
-	--dress-mw-f: max-content;
-	--dress-bs: 1px;
+	/* Base tone for secondary/mark accents */
+	--dress-sec: hsl(167 100% 54%);
+	/* Text colour that contrasts with --dress-sec */
+	--dress-sec-tx: hsl(187 71% 16%);
+
+	/* === Layout Metrics === */
+	/* Default border radius */
 	--dress-br: 0.25rem;
-	--dress-s-b: calc(var(--dress-lh) * 1rem);
+	/* Default border thickness */
+	--dress-bs: 1px;
+	/* Base line-height */
+	--dress-lh: 1.6;
+	/* Preferred max inline size */
+	--dress-mw: 50rem;
+	/* Fallback max inline size */
+	--dress-mw-f: max-content;
+	/* Minimum inline size */
+	--dress-mw-min: 0;
+	/* Base inline spacing unit */
 	--dress-s-i: 1.6rem;
-	--dress-m-b: var(--dress-s-b);
-	--dress-m-i: var(--dress-s-i);
-	--dress-p-b: calc(var(--dress-s-b) - var(--dress-bs));
-	--dress-p-i: calc(var(--dress-s-i) - var(--dress-bs));
-	--dress-m-bs: var(--dress-m-b);
-	--dress-m-be: var(--dress-m-b);
-	--dress-fs-min: 16px;
-	--dress-fs-var: 1.2vmin;
+
+	/* === Typography === */
+	/* Scale factor for monospace samples */
+	--dress-cs: 1;
+	/* Primary font family stack */
+	--dress-ff:
+		system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/* Monospace font family stack */
+	--dress-ff-mono:
+		ui-monospace, Menlo, Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono',
+		'Courier New', Courier, monospace;
+	/* Upper clamp for responsive font size */
 	--dress-fs-max: 22px;
+	/* Lower clamp for responsive font size */
+	--dress-fs-min: 16px;
+	/* Viewport-driven clamp value */
+	--dress-fs-var: 1.2vmin;
+	/* Tab size for pre/code blocks */
+	--dress-ts: 2;
+
+	/* === Motion === */
+	/* Default animation duration */
+	--dress-ad: 0.08s;
+	/* Default animation timing function */
+	--dress-at: ease-in-out;
+
+	/* === Icons === */
+	/* Data URI for checkbox glyph */
+	--dress-i-cb: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
+	/* Data URI for download icon */
+	--dress-i-dl: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='M21 15v5c0 .601-.471 1-1 1H4c-.573 0-1-.427-1-1v-5m4-5 5 5 5-5m-5 5V3'/></svg>");
+	/* Data URI for radio glyph */
+	--dress-i-rb: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'><circle cx='12' cy='12' r='8'/></svg>");
+	/* Data URI for select chevron (dark text) */
+	--dress-i-sel-d: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'><polyline points='9 10 12 7 15 10'/><polyline points='9 14 12 17 15 14'/></svg>");
+	/* Data URI for select chevron (light text) */
+	--dress-i-sel-l: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'><polyline points='9 10 12 7 15 10'/><polyline points='9 14 12 17 15 14'/></svg>");
+	/* Data URI for external-link icon */
+	--dress-i-xln: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='M10 14 21 3M3 9v11a1 1 0 0 0 1 1h11M14 3h7v7'/></svg>");
+
+	/* === Derived Colors === */
+	/* Raised block background */
+	--dress-bg-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 5%);
+	/* Primary button text colour */
+	--dress-bt-1-tx: var(--dress-bg);
+	/* Secondary button background */
+	--dress-bt-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 10%);
+	/* Active secondary button background */
+	--dress-bt-2-a: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 20%);
+	/* Hover/focus secondary button background */
+	--dress-bt-2-h: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
+	/* Secondary button text colour */
+	--dress-bt-2-tx: var(--dress-fg);
+	/* Semantic delete highlight */
+	--dress-del: color-mix(in srgb, var(--dress-neg) 60%, transparent);
+	/* Border/detail colour */
+	--dress-dt: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
+	/* Semantic high meter colour */
+	--dress-hi: var(--dress-pos);
+	/* Semantic insert highlight */
+	--dress-ins: color-mix(in srgb, var(--dress-pos) 60%, transparent);
+	/* Semantic low meter colour */
+	--dress-low: var(--dress-neg);
+	/* Semantic mid meter colour */
+	--dress-mid: var(--dress-sec);
+	/* Secondary mark background */
+	--dress-mk: color-mix(in srgb, var(--dress-sec) 60%, transparent);
+	/* Secondary mark text colour */
+	--dress-mk-tx: var(--dress-sec-tx);
+	/* Semantic detail shadow */
+	--dress-sh: color-mix(in srgb, var(--dress-fg) 20%, transparent);
+
+	/* === Derived Layout === */
+	/* Default content gap */
+	--dress-gap: calc(var(--dress-m-i) / 2);
+	/* Base block margin */
+	--dress-m-b: var(--dress-s-b);
+	/* Block margin end override */
+	--dress-m-be: var(--dress-m-b);
+	/* Block margin start override */
+	--dress-m-bs: var(--dress-m-b);
+	/* Base inline margin */
+	--dress-m-i: var(--dress-s-i);
+	/* Consistent spacing for controls */
+	--dress-mp: var(--dress-s-i);
+	/* Block padding */
+	--dress-p-b: calc(var(--dress-s-b) - var(--dress-bs));
+	/* Inline padding */
+	--dress-p-i: calc(var(--dress-s-i) - var(--dress-bs));
+	/* Base block spacing unit */
+	--dress-s-b: calc(var(--dress-lh) * 1rem);
+	/* Scroll offset for anchored headings */
+	--dress-so: calc(var(--dress-m-bs) * 2);
+
+	/* === Derived Typography === */
+	/* Root font-size clamp */
 	--dress-fs: clamp(
 		var(--dress-fs-min),
 		var(--dress-fs-var),
 		var(--dress-fs-max)
 	);
-	--dress-ff:
-		system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-		'Helvetica Neue', Helvetica, Arial, sans-serif;
-	--dress-ff-mono:
-		ui-monospace, Menlo, Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono',
-		'Courier New', Courier, monospace;
-	--dress-ts: 2;
-	--dress-cs: 1;
-	--dress-gap: calc(var(--dress-m-i) / 2);
-	--dress-so: calc(var(--dress-m-bs) * 2);
-	--dress-ad: 0.08s;
+
+	/* === Derived Motion === */
+	/* Hover/active animation duration */
 	--dress-ad-h: calc(var(--dress-ad) / 2);
-	--dress-at: ease-in-out;
-	--dress-i-dl: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='M21 15v5c0 .601-.471 1-1 1H4c-.573 0-1-.427-1-1v-5m4-5 5 5 5-5m-5 5V3'/></svg>");
-	--dress-i-xln: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='M10 14 21 3M3 9v11a1 1 0 0 0 1 1h11M14 3h7v7'/></svg>");
-	--dress-i-cb: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
-	--dress-i-rb: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'><circle cx='12' cy='12' r='8'/></svg>");
-	--dress-i-sel-d: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'><polyline points='9 10 12 7 15 10'/><polyline points='9 14 12 17 15 14'/></svg>");
-	--dress-i-sel-l: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'><polyline points='9 10 12 7 15 10'/><polyline points='9 14 12 17 15 14'/></svg>");
 }
 
 @media (prefers-color-scheme: dark) {

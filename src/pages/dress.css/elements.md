@@ -10,7 +10,7 @@ Below are all the tags style by **<mark>dress.css</mark>** along with markup sam
 
 For legibility, the docs site highlights code blocks with Prism using bespoke light (Pastie) and dark (Dracula) themes. This syntax highlighting is limited to the documentation and is not bundled with `dress.css`.
 
-## Table of Contents
+## Contents
 
 ## Text {#text}
 
