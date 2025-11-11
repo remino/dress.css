@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config'
 import remarkCustomHeadingId from 'remark-custom-heading-id'
+import remarkDeflist from 'remark-deflist'
 import remarkToc from 'remark-toc'
 import rehypeExternalLinks from 'rehype-external-links'
 import nginxConfig from './src/integrations/nginxConfig.ts'
@@ -27,6 +28,7 @@ export default defineConfig({
 		],
 		remarkPlugins: [
 			remarkCustomHeadingId,
+			remarkDeflist,
 			[remarkToc, { heading: 'Table of Contents' }],
 		],
 	},
