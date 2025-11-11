@@ -4,7 +4,6 @@
 	"description": "The little dress of CSS",
 	"type": "module",
 	"scripts": {
-		"predev": "node ./scripts/sync-dress-css.mjs",
 		"dev": "astro dev",
 		"build": "npm run build:css && npm run build:site",
 		"build:commit": "scripts/commit-build.sh",

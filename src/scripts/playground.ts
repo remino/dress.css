@@ -3,6 +3,7 @@ import { EditorView, basicSetup } from 'codemirror'
 import { EditorState } from '@codemirror/state'
 import { html } from '@codemirror/lang-html'
 import { dracula } from 'thememirror'
+import dressCssUrl from '../dress.css?url'
 
 class PlaygroundApp extends HTMLElement {
 	private editor?: EditorView
@@ -30,7 +31,7 @@ class PlaygroundApp extends HTMLElement {
 			<html lang="en">
 				<head>
 					<title>Preview</title>
-					<link rel="stylesheet" href="/dress.css/dress.css" />
+					<link rel="stylesheet" href="${dressCssUrl}" />
 					<style>*, *::after, *::before { transition: all 0.2s ease-in-out; }</style>
 				</head>
 				<body>${doc}</body>
