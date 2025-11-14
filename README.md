@@ -94,22 +94,29 @@ not supported.
 This project is built with Vite (for the CSS library) and Astro (for the
 documentation site).
 
+### Install first
+
 ```sh
 npm install
-npm run dev        # Start the Astro dev server
-npm run build:css  # Build dist/dress.css
-npm run build:site # Build the documentation site to deploy/public/
-npm run build      # Run both builds
 ```
 
-### Publishing the static site
-
-Deploy artifacts live in `deploy/public/` (docs) and `deploy/nginx/`.
+### CSS
 
 ```sh
-npm run worktree:init   # create a deploy/ worktree on an orphan branch
-npm run publish:site    # rebuild + git add/commit inside deploy/
-(cd deploy && git push origin deploy)
+npm run build:css  # Build dist/dress.css
+```
+
+### Documentation site
+
+```sh
+npm run dev        # Start the Astro dev server
+npm run build:site # Build the documentation site to deploy/public/
+```
+
+### Building both
+
+```sh
+npm run build      # Run both builds
 ```
 
 ---
