@@ -23,6 +23,10 @@
 	"files": [
 		"dist/dress.css"
 	],
+	"exports": {
+		".": "./dist/dress.css",
+		"./dress.css": "./dist/dress.css"
+	},
 	"keywords": [
 		"css",
 		"boilerplate"

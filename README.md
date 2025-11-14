@@ -53,11 +53,17 @@ Mirrors:
 
 ### npm
 
+Install the package first:
+
 ```bash
 npm install @remino/dress.css
 ```
 
-Use `node_modules/@remino/dress.css/dist/dress.css` in your build pipeline.
+Then, in your app, import its CSS file:
+
+```js
+import '@remino/dress.css'
+```
 
 ### Direct download
 
