@@ -7,7 +7,7 @@ export default defineConfig({
 	fullyParallel: true,
 	workers: 16,
 	use: {
-		baseURL: 'http://127.0.0.1:4321',
+		baseURL: 'http://localhost:4321',
 		viewport: { width: 400, height: 400 },
 	},
 	webServer: {
