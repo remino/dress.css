@@ -26,52 +26,74 @@ const captureState = async ({
 	expect(screenshot).toMatchSnapshot(`${name}.png`)
 }
 
-const moveMouseAway = async (page: Page) => {
+const captureInteractiveStates = async ({
+	locator,
+	name,
+	page,
+}: {
+	locator: Locator
+	name: string
+	page: Page
+}) => {
+	await captureState({ locator, name: `${name}-default` })
+
+	await locator.focus()
+	await captureState({ locator, name: `${name}-focus` })
+
 	await page.mouse.move(0, 0)
+	await locator.hover()
+	await captureState({ locator, name: `${name}-hover` })
+
+	const box = await locator.boundingBox()
+	if (box) {
+		await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2)
+		await page.mouse.down()
+		await captureState({ locator, name: `${name}-active` })
+		await page.mouse.up()
+	}
 }
 
+const themes = [
+	{ name: 'light', media: { colorScheme: 'light' as const } },
+	{ name: 'dark', media: { colorScheme: 'dark' as const } },
+]
+
 test.describe('interactions', () => {
-	test('button states', async ({ page }) => {
-		await loadExample(page, '/tests/elements/buttons/')
-		const button = page.getByRole('button', { name: 'Submit' })
+for (const theme of themes) {
+	test.describe(`${theme.name}`, () => {
+		test('button states', async ({ page }) => {
+			await loadExample(page, '/tests/elements/buttons/')
+			await page.emulateMedia({ colorScheme: theme.media.colorScheme })
+			const button = page.getByRole('button', { name: 'Submit' })
+			await captureInteractiveStates({
+				locator: button,
+				name: `${theme.name}-button-primary`,
+				page,
+			})
+		})
 
-		await captureState({ locator: button, name: 'button-default' })
+		test('secondary button states', async ({ page }) => {
+			await loadExample(page, '/tests/elements/buttons/')
+			await page.emulateMedia({ colorScheme: theme.media.colorScheme })
+			const secondary = page.getByRole('button', { name: 'Reset' })
+			await captureInteractiveStates({
+				locator: secondary,
+				name: `${theme.name}-button-secondary`,
+				page,
+			})
+		})
 
-		await button.focus()
-		await captureState({ locator: button, name: 'button-focus' })
+		test('link states', async ({ page }) => {
+			await loadExample(page, '/tests/elements/hyperlink/')
+			await page.emulateMedia({ colorScheme: theme.media.colorScheme })
+			const link = page.getByRole('link', { name: 'Click me' })
 
-		await moveMouseAway(page)
-		await button.hover()
-		await captureState({ locator: button, name: 'button-hover' })
-
-		const box = await button.boundingBox()
-		if (box) {
-			await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2)
-			await page.mouse.down()
-			await captureState({ locator: button, name: 'button-active' })
-			await page.mouse.up()
-		}
+			await captureInteractiveStates({
+				locator: link,
+				name: `${theme.name}-link`,
+				page,
+			})
+		})
 	})
-
-	test('link states', async ({ page }) => {
-		await loadExample(page, '/tests/elements/hyperlink/')
-		const link = page.getByRole('link', { name: 'Click me' })
-
-		await captureState({ locator: link, name: 'link-default' })
-
-		await link.focus()
-		await captureState({ locator: link, name: 'link-focus' })
-
-		await moveMouseAway(page)
-		await link.hover()
-		await captureState({ locator: link, name: 'link-hover' })
-
-		const box = await link.boundingBox()
-		if (box) {
-			await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2)
-			await page.mouse.down()
-			await captureState({ locator: link, name: 'link-active' })
-			await page.mouse.up()
-		}
-	})
+}
 })
