@@ -22,8 +22,24 @@ const captureState = async ({
 	locator: Locator
 	name: string
 }) => {
-	const screenshot = await locator.screenshot()
-	expect(screenshot).toMatchSnapshot(`${name}.png`)
+	const box = await locator.boundingBox()
+	const padding = 8
+
+	if (box) {
+		const screenshot = await locator.page().screenshot({
+			clip: {
+				x: Math.max(box.x - padding, 0),
+				y: Math.max(box.y - padding, 0),
+				width: box.width + padding * 2,
+				height: box.height + padding * 2,
+			},
+		})
+		expect(screenshot).toMatchSnapshot(`${name}.png`)
+		return
+	}
+
+	const fallback = await locator.screenshot()
+	expect(fallback).toMatchSnapshot(`${name}.png`)
 }
 
 const captureInteractiveStates = async ({
