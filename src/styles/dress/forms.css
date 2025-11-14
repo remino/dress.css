@@ -33,6 +33,29 @@ input[type='submit'] {
 	}
 }
 
+button,
+input[type='button'],
+input[type='reset'] {
+	background: var(--dress-bt-2);
+	color: var(--dress-bt-2-tx);
+
+	&:not([disabled]) {
+		&:focus {
+			background: var(--dress-bt-2-h);
+		}
+
+		@media (hover: hover) {
+			&:hover {
+				background: var(--dress-bt-2-h);
+			}
+		}
+
+		&:active {
+			background: var(--dress-bt-2-a);
+		}
+	}
+}
+
 a[role='button'],
 button[type='submit'],
 input[type='submit'] {
@@ -61,29 +84,6 @@ html,
 input,
 select {
 	font-family: var(--dress-ff);
-}
-
-button,
-input[type='button'],
-input[type='reset'] {
-	background: var(--dress-bt-2);
-	color: var(--dress-bt-2-tx);
-
-	&:not([disabled]) {
-		&:focus {
-			background: var(--dress-bt-2-h);
-		}
-
-		@media (hover: hover) {
-			&:hover {
-				background: var(--dress-bt-2-h);
-			}
-		}
-
-		&:active {
-			background: var(--dress-bt-2-a);
-		}
-	}
 }
 
 fieldset {
