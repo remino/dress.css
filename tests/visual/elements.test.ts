@@ -120,7 +120,7 @@ test.describe.parallel('elements', () => {
 
 					const screenshot = await page.screenshot({ fullPage: true })
 
-					await expect(screenshot).toMatchSnapshot({
+					expect(screenshot).toMatchSnapshot({
 						name: `${mediaName}-${dirName}-${elName}.png`,
 						...snapshotOpts,
 					})
