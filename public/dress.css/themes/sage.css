@@ -1,0 +1,22 @@
+/*! Sage Theme for dress.css */
+:root {
+	--dress-bg: #f3f6f1;
+	--dress-fg: #203125;
+	--dress-lk: #2a9d8f;
+	--dress-lk-h: #21867a;
+	--dress-lk-a: #e76f51;
+	--dress-lk-v: #496f5d;
+	--dress-bt-1: #4caf50;
+	--dress-bt-1-h: #3a8f3f;
+	--dress-bt-1-a: #2c6f30;
+	--dress-bt-2: #e0efe6;
+	--dress-bt-2-h: #cde4d6;
+	--dress-bt-2-a: #bdd8c8;
+	--dress-sec: #ffb703;
+	--dress-sec-tx: #2a1800;
+	--dress-neg: #d62828;
+	--dress-pos: #6a994e;
+	--dress-sh: rgba(66, 90, 75, 0.35);
+	--dress-ff-sans: 'Source Sans Pro', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+	--dress-ff-serif: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+}

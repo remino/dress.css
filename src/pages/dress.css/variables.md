@@ -157,6 +157,12 @@ brand system.
 - All values are plain CSS, so you can reference your own variables or use functions
   like `color-mix()` and `clamp()` when extending the design system.
 
+## Themes
+
+Want a quick colour pass? Open the [Playground](/dress.css/playground/), expand the
+Themes panel between the editor and preview, and load one of the bundled theme
+files (or download the CSS) before fine-tuning your own variables.
+
 ## Source
 
 Browse the upstream variables file on GitHub:

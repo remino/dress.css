@@ -49,8 +49,8 @@ const navItems = [
 ]
 ---
 
-<BaseLayout {title} {description} {image} {pathname}>
-	{includeDocsScript && <script slot="head" type="module" src={docsScript} />}
+	<BaseLayout {title} {description} {image} {pathname}>
+		{includeDocsScript && <script slot="head" type="module" src={docsScript} />}
 	<slot slot="head" name="head" />
 
 	<a href="#main">Skip to main content</a>

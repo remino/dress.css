@@ -34,6 +34,7 @@ states out of the box. Earlier releases were known as **sem.css**.
 - **Accessible** – friendly focus states and thoughtful defaults.
 - **Printable** – attractive print layout with external URLs revealed.
 - **Customizable** – override the CSS variables to theme it your way.
+- **Ready-made themes** – drop-in CSS overrides for Aurora, Nocturne, and Sage.
 
 ---
 

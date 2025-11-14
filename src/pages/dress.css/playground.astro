@@ -2,6 +2,7 @@
 import PageLayout from '../../layouts/PageLayout.astro'
 import '../../styles/playground.css'
 import playgroundScript from '../../scripts/playground.ts?url'
+import sampleHTML from '../../playground/sample.html?raw'
 
 const title = 'Playground'
 ---
@@ -11,8 +12,5 @@ const title = 'Playground'
 
 	<h1>{title}</h1>
 
-	<playground-app>
-		<h1>Hello!</h1>
-		<p>Edit me!</p>
-	</playground-app>
+	<playground-app set:html={sampleHTML} />
 </PageLayout>

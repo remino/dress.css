@@ -1,0 +1,22 @@
+/*! Aurora Theme for dress.css */
+:root {
+	--dress-bg: #fdf7ff;
+	--dress-fg: #241b33;
+	--dress-lk: #7b2cbf;
+	--dress-lk-h: #5a189a;
+	--dress-lk-a: #f72585;
+	--dress-lk-v: #9d4edd;
+	--dress-bt-1: #ff7b9c;
+	--dress-bt-1-h: #ff4f84;
+	--dress-bt-1-a: #e0356b;
+	--dress-bt-2: #ffe9fb;
+	--dress-bt-2-h: #ffd8f6;
+	--dress-bt-2-a: #ffc7f0;
+	--dress-sec: #23a094;
+	--dress-sec-tx: #0f2d2a;
+	--dress-neg: #e83f6f;
+	--dress-pos: #3ba45c;
+	--dress-sh: rgba(122, 84, 149, 0.35);
+	--dress-ff-sans: 'Nunito', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+	--dress-ff-serif: 'Playfair Display', 'Times New Roman', Times, serif;
+}

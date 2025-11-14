@@ -1,0 +1,22 @@
+/*! Nocturne Theme for dress.css */
+:root {
+	--dress-bg: #0f1116;
+	--dress-fg: #f3f4f6;
+	--dress-lk: #5ccfe6;
+	--dress-lk-h: #3fb5cf;
+	--dress-lk-a: #ffd166;
+	--dress-lk-v: #c084fc;
+	--dress-bt-1: #3a86ff;
+	--dress-bt-1-h: #2667d0;
+	--dress-bt-1-a: #1f4ca3;
+	--dress-bt-2: #1c1f27;
+	--dress-bt-2-h: #252933;
+	--dress-bt-2-a: #2e3341;
+	--dress-sec: #ef476f;
+	--dress-sec-tx: #fff8fb;
+	--dress-neg: #ff5d73;
+	--dress-pos: #3dd598;
+	--dress-sh: rgba(0, 0, 0, 0.6);
+	--dress-ff-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+	--dress-ff-serif: 'Merriweather', Georgia, serif;
+}
