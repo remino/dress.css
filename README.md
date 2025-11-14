@@ -6,11 +6,12 @@
 
 The little dress of CSS.
 
+By Rémino Rem  
+<https://remino.net/>
+
 [Site](https://remino.net/dress.css/) |
 [Code Repo](https://github.com/remino/dress.css) |
 [NPM Package](https://www.npmjs.com/package/@remino/dress.css)
-
-By Rémino Rem <https://remino.net/>
 
 ---
 
