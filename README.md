@@ -126,11 +126,12 @@ npm run build      # Run both builds
 ### Visual regression (Playwright)
 
 ```sh
-npm run test
-npm run test:update
+npm run test:visual        # Run tests
+npm run test:visual:update # Update visual snapshots
+npm run test:visual:ui     # Show Playwright UI
 ```
 
-Snapshots cover the Elements gallery, layout width fixtures, and anchor
+Snapshots cover the _Elements_ gallery, layout width fixtures, and anchor
 behavior.
 
 ---
