@@ -8,7 +8,7 @@ description: Examples of HTML elements styled by dress.css.
 
 Below are all the tags styled by **<mark>dress.css</mark>** along with markup samples.
 
-For legibility, the docs site highlights code blocks with Prism using bespoke light (Pastie) and dark (Dracula) themes. This syntax highlighting is limited to the documentation and is not bundled with `dress.css`.
+For legibility, the docs site highlights code blocks with [Prism](https://prismjs.com) using bespoke light (Pastie) and dark (Dracula) themes. This syntax highlighting is limited to the documentation and is not bundled with `dress.css`.
 
 ## Contents
 
