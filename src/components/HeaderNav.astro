@@ -13,17 +13,13 @@ const { items } = Astro.props as Props
 ---
 
 <nav aria-label="Main">
-	<ul>
-		{items.map((item) => (
-			<li>
-				<a
-					href={item.href}
-					target={item.external ? '_blank' : undefined}
-					rel={item.external ? 'noreferrer noopener' : undefined}
-				>
-					{item.label}
-				</a>
-			</li>
-		))}
-	</ul>
+	<ul
+		set:html={items
+			.map((item) => {
+				const target = item.external ? ' target="_blank"' : ''
+				const rel = item.external ? ' rel="noreferrer noopener"' : ''
+				return `<li><a href="${item.href}"${target}${rel}>${item.label}</a></li>`
+			})
+			.join('')}
+	/>
 </nav>
