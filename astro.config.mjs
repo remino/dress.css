@@ -38,6 +38,6 @@ export default defineConfig({
 			template: 'src/nginx.conf.ejs',
 			output: 'nginx/dress.css.conf',
 		}),
-		removeFiles({ patterns: ['tests/**'] }),
+		removeFiles({ patterns: ['tests'] }),
 	],
 })

@@ -22,10 +22,15 @@ export default function removeFiles({
 						cwd: outputDir,
 						dot: true,
 						absolute: true,
+						onlyFiles: false,
 					})
 
+					const uniqueFiles = [...new Set(files)].sort(
+						(a, b) => b.length - a.length,
+					)
+
 					await Promise.all(
-						files.map(async (file) => {
+						uniqueFiles.map(async (file) => {
 							await rm(file, { recursive: true, force: true })
 							logger.info(`removed ${path.relative(outputDir, file)}`)
 						}),
