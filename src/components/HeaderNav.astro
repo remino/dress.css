@@ -1,0 +1,29 @@
+---
+interface NavItem {
+	label: string
+	href: string
+	external?: boolean
+}
+
+interface Props {
+	items: NavItem[]
+}
+
+const { items } = Astro.props as Props
+---
+
+<nav aria-label="Main">
+	<ul>
+		{items.map((item) => (
+			<li>
+				<a
+					href={item.href}
+					target={item.external ? '_blank' : undefined}
+					rel={item.external ? 'noreferrer noopener' : undefined}
+				>
+					{item.label}
+				</a>
+			</li>
+		))}
+	</ul>
+</nav>

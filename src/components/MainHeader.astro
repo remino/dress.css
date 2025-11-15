@@ -1,0 +1,23 @@
+---
+import HeaderNav from './HeaderNav.astro'
+
+interface NavItem {
+	label: string
+	href: string
+	external?: boolean
+}
+
+interface Props {
+	navItems: NavItem[]
+	siteTitle: string
+}
+
+const { navItems, siteTitle } = Astro.props as Props
+---
+
+<header>
+	<h1>
+		<img src="/dress.css/dress.svg" alt="" role="presentation" />{siteTitle}
+	</h1>
+	<HeaderNav items={navItems} />
+</header>

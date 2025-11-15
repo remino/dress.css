@@ -1,5 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro'
+import MainHeader from '../components/MainHeader.astro'
+import MainFooter from '../components/MainFooter.astro'
 import '../styles/docs.css'
 import { siteConfig } from '../config/site.ts'
 import docsScript from '../scripts/docs.ts?url'
@@ -47,6 +49,7 @@ const navItems = [
 		external: true,
 	},
 ]
+
 ---
 
 <BaseLayout {title} {description} {image} {pathname}>
@@ -54,48 +57,9 @@ const navItems = [
 	<slot slot="head" name="head" />
 
 	<a href="#main">Skip to main content</a>
-	<header>
-		<h1>
-			<img src="/dress.css/dress.svg" alt="" role="presentation" />{
-				siteConfig.title
-			}
-		</h1>
-		<nav aria-label="Main">
-			<ul>
-				{
-					navItems.map((item) => (
-						<li>
-							<a
-								href={item.href}
-								target={item.external ? '_blank' : undefined}
-								rel={item.external ? 'noreferrer noopener' : undefined}
-							>
-								{item.label}
-							</a>
-						</li>
-					))
-				}
-			</ul>
-		</nav>
-	</header>
+	<MainHeader {navItems} siteTitle={siteConfig.title} />
 	<main id="main">
 		<slot />
 	</main>
-	<footer id="end">
-		<nav aria-label="Footer">
-			<a href="/">
-				<object type="image/svg+xml" data="/dress.css/remino.svg">
-					<img src="/dress.css/remino.svg" alt="RÉMINO" />
-				</object>
-			</a>
-			<ul>
-				<li>
-					<a href="/dress.css/license/">Licence</a>
-				</li>
-				<li>
-					<a href="#">Back to Top</a>
-				</li>
-			</ul>
-		</nav>
-	</footer>
+	<MainFooter />
 </BaseLayout>
