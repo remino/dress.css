@@ -4,15 +4,14 @@ import '../../styles/playground.css'
 import playgroundScript from '../../scripts/playground.ts?url'
 
 const title = 'Playground'
+const initialMarkup = String.raw`<playground-app>
+<h1>Hello!</h1>
+<p>Edit me!</p>
+</playground-app>`
 ---
 
 <PageLayout title={title} pathname="/dress.css/playground/">
 	<script slot="head" type="module" src={playgroundScript}></script>
-
 	<h1>{title}</h1>
-
-	<playground-app>
-		<h1>Hello!</h1>
-		<p>Edit me!</p>
-	</playground-app>
+	<template data-type="init" set:html={initialMarkup} />
 </PageLayout>

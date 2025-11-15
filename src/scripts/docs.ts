@@ -1,4 +1,5 @@
 import init from '@remino/reslib/lib/init.js'
+import { loadTemplate } from '@remino/reslib/lib/template.js'
 
 const addCodeBlockCopyButton = () => {
 	document.querySelectorAll<HTMLElement>('div.highlight').forEach((block) => {
@@ -130,7 +131,12 @@ const setupSignupForm = () => {
 	form.dispatchEvent(new Event('input', { bubbles: true }))
 }
 
+const insertInitTemplates = () => {
+	document.querySelectorAll('template[data-type=init]').forEach(loadTemplate)
+}
+
 init({
+	serial: [insertInitTemplates],
 	parallel: [
 		addCodeBlockCopyButton,
 		addHeadingAnchorLinks,
