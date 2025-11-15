@@ -80,7 +80,7 @@ Mirrors:
 Install the package first:
 
 ```sh
-npm install @remino/dress.css
+npm add @remino/dress.css
 ```
 
 Then, in your app, import its CSS file:
