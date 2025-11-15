@@ -4,7 +4,7 @@
 
 ## v5.0.0 Blouson
 
-The little dress of CSS.
+The little dress of CSS
 
 By Rémino Rem  
 <https://remino.net/>
