@@ -4,7 +4,7 @@ import remarkDeflist from 'remark-deflist'
 import remarkToc from 'remark-toc'
 import rehypeExternalLinks from 'rehype-external-links'
 import nginxConfig from './src/integrations/nginxConfig.ts'
-import removeTests from './src/integrations/removeTests.ts'
+import removeFiles from './src/integrations/removeFiles.ts'
 import { siteConfig } from './src/config/site.ts'
 
 export default defineConfig({
@@ -38,6 +38,6 @@ export default defineConfig({
 			template: 'src/nginx.conf.ejs',
 			output: 'nginx/dress.css.conf',
 		}),
-		removeTests(),
+		removeFiles({ patterns: ['tests/**'] }),
 	],
 })
