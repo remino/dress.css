@@ -7,7 +7,7 @@ body {
 		display: flex;
 		flex-flow: row;
 		gap: calc(var(--dress-lh) * 1rem);
-		justify-content: flex-start;
+		justify-content: space-between;
 		margin-block: 0;
 		min-height: calc(var(--dress-lh) * 2rem);
 
@@ -31,10 +31,6 @@ body {
 				height: calc(var(--dress-lh) * 1rem);
 				inline-size: auto;
 			}
-		}
-
-		> ul {
-			margin-block-start: 0.8em;
 		}
 	}
 
