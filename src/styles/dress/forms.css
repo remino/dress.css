@@ -135,6 +135,7 @@ input:not(
 select,
 textarea {
 	appearance: none;
+	font-family: inherit;
 	background: var(--dress-bg-2);
 	border: var(--dress-bs) solid var(--dress-dt);
 	border-radius: var(--dress-br);
