@@ -1,11 +1,11 @@
 :root {
-	/* === Colours: Surface === */
+	/* }{ Colours: Surface }{ */
 	/* Base page background colour */
 	--dress-bg: rgb(255 255 255);
 	/* Default body text colour */
 	--dress-fg: rgb(0 0 0);
 
-	/* === Colours: Links === */
+	/* }{ Colours: Links }{ */
 	/* Default link colour */
 	--dress-lk: hsl(212 100% 44%);
 	/* Active link colour */
@@ -17,7 +17,7 @@
 	/* Visited link colour */
 	--dress-lk-v: hsl(270 100% 46%);
 
-	/* === Colours: Buttons === */
+	/* }{ Colours: Buttons }{ */
 	/* Primary button background */
 	--dress-bt-1: hsl(212 100% 40%);
 	/* Active primary button background */
@@ -25,7 +25,7 @@
 	/* Hover/focus primary button background */
 	--dress-bt-1-h: hsl(212 100% 47.1%);
 
-	/* === Colours: Semantic === */
+	/* }{ Colours: Semantic }{ */
 	/* Base tone for negative/destructive accents */
 	--dress-neg: hsl(330 100% 54%);
 	/* Base tone for positive/constructive accents */
@@ -35,7 +35,7 @@
 	/* Text colour that contrasts with --dress-sec */
 	--dress-sec-tx: hsl(187 71% 16%);
 
-	/* === Layout Metrics === */
+	/* }{ Layout Metrics }{ */
 	/* Default border radius */
 	--dress-br: 0.25rem;
 	/* Default border thickness */
@@ -51,7 +51,7 @@
 	/* Base inline spacing unit */
 	--dress-s-i: 1.6rem;
 
-	/* === Typography === */
+	/* }{ Typography }{ */
 	/* Scale factor for monospace samples */
 	--dress-cs: 1;
 	/* Sans-serif font stack */
@@ -78,13 +78,13 @@
 	/* Tab size for pre/code blocks */
 	--dress-ts: 2;
 
-	/* === Motion === */
+	/* }{ Motion }{ */
 	/* Default animation duration */
 	--dress-ad: 0.08s;
 	/* Default animation timing function */
 	--dress-at: ease-in-out;
 
-	/* === Icons === */
+	/* }{ Icons }{ */
 	/* Data URI for checkbox glyph */
 	--dress-i-cb: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
 	/* Data URI for download icon */
@@ -98,7 +98,7 @@
 	/* Data URI for external-link icon */
 	--dress-i-xln: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='M10 14 21 3M3 9v11a1 1 0 0 0 1 1h11M14 3h7v7'/></svg>");
 
-	/* === Derived Colours === */
+	/* }{ Derived Colours }{ */
 	/* Raised block background */
 	--dress-bg-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 5%);
 	/* Primary button text colour */
@@ -130,7 +130,7 @@
 	/* Semantic detail shadow */
 	--dress-sh: color-mix(in srgb, var(--dress-fg) 20%, transparent);
 
-	/* === Derived Layout === */
+	/* }{ Derived Layout }{ */
 	/* Default content gap */
 	--dress-gap: calc(var(--dress-m-i) / 2);
 	/* Base block margin */
@@ -152,7 +152,7 @@
 	/* Scroll offset for anchored headings */
 	--dress-so: calc(var(--dress-m-bs) * 2);
 
-	/* === Derived Typography === */
+	/* }{ Derived Typography }{ */
 	/* Root font-size clamp */
 	--dress-fs: clamp(
 		var(--dress-fs-min),
@@ -160,7 +160,7 @@
 		var(--dress-fs-max)
 	);
 
-	/* === Derived Motion === */
+	/* }{ Derived Motion }{ */
 	/* Hover/active animation duration */
 	--dress-ad-h: calc(var(--dress-ad) / 2);
 }
