@@ -2,7 +2,7 @@
 
 <!-- mtoc-start -->
 
-- [v5.0.0](#v500)
+- [v5.0.0 Blouson](#v500-blouson)
 - [v4.4.3](#v443)
 - [v4.4.2](#v442)
 - [v4.4.1](#v441)
@@ -14,7 +14,7 @@
 - [v4.1.1](#v411)
 - [v4.1.0](#v410)
 - [v4.0.1](#v401)
-- [v4.0.0](#v400)
+- [v4.0.0 Peplum](#v400-peplum)
 - [v3.6.0](#v360)
 - [v3.5.1](#v351)
 - [v3.5.0](#v350)
@@ -25,13 +25,13 @@
 - [v3.2.0](#v320)
 - [v3.1.3](#v313)
 - [v3.1.1 / v3.1.2](#v311--v312)
-- [v3.0.0](#v300)
-- [v2.0.0](#v200)
+- [v3.0.0 Tea-Length Dress](#v300-tea-length-dress)
+- [v2.0.0 Little Black Dress](#v200-little-black-dress)
 - [v1.2.4](#v124)
 - [v1.2.3](#v123)
 - [v1.2.2 / v1.2.1 / v1.2.0](#v122--v121--v120)
 - [v1.1.0](#v110)
-- [v1.0.0](#v100)
+- [v1.0.0 _sem.css_](#v100-_semcss)
 - [v0.10.x](#v010x)
 - [v0.9.x](#v09x)
 - [v0.8.0](#v080)
@@ -44,7 +44,7 @@
 
 <!-- mtoc-end -->
 
-## v5.0.0
+## v5.0.0 Blouson
 
 - Migrated from Sass to native CSS with nesting
 - Rebuilt the documentation site with Astro 5
@@ -53,6 +53,7 @@
 - Renamed `--dress-bg-3` to `--dress-dt` to better describe its role as the shared border/detail colour
 - Split font stacks into `--dress-ff-sans` and `--dress-ff-serif`, plus derived `--dress-ff` and `--dress-ff-h` tokens for body vs heading copy
 - Removed the global `[hidden]` override to keep browser-native behaviours such as `hidden="until-found"`
+- Added codenames to current major version, and to past major versions in retrospect.
 
 ## v4.4.3
 
@@ -111,7 +112,7 @@
 
 - Centered `<main>` in `vertical-rl` layout
 
-## v4.0.0
+## v4.0.0 Peplum
 
 - Added print borders on `<header>` and `<footer>`
 - Removed backgrounds in print
@@ -182,7 +183,7 @@
 - Adjusted form layout spacing using `gap` vars
 - Switched inline spacing units to `rem` from `rch`
 
-## v3.0.0
+## v3.0.0 Tea-Length Dress
 
 - Switched to `rch`/`rlh` units for inline spacing
 - Renamed margin vars to logical props:
@@ -193,7 +194,7 @@
   ```
 - Renamed `--dc-*` vars (from `--sc-*`)
 
-## v2.0.0
+## v2.0.0 Little Black Dress
 
 - Renamed package to `@remino/dress.css`
 - Project renamed from `sem.css` to `dress.css`
@@ -219,7 +220,7 @@
 
 - Made default font size slightly flexible
 
-## v1.0.0
+## v1.0.0 _sem.css_
 
 - CSP-compatible external JS
 - Disabled demo links
