@@ -106,14 +106,14 @@ npm install
 npm run build:css  # Build dist/dress.css
 ```
 
-### Documentation site
+### Docs
 
 ```sh
 npm run dev        # Start the Astro dev server
 npm run build:site # Build the documentation site to deploy/public/
 ```
 
-### Building both
+### Build everything
 
 ```sh
 npm run build      # Run both builds
