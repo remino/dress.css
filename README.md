@@ -25,6 +25,29 @@ states out of the box. Earlier releases were known as **sem.css**.
 
 ---
 
+<!-- mtoc-start -->
+
+- [Features](#features)
+- [Installation](#installation)
+  - [HTML (CDN)](#html-cdn)
+  - [npm](#npm)
+  - [Direct download](#direct-download)
+- [Usage](#usage)
+- [Browser support](#browser-support)
+- [Development](#development)
+  - [Install first](#install-first)
+  - [CSS](#css)
+  - [Docs](#docs)
+  - [Build everything](#build-everything)
+- [Tests](#tests)
+  - [Visual regression (Playwright)](#visual-regression-playwright)
+- [Contributing](#contributing)
+- [Licence](#licence)
+
+<!-- mtoc-end -->
+
+---
+
 ## Features
 
 - **Small** – roughly 5 KiB gzipped.
