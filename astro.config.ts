@@ -28,16 +28,11 @@ export default defineConfig({
 		],
 		remarkPlugins: [remarkCustomHeadingId, remarkDeflist, remarkToc],
 	},
-	vite: {
-		build: {
-			assetsDir: 'assets',
-		},
-	},
 	integrations: [
 		nginxConfig({
 			template: 'src/nginx.conf.ejs',
 			output: 'nginx/dress.css.conf',
 		}),
-		removeFiles({ patterns: ['tests'] }),
+		removeFiles({ patterns: ['index.html', 'tests'] }),
 	],
 })
