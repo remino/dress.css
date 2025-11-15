@@ -6,7 +6,7 @@ export const test = base.extend({
 			const init = () => {
 				const hideToolbar = () => {
 					const targets = document.querySelectorAll<HTMLElement>(
-						'astro-dev-toolbar, astro-dev-toolbar-panel, astro-dev-toolbar-toggle, astro-dev-toolbar-overlay'
+						'astro-dev-toolbar, astro-dev-toolbar-panel, astro-dev-toolbar-toggle, astro-dev-toolbar-overlay',
 					)
 					targets.forEach((el) => {
 						el.style.setProperty('display', 'none', 'important')

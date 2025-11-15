@@ -75,41 +75,41 @@ const themes = [
 ]
 
 test.describe('interactions', () => {
-for (const theme of themes) {
-	test.describe(`${theme.name}`, () => {
-		test('button states', async ({ page }) => {
-			await loadExample(page, '/tests/elements/buttons/')
-			await page.emulateMedia({ colorScheme: theme.media.colorScheme })
-			const button = page.getByRole('button', { name: 'Submit' })
-			await captureInteractiveStates({
-				locator: button,
-				name: `${theme.name}-button-primary`,
-				page,
+	for (const theme of themes) {
+		test.describe(`${theme.name}`, () => {
+			test('button states', async ({ page }) => {
+				await loadExample(page, '/tests/elements/buttons/')
+				await page.emulateMedia({ colorScheme: theme.media.colorScheme })
+				const button = page.getByRole('button', { name: 'Submit' })
+				await captureInteractiveStates({
+					locator: button,
+					name: `${theme.name}-button-primary`,
+					page,
+				})
+			})
+
+			test('secondary button states', async ({ page }) => {
+				await loadExample(page, '/tests/elements/buttons/')
+				await page.emulateMedia({ colorScheme: theme.media.colorScheme })
+				const secondary = page.getByRole('button', { name: 'Reset' })
+				await captureInteractiveStates({
+					locator: secondary,
+					name: `${theme.name}-button-secondary`,
+					page,
+				})
+			})
+
+			test('link states', async ({ page }) => {
+				await loadExample(page, '/tests/elements/hyperlink/')
+				await page.emulateMedia({ colorScheme: theme.media.colorScheme })
+				const link = page.getByRole('link', { name: 'Click me' })
+
+				await captureInteractiveStates({
+					locator: link,
+					name: `${theme.name}-link`,
+					page,
+				})
 			})
 		})
-
-		test('secondary button states', async ({ page }) => {
-			await loadExample(page, '/tests/elements/buttons/')
-			await page.emulateMedia({ colorScheme: theme.media.colorScheme })
-			const secondary = page.getByRole('button', { name: 'Reset' })
-			await captureInteractiveStates({
-				locator: secondary,
-				name: `${theme.name}-button-secondary`,
-				page,
-			})
-		})
-
-		test('link states', async ({ page }) => {
-			await loadExample(page, '/tests/elements/hyperlink/')
-			await page.emulateMedia({ colorScheme: theme.media.colorScheme })
-			const link = page.getByRole('link', { name: 'Click me' })
-
-			await captureInteractiveStates({
-				locator: link,
-				name: `${theme.name}-link`,
-				page,
-			})
-		})
-	})
-}
+	}
 })
