@@ -10,6 +10,8 @@ Every design token is exposed by **<mark>dress.css</mark>** as a CSS variable
 so you can adapt the palette, spacing, and motion without editing the library
 itself. Override them globally in your own stylesheet:
 
+⚠️ Note some variable names have changed from v4.
+
 ```css
 :root {
 	--dress-bg: #f5f5f5;
