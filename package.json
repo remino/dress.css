@@ -21,7 +21,8 @@
 		"test:visual:ui": "playwright test --ui",
 		"test:visual:update": "playwright test --update-snapshots",
 		"test:responses": "bin/test-responses",
-		"worktree:init": "bash ./scripts/init-deploy-worktree.sh"
+		"worktree:init": "bash ./scripts/init-deploy-worktree.sh",
+		"prepare": "husky"
 	},
 	"files": [
 		"dist/dress.css"
@@ -65,6 +66,7 @@
 		"eslint-plugin-prettier": "^5.2.1",
 		"fast-glob": "^3.3.1",
 		"globals": "^15.5.0",
+		"husky": "^9.1.7",
 		"prettier": "^3.3.3",
 		"prettier-plugin-astro": "^0.14.0",
 		"remark-custom-heading-id": "^2.0.0",
