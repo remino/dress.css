@@ -2,7 +2,7 @@ import init from '@remino/reslib/lib/init.js'
 import { loadTemplate } from '@remino/reslib/lib/template.js'
 
 const addCodeBlockCopyButton = () => {
-	document.querySelectorAll<HTMLElement>('div.highlight').forEach((block) => {
+	document.querySelectorAll<HTMLElement>('pre').forEach((block) => {
 		const code = block.querySelector('code')
 
 		if (!code) return
