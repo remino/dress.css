@@ -1,6 +1,6 @@
 ---
-import '../dress.css'
-import '../styles/docs.css'
+import dressCssUrl from '../dress.css?url'
+import docsCssUrl from '../styles/docs.css?url'
 import { siteConfig } from '../config/site.ts'
 import logoUrl from '../images/dress.svg?url'
 
@@ -70,6 +70,8 @@ const canonicalUrl = new URL(pathname.replace(/\/+/g, '/'), siteConfig.url)
 		<link rel="icon" type="image/png" href="/dress.css/favicon.png" />
 		<link rel="icon" type="image/svg+xml" href={logoUrl} />
 		<link rel="apple-touch-icon" href="/dress.css/apple-touch-icon.png" />
+		<link rel="stylesheet" href={dressCssUrl} />
+		<link rel="stylesheet" href={docsCssUrl} />
 		<slot name="head" />
 	</head>
 	<body>

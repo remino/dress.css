@@ -3,14 +3,12 @@ import BaseLayout from './BaseLayout.astro'
 import MainHeader from '../components/MainHeader.astro'
 import MainFooter from '../components/MainFooter.astro'
 import { siteConfig } from '../config/site.ts'
-import docsScript from '../scripts/docs.ts?url'
 
 interface Props {
 	title?: string
 	description?: string
 	image?: string
 	pathname?: string
-	includeDocsScript?: boolean
 }
 
 type FrontmatterProps = Props & {
@@ -24,9 +22,6 @@ const title = props.title ?? frontmatter.title
 const description = props.description ?? frontmatter.description
 const image = props.image ?? frontmatter.image
 const pathname = props.pathname
-const includeDocsScript =
-	props.includeDocsScript ?? frontmatter.includeDocsScript ?? true
-
 const navItems = [
 	{ label: 'Home', href: '/dress.css/' },
 	{ label: 'Updates', href: '/dress.css/updates/' },
@@ -51,13 +46,15 @@ const navItems = [
 ---
 
 <BaseLayout {title} {description} {image} {pathname}>
-	{includeDocsScript && <script slot="head" type="module" src={docsScript} />}
 	<slot slot="head" name="head" />
-
 	<a href="#main">Skip to main content</a>
+
 	<MainHeader {navItems} siteTitle={siteConfig.title} />
+
 	<main id="main">
 		<slot />
 	</main>
+
+	<script src="../scripts/docs.ts"></script>
 	<MainFooter />
 </BaseLayout>

@@ -1,7 +1,6 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro'
 import '../../styles/playground.css'
-import playgroundScript from '../../scripts/playground.ts?url'
 
 const title = 'Playground'
 const initialMarkup = String.raw`<playground-app>
@@ -11,7 +10,7 @@ const initialMarkup = String.raw`<playground-app>
 ---
 
 <PageLayout title={title} pathname="/dress.css/playground/">
-	<script slot="head" type="module" src={playgroundScript}></script>
 	<h1>{title}</h1>
-	<template data-type="init" set:html={initialMarkup} />
+	<template data-type="init" set:html={initialMarkup}><!-- --></template>
+	<script src="../../scripts/playground.ts"></script>
 </PageLayout>
