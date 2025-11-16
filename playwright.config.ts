@@ -9,6 +9,7 @@ export default defineConfig({
 	use: {
 		baseURL: 'http://localhost:4321',
 		viewport: { width: 400, height: 400 },
+		deviceScaleFactor: 2,
 	},
 	webServer: {
 		command: 'npm run dev -- --host 127.0.0.1 --port 4321',
