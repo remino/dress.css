@@ -63,6 +63,7 @@ export default defineConfig({
 			patterns: ['index.html', 'tests'],
 		}),
 		compress({
+			CSS: false,
 			HTML: {
 				'html-minifier-terser': {
 					collapseWhitespace: true,
