@@ -32,6 +32,21 @@ export default defineConfig({
 		],
 		remarkPlugins: [remarkCustomHeadingId, remarkDeflist, remarkToc],
 	},
+	vite: {
+		build: {
+			assetsInlineLimit: 0,
+
+			rollupOptions: {
+				input: {
+					docs: 'src/scripts/docs.ts',
+					playground: 'src/scripts/playground.ts',
+				},
+				output: {
+					inlineDynamicImports: false,
+				},
+			},
+		},
+	},
 	integrations: [
 		nginxConfig({
 			template: 'src/nginx.conf.ejs',
