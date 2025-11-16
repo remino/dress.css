@@ -41,6 +41,7 @@ states out of the box. Earlier releases were known as **sem.css**.
   - [Build everything](#build-everything)
 - [Tests](#tests)
   - [Visual regression (Playwright)](#visual-regression-playwright)
+  - [Response redirects (Hurl)](#response-redirects-hurl)
 - [Contributing](#contributing)
 - [Licence](#licence)
 
