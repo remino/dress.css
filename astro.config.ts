@@ -7,6 +7,7 @@ import nginxConfig from './src/integrations/nginxConfig.ts'
 import removeFiles from './src/integrations/removeFiles.ts'
 import { siteConfig } from './src/config/site.ts'
 import compress from 'astro-compress'
+import remarkStripReadmeHero from './src/plugins/remarkStripReadmeHero.ts'
 
 export default defineConfig({
 	output: 'static',
@@ -30,7 +31,12 @@ export default defineConfig({
 				},
 			],
 		],
-		remarkPlugins: [remarkCustomHeadingId, remarkDeflist, remarkToc],
+		remarkPlugins: [
+			remarkCustomHeadingId,
+			remarkDeflist,
+			remarkToc,
+			remarkStripReadmeHero,
+		],
 	},
 	vite: {
 		build: {

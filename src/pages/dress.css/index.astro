@@ -1,8 +1,19 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro'
 import ReadmeContent from '../../../README.md'
+import logoUrl from '../../images/dress.svg?url'
 ---
 
 <PageLayout title="dress.css" pathname="/dress.css/">
+	<figure>
+		<img
+			src={logoUrl}
+			alt=""
+			decoding="async"
+			loading="lazy"
+			width="256"
+			height="256"
+		/>
+	</figure>
 	<ReadmeContent />
 </PageLayout>
