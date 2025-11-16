@@ -7,7 +7,11 @@ location /<%= alias %>/ {
 	rewrite ^/<%= alias.replace('.', '\\.') %>/(.*) /dress.css/$1 permanent;
 }
 <% }); %>
-
+<% if (shareImage) { %>
+location = /dress.css/share.png {
+	return 301 <%= shareImage %>;
+}
+<% } %>
 location = /dress.css/demo {
 	return 301 /dress.css/specimen/;
 }

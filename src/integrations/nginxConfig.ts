@@ -1,6 +1,6 @@
 import { fileURLToPath } from 'node:url'
 import path from 'node:path'
-import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises'
 import ejs from 'ejs'
 import type { AstroIntegration } from 'astro'
 
@@ -27,10 +27,19 @@ export default function nginxConfig(options: Options = {}): AstroIntegration {
 					options.template ?? DEFAULT_TEMPLATE,
 				)
 
+				const shareImage = await findShareImage(publicDir)
+
 				const template = await readFile(templatePath, 'utf8')
-				const rendered = ejs.render(template, options.variables ?? {}, {
-					filename: templatePath,
-				})
+				const rendered = ejs.render(
+					template,
+					{
+						shareImage,
+						...(options.variables ?? {}),
+					},
+					{
+						filename: templatePath,
+					},
+				)
 
 				const outputRelative = options.output ?? DEFAULT_OUTPUT
 				const outputPath = path.join(deployDir, outputRelative)
@@ -43,5 +52,18 @@ export default function nginxConfig(options: Options = {}): AstroIntegration {
 				)
 			},
 		},
+	}
+}
+
+async function findShareImage(publicDir: string) {
+	try {
+		const dressDir = path.join(publicDir, 'dress.css')
+		const entries = await readdir(dressDir)
+		const match = entries.find(
+			(entry) => entry.startsWith('share.') && entry.endsWith('.png'),
+		)
+		return match ? `/dress.css/${match}` : null
+	} catch {
+		return null
 	}
 }
