@@ -7,6 +7,7 @@ import nginxConfig from './src/integrations/nginxConfig.ts'
 import removeFiles from './src/integrations/removeFiles.ts'
 import { siteConfig } from './src/config/site.ts'
 import compress from 'astro-compress'
+import compressor from 'astro-compressor'
 import remarkStripReadmeHero from './src/plugins/remarkStripReadmeHero.ts'
 
 export default defineConfig({
@@ -71,5 +72,6 @@ export default defineConfig({
 				},
 			},
 		}),
+		compressor(),
 	],
 })
