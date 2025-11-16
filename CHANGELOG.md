@@ -49,11 +49,11 @@
 
 ## v5.0.3
 
-- Switch from Lightning CSS to PostCSS with cssnano to reduce CSS file size.
+- Switch from Lightning CSS to PostCSS with cssnano to reduce CSS file size
 
 ## v5.0.2
 
-- Adjust and unify usage of Lightning CSS for minification.
+- Adjust and unify usage of Lightning CSS for minification
 
 ## v5.0.1
 
