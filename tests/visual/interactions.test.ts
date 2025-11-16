@@ -11,6 +11,32 @@ const waitForStableUi = async (page: Page) => {
 }
 
 const loadExample = async (page: Page, path: string) => {
+	await page.addInitScript(() => {
+		const preventNavigation = (event: Event) => {
+			if (event.defaultPrevented) return
+			event.preventDefault()
+		}
+
+		document.addEventListener(
+			'click',
+			(event) => {
+				const target = event.target as Element | null
+				if (target?.closest('a[href]')) {
+					preventNavigation(event)
+				}
+			},
+			true,
+		)
+
+		document.addEventListener(
+			'submit',
+			(event) => {
+				preventNavigation(event)
+			},
+			true,
+		)
+	})
+
 	await page.goto(path, { waitUntil: 'domcontentloaded' })
 	await waitForStableUi(page)
 }
@@ -51,21 +77,26 @@ const captureInteractiveStates = async ({
 	name: string
 	page: Page
 }) => {
+	await waitForStableUi(page)
 	await captureState({ locator, name: `${name}-default` })
 
 	await locator.focus()
+	await waitForStableUi(page)
 	await captureState({ locator, name: `${name}-focus` })
 
 	await page.mouse.move(0, 0)
 	await locator.hover()
+	await waitForStableUi(page)
 	await captureState({ locator, name: `${name}-hover` })
 
 	const box = await locator.boundingBox()
 	if (box) {
 		await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2)
 		await page.mouse.down()
+		await waitForStableUi(page)
 		await captureState({ locator, name: `${name}-active` })
 		await page.mouse.up()
+		await waitForStableUi(page)
 	}
 }
 
