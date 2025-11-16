@@ -8,3 +8,10 @@ location /<%= alias %>/ {
 }
 <% }); %>
 
+location = /dress.css/demo {
+	return 301 /dress.css/specimen/;
+}
+
+location /dress.css/demo/ {
+	rewrite ^/dress\.css/demo/(.*) /dress.css/specimen/$1 permanent;
+}
