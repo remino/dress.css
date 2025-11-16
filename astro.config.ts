@@ -37,7 +37,9 @@ export default defineConfig({
 			template: 'src/nginx.conf.ejs',
 			output: 'nginx/dress.css.conf',
 		}),
-		removeFiles({ patterns: ['index.html', 'tests'] }),
+		removeFiles({
+			patterns: ['index.html', 'tests'],
+		}),
 		compress({
 			HTML: {
 				'html-minifier-terser': {
