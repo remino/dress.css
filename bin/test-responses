@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if ! command -v hurl > /dev/null 2>&1; then
+	echo "error: hurl is not installed" >&2
+	exit 1
+fi
+
+DEFAULT_BASE_URL=$(
+	node --input-type=module -e "import { readFileSync } from 'node:fs'; const pkg = JSON.parse(readFileSync('package.json', 'utf8')); const homepage = pkg.homepage ?? 'https://remino.net/dress.css/'; const origin = new URL(homepage).origin; process.stdout.write(origin);"
+)
+BASE_URL=${HURL_BASE_URL:-$DEFAULT_BASE_URL}
+
+HURL_VERSION=$(hurl --version 2> /dev/null | head -n 1 | awk '{print $2}')
+DEFAULT_USER_AGENT="hurl/${HURL_VERSION:-unknown} net.remino.dresscss.tests/5.0"
+USER_AGENT=${HURL_USER_AGENT:-$DEFAULT_USER_AGENT}
+
+exec hurl --test --continue-on-error --user-agent "$USER_AGENT" \
+	tests/hurl/responses.hurl --variable base_url="${BASE_URL}"

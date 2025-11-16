@@ -20,6 +20,7 @@
 		"test:visual": "playwright test",
 		"test:visual:ui": "playwright test --ui",
 		"test:visual:update": "playwright test --update-snapshots",
+		"test:responses": "bin/test-responses",
 		"worktree:init": "bash ./scripts/init-deploy-worktree.sh"
 	},
 	"files": [

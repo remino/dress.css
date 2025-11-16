@@ -157,6 +157,18 @@ npm run test:visual:ui     # Show Playwright UI
 Snapshots cover the _Elements_ gallery, layout width fixtures, and anchor
 behavior.
 
+### Response redirects (Hurl)
+
+Install [Hurl](https://hurl.dev) locally, then execute:
+
+```sh
+npm run test:responses
+```
+
+The suite targets the production origin declared in `package.json#homepage` by
+default. Override with `HURL_BASE_URL` (and optionally `HURL_USER_AGENT`) to
+point to staging or preview deployments.
+
 ---
 
 ## Contributing
