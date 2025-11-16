@@ -10,6 +10,9 @@ import { siteConfig } from './src/config/site.ts'
 export default defineConfig({
 	output: 'static',
 	outDir: './deploy/public',
+	build: {
+		assets: 'dress.css',
+	},
 	devToolbar: {
 		enabled: process.env.ASTRO_DEV_TOOLBAR_ENABLED !== '0',
 	},
