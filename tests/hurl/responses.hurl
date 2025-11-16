@@ -34,7 +34,7 @@ HTTP 301
 Location: /dress.css/dress.css
 
 # Legacy /demo path redirects to the specimen showcase
-HEAD {{base_url}}/demo
+HEAD {{base_url}}/dress.css/demo
 HTTP 301
 Location: /dress.css/specimen/
 
