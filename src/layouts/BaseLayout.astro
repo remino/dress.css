@@ -2,6 +2,7 @@
 import '../dress.css'
 import '../styles/docs.css'
 import { siteConfig } from '../config/site.ts'
+import logoUrl from '../images/dress.svg?url'
 
 interface Props {
 	title?: string
@@ -67,7 +68,7 @@ const canonicalUrl = new URL(pathname.replace(/\/+/g, '/'), siteConfig.url)
 		<meta name="twitter:image" content={new URL(image, siteConfig.url)} />
 		<meta name="twitter:url" content={canonicalUrl} />
 		<link rel="icon" type="image/png" href="/dress.css/favicon.png" />
-		<link rel="icon" type="image/svg+xml" href="/dress.css/dress.svg" />
+		<link rel="icon" type="image/svg+xml" href={logoUrl} />
 		<link rel="apple-touch-icon" href="/dress.css/apple-touch-icon.png" />
 		<slot name="head" />
 	</head>

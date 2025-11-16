@@ -1,5 +1,6 @@
 ---
 import HeaderNav from './HeaderNav.astro'
+import logoUrl from '../images/dress.svg?url'
 
 interface NavItem {
 	label: string
@@ -17,7 +18,7 @@ const { navItems, siteTitle } = Astro.props as Props
 
 <header>
 	<h1>
-		<img src="/dress.css/dress.svg" alt="" role="presentation" />{siteTitle}
+		<img src={logoUrl} alt="" role="presentation" />{siteTitle}
 	</h1>
 	<HeaderNav items={navItems} />
 </header>

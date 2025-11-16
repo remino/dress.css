@@ -1,4 +1,4 @@
-![](public/dress.css/dress.svg)
+![](src/images/dress.svg)
 
 # dress.css
 
