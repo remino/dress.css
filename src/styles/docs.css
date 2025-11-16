@@ -49,8 +49,11 @@ body {
 			}
 		}
 
+		/*
+			Centre "header" of embedded README.md.
+		*/
 		+ main {
-			p:has(img):has(+ h1) {
+			figure:has(img):has(+ h1) {
 				img {
 					display: block;
 					margin: 0 auto;
@@ -64,7 +67,7 @@ body {
 					margin-block-start: 0;
 					text-align: center;
 
-					+ h2 {
+					+ p {
 						text-align: center;
 
 						+ p {
