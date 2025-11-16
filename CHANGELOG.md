@@ -35,7 +35,7 @@
 - [v1.2.3](#v123)
 - [v1.2.2 / v1.2.1 / v1.2.0](#v122--v121--v120)
 - [v1.1.0](#v110)
-- [v1.0.0 _sem.css_](#v100-_semcss)
+- [v1.0.0 sem.css](#v100-semcss)
 - [v0.10.x](#v010x)
 - [v0.9.x](#v09x)
 - [v0.8.0](#v080)
@@ -240,7 +240,7 @@
 
 - Made default font size slightly flexible
 
-## v1.0.0 _sem.css_
+## v1.0.0 sem.css
 
 - CSP-compatible external JS
 - Disabled demo links
