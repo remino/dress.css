@@ -84,6 +84,8 @@ update automatically.
 
 [Back to top](#)
 
+---
+
 ## Layout & Spacing
 
 ### Metrics
@@ -118,6 +120,8 @@ or the other primary metrics, so you rarely need to override them individually.
 
 [Back to top](#)
 
+---
+
 ## Typography & Motion
 
 ### Typography
@@ -146,6 +150,8 @@ or the other primary metrics, so you rarely need to override them individually.
 
 [Back to top](#)
 
+---
+
 ## Icons & Data URIs
 
 | Variable          | Description                     |
@@ -162,6 +168,8 @@ brand system.
 
 [Back to top](#)
 
+---
+
 ## Tips
 
 - Prefer overriding high-level tokens (`--dress-bg`, `--dress-sec`, `--dress-mw`)
@@ -172,6 +180,8 @@ brand system.
   like `color-mix()` and `clamp()` when extending the design system.
 
 [Back to top](#)
+
+---
 
 ## Source
 
