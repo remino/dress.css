@@ -40,7 +40,12 @@ export default [
 			parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
 			globals: { ...globals.browser, ...globals.node },
 		},
-		rules: baseRules,
+		rules: {
+			...baseRules,
+			'@typescript-eslint/no-require-imports': 'off',
+			'@typescript-eslint/no-var-requires': 'off',
+			'@typescript-eslint/no-unused-vars': 'off',
+		},
 	},
 	{
 		files: ['**/*.{ts,tsx}'],
