@@ -3,6 +3,7 @@ import dressCssUrl from '../dress.css?url'
 import docsCssUrl from '../styles/docs.css?url'
 import { siteConfig } from '../config/site.ts'
 import logoUrl from '../images/dress.svg?url'
+import shareImage from '../images/share.png?url'
 
 interface Props {
 	title?: string
@@ -57,7 +58,7 @@ const canonicalUrl = new URL(pathname.replace(/\/+/g, '/'), siteConfig.url)
 		<meta property="og:title" content={pageTitle} />
 		<meta property="og:description" content={description} />
 		<meta property="og:url" content={canonicalUrl} />
-		<meta property="og:image" content={new URL(image, siteConfig.url)} />
+		<meta property="og:image" content={shareImage} />
 		<meta property="og:image:width" content="2880" />
 		<meta property="og:image:height" content="1440" />
 		<meta name="twitter:card" content="summary_large_image" />
@@ -65,7 +66,7 @@ const canonicalUrl = new URL(pathname.replace(/\/+/g, '/'), siteConfig.url)
 		<meta name="twitter:creator" content={siteConfig.twitter} />
 		<meta name="twitter:title" content={pageTitle} />
 		<meta name="twitter:description" content={description} />
-		<meta name="twitter:image" content={new URL(image, siteConfig.url)} />
+		<meta name="twitter:image" content={shareImage} />
 		<meta name="twitter:url" content={canonicalUrl} />
 		<link rel="icon" type="image/png" href="/dress.css/favicon.png" />
 		<link rel="icon" type="image/svg+xml" href={logoUrl} />
