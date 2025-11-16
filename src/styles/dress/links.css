@@ -42,5 +42,12 @@ a {
 	&[role='button'] {
 		display: inline-block;
 		text-decoration: none;
+
+		&[download],
+		&[target='_blank'] {
+			&::after {
+				background-color: currentColor;
+			}
+		}
 	}
 }
