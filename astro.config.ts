@@ -72,6 +72,7 @@ export default defineConfig({
 					removeRedundantAttributes: true,
 				},
 			},
+			SVG: false,
 		}),
 		compressor(),
 	],
