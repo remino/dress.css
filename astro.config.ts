@@ -42,7 +42,6 @@ export default defineConfig({
 	vite: {
 		build: {
 			assetsInlineLimit: 0,
-
 			rollupOptions: {
 				input: {
 					docs: 'src/scripts/docs.ts',
@@ -52,6 +51,9 @@ export default defineConfig({
 					inlineDynamicImports: false,
 				},
 			},
+		},
+		css: {
+			transformer: 'lightningcss',
 		},
 	},
 	integrations: [
@@ -63,12 +65,7 @@ export default defineConfig({
 			patterns: ['index.html', 'tests'],
 		}),
 		compress({
-			CSS: {
-				csso: false,
-				lightningcss: {
-					minify: true,
-				},
-			},
+			CSS: false,
 			HTML: {
 				'html-minifier-terser': {
 					collapseWhitespace: true,

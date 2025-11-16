@@ -1,6 +1,6 @@
 ---
-import '../dress.css'
-import '../styles/test.css'
+import dressCssUrl from '../dress.css?url'
+import testCssUrl from '../styles/test.css?url'
 const { title = 'dress.css test' } = Astro.props
 ---
 
@@ -10,6 +10,8 @@ const { title = 'dress.css test' } = Astro.props
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{title}</title>
+		<link rel="stylesheet" href={dressCssUrl} />
+		<link rel="stylesheet" href={testCssUrl} />
 	</head>
 	<body>
 		<slot />

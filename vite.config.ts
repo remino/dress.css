@@ -15,6 +15,9 @@ export default defineConfig({
 		},
 		target: 'esnext',
 	},
+	css: {
+		transformer: 'lightningcss',
+	},
 	plugins: [
 		{
 			name: 'remove-js-entry',
