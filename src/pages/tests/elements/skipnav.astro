@@ -5,7 +5,7 @@ import TestMainLayout from '../../../layouts/TestMainLayout.astro'
 <TestMainLayout title="Skipnav">
 	<a href="#main">Skip to main navigation</a>
 
-	<script>
+	<script is:inline>
 		document.querySelector('a').focus()
 	</script>
 </TestMainLayout>

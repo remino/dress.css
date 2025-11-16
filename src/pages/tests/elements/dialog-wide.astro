@@ -3,7 +3,7 @@ import TestMainLayout from '../../../layouts/TestMainLayout.astro'
 ---
 
 <TestMainLayout title="Dialog Wide">
-	<style>
+	<style is:inline>
 		body {
 			background: var(--dress-bg-2);
 		}
@@ -26,7 +26,7 @@ import TestMainLayout from '../../../layouts/TestMainLayout.astro'
 		</form>
 	</dialog>
 
-	<script>
+	<script is:inline>
 		document.getElementById('dialogExample').showModal()
 	</script>
 </TestMainLayout>
