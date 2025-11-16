@@ -8,7 +8,7 @@ export default defineConfig({
 		outDir: 'dist',
 		assetsDir: '.',
 		rollupOptions: {
-			input: resolve(__dirname, 'src/dress.css'),
+			input: 'src/dress.css',
 			output: {
 				assetFileNames: 'dress.css',
 			},
