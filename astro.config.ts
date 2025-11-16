@@ -53,7 +53,7 @@ export default defineConfig({
 			},
 		},
 		css: {
-			transformer: 'lightningcss',
+			transformer: 'postcss',
 		},
 	},
 	integrations: [

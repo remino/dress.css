@@ -16,7 +16,7 @@ export default defineConfig({
 		target: 'esnext',
 	},
 	css: {
-		transformer: 'lightningcss',
+		transformer: 'postcss',
 	},
 	plugins: [
 		{
