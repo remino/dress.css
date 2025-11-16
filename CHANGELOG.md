@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+- [v5.0.1](#v501)
 - [v5.0.0 Blouson](#v500-blouson)
 - [v4.4.3](#v443)
 - [v4.4.2](#v442)
@@ -43,6 +44,10 @@
 - [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## v5.0.1
+
+- Tweak CSS minification
 
 ## v5.0.0 Blouson
 
