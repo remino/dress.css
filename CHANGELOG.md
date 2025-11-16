@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+- [v5.0.2](#v502)
 - [v5.0.1](#v501)
 - [v5.0.0 Blouson](#v500-blouson)
 - [v4.4.3](#v443)
@@ -44,6 +45,10 @@
 - [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## v5.0.2
+
+- Adjust and unify usage of Lightning CSS for minification.
 
 ## v5.0.1
 
