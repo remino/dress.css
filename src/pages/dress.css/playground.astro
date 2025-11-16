@@ -11,6 +11,7 @@ const initialMarkup = String.raw`<playground-app>
 
 <PageLayout title={title} pathname="/dress.css/playground/">
 	<h1>{title}</h1>
-	<template data-type="init" set:html={initialMarkup}><!-- --></template>
+	<!-- prettier-ignore -->
+	<template data-type="init" set:html={initialMarkup}></template>
 	<script src="../../scripts/playground.ts"></script>
 </PageLayout>
