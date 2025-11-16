@@ -60,7 +60,7 @@ states out of the box. Earlier releases were known as **sem.css**.
 - **Printable** – attractive print layout with external URLs revealed.
 - **Customizable** – override the CSS variables to theme it your way.
 
-![Back to top](#)
+[Back to top](#)
 
 ---
 
@@ -97,7 +97,7 @@ import '@remino/dress.css'
 Grab the latest `dress.css` from the
 [GitHub Releases](https://github.com/remino/dress.css/releases/latest/download/dress.css).
 
-![Back to top](#)
+[Back to top](#)
 
 ---
 
@@ -106,7 +106,7 @@ Grab the latest `dress.css` from the
 Reference the [_Elements_](https://remino.net/dress.css/elements/) page for
 tag-by-tag examples that demonstrate the provided defaults.
 
-![Back to top](#)
+[Back to top](#)
 
 ---
 
@@ -117,7 +117,7 @@ their mobile counterparts). Compatibility is periodically checked with
 [`doiuse`](https://www.npmjs.com/package/doiuse); older engines such as IE are
 not supported.
 
-![Back to top](#)
+[Back to top](#)
 
 ---
 
@@ -151,7 +151,7 @@ npm run build:site # Build the documentation site to deploy/public/
 npm run build      # Run both builds
 ```
 
-![Back to top](#)
+[Back to top](#)
 
 ---
 
@@ -180,7 +180,7 @@ The suite targets the production origin declared in `package.json#homepage` by
 default. Override with `HURL_BASE_URL` (and optionally `HURL_USER_AGENT`) to
 point to staging or preview deployments.
 
-![Back to top](#)
+[Back to top](#)
 
 ---
 
@@ -194,7 +194,7 @@ point to staging or preview deployments.
 
 Issues and ideas are welcome—please star the project if you enjoy it!
 
-![Back to top](#)
+[Back to top](#)
 
 ---
 
@@ -202,4 +202,4 @@ Issues and ideas are welcome—please star the project if you enjoy it!
 
 Licensed under the ISC licence. See `LICENSE.md`.
 
-![Back to top](#)
+[Back to top](#)

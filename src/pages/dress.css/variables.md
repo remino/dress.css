@@ -82,7 +82,7 @@ update automatically.
 | `--dress-hi`     | Meter colour for high values            |
 | `--dress-sh`     | Soft drop shadow colour                 |
 
-![Back to top](#)
+[Back to top](#)
 
 ## Layout & Spacing
 
@@ -116,7 +116,7 @@ or the other primary metrics, so you rarely need to override them individually.
 | `--dress-s-b`  | Base block spacing unit (`--dress-lh * 1rem`)  |
 | `--dress-so`   | Scroll offset applied to anchored headings     |
 
-![Back to top](#)
+[Back to top](#)
 
 ## Typography & Motion
 
@@ -144,7 +144,7 @@ or the other primary metrics, so you rarely need to override them individually.
 | `--dress-ad-h` | Hover/active duration (half of `--dress-ad`) |
 | `--dress-at`   | Animation timing function                    |
 
-![Back to top](#)
+[Back to top](#)
 
 ## Icons & Data URIs
 
@@ -160,7 +160,7 @@ or the other primary metrics, so you rarely need to override them individually.
 Vector assets use inline SVG data URIs so you can replace them with your own
 brand system.
 
-![Back to top](#)
+[Back to top](#)
 
 ## Tips
 
@@ -171,11 +171,11 @@ brand system.
 - All values are plain CSS, so you can reference your own variables or use functions
   like `color-mix()` and `clamp()` when extending the design system.
 
-![Back to top](#)
+[Back to top](#)
 
 ## Source
 
 Browse the upstream variables file on GitHub:
 <https://github.com/remino/dress.css/blob/main/src/styles/dress/variables.css>
 
-![Back to top](#)
+[Back to top](#)
