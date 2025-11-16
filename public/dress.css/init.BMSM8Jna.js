@@ -1,0 +1,1 @@
+const n=({serial:e,parallel:a})=>{(e||[]).forEach(t=>t()),Promise.all((a||[]).map(t=>new Promise(o=>t(o)))).then()},i=e=>{document.readyState==="interactive"?n(e):document.addEventListener("DOMContentLoaded",()=>n(e))};export{i};
