@@ -6,6 +6,7 @@ import rehypeExternalLinks from 'rehype-external-links'
 import nginxConfig from './src/integrations/nginxConfig.ts'
 import removeFiles from './src/integrations/removeFiles.ts'
 import { siteConfig } from './src/config/site.ts'
+import compress from 'astro-compress'
 
 export default defineConfig({
 	output: 'static',
@@ -37,5 +38,15 @@ export default defineConfig({
 			output: 'nginx/dress.css.conf',
 		}),
 		removeFiles({ patterns: ['index.html', 'tests'] }),
+		compress({
+			HTML: {
+				'html-minifier-terser': {
+					collapseWhitespace: true,
+					conservativeCollapse: false,
+					removeComments: true,
+					removeRedundantAttributes: true,
+				},
+			},
+		}),
 	],
 })
