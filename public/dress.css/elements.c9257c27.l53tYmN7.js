@@ -1,0 +1,1 @@
+const s="/dress.css/dress.Bfz6JemA.css";export{s as d};
