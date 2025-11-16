@@ -18,17 +18,4 @@ export default defineConfig({
 	css: {
 		transformer: 'postcss',
 	},
-	plugins: [
-		{
-			name: 'remove-js-entry',
-			apply: 'build',
-			generateBundle(_, bundle) {
-				for (const [key, value] of Object.entries(bundle)) {
-					if (value.type === 'chunk') {
-						delete bundle[key]
-					}
-				}
-			},
-		},
-	],
 })
