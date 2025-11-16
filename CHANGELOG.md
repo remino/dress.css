@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+- [v5.0.3](#v503)
 - [v5.0.2](#v502)
 - [v5.0.1](#v501)
 - [v5.0.0 Blouson](#v500-blouson)
@@ -45,6 +46,10 @@
 - [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## v5.0.3
+
+- Switch from Lightning CSS to PostCSS with cssnano to reduce CSS file size.
 
 ## v5.0.2
 
