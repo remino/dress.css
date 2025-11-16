@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+- [v5.0.4](#v504)
 - [v5.0.3](#v503)
 - [v5.0.2](#v502)
 - [v5.0.1](#v501)
@@ -46,6 +47,10 @@
 - [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## v5.0.4
+
+- Fix button link icon colour in light mode
 
 ## v5.0.3
 
