@@ -9,6 +9,7 @@ import { siteConfig } from './src/config/site.ts'
 import compress from 'astro-compress'
 import compressor from 'astro-compressor'
 import remarkStripReadmeHero from './src/plugins/remarkStripReadmeHero.ts'
+import rehypeWrapCodeBlocks from './src/plugins/rehypeWrapCodeBlocks.ts'
 
 export default defineConfig({
 	output: 'static',
@@ -31,6 +32,7 @@ export default defineConfig({
 						/^https?:\/\//.test(href) && !href.startsWith(siteConfig.url),
 				},
 			],
+			rehypeWrapCodeBlocks,
 		],
 		remarkPlugins: [
 			remarkCustomHeadingId,

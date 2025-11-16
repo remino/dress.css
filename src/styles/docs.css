@@ -88,7 +88,7 @@ body {
 	}
 }
 
-pre {
+.code-block {
 	position: relative;
 
 	@media (pointer: fine) {
