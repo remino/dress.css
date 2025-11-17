@@ -51,7 +51,7 @@
 
 ## v5.1.0
 
-- Add styling for header title link
+- Add styling for logo and title link in header
 
 ## v5.0.4
 

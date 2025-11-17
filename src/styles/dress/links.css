@@ -56,10 +56,17 @@ header {
 	margin-block-end: calc(var(--dress-m-b) * 2);
 
 	h1:has(> a):not(:has(> :not(a))) > a {
+		display: inline-block;
+
 		&:link,
 		&:visited {
 			color: inherit;
 			text-decoration: none;
+		}
+
+		&:focus-visible img {
+			box-shadow: none;
+			outline: none;
 		}
 	}
 }

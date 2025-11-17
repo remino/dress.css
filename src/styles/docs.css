@@ -35,23 +35,15 @@ body {
 	}
 
 	> header {
-		h1 img {
-			--height: calc(var(--dress-lh) * 3rem);
-			display: inline;
-			height: var(--height);
-			margin-block-end: 12px;
-			margin-inline-end: calc(var(--dress-m-i) / 2);
-			vertical-align: middle;
-			width: auto;
-
-			@media (prefers-color-scheme: light) {
-				filter: invert(1);
+		h1 {
+			img {
+				@media (prefers-color-scheme: light) {
+					filter: invert(1);
+				}
 			}
 		}
 
-		/*
-			Centre "header" of embedded README.md.
-		*/
+		/* Centre "header" of embedded README.md. */
 		+ main {
 			figure:has(img):has(+ h1) {
 				img {

@@ -118,6 +118,12 @@
 
 	header {
 		border-block-end: solid var(--dress-bs) var(--dress-dt);
+
+		h1 {
+			&:not(:last-child):has(img) {
+				--dress-m-be: 0;
+			}
+		}
 	}
 
 	ins {

@@ -1,0 +1,31 @@
+---
+import TestMainLayout from '../../../layouts/TestMainLayout.astro'
+import logoUrl from '../../../images/dress.svg?url'
+---
+
+<TestMainLayout title="Header Logo Behaviour">
+	<header>
+		<h1>
+			<a href="/">
+				<img src={logoUrl} alt="" width="64" height="64" />
+				<span>runway.house</span>
+			</a>
+		</h1>
+	</header>
+
+	<header>
+		<h1>
+			<a href="/">
+				<img src={logoUrl} alt="" width="64" height="64" />
+				<span>runway.house</span>
+			</a>
+		</h1>
+		<nav aria-label="Main">
+			<ul>
+				<li><a href="#">Shows</a></li>
+				<li><a href="#">Archive</a></li>
+				<li><a href="#">Lookbook</a></li>
+			</ul>
+		</nav>
+	</header>
+</TestMainLayout>

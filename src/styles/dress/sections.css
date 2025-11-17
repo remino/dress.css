@@ -38,6 +38,10 @@ header {
 
 	h1 {
 		--dress-m-be: 0;
+
+		&:not(:last-child):has(img) {
+			--dress-m-be: calc(var(--dress-m-b) / 2);
+		}
 	}
 
 	h2,

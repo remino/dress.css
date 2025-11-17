@@ -99,6 +99,7 @@ update automatically.
 | `--dress-mw-f`   | Fallback main width for `<body>` (`max-content`) |
 | `--dress-mw-min` | Minimum main width for `<body>`                  |
 | `--dress-s-i`    | Base inline spacing unit                         |
+| `--dress-logo-h` | Header logo height                               |
 
 ✅ All derived spacing tokens respond automatically when you change `--dress-mw`
 or the other primary metrics, so you rarely need to override them individually.

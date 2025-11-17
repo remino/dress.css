@@ -116,13 +116,13 @@ Our sale ends <del>Sunday</del> <ins>Monday</ins>.
 Shop Now <small>&lt;https://example.com/shop/&gt;</small>
 </blockquote>
 
-### Header title link `<header><h1><a href="…">` {#headerlink}
+### Header Title Link `<header><h1><a href="…">` {#headerlink}
 
 When a `<h1>` heading in the `<header>` contains only a link, it is assumed to be used as the header title link, normally containing the site's logo and title, and pointing to the site's homepage. For this, the link will still work as intended for practicality, but will camouflaged as normal text for legibility and avoid distractions.
 
 For accessibility, it is best to also include a _Home_ link in your main menu.
 
-For details on the formatting of the page header, see [_Header_](#header).
+Also see the details on the formatting of the [page header](#header).
 
 ```html
 <header>
@@ -658,15 +658,20 @@ In **<mark>dress.css</mark>**, some special formatting is used in the header and
 
 ### Header `<header>` {#header}
 
-Some special styling is applied to the <code>&lt;header&gt;</code> tag. That can be seen at the [top of this page](#) and can be replicated with the sample below:
+Some special styling is applied to the <code>&lt;header&gt;</code> tag itself, as well to its title, link, logo, and navigation. That can be seen at the [top of this page](#) and can be replicated with the sample below:
 
 ```html
 <header>
-	<h1>Header</h1>
+	<h1>
+		<a href="/">
+			<img src="logo.png" alt="">
+			Runway
+		</a>
+	</h1>
 	<nav>
 		<ul>
-			<li><a href="#header">Header</a></li>
-			<li><a href="#footer">Footer</a></li>
+			<li><a href="/">Home</a></li>
+			<li><a href="/contact/">Contact</a></li>
 		</ul>
 	</nav>
 	<menu>

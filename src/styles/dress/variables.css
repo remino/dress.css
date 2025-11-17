@@ -151,6 +151,8 @@
 	--dress-s-b: calc(var(--dress-lh) * 1rem);
 	/* Scroll offset for anchored headings */
 	--dress-so: calc(var(--dress-m-bs) * 2);
+	/* Logo height */
+	--dress-logo-h: calc(var(--dress-lh) * 3rem);
 
 	/* }{ Derived Typography }{ */
 	/* Root font-size clamp */
