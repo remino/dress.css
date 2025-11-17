@@ -1,6 +1,6 @@
 {
 	"name": "@remino/dress.css",
-	"version": "5.0.4",
+	"version": "5.1.0",
 	"description": "The little dress of CSS",
 	"type": "module",
 	"scripts": {
