@@ -69,4 +69,12 @@ footer {
 
 header {
 	margin-block-end: calc(var(--dress-m-b) * 2);
+
+	h1:has(> a):not(:has(> :not(a))) > a {
+		&:link,
+		&:visited {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
 }

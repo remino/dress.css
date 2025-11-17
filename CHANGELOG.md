@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+- [v5.1.0](#v510)
 - [v5.0.4](#v504)
 - [v5.0.3](#v503)
 - [v5.0.2](#v502)
@@ -47,6 +48,10 @@
 - [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## v5.1.0
+
+- Add styling for header title link
 
 ## v5.0.4
 

@@ -1,0 +1,40 @@
+---
+import TestMainLayout from '../../../layouts/TestMainLayout.astro'
+---
+
+<TestMainLayout title="Header Title Link">
+	<style>
+		.brand-link {
+			align-items: center;
+			display: inline-flex;
+			gap: 0.5rem;
+		}
+
+		.brand-mark {
+			background: var(--dress-sec);
+			border-radius: 999px;
+			color: var(--dress-bg);
+			display: inline-flex;
+			font-size: 1.5rem;
+			inline-size: 2.5rem;
+			justify-content: center;
+			line-height: 2.5rem;
+		}
+	</style>
+	<header>
+		<h1>
+			<a href="/" class="brand-link">
+				<span aria-hidden="true" class="brand-mark">✶</span>
+				Runway
+			</a>
+		</h1>
+	</header>
+
+	<h1>
+		<a href="/" class="brand-link">
+			<span aria-hidden="true" class="brand-mark">✶</span>
+			Runway
+		</a>
+		<span aria-hidden="true">×</span>
+	</h1>
+</TestMainLayout>

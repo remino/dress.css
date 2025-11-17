@@ -43,6 +43,7 @@ const elements: Record<string, SnapshotConfig> = {
 	file: { maxDiffPixelRatio: 0.01 },
 	footer: {},
 	header: {},
+	headerlink: {},
 	headings: {},
 	hr: {},
 	hyperlink: {},

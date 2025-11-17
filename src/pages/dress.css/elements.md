@@ -116,6 +116,25 @@ Our sale ends <del>Sunday</del> <ins>Monday</ins>.
 Shop Now <small>&lt;https://example.com/shop/&gt;</small>
 </blockquote>
 
+### Header title link `<header><h1><a href="…">` {#headerlink}
+
+When a `<h1>` heading in the `<header>` contains only a link, it is assumed to be used as the header title link, normally containing the site's logo and title, and pointing to the site's homepage. For this, the link will still work as intended for practicality, but will camouflaged as normal text for legibility and avoid distractions.
+
+For accessibility, it is best to also include a _Home_ link in your main menu.
+
+For details on the formatting of the page header, see [_Header_](#header).
+
+```html
+<header>
+	<h1>
+		<a href="/">
+			<img src="logo.png" alt="">
+			Runway
+		</a>
+	</h1>
+</header>
+```
+
 ### Skip Navigation ("skipnav") `<body><a href="#…">` {#skipnav}
 
 For the accessibility of screen reader users, it's common to add a link at the very beginning of the page to skip the header and its menu, and go straight to the main content. It remains hidden until the user tabs to it, yet it is always visible to the screen reader.
@@ -637,7 +656,7 @@ Additionally, formatting is applied to a <code>&lt;menu&gt;</code> of actions in
 
 In **<mark>dress.css</mark>**, some special formatting is used in the header and the footer of the page to ease navigation and readability. Menus (<code>&lt;menu&gt;</code>) as well as unordered lists (<code>&lt;ul&gt;</code>) in navigation (<code>&lt;nav&gt;</code>) are rendered horizontally.
 
-### Header `<header>`
+### Header `<header>` {#header}
 
 Some special styling is applied to the <code>&lt;header&gt;</code> tag. That can be seen at the [top of this page](#) and can be replicated with the sample below:
 
@@ -665,7 +684,9 @@ Some special styling is applied to the <code>&lt;header&gt;</code> tag. That can
 </header>
 ```
 
-### Footer `<footer>`
+Special styling is also applied to links in `<header><h1>`. For details, see [_Header Title Link_](#headerlink).
+
+### Footer `<footer>` {#footer}
 
 Like the <code>&lt;header&gt;</code> tag, some special formatting is applied to <code>&lt;footer&gt;</code>. That can also been seen at the [bottom of this page](#end) and can be replicated with the sample below:
 
