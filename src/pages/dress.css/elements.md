@@ -1157,16 +1157,3 @@ Any element with the <code>inert</code> Boolean attribute will have its content 
 ```
 
 <p><a href="#">Back to top</a></p>
-
-### Hidden `hidden` {#hidden}
-
-Starting with v5, dress.css no longer overrides the `hidden` attribute.
-That keeps newer values like `hidden="until-found"` compliant with browser
-behaviour. To hide content, either rely on the native Boolean `hidden`
-attribute or use your own utility class.
-
-```html
-<p hidden>You can't see me!</p>
-```
-
-<p><a href="#">Back to top</a></p>
