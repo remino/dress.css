@@ -22,7 +22,9 @@ const topPageUrl = `/${siteConfig.prefix}/`
 <header>
 	<h1>
 		<a href={topPageUrl}>
-			<img src={logoUrl} alt="" role="presentation" />{siteTitle}
+			<img src={logoUrl} alt="" role="presentation" width="64" height="64" />{
+				siteTitle
+			}
 		</a>
 	</h1>
 	<HeaderNav items={navItems} />
