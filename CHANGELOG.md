@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+- [v5.1.1](#v511)
 - [v5.1.0](#v510)
 - [v5.0.4](#v504)
 - [v5.0.3](#v503)
@@ -48,6 +49,10 @@
 - [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## v5.1.1
+
+- Fix unstable shrink-wrap body width when header or footer is present in Safari macOS
 
 ## v5.1.0
 
