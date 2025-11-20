@@ -44,7 +44,7 @@
 	--dress-lh: 1.6;
 	/* Preferred max inline size */
 	--dress-mw: 50rem;
-	/* Fallback max inline size */
+	/* Fluid max inline size */
 	--dress-mw-f: max-content;
 	/* Minimum inline size */
 	--dress-mw-min: 0;

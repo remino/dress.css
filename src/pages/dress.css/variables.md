@@ -95,8 +95,8 @@ update automatically.
 | `--dress-br`     | Default border radius                            |
 | `--dress-bs`     | Default border thickness                         |
 | `--dress-lh`     | Base line-height multiplier                      |
-| `--dress-mw`     | Preferred main width for `<body>`                |
-| `--dress-mw-f`   | Fallback main width for `<body>` (`max-content`) |
+| `--dress-mw`     | Maximum main width for `<body>`                  |
+| `--dress-mw-f`   | Fluid main width for `<body>` (`max-content`)    |
 | `--dress-mw-min` | Minimum main width for `<body>`                  |
 | `--dress-s-i`    | Base inline spacing unit                         |
 | `--dress-logo-h` | Header logo height                               |
