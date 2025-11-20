@@ -1,0 +1,1 @@
+const t=document.querySelectorAll("iframe");t.forEach((e=>e.onload=()=>{setInterval((()=>{switch(e.width){case"600":e.width="605";break;case"605":e.width="610";break;default:e.width="600"}}),1e3)}));
