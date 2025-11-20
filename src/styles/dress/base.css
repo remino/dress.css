@@ -30,6 +30,10 @@ body {
 	padding-inline: var(--dress-mp);
 	word-break: break-word;
 
+	&:has(> footer, > header) {
+		inline-size: auto;
+	}
+
 	> a[href^='#']:not([href='#']):first-child {
 		background: var(--dress-bg-2);
 		border-radius: var(--dress-br);

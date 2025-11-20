@@ -1,0 +1,53 @@
+---
+import TestBodyLayout from '../../../layouts/TestBodyLayout.astro'
+---
+
+<TestBodyLayout title="Sparse Content Frame Without Frame">
+	<main>
+		<p>content</p>
+	</main>
+
+	<style>
+		:root {
+			--dress-mw-min: 0;
+		}
+
+		body > main {
+			border: solid var(--dress-bs) var(--dress-dt);
+		}
+
+		#debug-info {
+			position: fixed;
+			inset: 1rlh 1rlh auto auto;
+			background: rgba(0, 0, 0, 0.7);
+			color: white;
+			font-size: 0.75rem;
+			padding: 0.25rem;
+			z-index: 1000;
+		}
+	</style>
+
+	<div id="debug-info"></div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const debugInfo = document.getElementById('debug-info')
+			const updateDebugInfo = () => {
+				const variables = ['--dress-mw', '--dress-mw-f', '--dress-mw-min']
+				let debugText = ''
+				variables.forEach((variable) => {
+					const value = getComputedStyle(document.body).getPropertyValue(
+						variable,
+					)
+					debugText += `${variable}: ${value.trim()};<br>`
+				})
+				const bodyWidth = document.body.offsetWidth
+				debugText += `Body width: ${bodyWidth}px;<br>`
+				debugText += `Viewport: ${window.innerWidth}px x ${window.innerHeight}px;<br>`
+				debugInfo.innerHTML = debugText.trim()
+			}
+			updateDebugInfo()
+			window.addEventListener('resize', updateDebugInfo)
+		})
+	</script>
+</TestBodyLayout>

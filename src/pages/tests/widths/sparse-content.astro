@@ -1,0 +1,34 @@
+---
+import TestBodyLayout from '../../../layouts/TestBodyLayout.astro'
+---
+
+<TestBodyLayout title="Sparse Content">
+	<h1>Sparse Content</h1>
+	<h2>With Header</h2>
+	<iframe src="../sparse-content-with-header/" width="600" height="400"
+	></iframe>
+	<h2>Without Header</h2>
+	<iframe src="../sparse-content-no-header/" width="600" height="400"></iframe>
+	<script>
+		// on load, start timer to resize width of iframe just by a few pixels, then back after a second, repeatedly
+		const iframes = document.querySelectorAll('iframe')
+		iframes.forEach(
+			(iframe) =>
+				(iframe.onload = () => {
+					setInterval(() => {
+						switch (iframe.width) {
+							case '600':
+								iframe.width = '605'
+								break
+							case '605':
+								iframe.width = '610'
+								break
+							default:
+								iframe.width = '600'
+								break
+						}
+					}, 1000)
+				}),
+		)
+	</script>
+</TestBodyLayout>
