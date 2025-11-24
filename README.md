@@ -77,7 +77,7 @@ states out of the box. Earlier releases were known as **sem.css**.
 Mirrors:
 
 - https://unpkg.com/@remino/dress.css
-- https://cdn.jsdelivr.net/npm/@remino/dress.css
+- https://cdn.jsdelivr.net/npm/@remino/dress.css/dist/dress.css
 
 ### npm
 
