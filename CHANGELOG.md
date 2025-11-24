@@ -62,7 +62,8 @@
 
 ## v5.1.1
 
-- Fix unstable shrink-wrap body width when header or footer is present in Safari macOS
+- Fix unstable shrink-wrap body width when header or footer is present in Safari
+  macOS
 
 ## v5.1.0
 
@@ -89,11 +90,18 @@
 - Migrated from Sass to native CSS with nesting
 - Rebuilt the documentation site with Astro 5
 - Updated the playground tooling to use Vite
-- Introduced semantic colour tokens (`--dress-sec`, `--dress-neg`, `--dress-pos`) with highlight counterparts (`--dress-mk`, `--dress-del`, `--dress-ins`) replacing the old `--dress-ax` pair, and refreshed `<meter>` colours through `--dress-low`, `--dress-mid`, and `--dress-hi`
-- Renamed `--dress-bg-3` to `--dress-dt` to better describe its role as the shared border/detail colour
-- Split font stacks into `--dress-ff-sans` and `--dress-ff-serif`, plus derived `--dress-ff` and `--dress-ff-h` tokens for body vs heading copy
-- Removed the global `[hidden]` override to keep browser-native behaviours such as `hidden="until-found"`
-- Added codenames to current major version, and to past major versions in retrospect.
+- Introduced semantic colour tokens (`--dress-sec`, `--dress-neg`,
+  `--dress-pos`) with highlight counterparts (`--dress-mk`, `--dress-del`,
+  `--dress-ins`) replacing the old `--dress-ax` pair, and refreshed `<meter>`
+  colours through `--dress-low`, `--dress-mid`, and `--dress-hi`
+- Renamed `--dress-bg-3` to `--dress-dt` to better describe its role as the
+  shared border/detail colour
+- Split font stacks into `--dress-ff-sans` and `--dress-ff-serif`, plus derived
+  `--dress-ff` and `--dress-ff-h` tokens for body vs heading copy
+- Removed the global `[hidden]` override to keep browser-native behaviours such
+  as `hidden="until-found"`
+- Added codenames to current major version, and to past major versions in
+  retrospect.
 
 ## v4.4.3
 
@@ -145,8 +153,8 @@
 ## v4.1.0
 
 - Adjusted `<body>` width and padding
-  - Fixed "springing" issue on macOS Safari
-  - Updated padding for consistency with inline elements
+    - Fixed "springing" issue on macOS Safari
+    - Updated padding for consistency with inline elements
 
 ## v4.0.1
 
@@ -190,9 +198,9 @@
 - Added styles for `[inert]` and `<abbr>`
 - Used `:focus-visible` to suppress focus ring for mouse users
 - Added:
-  - `--dress-so` (scroll offset)
-  - `scroll-margin-block-start` on headings
-  - `scroll-padding-top` → `scroll-padding-block-start`
+    - `--dress-so` (scroll offset)
+    - `scroll-margin-block-start` on headings
+    - `scroll-padding-top` → `scroll-padding-block-start`
 - Style for `[hidden]`
 - Style for `<dialog>`
 
@@ -227,11 +235,11 @@
 
 - Switched to `rch`/`rlh` units for inline spacing
 - Renamed margin vars to logical props:
-  ```scss
-  --dress-m-t → --dress-m-bs
-  --dress-m-b → --dress-m-be
-  --dress-m-v → --dress-m-b
-  ```
+    ```scss
+    --dress-m-t → --dress-m-bs
+    --dress-m-b → --dress-m-be
+    --dress-m-v → --dress-m-b
+    ```
 - Renamed `--dc-*` vars (from `--sc-*`)
 
 ## v2.0.0 Little Black Dress

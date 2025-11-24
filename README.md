@@ -29,19 +29,20 @@ states out of the box. Earlier releases were known as **sem.css**.
 
 - [Features](#features)
 - [Installation](#installation)
-  - [HTML (CDN)](#html-cdn)
-  - [npm](#npm)
-  - [Direct download](#direct-download)
+    - [HTML (CDN)](#html-cdn)
+    - [npm](#npm)
+    - [Direct download](#direct-download)
 - [Usage](#usage)
 - [Browser support](#browser-support)
+    - [Backwards compatibility](#backwards-compatibility)
 - [Development](#development)
-  - [Install first](#install-first)
-  - [CSS](#css)
-  - [Docs](#docs)
-  - [Build everything](#build-everything)
+    - [Install first](#install-first)
+    - [CSS](#css)
+    - [Docs](#docs)
+    - [Build everything](#build-everything)
 - [Tests](#tests)
-  - [Visual regression (Playwright)](#visual-regression-playwright)
-  - [Response redirects (Hurl)](#response-redirects-hurl)
+    - [Visual regression (Playwright)](#visual-regression-playwright)
+    - [Response redirects (Hurl)](#response-redirects-hurl)
 - [Contributing](#contributing)
 - [Licence](#licence)
 
@@ -116,6 +117,16 @@ Designed for evergreen browsers (current Chrome, Edge, Firefox, Safari, and
 their mobile counterparts). Compatibility is periodically checked with
 [`doiuse`](https://www.npmjs.com/package/doiuse); older engines such as IE are
 not supported.
+
+### Backwards compatibility
+
+This stylesheet is meant to stay up to date with the latest changes of
+mainstream browsers, not to support old CSS forever. Major version changes will
+likely break support of previous version of this stylesheet. Minor version
+updates are less likely to do so, but there is still a possibility. If a
+specific version of the stylesheet works best for you, stay with it. If you
+prefer using the latest version, make sure to read the updates (`CHANGELOG.md`)
+and to test your site or application.
 
 [Back to top](#)
 

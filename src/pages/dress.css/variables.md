@@ -6,15 +6,15 @@ description: Reference for customizing dress.css with CSS variables.
 
 # Variables
 
-Every design token is exposed by **<mark>dress.css</mark>** as a CSS variable
-so you can adapt the palette, spacing, and motion without editing the library
+Every design token is exposed by **<mark>dress.css</mark>** as a CSS variable so
+you can adapt the palette, spacing, and motion without editing the library
 itself. Override them globally in your own stylesheet:
 
 ```css
 :root {
-	--dress-bg: #f5f5f5;
-	--dress-lk: rebeccapurple;
-	--dress-mw: 64rem;
+    --dress-bg: #f5f5f5;
+    --dress-lk: rebeccapurple;
+    --dress-mw: 64rem;
 }
 ```
 
@@ -173,12 +173,13 @@ brand system.
 
 ## Tips
 
-- Prefer overriding high-level tokens (`--dress-bg`, `--dress-sec`, `--dress-mw`)
-  so the rest of the system stays in sync.
-- Use media queries to provide light/dark variants, mirroring how **<mark>dress.css</mark>**
-  overrides the same tokens inside `@media (prefers-color-scheme: dark)`.
-- All values are plain CSS, so you can reference your own variables or use functions
-  like `color-mix()` and `clamp()` when extending the design system.
+- Prefer overriding high-level tokens (`--dress-bg`, `--dress-sec`,
+  `--dress-mw`) so the rest of the system stays in sync.
+- Use media queries to provide light/dark variants, mirroring how
+  **<mark>dress.css</mark>** overrides the same tokens inside
+  `@media (prefers-color-scheme: dark)`.
+- All values are plain CSS, so you can reference your own variables or use
+  functions like `color-mix()` and `clamp()` when extending the design system.
 
 [Back to top](#)
 

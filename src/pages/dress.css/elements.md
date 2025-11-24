@@ -6,9 +6,13 @@ description: Examples of HTML elements styled by dress.css.
 
 # Elements
 
-Below are all the tags styled by **<mark>dress.css</mark>** along with markup samples.
+Below are all the tags styled by **<mark>dress.css</mark>** along with markup
+samples.
 
-For legibility, the docs site highlights code blocks with [Prism](https://prismjs.com) using bespoke light (Pastie) and dark (Dracula) themes. This syntax highlighting is limited to the documentation and is not bundled with `dress.css`.
+For legibility, the docs site highlights code blocks with
+[Prism](https://prismjs.com) using bespoke light (Pastie) and dark (Dracula)
+themes. This syntax highlighting is limited to the documentation and is not
+bundled with `dress.css`.
 
 ---
 
@@ -48,8 +52,8 @@ For legibility, the docs site highlights code blocks with [Prism](https://prismj
 
 ### Mark Text (Highlighted Text) `<mark>` {#mark}
 
-<mark>highlighted text</mark>
-<mark><a href="#" data-disabled>highlighted text with link</a></mark>
+<mark>highlighted text</mark> <mark><a href="#" data-disabled>highlighted text
+with link</a></mark>
 
 ```html
 <mark>highlighted text</mark>
@@ -108,7 +112,8 @@ Our sale ends <del>Sunday</del> <ins>Monday</ins>.
 <a href="https://example.com/review/" target="_blank">Submit Review</a>
 ```
 
-**In links wrapping images** in a <code>&lt;figure&gt;</code>, the icon will not show.
+**In links wrapping images** in a <code>&lt;figure&gt;</code>, the icon will not
+show.
 
 🖨️ **In print,** the URL of the link will be displayed instead of the icon:
 
@@ -118,7 +123,11 @@ Shop Now <small>&lt;https://example.com/shop/&gt;</small>
 
 ### Header Title Link `<header><h1><a href="…">` {#headerlink}
 
-When a `<h1>` heading in the `<header>` contains only a link, it is assumed to be used as the header title link, normally containing the site's logo and title, and pointing to the site's homepage. For this, the link will still work as intended for practicality, but will camouflaged as normal text for legibility and avoid distractions.
+When a `<h1>` heading in the `<header>` contains only a link, it is assumed to
+be used as the header title link, normally containing the site's logo and title,
+and pointing to the site's homepage. For this, the link will still work as
+intended for practicality, but will camouflaged as normal text for legibility
+and avoid distractions.
 
 For accessibility, it is best to also include a _Home_ link in your main menu.
 
@@ -126,20 +135,25 @@ Also see the details on the formatting of the [page header](#header).
 
 ```html
 <header>
-	<h1>
-		<a href="/">
-			<img src="logo.png" alt="">
-			Runway
-		</a>
-	</h1>
+    <h1>
+        <a href="/">
+            <img src="logo.png" alt="">
+            Runway
+        </a>
+    </h1>
 </header>
 ```
 
 ### Skip Navigation ("skipnav") `<body><a href="#…">` {#skipnav}
 
-For the accessibility of screen reader users, it's common to add a link at the very beginning of the page to skip the header and its menu, and go straight to the main content. It remains hidden until the user tabs to it, yet it is always visible to the screen reader.
+For the accessibility of screen reader users, it's common to add a link at the
+very beginning of the page to skip the header and its menu, and go straight to
+the main content. It remains hidden until the user tabs to it, yet it is always
+visible to the screen reader.
 
-When a link is the first child element of <code>&lt;body&gt;</code> and points to a section to the page other than <code>#</code>, it will be treated and rendered as such "skipnav" link.
+When a link is the first child element of <code>&lt;body&gt;</code> and points
+to a section to the page other than <code>#</code>, it will be treated and
+rendered as such "skipnav" link.
 
 <blockquote>
 <a href="#main" data-disabled>Skip to main content</a>
@@ -147,15 +161,15 @@ When a link is the first child element of <code>&lt;body&gt;</code> and points t
 
 ```html
 <body>
-	<!-- Skipnav link: first child of <body> and points to section on page. -->
-	<a href="#main">Skip to main navigation</a>
+    <!-- Skipnav link: first child of <body> and points to section on page. -->
+    <a href="#main">Skip to main navigation</a>
 
-	<header>
-		<!-- Header & menu -->
-	</header>
-	<main id="main">
-		<!-- Main content -->
-	</main>
+    <header>
+        <!-- Header & menu -->
+    </header>
+    <main id="main">
+        <!-- Main content -->
+    </main>
 </body>
 ```
 
@@ -168,44 +182,44 @@ When a link is the first child element of <code>&lt;body&gt;</code> and points t
 ### Unordered List `<ul>` {#ul}
 
 - Unordered list item 1
-  - Nested unordered list item 1
-  - Nested unordered list item 2
+    - Nested unordered list item 1
+    - Nested unordered list item 2
 - Unordered list item 2
 - Unordered list item 3
 
 ```html
 <ul>
-	<li>
-		Unordered list item 1
-		<ul>
-			<li>Nested unordered list item 1</li>
-			<li>Nested unordered list item 2</li>
-		</ul>
-	</li>
-	<li>Unordered list item 2</li>
-	<li>Unordered list item 3</li>
+    <li>
+        Unordered list item 1
+        <ul>
+            <li>Nested unordered list item 1</li>
+            <li>Nested unordered list item 2</li>
+        </ul>
+    </li>
+    <li>Unordered list item 2</li>
+    <li>Unordered list item 3</li>
 </ul>
 ```
 
 ### Ordered List `<ol>` {#ol}
 
 1. Ordered list item 1
-   1. Nested ordered list item 1
-   2. Nested ordered list item 2
+    1. Nested ordered list item 1
+    2. Nested ordered list item 2
 2. Ordered list item 2
 3. Ordered list item 3
 
 ```html
 <ol>
-	<li>
-		Ordered list item 1
-		<ol>
-			<li>Nested ordered list item 1</li>
-			<li>Nested ordered list item 2</li>
-		</ol>
-	</li>
-	<li>Ordered list item 2</li>
-	<li>Ordered list item 3</li>
+    <li>
+        Ordered list item 1
+        <ol>
+            <li>Nested ordered list item 1</li>
+            <li>Nested ordered list item 2</li>
+        </ol>
+    </li>
+    <li>Ordered list item 2</li>
+    <li>Ordered list item 3</li>
 </ol>
 ```
 
@@ -224,37 +238,34 @@ When a link is the first child element of <code>&lt;body&gt;</code> and points t
 
 ```html
 <menu>
-	<li>
-		Menu list item 1
-		<ul>
-			<li>Nested menu list item 1</li>
-			<li>Nested menu list item 2</li>
-		</ul>
-	</li>
-	<li>Menu list item 2</li>
-	<li>Menu list item 3</li>
+    <li>
+        Menu list item 1
+        <ul>
+            <li>Nested menu list item 1</li>
+            <li>Nested menu list item 2</li>
+        </ul>
+    </li>
+    <li>Menu list item 2</li>
+    <li>Menu list item 3</li>
 </menu>
 ```
 
 ### Description List `<dl>` {#dl}
 
-Term 1
-: Definition 1
+Term 1 : Definition 1
 
-Term 2
-: Definition 2
+Term 2 : Definition 2
 
-Term 3
-: Definition 3
+Term 3 : Definition 3
 
 ```html
 <dl>
-	<dt>Term 1</dt>
-	<dd>Definition 1</dd>
-	<dt>Term 2</dt>
-	<dd>Definition 2</dd>
-	<dt>Term 3</dt>
-	<dd>Definition 3</dd>
+    <dt>Term 1</dt>
+    <dd>Definition 1</dd>
+    <dt>Term 2</dt>
+    <dd>Definition 2</dd>
+    <dt>Term 3</dt>
+    <dd>Definition 3</dd>
 </dl>
 ```
 
@@ -281,8 +292,8 @@ Term 3
 
 ```html
 <blockquote>
-	“Simplicity is the keynote of all true elegance.”<br>
-	&mdash; Coco Chanel
+    “Simplicity is the keynote of all true elegance.”<br>
+    &mdash; Coco Chanel
 </blockquote>
 ```
 
@@ -318,7 +329,8 @@ C U B I C   B
 
 ### Code Block `<pre><code>` {#precode}
 
-Many libraries, including code highlighters, use the <code>&lt;code&gt;</code> tag nested in a <code>&lt;pre&gt;</code> tag to display code blocks.
+Many libraries, including code highlighters, use the <code>&lt;code&gt;</code>
+tag nested in a <code>&lt;pre&gt;</code> tag to display code blocks.
 
 ```html
 alert('Hello World!');
@@ -362,9 +374,13 @@ alert('Hello World!');
 
 ### Single Figure `<figure>` {#figure}
 
-A <code>&lt;figure&gt;</code> will display embedded content, including <code>&lt;img&gt;</code>, <code>&lt;picture&gt;</code>, <code>&lt;svg&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;object&gt;</code>, and <code>&lt;embed&gt;</code> as a block.
+A <code>&lt;figure&gt;</code> will display embedded content, including
+<code>&lt;img&gt;</code>, <code>&lt;picture&gt;</code>,
+<code>&lt;svg&gt;</code>, <code>&lt;video&gt;</code>,
+<code>&lt;object&gt;</code>, and <code>&lt;embed&gt;</code> as a block.
 
-Those elements are not shown as blocks outside of a <code>&lt;figure&gt;</code>, as there are cases when embedded content is meant to be inlined.
+Those elements are not shown as blocks outside of a <code>&lt;figure&gt;</code>,
+as there are cases when embedded content is meant to be inlined.
 
 <figure>
 <a href="https://en.wikipedia.org/wiki/Triangle" target="_blank"><img src="/dress.css/triangles.svg" alt="Triangles illustration" /></a>
@@ -373,18 +389,21 @@ Those elements are not shown as blocks outside of a <code>&lt;figure&gt;</code>,
 
 ```html
 <figure>
-	<a href="https://en.wikipedia.org/wiki/Triangle" target="_blank">
-		<img src="triangles.svg">
-	</a>
-	<figcaption>
-		A display of colourful triangles. (Click for more about triangles.)
-	</figcaption>
+    <a href="https://en.wikipedia.org/wiki/Triangle" target="_blank">
+        <img src="triangles.svg">
+    </a>
+    <figcaption>
+        A display of colourful triangles. (Click for more about triangles.)
+    </figcaption>
 </figure>
 ```
 
 ### Nested Figures `<figure><figure>` {#nestedfigures}
 
-Ideal for displaying multiple images side by side, or to enlarge a single figure. Collapsed into a single column on narrow displays. Formatted automatically when a single set of figures are nested into another. When only one figure is nested, it will be displayed wider than a normal figure.
+Ideal for displaying multiple images side by side, or to enlarge a single
+figure. Collapsed into a single column on narrow displays. Formatted
+automatically when a single set of figures are nested into another. When only
+one figure is nested, it will be displayed wider than a normal figure.
 
 <figure>
 <figure>
@@ -411,26 +430,26 @@ Ideal for displaying multiple images side by side, or to enlarge a single figure
 
 ```html
 <figure>
-	<figure>
-		<img src="fuchsia.svg">
-		<figcaption>Wide Fuchsia</figcaption>
-	</figure>
+    <figure>
+        <img src="fuchsia.svg">
+        <figcaption>Wide Fuchsia</figcaption>
+    </figure>
 </figure>
 
 <figure>
-	<figure>
-		<img src="blue.svg">
-		<figcaption>Blue</figcaption>
-	</figure>
-	<figure>
-		<img src="pink.svg">
-		<figcaption>Pink</figcaption>
-	</figure>
-	<figure>
-		<img src="purple.svg">
-		<figcaption>Purple</figcaption>
-	</figure>
-	<figcaption>A set of electric colours.</figcaption>
+    <figure>
+        <img src="blue.svg">
+        <figcaption>Blue</figcaption>
+    </figure>
+    <figure>
+        <img src="pink.svg">
+        <figcaption>Pink</figcaption>
+    </figure>
+    <figure>
+        <img src="purple.svg">
+        <figcaption>Purple</figcaption>
+    </figure>
+    <figcaption>A set of electric colours.</figcaption>
 </figure>
 ```
 
@@ -451,7 +470,8 @@ Video above is from [_Retrosurfing_](https://remino.net/bits/retrosurfing/).
 
 ### Inline Frame `<iframe>` {#iframe}
 
-Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will default to take the whole width of the <code>&lt;body&gt;</code>.
+Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will
+default to take the whole width of the <code>&lt;body&gt;</code>.
 
 <iframe
   srcdoc="
@@ -536,45 +556,45 @@ Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will 
 
 ```html
 <table>
-	<caption>
-		Table Caption
-	</caption>
-	<thead>
-		<tr>
-			<th>Header 1</th>
-			<th>Header 2</th>
-			<th>Header 3</th>
-			<th>Header 4</th>
-		</tr>
-	</thead>
-	<tfoot>
-		<tr>
-			<th>Footer 1</th>
-			<th>Footer 2</th>
-			<th>Footer 3</th>
-			<th>Footer 4</th>
-		</tr>
-	</tfoot>
-	<tbody>
-		<tr>
-			<td>Data 1</td>
-			<td>Data 2</td>
-			<td>Data 3</td>
-			<td>Data 4</td>
-		</tr>
-		<tr>
-			<td>Data 5</td>
-			<td>Data 6</td>
-			<td>Data 7</td>
-			<td>Data 8</td>
-		</tr>
-		<tr>
-			<td>Data 9</td>
-			<td>Data 10</td>
-			<td>Data 11</td>
-			<td>Data 12</td>
-		</tr>
-	</tbody>
+    <caption>
+        Table Caption
+    </caption>
+    <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Footer 1</th>
+            <th>Footer 2</th>
+            <th>Footer 3</th>
+            <th>Footer 4</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+        <tr>
+            <td>Data 5</td>
+            <td>Data 6</td>
+            <td>Data 7</td>
+            <td>Data 8</td>
+        </tr>
+        <tr>
+            <td>Data 9</td>
+            <td>Data 10</td>
+            <td>Data 11</td>
+            <td>Data 12</td>
+        </tr>
+    </tbody>
 </table>
 ```
 
@@ -587,8 +607,8 @@ Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will 
 
 ```html
 <details>
-	<summary>Click to show details</summary>
-	<p>Here are all the details!</p>
+    <summary>Click to show details</summary>
+    <p>Here are all the details!</p>
 </details>
 ```
 
@@ -602,7 +622,8 @@ Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will 
 
 Styling is applied to the <code>&lt;dialog&gt;</code> and its backdrop.
 
-Additionally, formatting is applied to a <code>&lt;menu&gt;</code> of actions in a <code>&lt;form&gt;</code> when formatted as the code sample below.
+Additionally, formatting is applied to a <code>&lt;menu&gt;</code> of actions in
+a <code>&lt;form&gt;</code> when formatted as the code sample below.
 
 <button id="dialogOpen">Open Dialog</button>
 
@@ -618,17 +639,17 @@ Additionally, formatting is applied to a <code>&lt;menu&gt;</code> of actions in
 
 ```html
 <button onclick="document.getElementById('dialogExample').showModal()">
-	Open Dialog
+    Open Dialog
 </button>
 
 <dialog id="dialogExample">
-	<form method="dialog">
-		<p><strong>Hello!</strong> This is a native dialog.</p>
-		<menu>
-			<li><button value="cancel" autofocus>Cancel</button></li>
-			<li><button type="submit" value="ok">OK</button></li>
-		</menu>
-	</form>
+    <form method="dialog">
+        <p><strong>Hello!</strong> This is a native dialog.</p>
+        <menu>
+            <li><button value="cancel" autofocus>Cancel</button></li>
+            <li><button type="submit" value="ok">OK</button></li>
+        </menu>
+    </form>
 </dialog>
 ```
 
@@ -644,7 +665,7 @@ Additionally, formatting is applied to a <code>&lt;menu&gt;</code> of actions in
 <button popovertarget="detailsPopover">Show Popover</button>
 
 <div popover id="detailsPopover">
-	<p><strong>Hello!</strong> This is a popover.</p>
+    <p><strong>Hello!</strong> This is a popover.</p>
 </div>
 ```
 
@@ -654,60 +675,70 @@ Additionally, formatting is applied to a <code>&lt;menu&gt;</code> of actions in
 
 ## Page Sections {#sections}
 
-In **<mark>dress.css</mark>**, some special formatting is used in the header and the footer of the page to ease navigation and readability. Menus (<code>&lt;menu&gt;</code>) as well as unordered lists (<code>&lt;ul&gt;</code>) in navigation (<code>&lt;nav&gt;</code>) are rendered horizontally.
+In **<mark>dress.css</mark>**, some special formatting is used in the header and
+the footer of the page to ease navigation and readability. Menus
+(<code>&lt;menu&gt;</code>) as well as unordered lists (<code>&lt;ul&gt;</code>)
+in navigation (<code>&lt;nav&gt;</code>) are rendered horizontally.
 
 ### Header `<header>` {#header}
 
-Some special styling is applied to the <code>&lt;header&gt;</code> tag itself, as well to its title, link, logo, and navigation. That can be seen at the [top of this page](#) and can be replicated with the sample below:
+Some special styling is applied to the <code>&lt;header&gt;</code> tag itself,
+as well to its title, link, logo, and navigation. That can be seen at the
+[top of this page](#) and can be replicated with the sample below:
 
 ```html
 <header>
-	<h1>
-		<a href="/">
-			<img src="logo.png" alt="">
-			Runway
-		</a>
-	</h1>
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/contact/">Contact</a></li>
-		</ul>
-	</nav>
-	<menu>
-		<li>
-			<button onclick="document.documentElement.classList.toggle('dark')">
-				Toggle theme
-			</button>
-		</li>
-		<li>
-			<button onclick="document.getElementById('settings').openModal()">
-				Settings
-			</button>
-		</li>
-	</menu>
+    <h1>
+        <a href="/">
+            <img src="logo.png" alt="">
+            Runway
+        </a>
+    </h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </nav>
+    <menu>
+        <li>
+            <button onclick="document.documentElement.classList.toggle('dark')">
+                Toggle theme
+            </button>
+        </li>
+        <li>
+            <button onclick="document.getElementById('settings').openModal()">
+                Settings
+            </button>
+        </li>
+    </menu>
 </header>
 ```
 
-Special styling is also applied to links in `<header><h1>`. For details, see [_Header Title Link_](#headerlink).
+Special styling is also applied to links in `<header><h1>`. For details, see
+[_Header Title Link_](#headerlink).
 
 ### Footer `<footer>` {#footer}
 
-Like the <code>&lt;header&gt;</code> tag, some special formatting is applied to <code>&lt;footer&gt;</code>. That can also been seen at the [bottom of this page](#end) and can be replicated with the sample below:
+Like the <code>&lt;header&gt;</code> tag, some special formatting is applied to
+<code>&lt;footer&gt;</code>. That can also been seen at the
+[bottom of this page](#end) and can be replicated with the sample below:
 
 ```html
 <footer>
-	<p>&copy; 2024</p>
-	<nav>
-		<ul>
-			<li><a href="#terms">Terms of Use</a></li>
-			<li><a href="#privacy">Privacy Policy</a></li>
-		</ul>
-	</nav>
-	<menu>
-		<li><button onclick="window.print()">Print</button></li>
-		<li><button onclick="prompt('Copy URL:', location.href)">Share</button></li>
-	</menu>
+    <p>&copy; 2024</p>
+    <nav>
+        <ul>
+            <li><a href="#terms">Terms of Use</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+    </nav>
+    <menu>
+        <li><button onclick="window.print()">Print</button></li>
+        <li>
+            <button onclick="prompt('Copy URL:', location.href)">Share</button>
+        </li>
+    </menu>
 </footer>
 ```
 
@@ -720,12 +751,15 @@ Like the <code>&lt;header&gt;</code> tag, some special formatting is applied to 
 
 ```html
 <aside>
-	<h4>Side Notes</h4>
-	<p>This information is related to the main content, but not essential.</p>
+    <h4>Side Notes</h4>
+    <p>This information is related to the main content, but not essential.</p>
 </aside>
 ```
 
-**Note:** Heading hierarchy isn't meant to be reset in sectioning elements such as <code>&lt;aside&gt;</code> and <code>&lt;section&gt;</code>. Doing so is considered non-comforing. See [_HTML Living Standard_ §4.3.11](https://html.spec.whatwg.org/multipage/sections.html#headings-and-outlines).
+**Note:** Heading hierarchy isn't meant to be reset in sectioning elements such
+as <code>&lt;aside&gt;</code> and <code>&lt;section&gt;</code>. Doing so is
+considered non-comforing. See
+[_HTML Living Standard_ §4.3.11](https://html.spec.whatwg.org/multipage/sections.html#headings-and-outlines).
 
 ### Navigation Section `<nav>` {#nav}
 
@@ -733,26 +767,27 @@ There is no styling on screen applied on <code>&lt;nav&gt;</code>.
 
 ```html
 <nav>
-	<a href="#">Back to top</a>
+    <a href="#">Back to top</a>
 </nav>
 ```
 
 🖨️ **In print**, however, some style is applied to reduce clutter on the page:
 
-- When used in <code>&lt;header&gt;</code> or <code>&lt;footer&gt;</code>, their <code>&lt;menu&gt;</code> is invisible.
+- When used in <code>&lt;header&gt;</code> or <code>&lt;footer&gt;</code>, their
+  <code>&lt;menu&gt;</code> is invisible.
 - They are invisible when they only contain a link to a page's anchor.
 
 ```html
 <header>
-	<nav>
-		<!--
+    <nav>
+        <!--
 			This <menu> will be invisible in print
 			because it is in a <nav> in a header or footer.
 		-->
-		<menu>
-			<li><a href="/">Home</a></li>
-		</menu>
-	</nav>
+        <menu>
+            <li><a href="/">Home</a></li>
+        </menu>
+    </nav>
 </header>
 
 <!--
@@ -760,7 +795,7 @@ There is no styling on screen applied on <code>&lt;nav&gt;</code>.
 	because it only has an anchor link.
 -->
 <nav>
-	<a href="#example">Example section</a>
+    <a href="#example">Example section</a>
 </nav>
 ```
 
@@ -768,9 +803,14 @@ There is no styling on screen applied on <code>&lt;nav&gt;</code>.
 
 There is no visual styling applied on <code>&lt;main&gt;</code> itself.
 
-However, when <code>&lt;body&gt;</code> has a <code>&lt;main&gt;</code>, the body of the page will be rendered using a flex layout and expand to take the whole height of the viewport. This sets the header at the top of the page, the footer at the bottom, and centres <code>&lt;main&gt;</code> and its content, when the content of the body is shorter than the viewport of the browser.
+However, when <code>&lt;body&gt;</code> has a <code>&lt;main&gt;</code>, the
+body of the page will be rendered using a flex layout and expand to take the
+whole height of the viewport. This sets the header at the top of the page, the
+footer at the bottom, and centres <code>&lt;main&gt;</code> and its content,
+when the content of the body is shorter than the viewport of the browser.
 
-This is ideal for pages with little content that needs to fill up the whole height of the browser's window.
+This is ideal for pages with little content that needs to fill up the whole
+height of the browser's window.
 
 ```html
 <body>
@@ -788,7 +828,13 @@ This is ideal for pages with little content that needs to fill up the whole heig
 
 ## Form `<form>` {#form}
 
-There is some styling for forms in **<mark>dress.css</mark>** for the most common controls. It works best with the suggested markup below, wrapping every input field into a <code>&lt;label&gt;</code> for better usability. However, forms are notorious for how finicky they are with styling, accessibility, and inconsistencies between browsers. For anything more complex, as this stylesheet is basic, you may need to look for a different styling system better suited for your needs.
+There is some styling for forms in **<mark>dress.css</mark>** for the most
+common controls. It works best with the suggested markup below, wrapping every
+input field into a <code>&lt;label&gt;</code> for better usability. However,
+forms are notorious for how finicky they are with styling, accessibility, and
+inconsistencies between browsers. For anything more complex, as this stylesheet
+is basic, you may need to look for a different styling system better suited for
+your needs.
 
 ### Text Input `<input>` {#input}
 
@@ -824,23 +870,23 @@ Works with basic “textual” input fields including the following:
 
 ```html
 <nav>
-	<form method="post">
-		<label>
-			<span>Search</span>
-			<input type="search">
-		</label>
-	</form>
+    <form method="post">
+        <label>
+            <span>Search</span>
+            <input type="search">
+        </label>
+    </form>
 </nav>
 <form method="post">
-	<label>
-		<span>Username</span>
-		<input>
-		<small>Can also be your email address or phone number.</small>
-	</label>
-	<label>
-		<span>Password</span>
-		<input type="password">
-	</label>
+    <label>
+        <span>Username</span>
+        <input>
+        <small>Can also be your email address or phone number.</small>
+    </label>
+    <label>
+        <span>Password</span>
+        <input type="password">
+    </label>
 </form>
 ```
 
@@ -858,24 +904,24 @@ Basic styling is applied to date and time inputs for consistency.
 
 ```html
 <label>
-	<span><code>time</code></span>
-	<input type="time">
+    <span><code>time</code></span>
+    <input type="time">
 </label>
 <label>
-	<span><code>date</code></span>
-	<input type="date">
+    <span><code>date</code></span>
+    <input type="date">
 </label>
 <label>
-	<span><code>datetime-local</code></span>
-	<input type="datetime-local">
+    <span><code>datetime-local</code></span>
+    <input type="datetime-local">
 </label>
 <label>
-	<span><code>month</code></span>
-	<input type="month">
+    <span><code>month</code></span>
+    <input type="month">
 </label>
 <label>
-	<span><code>week</code></span>
-	<input type="week">
+    <span><code>week</code></span>
+    <input type="week">
 </label>
 ```
 
@@ -890,8 +936,8 @@ Basic styling is applied to date and time inputs for consistency.
 
 ```html
 <label>
-	<span>Message</span>
-	<textarea rows="4"></textarea>
+    <span>Message</span>
+    <textarea rows="4"></textarea>
 </label>
 ```
 
@@ -909,11 +955,11 @@ Basic styling is applied to date and time inputs for consistency.
 
 ```html
 <label>
-	<span>Choose one</span>
-	<select>
-		<option>Option A</option>
-		<option>Option B</option>
-	</select>
+    <span>Choose one</span>
+    <select>
+        <option>Option A</option>
+        <option>Option B</option>
+    </select>
 </label>
 ```
 
@@ -928,8 +974,8 @@ Basic styling is applied to date and time inputs for consistency.
 
 ```html
 <label>
-	<input type="checkbox" name="agree" value="1">
-	<span>I agree</span>
+    <input type="checkbox" name="agree" value="1">
+    <span>I agree</span>
 </label>
 ```
 
@@ -948,12 +994,12 @@ Basic styling is applied to date and time inputs for consistency.
 
 ```html
 <label>
-	<input type="radio" name="be" value="1">
-	<span>To be</span>
+    <input type="radio" name="be" value="1">
+    <span>To be</span>
 </label>
 <label>
-	<input type="radio" name="be" value="0">
-	<span>Not to be</span>
+    <input type="radio" name="be" value="0">
+    <span>Not to be</span>
 </label>
 ```
 
@@ -968,8 +1014,8 @@ Basic styling is applied to date and time inputs for consistency.
 
 ```html
 <label>
-	<span>Select profile avatar</span>
-	<input type="file" name="avatar">
+    <span>Select profile avatar</span>
+    <input type="file" name="avatar">
 </label>
 ```
 
@@ -984,8 +1030,8 @@ Basic styling is applied to date and time inputs for consistency.
 
 ```html
 <label>
-	<span>Favourite colour</span>
-	<input type="color" name="color" value="#d53bb8">
+    <span>Favourite colour</span>
+    <input type="color" name="color" value="#d53bb8">
 </label>
 ```
 
@@ -1000,14 +1046,17 @@ Basic styling is applied to date and time inputs for consistency.
 
 ```html
 <label>
-	<span>Volume</span>
-	<input type="range" name="volume" min="0" max="11" step="1" value="9">
+    <span>Volume</span>
+    <input type="range" name="volume" min="0" max="11" step="1" value="9">
 </label>
 ```
 
 ### Composite Inputs {#composite}
 
-Labels may also contain multiple fields. Clicking on the label will focus on its first input field. However, note this is not valid HTML5 and may present accessibility issues. Use with caution. You may consider using multiple fields in a <code>&lt;fieldset&gt;</code> instead.
+Labels may also contain multiple fields. Clicking on the label will focus on its
+first input field. However, note this is not valid HTML5 and may present
+accessibility issues. Use with caution. You may consider using multiple fields
+in a <code>&lt;fieldset&gt;</code> instead.
 
 <form data-nosubmit method="post">
 	<label>
@@ -1019,9 +1068,9 @@ Labels may also contain multiple fields. Clicking on the label will focus on its
 
 ```html
 <label>
-	<span>Full Name</span>
-	<input placeholder="Given Name">
-	<input placeholder="Family Name">
+    <span>Full Name</span>
+    <input placeholder="Given Name">
+    <input placeholder="Family Name">
 </label>
 ```
 
@@ -1043,21 +1092,22 @@ Labels may also contain multiple fields. Clicking on the label will focus on its
 
 ```html
 <fieldset>
-	<legend>Skills</legend>
-	<label>
-		<input type="checkbox" name="skills" value="html">
-		<span>HTML</span>
-	</label>
-	<label>
-		<input type="checkbox" name="skills" value="css">
-		<span>CSS</span>
-	</label>
+    <legend>Skills</legend>
+    <label>
+        <input type="checkbox" name="skills" value="html">
+        <span>HTML</span>
+    </label>
+    <label>
+        <input type="checkbox" name="skills" value="css">
+        <span>CSS</span>
+    </label>
 </fieldset>
 ```
 
 ### Output `<output>` {#output}
 
-Styling on <code>&lt;output&gt;</code> is made to match the same height than an usual <code>&lt;input&gt;</code> field for consistency.
+Styling on <code>&lt;output&gt;</code> is made to match the same height than an
+usual <code>&lt;input&gt;</code> field for consistency.
 
 <blockquote>
 	<output>42</output>
@@ -1078,14 +1128,16 @@ Styling on <code>&lt;output&gt;</code> is made to match the same height than an 
 
 ```html
 <label>
-	<span>Uploading…</span>
-	<progress max="100" value="75"></progress>
+    <span>Uploading…</span>
+    <progress max="100" value="75"></progress>
 </label>
 ```
 
 ### Meter `<meter>` {#meter}
 
-The <code>&lt;meter&gt;</code> value switches between the semantic palette using <code>--dress-low</code>, <code>--dress-mid</code>, and <code>--dress-hi</code> depending on the value.
+The <code>&lt;meter&gt;</code> value switches between the semantic palette using
+<code>--dress-low</code>, <code>--dress-mid</code>, and <code>--dress-hi</code>
+depending on the value.
 
 <meter min="0" max="100" low="20" high="60" optimum="80" value="0">0%</meter>
 <meter min="0" max="100" low="20" high="60" optimum="80" value="10">10%</meter>
@@ -1106,7 +1158,9 @@ The <code>&lt;meter&gt;</code> value switches between the semantic palette using
 
 ### Buttons {#buttons}
 
-Including <code>&lt;button&gt;</code> as well as <code>&lt;input&gt;</code> with <code>type=&quot;button&quot;</code>, <code>type=&quot;reset&quot;</code>, and <code>type=&quot;submit&quot;</code>.
+Including <code>&lt;button&gt;</code> as well as <code>&lt;input&gt;</code> with
+<code>type=&quot;button&quot;</code>, <code>type=&quot;reset&quot;</code>, and
+<code>type=&quot;submit&quot;</code>.
 
 <form data-nosubmit method="post">
 	<input type="reset" value="Reset">
@@ -1122,7 +1176,9 @@ Including <code>&lt;button&gt;</code> as well as <code>&lt;input&gt;</code> with
 
 ### Button Set `<menu><button>` {#buttonset}
 
-Using <code>&lt;menu&gt;</code> as a direct descendant of a <code>&lt;form&gt;</code> or <code>&lt;fieldset&gt;</code> is assumed to be meant for a toolbar with a set of action buttons and is formatted as such.
+Using <code>&lt;menu&gt;</code> as a direct descendant of a
+<code>&lt;form&gt;</code> or <code>&lt;fieldset&gt;</code> is assumed to be
+meant for a toolbar with a set of action buttons and is formatted as such.
 
 <form data-nosubmit method="post">
 	<menu>
@@ -1133,10 +1189,10 @@ Using <code>&lt;menu&gt;</code> as a direct descendant of a <code>&lt;form&gt;</
 
 ```html
 <form>
-	<menu>
-		<li><button>Preview</button></li>
-		<li><button type="submit">Save</button></li>
-	</menu>
+    <menu>
+        <li><button>Preview</button></li>
+        <li><button type="submit">Save</button></li>
+    </menu>
 </form>
 ```
 
@@ -1148,7 +1204,8 @@ Using <code>&lt;menu&gt;</code> as a direct descendant of a <code>&lt;form&gt;</
 
 ### Inert `inert` {#inert}
 
-Any element with the <code>inert</code> Boolean attribute will have its content appear faded.
+Any element with the <code>inert</code> Boolean attribute will have its content
+appear faded.
 
 <nav inert><a href="javascript:history.go(-1)">Go Back</a></nav>
 
