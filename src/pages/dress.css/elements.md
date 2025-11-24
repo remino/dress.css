@@ -112,8 +112,7 @@ Our sale ends <del>Sunday</del> <ins>Monday</ins>.
 <a href="https://example.com/review/" target="_blank">Submit Review</a>
 ```
 
-**In links wrapping images** in a <code>&lt;figure&gt;</code>, the icon will not
-show.
+**In links wrapping images** in a `<figure>`, the icon will not show.
 
 🖨️ **In print,** the URL of the link will be displayed instead of the icon:
 
@@ -151,9 +150,8 @@ very beginning of the page to skip the header and its menu, and go straight to
 the main content. It remains hidden until the user tabs to it, yet it is always
 visible to the screen reader.
 
-When a link is the first child element of <code>&lt;body&gt;</code> and points
-to a section to the page other than <code>#</code>, it will be treated and
-rendered as such "skipnav" link.
+When a link is the first child element of `<body>` and points to a section to
+the page other than `#`, it will be treated and rendered as such "skipnav" link.
 
 <blockquote>
 <a href="#main" data-disabled>Skip to main content</a>
@@ -329,8 +327,8 @@ C U B I C   B
 
 ### Code Block `<pre><code>` {#precode}
 
-Many libraries, including code highlighters, use the <code>&lt;code&gt;</code>
-tag nested in a <code>&lt;pre&gt;</code> tag to display code blocks.
+Many libraries, including code highlighters, use the `<code>` tag nested in a
+`<pre>` tag to display code blocks.
 
 ```html
 alert('Hello World!');
@@ -374,13 +372,11 @@ alert('Hello World!');
 
 ### Single Figure `<figure>` {#figure}
 
-A <code>&lt;figure&gt;</code> will display embedded content, including
-<code>&lt;img&gt;</code>, <code>&lt;picture&gt;</code>,
-<code>&lt;svg&gt;</code>, <code>&lt;video&gt;</code>,
-<code>&lt;object&gt;</code>, and <code>&lt;embed&gt;</code> as a block.
+A `<figure>` will display embedded content, including `<img>`, `<picture>`,
+`<svg>`, `<video>`, `<object>`, and `<embed>` as a block.
 
-Those elements are not shown as blocks outside of a <code>&lt;figure&gt;</code>,
-as there are cases when embedded content is meant to be inlined.
+Those elements are not shown as blocks outside of a `<figure>`, as there are
+cases when embedded content is meant to be inlined.
 
 <figure>
 <a href="https://en.wikipedia.org/wiki/Triangle" target="_blank"><img src="/dress.css/triangles.svg" alt="Triangles illustration" /></a>
@@ -455,7 +451,7 @@ one figure is nested, it will be displayed wider than a normal figure.
 
 ### Video `<video>` {#video}
 
-Videos may be embedded on their own, or in a <code>&lt;figure&gt;</code>.
+Videos may be embedded on their own, or in a `<figure>`.
 
 <video controls src="/bits/retrosurfing/browsing.hevc.mp4" poster="/bits/retrosurfing/browsing.avif">
 <source src="/bits/retrosurfing/browsing.hevc.mp4" type="video/mp4; codecs=hvc1">
@@ -470,8 +466,8 @@ Video above is from [_Retrosurfing_](https://remino.net/bits/retrosurfing/).
 
 ### Inline Frame `<iframe>` {#iframe}
 
-Unless the <code>width</code> is set on an <code>&lt;iframe&gt;</code>, it will
-default to take the whole width of the <code>&lt;body&gt;</code>.
+Unless the `width` is set on an `<iframe>`, it will default to take the whole
+width of the `<body>`.
 
 <iframe
   srcdoc="
@@ -620,10 +616,10 @@ default to take the whole width of the <code>&lt;body&gt;</code>.
 
 ### Dialog `<dialog>` {#dialog}
 
-Styling is applied to the <code>&lt;dialog&gt;</code> and its backdrop.
+Styling is applied to the `<dialog>` and its backdrop.
 
-Additionally, formatting is applied to a <code>&lt;menu&gt;</code> of actions in
-a <code>&lt;form&gt;</code> when formatted as the code sample below.
+Additionally, formatting is applied to a `<menu>` of actions in a `<form>` when
+formatted as the code sample below.
 
 <button id="dialogOpen">Open Dialog</button>
 
@@ -676,15 +672,15 @@ a <code>&lt;form&gt;</code> when formatted as the code sample below.
 ## Page Sections {#sections}
 
 In **<mark>dress.css</mark>**, some special formatting is used in the header and
-the footer of the page to ease navigation and readability. Menus
-(<code>&lt;menu&gt;</code>) as well as unordered lists (<code>&lt;ul&gt;</code>)
-in navigation (<code>&lt;nav&gt;</code>) are rendered horizontally.
+the footer of the page to ease navigation and readability. Menus (`<menu>`) as
+well as unordered lists (`<ul>`) in navigation (`<nav>`) are rendered
+horizontally.
 
 ### Header `<header>` {#header}
 
-Some special styling is applied to the <code>&lt;header&gt;</code> tag itself,
-as well to its title, link, logo, and navigation. That can be seen at the
-[top of this page](#) and can be replicated with the sample below:
+Some special styling is applied to the `<header>` tag itself, as well to its
+title, link, logo, and navigation. That can be seen at the [top of this page](#)
+and can be replicated with the sample below:
 
 ```html
 <header>
@@ -720,9 +716,9 @@ Special styling is also applied to links in `<header><h1>`. For details, see
 
 ### Footer `<footer>` {#footer}
 
-Like the <code>&lt;header&gt;</code> tag, some special formatting is applied to
-<code>&lt;footer&gt;</code>. That can also been seen at the
-[bottom of this page](#end) and can be replicated with the sample below:
+Like the `<header>` tag, some special formatting is applied to `<footer>`. That
+can also been seen at the [bottom of this page](#end) and can be replicated with
+the sample below:
 
 ```html
 <footer>
@@ -757,13 +753,12 @@ Like the <code>&lt;header&gt;</code> tag, some special formatting is applied to
 ```
 
 **Note:** Heading hierarchy isn't meant to be reset in sectioning elements such
-as <code>&lt;aside&gt;</code> and <code>&lt;section&gt;</code>. Doing so is
-considered non-comforing. See
+as `<aside>` and `<section>`. Doing so is considered non-comforing. See
 [_HTML Living Standard_ §4.3.11](https://html.spec.whatwg.org/multipage/sections.html#headings-and-outlines).
 
 ### Navigation Section `<nav>` {#nav}
 
-There is no styling on screen applied on <code>&lt;nav&gt;</code>.
+There is no styling on screen applied on `<nav>`.
 
 ```html
 <nav>
@@ -773,8 +768,7 @@ There is no styling on screen applied on <code>&lt;nav&gt;</code>.
 
 🖨️ **In print**, however, some style is applied to reduce clutter on the page:
 
-- When used in <code>&lt;header&gt;</code> or <code>&lt;footer&gt;</code>, their
-  <code>&lt;menu&gt;</code> is invisible.
+- When used in `<header>` or `<footer>`, their `<menu>` is invisible.
 - They are invisible when they only contain a link to a page's anchor.
 
 ```html
@@ -801,13 +795,13 @@ There is no styling on screen applied on <code>&lt;nav&gt;</code>.
 
 ### Main `<main>` {#main-section}
 
-There is no visual styling applied on <code>&lt;main&gt;</code> itself.
+There is no visual styling applied on `<main>` itself.
 
-However, when <code>&lt;body&gt;</code> has a <code>&lt;main&gt;</code>, the
-body of the page will be rendered using a flex layout and expand to take the
-whole height of the viewport. This sets the header at the top of the page, the
-footer at the bottom, and centres <code>&lt;main&gt;</code> and its content,
-when the content of the body is shorter than the viewport of the browser.
+However, when `<body>` has a `<main>`, the body of the page will be rendered
+using a flex layout and expand to take the whole height of the viewport. This
+sets the header at the top of the page, the footer at the bottom, and centres
+`<main>` and its content, when the content of the body is shorter than the
+viewport of the browser.
 
 This is ideal for pages with little content that needs to fill up the whole
 height of the browser's window.
@@ -820,7 +814,7 @@ height of the browser's window.
 </aside>
 ```
 
-🖨️ **In print,** the layout of <code>&lt;body&gt;</code> remains unaffected.
+🖨️ **In print,** the layout of `<body>` remains unaffected.
 
 <p><a href="#">Back to top</a></p>
 
@@ -830,23 +824,22 @@ height of the browser's window.
 
 There is some styling for forms in **<mark>dress.css</mark>** for the most
 common controls. It works best with the suggested markup below, wrapping every
-input field into a <code>&lt;label&gt;</code> for better usability. However,
-forms are notorious for how finicky they are with styling, accessibility, and
-inconsistencies between browsers. For anything more complex, as this stylesheet
-is basic, you may need to look for a different styling system better suited for
-your needs.
+input field into a `<label>` for better usability. However, forms are notorious
+for how finicky they are with styling, accessibility, and inconsistencies
+between browsers. For anything more complex, as this stylesheet is basic, you
+may need to look for a different styling system better suited for your needs.
 
 ### Text Input `<input>` {#input}
 
 Works with basic “textual” input fields including the following:
 
-- <code>text</code> (the default type)
-- <code>email</code>
-- <code>number</code>
-- <code>password</code>
-- <code>search</code>
-- <code>tel</code>
-- <code>url</code>
+- `text` (the default type)
+- `email`
+- `number`
+- `password`
+- `search`
+- `tel`
+- `url`
 
 <nav>
 	<form data-nosubmit method="post">
@@ -1056,7 +1049,7 @@ Basic styling is applied to date and time inputs for consistency.
 Labels may also contain multiple fields. Clicking on the label will focus on its
 first input field. However, note this is not valid HTML5 and may present
 accessibility issues. Use with caution. You may consider using multiple fields
-in a <code>&lt;fieldset&gt;</code> instead.
+in a `<fieldset>` instead.
 
 <form data-nosubmit method="post">
 	<label>
@@ -1106,8 +1099,8 @@ in a <code>&lt;fieldset&gt;</code> instead.
 
 ### Output `<output>` {#output}
 
-Styling on <code>&lt;output&gt;</code> is made to match the same height than an
-usual <code>&lt;input&gt;</code> field for consistency.
+Styling on `<output>` is made to match the same height than an usual `<input>`
+field for consistency.
 
 <blockquote>
 	<output>42</output>
@@ -1135,9 +1128,8 @@ usual <code>&lt;input&gt;</code> field for consistency.
 
 ### Meter `<meter>` {#meter}
 
-The <code>&lt;meter&gt;</code> value switches between the semantic palette using
-<code>--dress-low</code>, <code>--dress-mid</code>, and <code>--dress-hi</code>
-depending on the value.
+The `<meter>` value switches between the semantic palette using `--dress-low`,
+`--dress-mid`, and `--dress-hi` depending on the value.
 
 <meter min="0" max="100" low="20" high="60" optimum="80" value="0">0%</meter>
 <meter min="0" max="100" low="20" high="60" optimum="80" value="10">10%</meter>
@@ -1158,9 +1150,8 @@ depending on the value.
 
 ### Buttons {#buttons}
 
-Including <code>&lt;button&gt;</code> as well as <code>&lt;input&gt;</code> with
-<code>type=&quot;button&quot;</code>, <code>type=&quot;reset&quot;</code>, and
-<code>type=&quot;submit&quot;</code>.
+Including `<button>` as well as `<input>` with `type="button"`, `type="reset"`,
+and `type="submit"`.
 
 <form data-nosubmit method="post">
 	<input type="reset" value="Reset">
@@ -1176,9 +1167,8 @@ Including <code>&lt;button&gt;</code> as well as <code>&lt;input&gt;</code> with
 
 ### Button Set `<menu><button>` {#buttonset}
 
-Using <code>&lt;menu&gt;</code> as a direct descendant of a
-<code>&lt;form&gt;</code> or <code>&lt;fieldset&gt;</code> is assumed to be
-meant for a toolbar with a set of action buttons and is formatted as such.
+Using `<menu>` as a direct descendant of a `<form>` or `<fieldset>` is assumed
+to be meant for a toolbar with a set of action buttons and is formatted as such.
 
 <form data-nosubmit method="post">
 	<menu>
@@ -1204,8 +1194,8 @@ meant for a toolbar with a set of action buttons and is formatted as such.
 
 ### Inert `inert` {#inert}
 
-Any element with the <code>inert</code> Boolean attribute will have its content
-appear faded.
+Any element with the `inert` Boolean attribute will have its content appear
+faded.
 
 <nav inert><a href="javascript:history.go(-1)">Go Back</a></nav>
 
