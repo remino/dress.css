@@ -2,6 +2,8 @@
 
 <!-- mtoc-start -->
 
+- [v5.2.1](#v521)
+- [v5.2.0](#v520)
 - [v5.1.1](#v511)
 - [v5.1.0](#v510)
 - [v5.0.4](#v504)
@@ -49,6 +51,14 @@
 - [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## v5.2.1
+
+- Add missing changes
+
+## v5.2.0
+
+- Drop `prefers-color-scheme` in favour of `light-dark()`
 
 ## v5.1.1
 
