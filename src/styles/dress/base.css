@@ -60,8 +60,8 @@ body {
 			flex-flow: column nowrap;
 			gap: var(--dress-m-b);
 			justify-content: space-between;
-			min-block-size: 100vh;
-			min-block-size: 100dvh;
+			min-block-size: 100vb;
+			min-block-size: 100dvb;
 
 			> footer {
 				margin-block-start: 0;

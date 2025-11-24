@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+- [v5.2.2](#v522)
 - [v5.2.1](#v521)
 - [v5.2.0](#v520)
 - [v5.1.1](#v511)
@@ -51,6 +52,10 @@
 - [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## v5.2.2
+
+- Use `dvb` instead of `dvh` for `<body>` `min-block-size`
 
 ## v5.2.1
 
