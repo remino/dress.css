@@ -10,6 +10,7 @@ import compress from 'astro-compress'
 import compressor from 'astro-compressor'
 import remarkStripReadmeHero from './src/plugins/remarkStripReadmeHero.ts'
 import rehypeWrapCodeBlocks from './src/plugins/rehypeWrapCodeBlocks.ts'
+import remarkCodeIndentTabs from './src/plugins/remarkCodeIndentTabs.ts'
 
 export default defineConfig({
 	output: 'static',
@@ -39,6 +40,7 @@ export default defineConfig({
 			remarkDeflist,
 			remarkToc,
 			remarkStripReadmeHero,
+			remarkCodeIndentTabs,
 		],
 	},
 	vite: {
