@@ -9,6 +9,16 @@
 			"options": {
 				"parser": "astro"
 			}
+		},
+		{
+			"files": "*.md",
+			"options": {
+				"parser": "markdown",
+				"proseWrap": "always",
+				"proseWidth": 80,
+				"tabWidth": 4,
+				"useTabs": false
+			}
 		}
 	]
 }
