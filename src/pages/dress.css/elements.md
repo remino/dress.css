@@ -70,7 +70,7 @@ with link</a></mark>
 Our sale ends <del>Sunday</del> <ins>Monday</ins>.
 ```
 
-<p><a href="#">Back to top</a></p>
+[Back to top](#)
 
 ---
 
@@ -171,7 +171,7 @@ the page other than `#`, it will be treated and rendered as such "skipnav" link.
 </body>
 ```
 
-<p><a href="#">Back to top</a></p>
+[Back to top](#)
 
 ---
 
@@ -267,7 +267,7 @@ Term 3 : Definition 3
 </dl>
 ```
 
-<p><a href="#">Back to top</a></p>
+[Back to top](#)
 
 ---
 
@@ -295,7 +295,7 @@ Term 3 : Definition 3
 </blockquote>
 ```
 
-<p><a href="#">Back to top</a></p>
+[Back to top](#)
 
 ---
 
@@ -364,7 +364,7 @@ alert('Hello World!');
 <samp>Press F1 to continue</samp>
 ```
 
-<p><a href="#">Back to top</a></p>
+[Back to top](#)
 
 ---
 
@@ -492,7 +492,7 @@ width of the `<body>`.
 <iframe src="dress.html" height="200" width="400">Dress</iframe>
 ```
 
-<p><a href="#">Back to top</a></p>
+[Back to top](#)
 
 ---
 
@@ -608,7 +608,7 @@ width of the `<body>`.
 </details>
 ```
 
-<p><a href="#">Back to top</a></p>
+[Back to top](#)
 
 ---
 
@@ -665,7 +665,7 @@ formatted as the code sample below.
 </div>
 ```
 
-<p><a href="#">Back to top</a></p>
+[Back to top](#)
 
 ---
 
@@ -816,7 +816,7 @@ height of the browser's window.
 
 🖨️ **In print,** the layout of `<body>` remains unaffected.
 
-<p><a href="#">Back to top</a></p>
+[Back to top](#)
 
 ---
 
@@ -1186,7 +1186,7 @@ to be meant for a toolbar with a set of action buttons and is formatted as such.
 </form>
 ```
 
-<p><a href="#">Back to top</a></p>
+[Back to top](#)
 
 ---
 
@@ -1203,4 +1203,4 @@ faded.
 <nav inert><a href="javascript:history.go(-1)">Go Back</a></nav>
 ```
 
-<p><a href="#">Back to top</a></p>
+[Back to top](#)

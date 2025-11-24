@@ -11,6 +11,7 @@ import compressor from 'astro-compressor'
 import remarkStripReadmeHero from './src/plugins/remarkStripReadmeHero.ts'
 import rehypeWrapCodeBlocks from './src/plugins/rehypeWrapCodeBlocks.ts'
 import remarkCodeIndentTabs from './src/plugins/remarkCodeIndentTabs.ts'
+import rehypeBackToTopNav from './src/plugins/rehypeBackToTopNav.ts'
 
 export default defineConfig({
 	output: 'static',
@@ -34,6 +35,7 @@ export default defineConfig({
 				},
 			],
 			rehypeWrapCodeBlocks,
+			rehypeBackToTopNav,
 		],
 		remarkPlugins: [
 			remarkCustomHeadingId,
