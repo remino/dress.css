@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+- [v5.2.3](#v523)
 - [v5.2.2](#v522)
 - [v5.2.1](#v521)
 - [v5.2.0](#v520)
@@ -52,6 +53,10 @@
 - [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## v5.2.3
+
+- Fix monospace font not being used on `<textarea>`
 
 ## v5.2.2
 

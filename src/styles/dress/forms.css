@@ -80,7 +80,6 @@ input[type='submit'] {
 }
 
 button,
-html,
 input,
 select {
 	font-family: var(--dress-ff);
@@ -135,7 +134,6 @@ input:not(
 select,
 textarea {
 	appearance: none;
-	font-family: inherit;
 	background: var(--dress-bg-2);
 	border: var(--dress-bs) solid var(--dress-dt);
 	border-radius: var(--dress-br);
@@ -449,6 +447,7 @@ select {
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	cursor: pointer;
+	font-family: inherit;
 	padding-inline-end: calc(var(--dress-m-i) / 2 + 24px);
 
 	@media (prefers-color-scheme: dark) {

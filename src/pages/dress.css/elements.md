@@ -923,14 +923,14 @@ Basic styling is applied to date and time inputs for consistency.
 <form data-nosubmit method="post">
 	<label>
 		<span>Message</span>
-		<textarea rows="4"></textarea>
+		<textarea rows="4">Hi!</textarea>
 	</label>
 </form>
 
 ```html
 <label>
     <span>Message</span>
-    <textarea rows="4"></textarea>
+    <textarea rows="4">Hi!</textarea>
 </label>
 ```
 
