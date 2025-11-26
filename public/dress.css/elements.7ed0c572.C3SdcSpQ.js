@@ -1,1 +1,0 @@
-const s="/dress.css/dress.BQQu26R3.css";export{s as d};
