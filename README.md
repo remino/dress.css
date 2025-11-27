@@ -4,7 +4,7 @@
 
 The little dress of CSS
 
-Blouson v5.2.3
+Blouson v5.2.4
 
 By Rémino Rem  
 <https://remino.net/>
