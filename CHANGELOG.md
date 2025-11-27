@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+- [v5.2.4](#v524)
 - [v5.2.3](#v523)
 - [v5.2.2](#v522)
 - [v5.2.1](#v521)
@@ -53,6 +54,11 @@
 - [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## v5.2.4
+
+- Override `margin-block` in `> :first-child` & `> :last-child` of `aside`
+  instead of overriding variables affecting children elements
 
 ## v5.2.3
 
