@@ -33,6 +33,7 @@ states out of the box. Earlier releases were known as **sem.css**.
     - [npm](#npm)
     - [Direct download](#direct-download)
 - [Usage](#usage)
+    - [Layered imports](#layered-imports)
 - [Browser support](#browser-support)
     - [Backwards compatibility](#backwards-compatibility)
 - [Development](#development)
@@ -106,6 +107,43 @@ Grab the latest `dress.css` from the
 
 Reference the [_Elements_](https://remino.net/dress.css/elements/) page for
 tag-by-tag examples that demonstrate the provided defaults.
+
+### Layered imports
+
+Need finer control? <mark>**dress.css**</mark> publishes each internal layer so
+you can mix and match:
+
+```js
+import '@remino/dress.css/layers/variables.css'
+import '@remino/dress.css/layers/base.css'
+import '@remino/dress.css/layers/links.css'
+// ...
+```
+
+These modules mirror the order of the main `dress.css` bundle, so importing them
+sequentially reproduces the full experience while letting you override or skip
+specific layers:
+
+| Layer               | Purpose                                                                              |
+| ------------------- | ------------------------------------------------------------------------------------ |
+| `variables.css`     | Declares `--dress-*` CSS custom properties, icons, spacing, and motion tokens.       |
+| `base.css`          | Applies the global reset, body/html sizing, and accessibility skip-link helpers.     |
+| `props.css`         | Bridges browser quirks (e.g. `color-scheme`, `text-size-adjust`, `scroll-behavior`). |
+| `inlines.css`       | Normalises inline tags such as `strong`, `em`, `abbr`, and `small`.                  |
+| `focus.css`         | Provides consistent focus/active outlines and selection styling.                     |
+| `links.css`         | Styles anchors, download/external indicators, and heading-link wrappers.             |
+| `blocks.css`        | Handles block-level spacing, generic containers, and vertical rhythm.                |
+| `sections.css`      | Tunes `header`, `main`, `section`, and `footer` spacing/stacking.                    |
+| `headings.css`      | Typography scale for `h1`–`h6`, including fluid sizes and margins.                   |
+| `images.css`        | Shared rules for `img`, `picture`, and media elements (borders, captions).           |
+| `lists.css`         | Normalises `ul`/`ol` padding, bullets, and definition lists.                         |
+| `tables.css`        | Table layout, borders, striping, and responsive tweaks.                              |
+| `forms.css`         | Inputs, buttons, selects, and checkbox/radio styling.                                |
+| `code.css`          | Monospaced typography, `pre` blocks, and inline code treatments.                     |
+| `animation.css`     | Keyframes and transition tokens used by other layers.                                |
+| `popups.css`        | Details/Summary, dialog, and tooltip helpers.                                        |
+| `print.css`         | Print styles (margins, URL disclosure, simplified layout).                           |
+| `@remino/dress.css` | Imports every layer above in the correct order. (Use this by default).               |
 
 [Back to top](#)
 

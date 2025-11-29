@@ -25,11 +25,29 @@
 		"prepare": "husky"
 	},
 	"files": [
-		"dist/dress.css"
+		"dist/dress.css",
+		"dist/layers"
 	],
 	"exports": {
 		".": "./dist/dress.css",
-		"./dress.css": "./dist/dress.css"
+		"./dress.css": "./dist/dress.css",
+		"./layers/variables.css": "./dist/layers/variables.css",
+		"./layers/base.css": "./dist/layers/base.css",
+		"./layers/props.css": "./dist/layers/props.css",
+		"./layers/inlines.css": "./dist/layers/inlines.css",
+		"./layers/focus.css": "./dist/layers/focus.css",
+		"./layers/links.css": "./dist/layers/links.css",
+		"./layers/blocks.css": "./dist/layers/blocks.css",
+		"./layers/sections.css": "./dist/layers/sections.css",
+		"./layers/headings.css": "./dist/layers/headings.css",
+		"./layers/images.css": "./dist/layers/images.css",
+		"./layers/lists.css": "./dist/layers/lists.css",
+		"./layers/tables.css": "./dist/layers/tables.css",
+		"./layers/forms.css": "./dist/layers/forms.css",
+		"./layers/code.css": "./dist/layers/code.css",
+		"./layers/animation.css": "./dist/layers/animation.css",
+		"./layers/popups.css": "./dist/layers/popups.css",
+		"./layers/print.css": "./dist/layers/print.css"
 	},
 	"keywords": [
 		"css",

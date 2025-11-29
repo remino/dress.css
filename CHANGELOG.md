@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+- [v5.3.0](#v530)
 - [v5.2.4](#v524)
 - [v5.2.3](#v523)
 - [v5.2.2](#v522)
@@ -54,6 +55,10 @@
 - [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## v5.3.0
+
+- Export every CSS layer file for import finer control
 
 ## v5.2.4
 
