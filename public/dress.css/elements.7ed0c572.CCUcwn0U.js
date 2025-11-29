@@ -1,1 +1,0 @@
-const s="/dress.css/dress.wSPp5_SN.css";export{s as d};
