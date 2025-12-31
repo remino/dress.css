@@ -39,6 +39,7 @@ if (siteConfig.publisher) {
 
 const pageTitle = titleSegments.filter(Boolean).join(' : ')
 const canonicalUrl = new URL(pathname.replace(/\/+/g, '/'), siteConfig.url)
+const absoluteShareImageUrl = new URL(shareImage, Astro.url).href
 ---
 
 <!doctype html>
@@ -57,7 +58,7 @@ const canonicalUrl = new URL(pathname.replace(/\/+/g, '/'), siteConfig.url)
 		<meta property="og:title" content={pageTitle} />
 		<meta property="og:description" content={description} />
 		<meta property="og:url" content={canonicalUrl} />
-		<meta property="og:image" content={shareImage} />
+		<meta property="og:image" content={absoluteShareImageUrl} />
 		<meta property="og:image:width" content="2880" />
 		<meta property="og:image:height" content="1440" />
 		<meta name="twitter:card" content="summary_large_image" />
@@ -65,7 +66,7 @@ const canonicalUrl = new URL(pathname.replace(/\/+/g, '/'), siteConfig.url)
 		<meta name="twitter:creator" content={siteConfig.twitter} />
 		<meta name="twitter:title" content={pageTitle} />
 		<meta name="twitter:description" content={description} />
-		<meta name="twitter:image" content={shareImage} />
+		<meta name="twitter:image" content={absoluteShareImageUrl} />
 		<meta name="twitter:url" content={canonicalUrl} />
 		<link rel="icon" href="/dress.css/favicon.ico" sizes="any" />
 		<link rel="icon" type="image/png" href="/dress.css/favicon.png" />
