@@ -16,6 +16,7 @@ import rehypeBackToTopNav from './src/plugins/rehypeBackToTopNav.ts'
 export default defineConfig({
 	output: 'static',
 	outDir: './deploy/public',
+	site: siteConfig.url,
 	build: {
 		assets: 'dress.css',
 	},
