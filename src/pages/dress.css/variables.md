@@ -106,18 +106,19 @@ or the other primary metrics, so you rarely need to override them individually.
 
 ### Spacing Helpers
 
-| Variable       | Description                                    |
-| -------------- | ---------------------------------------------- |
-| `--dress-gap`  | Default gap between stacked elements           |
-| `--dress-m-b`  | Base block margin                              |
-| `--dress-m-be` | Block margin end override                      |
-| `--dress-m-bs` | Block margin start override                    |
-| `--dress-m-i`  | Default inline margin                          |
-| `--dress-mp`   | Consistent spacing inside interactive controls |
-| `--dress-p-b`  | Block padding derived from `--dress-s-b`       |
-| `--dress-p-i`  | Inline padding derived from `--dress-s-i`      |
-| `--dress-s-b`  | Base block spacing unit (`--dress-lh * 1rem`)  |
-| `--dress-so`   | Scroll offset applied to anchored headings     |
+| Variable           | Description                                                 |
+| ------------------ | ----------------------------------------------------------- |
+| `--dress-gap`      | Default gap between stacked elements                        |
+| `--dress-gap-body` | Gap between elements in `<body>` with an immediate `<main>` |
+| `--dress-m-b`      | Base block margin                                           |
+| `--dress-m-be`     | Block margin end override                                   |
+| `--dress-m-bs`     | Block margin start override                                 |
+| `--dress-m-i`      | Default inline margin                                       |
+| `--dress-mp`       | Consistent spacing inside interactive controls              |
+| `--dress-p-b`      | Block padding derived from `--dress-s-b`                    |
+| `--dress-p-i`      | Inline padding derived from `--dress-s-i`                   |
+| `--dress-s-b`      | Base block spacing unit (`--dress-lh * 1rem`)               |
+| `--dress-so`       | Scroll offset applied to anchored headings                  |
 
 [Back to top](#)
 

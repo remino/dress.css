@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+- [v5.3.1](#v531)
 - [v5.3.0](#v530)
 - [v5.2.4](#v524)
 - [v5.2.3](#v523)
@@ -55,6 +56,11 @@
 - [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## v5.3.1
+
+- Added `--dress-gap-body` variable for `<body>` with an immediate `<main>`.
+  Defaults to `--dress-m-b`.
 
 ## v5.3.0
 

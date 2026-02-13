@@ -160,6 +160,8 @@
 	/* }{ Derived Layout }{ */
 	/* Default content gap */
 	--dress-gap: calc(var(--dress-m-i) / 2);
+	/* Gap between elements of body with immediate main */
+	--dress-gap-body: var(--dress-m-b);
 	/* Base block margin */
 	--dress-m-b: var(--dress-s-b);
 	/* Block margin end override */
