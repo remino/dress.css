@@ -59,8 +59,8 @@
 
 ## v5.3.1
 
-- Added `--dress-gap-body` variable for `<body>` with an immediate `<main>`.
-  Defaults to `--dress-m-b`.
+- Add `--dress-gap-body` variable for `<body>` with an immediate `<main>`.
+  Default to `--dress-m-b`.
 - Set default bold font weight on all headings.
 
 ## v5.3.0
