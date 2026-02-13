@@ -22,6 +22,7 @@ h5,
 h6 {
 	--dress-m-bs: calc(var(--dress-m-b) * 2);
 	font-family: var(--dress-ff-h);
+	font-weight: bold;
 	scroll-margin-block-start: var(--dress-so);
 
 	&:target {
