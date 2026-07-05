@@ -1,38 +1,6 @@
+import { addCopyButtons } from '@remino/functions'
 import init from '@remino/reslib/lib/init.js'
 import { loadTemplate } from '@remino/reslib/lib/template.js'
-
-const addCodeBlockCopyButton = () => {
-	document.querySelectorAll<HTMLElement>('.code-block').forEach((block) => {
-		const code = block.querySelector('code')
-
-		if (!code) return
-
-		const button = document.createElement('button')
-		const label = 'Copy'
-
-		button.classList.add('copy')
-		button.type = 'button'
-		button.textContent = label
-
-		button.addEventListener('click', async () => {
-			try {
-				await navigator.clipboard.writeText(code.textContent ?? '')
-
-				button.setAttribute('aria-live', 'assertive')
-				button.textContent = 'Copied!'
-			} catch {
-				button.textContent = 'Unable to copy'
-			}
-
-			setTimeout(() => {
-				button.textContent = label
-				button.removeAttribute('aria-live')
-			}, 1000)
-		})
-
-		block.appendChild(button)
-	})
-}
 
 const addHeadingAnchorLinks = () => {
 	document
@@ -138,7 +106,7 @@ const insertInitTemplates = () => {
 init({
 	serial: [insertInitTemplates],
 	parallel: [
-		addCodeBlockCopyButton,
+		addCopyButtons,
 		addHeadingAnchorLinks,
 		disableLinks,
 		disableNoSubmitForms,
