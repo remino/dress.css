@@ -2,6 +2,7 @@ const pkg = require('./package.json')
 
 module.exports = {
 	plugins: {
+		'postcss-nesting': {},
 		'postcss-replace': {
 			commentsOnly: true,
 			pattern: /([A-Z_]+)/g,
