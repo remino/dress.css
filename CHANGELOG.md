@@ -3,6 +3,7 @@
 <!-- mtoc-start -->
 
 - [HEAD](#head)
+- [v5.4.1](#v541)
 - [v5.4.0](#v540)
 - [v5.3.0](#v530)
 - [v5.2.4](#v524)
@@ -59,6 +60,8 @@
 <!-- mtoc-end -->
 
 ## HEAD
+
+## v5.4.1
 
 - Add `lint-staged`-based pre-commit checks and move full validation to
   pre-push/release.
