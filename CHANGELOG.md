@@ -64,6 +64,7 @@
 - Set default bold font weight on all headings.
 - Disable CSS nesting in build.
 - Add some compatibility for browsers not supporting `light-dark()`.
+- Add `lint-staged` and `release-it`.
 
 ## v5.3.0
 

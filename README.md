@@ -201,6 +201,31 @@ npm run build:site # Build the documentation site to deploy/public/
 npm run build      # Run both builds
 ```
 
+### Pre-commit checks
+
+```sh
+npm run precommit  # Format/lint only staged files
+```
+
+The Husky `pre-commit` hook uses `lint-staged`, so regular commits stay fast
+while the Husky `pre-push` hook still runs the full validation suite.
+
+```sh
+npm run validate   # Format, lint, and run visual tests
+```
+
+### Releases
+
+Update `CHANGELOG.md` first, then run:
+
+```sh
+npm run release:dry-run # Preview version/tag/publish steps
+npm run release         # Publish to npm and create the GitHub release
+```
+
+`release-it` runs format, lint, visual tests, and the full build before creating
+the release.
+
 [Back to top](#)
 
 ---
