@@ -1,0 +1,65 @@
+:root {
+	--dress-bg: rgb(255 255 255);
+	--dress-fg: rgb(0 0 0);
+	--dress-lk: hsl(212 100% 44%);
+	--dress-lk-a: hsl(320 100% 48%);
+	--dress-lk-h: hsl(212 97% 34%);
+	--dress-lk-tx: hsl(0 0% 100%);
+	--dress-lk-v: hsl(270 100% 46%);
+	--dress-bt-1: hsl(212 100% 40%);
+	--dress-bt-1-a: hsl(212 97% 36%);
+	--dress-bt-1-h: hsl(212 100% 47.1%);
+	--dress-neg: hsl(330 100% 54%);
+	--dress-pos: hsl(140 100% 54%);
+	--dress-sec: hsl(167 100% 54%);
+	--dress-sec-tx: hsl(187 71% 16%);
+	--dress-bg-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 5%);
+	--dress-bt-1-tx: var(--dress-bg);
+	--dress-bt-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 10%);
+	--dress-bt-2-a: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 20%);
+	--dress-bt-2-h: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
+	--dress-bt-2-tx: var(--dress-fg);
+	--dress-del: color-mix(in srgb, var(--dress-neg) 60%, transparent);
+	--dress-dt: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
+	--dress-hi: var(--dress-pos);
+	--dress-ins: color-mix(in srgb, var(--dress-pos) 60%, transparent);
+	--dress-low: var(--dress-neg);
+	--dress-mid: var(--dress-sec);
+	--dress-mk: color-mix(in srgb, var(--dress-sec) 60%, transparent);
+	--dress-mk-tx: var(--dress-sec-tx);
+	--dress-sh: color-mix(in srgb, var(--dress-fg) 20%, transparent);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		--dress-bg: rgb(0 0 0);
+		--dress-fg: rgb(255 255 255);
+		--dress-lk: hsl(212 100% 60%);
+		--dress-lk-a: hsl(320 100% 64%);
+		--dress-lk-h: hsl(212 100% 48%);
+		--dress-lk-tx: hsl(0 0% 100%);
+		--dress-lk-v: hsl(270 100% 64%);
+		--dress-bt-1: hsl(212 100% 40%);
+		--dress-bt-1-a: hsl(212 97% 36%);
+		--dress-bt-1-h: hsl(212 100% 47.1%);
+		--dress-neg: hsl(330 100% 63%);
+		--dress-pos: hsl(140 100% 63%);
+		--dress-sec: hsl(167 100% 63%);
+		--dress-sec-tx: var(--dress-fg);
+		--dress-bg-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%);
+		--dress-bt-1-tx: var(--dress-fg);
+		--dress-bt-2: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 30%);
+		--dress-bt-2-a: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 10%);
+		--dress-bt-2-h: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 20%);
+		--dress-bt-2-tx: var(--dress-fg);
+		--dress-del: hsl(330 100% 63% / 20%);
+		--dress-dt: color-mix(in srgb, var(--dress-bg), var(--dress-fg) 30%);
+		--dress-hi: var(--dress-pos);
+		--dress-ins: hsl(140 100% 63% / 20%);
+		--dress-low: var(--dress-neg);
+		--dress-mid: var(--dress-sec);
+		--dress-mk: hsl(167 100% 63% / 20%);
+		--dress-mk-tx: var(--dress-fg);
+		--dress-sh: var(--dress-bg);
+	}
+}

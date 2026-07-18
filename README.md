@@ -126,6 +126,7 @@ specific layers:
 
 | Layer               | Purpose                                                                              |
 | ------------------- | ------------------------------------------------------------------------------------ |
+| `compat.css`        | Fallback variables for browsers not supporting `light-dark()`.                       |
 | `variables.css`     | Declares `--dress-*` CSS custom properties, icons, spacing, and motion tokens.       |
 | `base.css`          | Applies the global reset, body/html sizing, and accessibility skip-link helpers.     |
 | `props.css`         | Bridges browser quirks (e.g. `color-scheme`, `text-size-adjust`, `scroll-behavior`). |

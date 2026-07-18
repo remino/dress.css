@@ -63,6 +63,7 @@
   Default to `--dress-m-b`.
 - Set default bold font weight on all headings.
 - Disable CSS nesting in build.
+- Add some compatibility for browsers not supporting `light-dark()`.
 
 ## v5.3.0
 

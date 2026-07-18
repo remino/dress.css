@@ -1,5 +1,6 @@
 /*! }{ PKG_NAME vPKG_VER }{ PKG_LICENSE Licence }{ PKG_HOMEPAGE }{ */
 
+@import './styles/dress/compat.css';
 @import './styles/dress/variables.css';
 @import './styles/dress/base.css';
 @import './styles/dress/props.css';

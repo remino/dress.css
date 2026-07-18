@@ -1,40 +1,105 @@
+/* }{ Colours }{ */
+/* Also see compat.css for browsers not supporting light-dark(). */
+@supports (color: light-dark(#000, #fff)) {
+	:root {
+		/* }{ Colours: Surface }{ */
+		/* Base page background colour */
+		--dress-bg: light-dark(rgb(255 255 255), rgb(0 0 0));
+		/* Default body text colour */
+		--dress-fg: light-dark(rgb(0 0 0), rgb(255 255 255));
+
+		/* }{ Colours: Links }{ */
+		/* Default link colour */
+		--dress-lk: light-dark(hsl(212 100% 44%), hsl(212 100% 60%));
+		/* Active link colour */
+		--dress-lk-a: light-dark(hsl(320 100% 48%), hsl(320 100% 64%));
+		/* Hover/focus link colour */
+		--dress-lk-h: light-dark(hsl(212 97% 34%), hsl(212 100% 48%));
+		/* Link text colour on coloured backgrounds */
+		--dress-lk-tx: hsl(0 0% 100%);
+		/* Visited link colour */
+		--dress-lk-v: light-dark(hsl(270 100% 46%), hsl(270 100% 64%));
+
+		/* }{ Colours: Buttons }{ */
+		/* Primary button background */
+		--dress-bt-1: hsl(212 100% 40%);
+		/* Active primary button background */
+		--dress-bt-1-a: hsl(212 97% 36%);
+		/* Hover/focus primary button background */
+		--dress-bt-1-h: hsl(212 100% 47.1%);
+
+		/* }{ Colours: Semantic }{ */
+		/* Base tone for negative/destructive accents */
+		--dress-neg: light-dark(hsl(330 100% 54%), hsl(330 100% 63%));
+		/* Base tone for positive/constructive accents */
+		--dress-pos: light-dark(hsl(140 100% 54%), hsl(140 100% 63%));
+		/* Base tone for secondary/mark accents */
+		--dress-sec: light-dark(hsl(167 100% 54%), hsl(167 100% 63%));
+		/* Text colour that contrasts with --dress-sec */
+		--dress-sec-tx: light-dark(hsl(187 71% 16%), var(--dress-fg));
+
+		/* }{ Derived Colours }{ */
+		/* Raised block background */
+		--dress-bg-2: light-dark(
+			color-mix(in srgb, var(--dress-bg), var(--dress-fg) 5%),
+			color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%)
+		);
+		/* Primary button text colour */
+		--dress-bt-1-tx: light-dark(var(--dress-bg), var(--dress-fg));
+		/* Secondary button background */
+		--dress-bt-2: light-dark(
+			color-mix(in srgb, var(--dress-bg), var(--dress-fg) 10%),
+			color-mix(in srgb, var(--dress-bg), var(--dress-fg) 30%)
+		);
+		/* Active secondary button background */
+		--dress-bt-2-a: light-dark(
+			color-mix(in srgb, var(--dress-bg), var(--dress-fg) 20%),
+			color-mix(in srgb, var(--dress-bg), var(--dress-fg) 10%)
+		);
+		/* Hover/focus secondary button background */
+		--dress-bt-2-h: light-dark(
+			color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%),
+			color-mix(in srgb, var(--dress-bg), var(--dress-fg) 20%)
+		);
+		/* Secondary button text colour */
+		--dress-bt-2-tx: var(--dress-fg);
+		/* Semantic delete highlight */
+		--dress-del: light-dark(
+			color-mix(in srgb, var(--dress-neg) 60%, transparent),
+			hsl(330 100% 63% / 20%)
+		);
+		/* Border/detail colour */
+		--dress-dt: light-dark(
+			color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%),
+			color-mix(in srgb, var(--dress-bg), var(--dress-fg) 30%)
+		);
+		/* Semantic high meter colour */
+		--dress-hi: var(--dress-pos);
+		/* Semantic insert highlight */
+		--dress-ins: light-dark(
+			color-mix(in srgb, var(--dress-pos) 60%, transparent),
+			hsl(140 100% 63% / 20%)
+		);
+		/* Semantic low meter colour */
+		--dress-low: var(--dress-neg);
+		/* Semantic mid meter colour */
+		--dress-mid: var(--dress-sec);
+		/* Secondary mark background */
+		--dress-mk: light-dark(
+			color-mix(in srgb, var(--dress-sec) 60%, transparent),
+			hsl(167 100% 63% / 20%)
+		);
+		/* Secondary mark text colour */
+		--dress-mk-tx: light-dark(var(--dress-sec-tx), var(--dress-fg));
+		/* Semantic detail shadow */
+		--dress-sh: light-dark(
+			color-mix(in srgb, var(--dress-fg) 20%, transparent),
+			var(--dress-bg)
+		);
+	}
+}
+
 :root {
-	/* }{ Colours: Surface }{ */
-	/* Base page background colour */
-	--dress-bg: light-dark(rgb(255 255 255), rgb(0 0 0));
-	/* Default body text colour */
-	--dress-fg: light-dark(rgb(0 0 0), rgb(255 255 255));
-
-	/* }{ Colours: Links }{ */
-	/* Default link colour */
-	--dress-lk: light-dark(hsl(212 100% 44%), hsl(212 100% 60%));
-	/* Active link colour */
-	--dress-lk-a: light-dark(hsl(320 100% 48%), hsl(320 100% 64%));
-	/* Hover/focus link colour */
-	--dress-lk-h: light-dark(hsl(212 97% 34%), hsl(212 100% 48%));
-	/* Link text colour on coloured backgrounds */
-	--dress-lk-tx: hsl(0 0% 100%);
-	/* Visited link colour */
-	--dress-lk-v: light-dark(hsl(270 100% 46%), hsl(270 100% 64%));
-
-	/* }{ Colours: Buttons }{ */
-	/* Primary button background */
-	--dress-bt-1: hsl(212 100% 40%);
-	/* Active primary button background */
-	--dress-bt-1-a: hsl(212 97% 36%);
-	/* Hover/focus primary button background */
-	--dress-bt-1-h: hsl(212 100% 47.1%);
-
-	/* }{ Colours: Semantic }{ */
-	/* Base tone for negative/destructive accents */
-	--dress-neg: light-dark(hsl(330 100% 54%), hsl(330 100% 63%));
-	/* Base tone for positive/constructive accents */
-	--dress-pos: light-dark(hsl(140 100% 54%), hsl(140 100% 63%));
-	/* Base tone for secondary/mark accents */
-	--dress-sec: light-dark(hsl(167 100% 54%), hsl(167 100% 63%));
-	/* Text colour that contrasts with --dress-sec */
-	--dress-sec-tx: light-dark(hsl(187 71% 16%), var(--dress-fg));
-
 	/* }{ Layout Metrics }{ */
 	/* Default border radius */
 	--dress-br: 0.25rem;
@@ -97,65 +162,6 @@
 	--dress-i-sel-l: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'><polyline points='9 10 12 7 15 10'/><polyline points='9 14 12 17 15 14'/></svg>");
 	/* Data URI for external-link icon */
 	--dress-i-xln: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='M10 14 21 3M3 9v11a1 1 0 0 0 1 1h11M14 3h7v7'/></svg>");
-
-	/* }{ Derived Colours }{ */
-	/* Raised block background */
-	--dress-bg-2: light-dark(
-		color-mix(in srgb, var(--dress-bg), var(--dress-fg) 5%),
-		color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%)
-	);
-	/* Primary button text colour */
-	--dress-bt-1-tx: light-dark(var(--dress-bg), var(--dress-fg));
-	/* Secondary button background */
-	--dress-bt-2: light-dark(
-		color-mix(in srgb, var(--dress-bg), var(--dress-fg) 10%),
-		color-mix(in srgb, var(--dress-bg), var(--dress-fg) 30%)
-	);
-	/* Active secondary button background */
-	--dress-bt-2-a: light-dark(
-		color-mix(in srgb, var(--dress-bg), var(--dress-fg) 20%),
-		color-mix(in srgb, var(--dress-bg), var(--dress-fg) 10%)
-	);
-	/* Hover/focus secondary button background */
-	--dress-bt-2-h: light-dark(
-		color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%),
-		color-mix(in srgb, var(--dress-bg), var(--dress-fg) 20%)
-	);
-	/* Secondary button text colour */
-	--dress-bt-2-tx: var(--dress-fg);
-	/* Semantic delete highlight */
-	--dress-del: light-dark(
-		color-mix(in srgb, var(--dress-neg) 60%, transparent),
-		hsl(330 100% 63% / 20%)
-	);
-	/* Border/detail colour */
-	--dress-dt: light-dark(
-		color-mix(in srgb, var(--dress-bg), var(--dress-fg) 15%),
-		color-mix(in srgb, var(--dress-bg), var(--dress-fg) 30%)
-	);
-	/* Semantic high meter colour */
-	--dress-hi: var(--dress-pos);
-	/* Semantic insert highlight */
-	--dress-ins: light-dark(
-		color-mix(in srgb, var(--dress-pos) 60%, transparent),
-		hsl(140 100% 63% / 20%)
-	);
-	/* Semantic low meter colour */
-	--dress-low: var(--dress-neg);
-	/* Semantic mid meter colour */
-	--dress-mid: var(--dress-sec);
-	/* Secondary mark background */
-	--dress-mk: light-dark(
-		color-mix(in srgb, var(--dress-sec) 60%, transparent),
-		hsl(167 100% 63% / 20%)
-	);
-	/* Secondary mark text colour */
-	--dress-mk-tx: light-dark(var(--dress-sec-tx), var(--dress-fg));
-	/* Semantic detail shadow */
-	--dress-sh: light-dark(
-		color-mix(in srgb, var(--dress-fg) 20%, transparent),
-		var(--dress-bg)
-	);
 
 	/* }{ Derived Layout }{ */
 	/* Default content gap */
