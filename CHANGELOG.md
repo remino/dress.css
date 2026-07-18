@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+- [HEAD](#head)
 - [v5.4.0](#v540)
 - [v5.3.0](#v530)
 - [v5.2.4](#v524)
@@ -56,6 +57,15 @@
 - [v0.1.x](#v01x)
 
 <!-- mtoc-end -->
+
+## HEAD
+
+- Add `lint-staged`-based pre-commit checks and move full validation to
+  pre-push/release.
+- Add local `release-it` automation for validation, version bumping, changelog
+  promotion, and README version updates.
+- Create GitHub releases from the CLI with `gh` instead of relying on a browser
+  flow.
 
 ## v5.4.0
 

@@ -4,7 +4,7 @@
 
 The little dress of CSS
 
-Blouson v5.3.0
+Blouson v5.4.0
 
 By Rémino Rem  
 <https://remino.net/>
@@ -224,7 +224,9 @@ npm run release         # Publish to npm and create the GitHub release
 ```
 
 `release-it` runs format, lint, visual tests, and the full build before creating
-the release.
+the release. It also updates the README version line and creates the GitHub
+release from the CLI through `gh`, so make sure `gh auth status` and
+`npm whoami` both pass first.
 
 [Back to top](#)
 

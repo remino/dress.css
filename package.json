@@ -19,6 +19,10 @@
 		"precommit": "lint-staged",
 		"release": "release-it",
 		"release:dry-run": "release-it --dry-run --verbose",
+		"release:changelog": "node ./bin/release-changelog.mjs promote",
+		"release:notes": "node ./bin/release-changelog.mjs notes",
+		"release:readme": "node ./bin/release-readme.mjs update",
+		"release:github": "node ./bin/release-github.mjs create",
 		"test": "npm run test:visual",
 		"test:visual": "playwright test",
 		"test:visual:ui": "playwright test --ui",
@@ -125,11 +129,14 @@
 			"tagName": "v${version}",
 			"requireBranch": false
 		},
-		"github": {
-			"release": true
-		},
+		"github": false,
 		"hooks": {
-			"before:init": "npm run validate:release"
+			"before:init": "npm run validate:release",
+			"after:bump": [
+				"node ./bin/release-changelog.mjs promote ${version}",
+				"node ./bin/release-readme.mjs update ${version}"
+			],
+			"after:git:release": "node ./bin/release-github.mjs create ${version}"
 		}
 	}
 }
