@@ -1,1 +1,6 @@
+if [ "${SKIP_PUSH_VALIDATE:-0}" = "1" ]; then
+	echo "Skipping pre-push validation because SKIP_PUSH_VALIDATE=1"
+	exit 0
+fi
+
 npm run validate

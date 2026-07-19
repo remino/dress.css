@@ -208,7 +208,8 @@ npm run precommit  # Format/lint only staged files
 ```
 
 The Husky `pre-commit` hook uses `lint-staged`, so regular commits stay fast
-while the Husky `pre-push` hook still runs the full validation suite.
+while the Husky `pre-push` hook still runs the full validation suite unless
+`SKIP_PUSH_VALIDATE=1` is set for release automation.
 
 ```sh
 npm run validate   # Format, lint, and run visual tests
@@ -224,9 +225,10 @@ npm run release         # Publish to npm and create the GitHub release
 ```
 
 `release-it` runs format, lint, visual tests, and the full build before creating
-the release. It also updates the README version line and creates the GitHub
-release from the CLI through `gh`, so make sure `gh auth status` and
-`npm whoami` both pass first.
+the release. The release scripts set `SKIP_PUSH_VALIDATE=1` so the subsequent
+git push does not rerun the same validation in the Husky `pre-push` hook. It
+also updates the README version line and creates the GitHub release from the CLI
+through `gh`, so make sure `gh auth status` and `npm whoami` both pass first.
 
 [Back to top](#)
 
