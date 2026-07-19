@@ -797,21 +797,31 @@ There is no styling on screen applied on `<nav>`.
 
 There is no visual styling applied on `<main>` itself.
 
-However, when `<body>` has a `<main>`, the body of the page will be rendered
-using a flex layout and expand to take the whole height of the viewport. This
-sets the header at the top of the page, the footer at the bottom, and centres
-`<main>` and its content, when the content of the body is shorter than the
-viewport of the browser.
+However, when `<body>` directly has a `<main>`, or when one direct child of
+`<body>` directly has a `<main>`, that container will be rendered using a flex
+layout and expand to take the whole height of the viewport. This sets the header
+at the top of the page, the footer at the bottom, and centres `<main>` and its
+content, when the content is shorter than the viewport of the browser.
 
 This is ideal for pages with little content that needs to fill up the whole
 height of the browser's window.
 
 ```html
 <body>
-	<header><!-- ... --></header>
-	<main><!-- ... --></main>
-	<footer><!-- ... --></footer>
-</aside>
+    <header><!-- ... --></header>
+    <main><!-- ... --></main>
+    <footer><!-- ... --></footer>
+</body>
+```
+
+```html
+<body>
+    <div id="app">
+        <header><!-- ... --></header>
+        <main><!-- ... --></main>
+        <footer><!-- ... --></footer>
+    </div>
+</body>
 ```
 
 🖨️ **In print,** the layout of `<body>` remains unaffected.

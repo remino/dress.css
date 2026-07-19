@@ -53,7 +53,8 @@ body {
 	}
 
 	@media not print {
-		&:has(> main) {
+		&:has(> main),
+		> *:has(> main) {
 			align-items: stretch;
 			display: flex;
 			flex-flow: column nowrap;

@@ -61,6 +61,9 @@
 
 ## HEAD
 
+- Extend the full-height flex layout trigger from `body > main` to also cover a
+  direct wrapper under `<body>` that directly contains `<main>`.
+
 ## v5.4.1
 
 - Add `lint-staged`-based pre-commit checks and move full validation to

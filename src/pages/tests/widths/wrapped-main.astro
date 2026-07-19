@@ -1,0 +1,27 @@
+---
+import TestBodyLayout from '../../../layouts/TestBodyLayout.astro'
+---
+
+<TestBodyLayout title="Wrapped Main">
+	<div id="page-shell">
+		<header>
+			<h1>header</h1>
+		</header>
+		<main>
+			<p>content</p>
+		</main>
+		<footer>
+			<p>footer</p>
+		</footer>
+	</div>
+
+	<style>
+		:root {
+			--dress-mw-min: 0;
+		}
+
+		#page-shell > main {
+			border: solid var(--dress-bs) var(--dress-dt);
+		}
+	</style>
+</TestBodyLayout>
