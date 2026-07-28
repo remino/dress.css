@@ -1,4 +1,5 @@
 ---
+import SiteNavHtmlHead from '@remino/astro-site-nav/SiteNavHtmlHead.astro'
 import dressCssUrl from '../dress.css?url'
 import docsCssUrl from '../styles/docs.css?url'
 import { siteConfig } from '../config/site.ts'
@@ -40,10 +41,11 @@ if (siteConfig.publisher) {
 const pageTitle = titleSegments.filter(Boolean).join(' : ')
 const canonicalUrl = new URL(pathname.replace(/\/+/g, '/'), siteConfig.url)
 const absoluteShareImageUrl = new URL(shareImage, Astro.url).href
+const htmlClass = 'rmn-nav-ribbon-bg-blur'
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class={htmlClass}>
 	<head>
 		<meta charset="utf-8" />
 		<meta
@@ -74,6 +76,7 @@ const absoluteShareImageUrl = new URL(shareImage, Astro.url).href
 		<link rel="apple-touch-icon" href="/dress.css/apple-touch-icon.png" />
 		<link rel="stylesheet" href={dressCssUrl} />
 		<link rel="stylesheet" href={docsCssUrl} />
+		<SiteNavHtmlHead />
 		<slot name="head" />
 	</head>
 	<body>

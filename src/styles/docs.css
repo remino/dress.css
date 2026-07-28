@@ -1,6 +1,12 @@
 @import url('./themes/pastie.css') screen and (prefers-color-scheme: light);
 @import url('./themes/dracula.css') screen and (prefers-color-scheme: dark);
 
+::view-transition-group(root),
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation: none !important;
+}
+
 body {
 	> footer > nav {
 		align-items: center;

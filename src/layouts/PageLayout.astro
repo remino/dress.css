@@ -1,7 +1,8 @@
 ---
+import SiteNavFooter from '@remino/astro-site-nav/SiteNavFooter.astro'
+import SiteNavHeader from '@remino/astro-site-nav/SiteNavHeader.astro'
 import BaseLayout from './BaseLayout.astro'
 import MainHeader from '../components/MainHeader.astro'
-import MainFooter from '../components/MainFooter.astro'
 import { siteConfig } from '../config/site.ts'
 
 interface Props {
@@ -15,13 +16,26 @@ type FrontmatterProps = Props & {
 	frontmatter?: Partial<Props>
 }
 
+interface Breadcrumb {
+	label: string
+	href?: string
+}
+
 const props = Astro.props as FrontmatterProps
 const frontmatter = props.frontmatter ?? {}
 
 const title = props.title ?? frontmatter.title
 const description = props.description ?? frontmatter.description
 const image = props.image ?? frontmatter.image
-const pathname = props.pathname
+const pathname = props.pathname ?? Astro.url.pathname
+const homePath = '/dress.css/'
+const breadcrumbItems: Breadcrumb[] =
+	pathname === homePath || title === siteConfig.title
+		? [{ label: siteConfig.title, href: homePath }]
+		: [
+				{ label: siteConfig.title, href: homePath },
+				{ label: title ?? siteConfig.title, href: pathname },
+			]
 const navItems = [
 	{ label: 'Home', href: '/dress.css/' },
 	{ label: 'Updates', href: '/dress.css/updates/' },
@@ -49,12 +63,24 @@ const navItems = [
 	<slot slot="head" name="head" />
 	<a href="#main">Skip to main content</a>
 
+	<SiteNavHeader />
 	<MainHeader {navItems} siteTitle={siteConfig.title} />
 
 	<main id="main">
 		<slot />
 	</main>
+	<div class="rmn-nav__content">
+		<ul class="rmn-breadcrumbs">
+			{
+				breadcrumbItems.map((item) => (
+					<li>
+						{item.href ? <a href={item.href}>{item.label}</a> : item.label}
+					</li>
+				))
+			}
+		</ul>
+	</div>
 
 	<script src="../scripts/docs.ts"></script>
-	<MainFooter />
+	<SiteNavFooter />
 </BaseLayout>
