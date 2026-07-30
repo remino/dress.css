@@ -3,6 +3,7 @@
 <!-- mtoc-start -->
 
 - [HEAD](#head)
+- [v5.4.4](#v544)
 - [v5.4.3](#v543)
 - [v5.4.2](#v542)
 - [v5.4.1](#v541)
@@ -62,6 +63,8 @@
 <!-- mtoc-end -->
 
 ## HEAD
+
+## v5.4.4
 
 - Force `npm run release` and `npm run release:dry-run` to use a dedicated
   publish config that targets the public npm registry, even when the local
