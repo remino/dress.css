@@ -139,6 +139,7 @@
 				"node ./bin/release-readme.mjs update ${version}"
 			],
 			"after:git:release": "node ./bin/release-github.mjs create ${version}"
-		}
+		},
+		"verbose": true
 	}
 }
