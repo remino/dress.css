@@ -63,6 +63,10 @@
 
 ## HEAD
 
+- Force `npm run release` and `npm run release:dry-run` to use a dedicated
+  publish config that targets the public npm registry, even when the local
+  `~/.npmrc` points `@remino` packages at a private Verdaccio.
+
 ## v5.4.3
 
 - Fix the published package manifest so private docs-site build dependencies

@@ -1,0 +1,2 @@
+provenance=false
+//registry.npmjs.org/:_authToken=${RELEASE_IT_NPM_TOKEN}

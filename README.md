@@ -230,6 +230,11 @@ git push does not rerun the same validation in the Husky `pre-push` hook. It
 also updates the README version line and creates the GitHub release from the CLI
 through `gh`, so make sure `gh auth status` and `npm whoami` both pass first.
 
+This repo runs release commands with a dedicated `.npmrc-publish`, so
+`npm run release` still publishes `@remino/dress.css` to the public npm registry
+even if your normal `~/.npmrc` sends `@remino/*` installs to a private
+Verdaccio.
+
 [Back to top](#)
 
 ---
