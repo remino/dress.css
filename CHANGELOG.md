@@ -62,6 +62,10 @@
 
 ## HEAD
 
+- Fix the published package manifest so private docs-site build dependencies
+  like `@remino/functions` and `@remino/reslib` are no longer shipped as runtime
+  dependencies to consumers.
+
 ## v5.4.2
 
 - Extend the full-height flex layout trigger from `body > main` to also cover a

@@ -71,8 +71,6 @@
 	"dependencies": {
 		"@codemirror/lang-html": "^6.4.9",
 		"@codemirror/state": "^6.4.1",
-		"@remino/functions": "^1.2.0",
-		"@remino/reslib": "git+https://github.com/remino/reslib.git#v0.3.34",
 		"codemirror": "^6.0.1",
 		"ejs": "^3.1.10",
 		"glob": "^11.0.3",
@@ -86,6 +84,8 @@
 		"@playwright/test": "^1.49.1",
 		"@remino/astro-middleware": "^0.1.2",
 		"@remino/astro-site-nav": "^0.4.2",
+		"@remino/functions": "^1.2.0",
+		"@remino/reslib": "git+https://github.com/remino/reslib.git#v0.3.34",
 		"@types/node": "^22.7.4",
 		"@typescript-eslint/eslint-plugin": "^8.8.1",
 		"@typescript-eslint/parser": "^8.8.1",
