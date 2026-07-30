@@ -3,6 +3,7 @@
 <!-- mtoc-start -->
 
 - [HEAD](#head)
+- [v5.4.3](#v543)
 - [v5.4.2](#v542)
 - [v5.4.1](#v541)
 - [v5.4.0](#v540)
@@ -61,6 +62,8 @@
 <!-- mtoc-end -->
 
 ## HEAD
+
+## v5.4.3
 
 - Fix the published package manifest so private docs-site build dependencies
   like `@remino/functions` and `@remino/reslib` are no longer shipped as runtime
