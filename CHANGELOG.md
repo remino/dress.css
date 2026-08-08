@@ -3,6 +3,7 @@
 <!-- mtoc-start -->
 
 - [HEAD](#head)
+- [v5.5.0](#v550)
 - [v5.4.4](#v544)
 - [v5.4.3](#v543)
 - [v5.4.2](#v542)
@@ -63,6 +64,8 @@
 <!-- mtoc-end -->
 
 ## HEAD
+
+## v5.5.0
 
 - Add limited styling for `<select size>` and `<select multiple>`.
 - Remove `max-block-size` on media.
