@@ -65,6 +65,7 @@
 ## HEAD
 
 - Add limited styling for `<select size>` and `<select multiple>`.
+- Remove `max-block-size` on media.
 
 ## v5.4.4
 

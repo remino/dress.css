@@ -10,7 +10,6 @@ figure {
 		block-size: auto;
 		display: block;
 		margin-inline: auto;
-		max-block-size: var(--dress-mw);
 		max-inline-size: 100%;
 	}
 
