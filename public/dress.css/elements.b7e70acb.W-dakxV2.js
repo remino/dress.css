@@ -1,0 +1,1 @@
+const s="/dress.css/dress.DXGi-bxN.css";export{s as d};
