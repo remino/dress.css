@@ -3,6 +3,7 @@
 <!-- mtoc-start -->
 
 - [HEAD](#head)
+- [v5.5.1](#v551)
 - [v5.5.0](#v550)
 - [v5.4.4](#v544)
 - [v5.4.3](#v543)
@@ -64,6 +65,8 @@
 <!-- mtoc-end -->
 
 ## HEAD
+
+## v5.5.1
 
 - Rebuild the CSS bundle after the release version bump. The published v5.5.0
   npm package was labeled 5.5.0 but contained a bundle generated while the
