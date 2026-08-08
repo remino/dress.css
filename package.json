@@ -135,6 +135,7 @@
 		"hooks": {
 			"before:init": "npm run validate:release",
 			"after:bump": [
+				"npm run build:css",
 				"node ./bin/release-changelog.mjs promote ${version}",
 				"node ./bin/release-readme.mjs update ${version}"
 			],

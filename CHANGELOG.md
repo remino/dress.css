@@ -65,6 +65,10 @@
 
 ## HEAD
 
+- Rebuild the CSS bundle after the release version bump. The published v5.5.0
+  npm package was labeled 5.5.0 but contained a bundle generated while the
+  manifest still declared v5.4.4.
+
 ## v5.5.0
 
 - Add limited styling for `<select size>` and `<select multiple>`.
