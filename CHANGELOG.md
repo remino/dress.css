@@ -64,6 +64,8 @@
 
 ## HEAD
 
+- Add limited styling for `<select size>` and `<select multiple>`.
+
 ## v5.4.4
 
 - Force `npm run release` and `npm run release:dry-run` to use a dedicated

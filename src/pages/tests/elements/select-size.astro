@@ -1,0 +1,25 @@
+---
+import TestMainLayout from '../../../layouts/TestMainLayout.astro'
+---
+
+<TestMainLayout title="Sized Select">
+	<label>
+		<span>Choose a garment</span>
+		<select name="garment" size="4">
+			<option value="dress">Dress</option>
+			<option value="blazer">Blazer</option>
+			<option value="trousers">Trousers</option>
+			<option value="knitwear">Knitwear</option>
+		</select>
+	</label>
+
+	<label>
+		<span>Choose fabrics</span>
+		<select name="fabrics" size="4" multiple>
+			<option value="cotton">Cotton</option>
+			<option value="linen">Linen</option>
+			<option value="silk">Silk</option>
+			<option value="wool">Wool</option>
+		</select>
+	</label>
+</TestMainLayout>

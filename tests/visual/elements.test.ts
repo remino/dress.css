@@ -73,6 +73,7 @@ const elements: Record<string, SnapshotConfig> = {
 	range: {},
 	samp: {},
 	select: {},
+	'select-size': {},
 	singlefigure: {},
 	skipnav: {},
 	table: {},

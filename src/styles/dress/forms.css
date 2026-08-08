@@ -455,6 +455,13 @@ select {
 	}
 }
 
+select[multiple],
+select[size]:not([size='0'], [size='1']) {
+	background-image: none;
+	cursor: auto;
+	padding-inline-end: calc(var(--dress-m-i) / 2);
+}
+
 textarea {
 	margin-block: calc(var(--dress-m-b) / 2);
 	padding-block: var(--dress-p-b);

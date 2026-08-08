@@ -966,6 +966,87 @@ Basic styling is applied to date and time inputs for consistency.
 </label>
 ```
 
+### Sized Select `<select size>` {#select-size}
+
+Use `size` to show several options at once.
+
+This is generally ignored in mobile browsers, where the control will be
+displayed as a usual `<select>` with a dropdown list. In terms of accessibility,
+`<select size>` is likely discouraged as it is not very intuitive to use, and
+may be difficult to use for some users.
+
+<form data-nosubmit method="post">
+	<label>
+		<span>Choose a garment</span>
+		<select name="garment" size="4">
+			<option value="dress">Dress</option>
+			<option value="blazer">Blazer</option>
+			<option value="trousers">Trousers</option>
+			<option value="knitwear">Knitwear</option>
+		</select>
+	</label>
+</form>
+
+```html
+<label>
+    <span>Choose a garment</span>
+    <select name="garment" size="4">
+        <option value="dress">Dress</option>
+        <option value="blazer">Blazer</option>
+        <option value="trousers">Trousers</option>
+        <option value="knitwear">Knitwear</option>
+    </select>
+</label>
+```
+
+### Multiple Select `<select multiple>` {#select-multiple}
+
+Add `multiple` to allow more than one option to be selected.
+
+Like `<select size>`, the control will likely be rendered as a normal `<select>`
+on mobile. In terms of accessibility, `<select multiple>` is likely discouraged
+as it is not very intuitive to use, and may be difficult to use for some users.
+
+The possibility of styling `<option>` is inconsistent between browsers.
+
+<form data-nosubmit method="post">
+	<label>
+		<span>Choose fabrics</span>
+		<select name="fabrics" size="6" multiple>
+            <optgroup label="Natural">
+                <option value="cotton">Cotton</option>
+                <option value="linen">Linen</option>
+                <option value="silk">Silk</option>
+                <option value="wool">Wool</option>
+            </optgroup>
+            <optgroup label="Synthetic">
+                <option value="polyester">Polyester</option>
+                <option value="nylon">Nylon</option>
+                <option value="acrylic">Acrylic</option>
+            </optgroup>
+		</select>
+	</label>
+</form>
+
+```html
+<label>
+    <span>Choose fabrics</span>
+    <select name="fabrics" size="6" multiple>
+        <optgroup label="Natural">
+            <option value="cotton">Cotton</option>
+            <option value="linen">Linen</option>
+            <option value="silk">Silk</option>
+            <option value="wool">Wool</option>
+        </optgroup>
+        <optgroup label="Synthetic">
+            <option value="polyester">Polyester</option>
+            <option value="nylon">Nylon</option>
+            <option value="acrylic">Acrylic</option>
+        </optgroup>
+    </select>
+</label>
+```
+
 ### Checkbox `<input type="checkbox">` {#checkbox}
 
 <form data-nosubmit method="post">
